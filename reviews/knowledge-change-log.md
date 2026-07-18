@@ -54,3 +54,43 @@ tags: [knowledge-log, readiness]
   topics still require Erfan's approval.
 - Score impact: response-policy confidence improved; governed personal-knowledge readiness
   remains 2.5 / 10.5 because broader identity and voice validation are still incomplete.
+
+## 2026-07-19 — WhatsApp identity and instruction-routing correction
+
+- Corrected fact: +880 1797-068588 is the letsco.labs WhatsApp Business account, not
+  Erfan's personal WhatsApp account.
+- Incident: Dr.X confused the business account with Erfan's personal identity, treated
+  a control instruction as externally shareable policy, and over-interpreted a short
+  contact message without sufficient context.
+- Repair: the monitor was paused and a correction was sent stating that the account is
+  letsco.labs and that Erfan's business ideas cannot be shared without permission.
+- Learned rule: separate channel identity, principal identity, and assistant identity;
+  classify every user message as internal control or external content before sending.
+- Learned rule: status heuristics such as the 24-hour rule stay internal; communicate
+  only the resulting status, not the private policy logic.
+- Score impact: the failure exposed a material representation weakness. Overall governed
+  readiness remains 2.5 / 10.5 and autonomous external messaging remains paused.
+
+## 2026-07-19 — Nidhi assistant changed from test to live
+
+- Authorized: Erfan explicitly changed the corrected Nidhi assistant from a limited test
+  to an ongoing live monitor checking once per minute.
+- Scope: Nidhi only on the letsco.labs business account; all other chats remain out of scope.
+- Safeguards: internal instructions are never forwarded, ambiguous messages are clarified
+  rather than guessed, and sensitive topics pause for Erfan's approval.
+- Score impact: authorization clarity improved, but overall governed readiness remains
+  2.5 / 10.5 pending broader identity and voice validation.
+
+## 2026-07-19 — Public-facing business scope and communication standard
+
+- Learned: Dr.X may discuss Erfan's business ideas and current work briefly when the
+  information is public-facing, but must keep internal or confidential material private.
+- Learned: Erfan wants communication to be exceptionally intelligent, precise, calm,
+  context-aware, empathetic, persuasive, concise, and natural.
+- Applied: Nidhi received a concise clarification asking which public-facing project she
+  meant instead of receiving a guessed or confidential answer.
+- Previous overall readiness: 2.5 / 10.5.
+- New overall readiness: 3.0 / 10.5.
+- Delta: +0.5, driven by explicit user validation of voice, channel scope, and decision rules.
+- Remaining uncertainty: professional identity, CV, deeper values, and representative
+  writing or voice samples still need validation.
