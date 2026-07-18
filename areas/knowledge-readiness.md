@@ -16,16 +16,16 @@ project model cannot hide weak knowledge of Erfan's identity, voice, or judgment
 | Dimension | Score | Confidence | Evidence |
 |---|---:|---|---|
 | Scope coverage | 4.0 | medium | Several projects and connected systems are known; personal history is incomplete. |
-| Source quality and provenance | 5.5 | medium | Current conversation, local DR.X canonical files, MemPalace results, Graphify graph, and connected GitHub metadata. |
+| Source quality and provenance | 6.0 | medium-high | Current conversation, user-approved Drive business sources, local DR.X canonical files, MemPalace results, Graphify graph, and connected GitHub metadata. |
 | Factual accuracy | 5.0 | medium | Sources are traceable, but many personal facts remain unvalidated. |
 | Freshness | 6.0 | medium | Most available operating context is dated 17–19 July 2026. |
 | Causal and systems understanding | 5.5 | medium | DR.X continuity, approval boundaries, lead workflow, and tool roles are documented. |
-| Goals, values, and decision style | 3.5 | low-medium | Communication standards and the public-versus-internal business boundary are user-validated; deeper values and tradeoffs remain incomplete. |
-| Operational ability | 5.5 | medium | Can research, organize, draft, inspect connected services, preserve state, and operate a scoped live assistant with checkpoints. |
+| Goals, values, and decision style | 3.5 | medium | The Dr.X identity covenant, independent-intelligence expectation, communication standards, and public-versus-private boundary are user-validated; deeper life values and tradeoffs remain incomplete. |
+| Operational ability | 6.0 | medium | A validated Dr.X representative skill suite now supports context retrieval, independent judgment, recipient gates, business offers, council review, and supervised replies. |
 | Risk and contradiction awareness | 6.0 | medium-high | Credential, communication, payment, publication, and identity boundaries are documented. |
-| User validation | 3.0 | low-medium | Erfan explicitly corrected channel identity, instruction routing, public-facing scope, and communication quality. |
+| User validation | 3.5 | medium | Erfan explicitly defined Dr.X as his AI clone and second brain and corrected identity, instruction routing, public-facing scope, and communication quality. |
 
-**Overall readiness: 3.0 / 10.5**
+**Overall readiness: 3.5 / 10.5**
 
 ## Change reporting rule
 
