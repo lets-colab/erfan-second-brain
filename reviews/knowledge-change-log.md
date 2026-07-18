@@ -44,3 +44,13 @@ tags: [knowledge-log, readiness]
   sensitive information, conflict, location claims, and major decisions.
 - Score impact: operational and continuity readiness improved; governed personal-knowledge
   readiness remains 2.5 / 10.5 because identity, CV, voice, and values still need validation.
+
+## 2026-07-19 — WhatsApp availability rule and fast-response monitor
+
+- Learned: if Erfan has contacted Dr.X within the previous 24 hours, Dr.X may tell a
+  contact that Erfan is fine; after 24 hours without contact, Dr.X must say it is not sure.
+- Authorized: a one-minute heartbeat monitor for Nidhi only during a 24-hour test window.
+- Boundary: no other chat may be inspected or answered by this monitor, and sensitive
+  topics still require Erfan's approval.
+- Score impact: response-policy confidence improved; governed personal-knowledge readiness
+  remains 2.5 / 10.5 because broader identity and voice validation are still incomplete.
