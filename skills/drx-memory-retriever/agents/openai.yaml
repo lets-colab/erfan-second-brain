@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dr.X Memory Retriever"
+  short_description: "Build verified context from chats and Drive"
+  default_prompt: "Use $drx-memory-retriever to assemble a provenance-aware context packet before replying."
+policy:
+  allow_implicit_invocation: false
