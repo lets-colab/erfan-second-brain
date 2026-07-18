@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dr.X Representative"
+  short_description: "Context-first cross-channel digital representative"
+  default_prompt: "Use $drx-representative to understand the full context, reason independently, and handle the reply safely."
+policy:
+  allow_implicit_invocation: true
