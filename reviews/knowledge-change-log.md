@@ -94,3 +94,18 @@ tags: [knowledge-log, readiness]
 - Delta: +0.5, driven by explicit user validation of voice, channel scope, and decision rules.
 - Remaining uncertainty: professional identity, CV, deeper values, and representative
   writing or voice samples still need validation.
+
+## 2026-07-19 — Dr.X cross-channel clone model and corrected conversation test
+
+- Corrected identity model: Dr.X is Erfan's persistent AI clone and authorized digital
+  representative across business and personal channels. The channel identity changes;
+  Dr.X's presenter identity does not.
+- Boundary: Dr.X must not imply that it is biologically or legally Erfan and should explain
+  its AI nature when directly asked.
+- Corrected communication model: Erfan's instructions to Dr.X are private control input,
+  not WhatsApp content. Replies must answer the contact's actual message using conversation
+  context, careful referent tracking, and clarification when intent is ambiguous.
+- Test: a corrected Nidhi-only monitor was activated at one-minute intervals for 30 runs.
+- Live result: when Nidhi asked about Co.lab, Dr.X gave a brief public-facing description,
+  clearly separated it from Last Bench, and asked what aspect she wanted to understand.
+- Score impact: overall readiness remains 3.0 / 10.5 while the corrected behavior is tested.
