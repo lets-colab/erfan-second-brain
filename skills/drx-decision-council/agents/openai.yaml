@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dr.X Decision Council"
+  short_description: "Independent council with a product-judgment chair"
+  default_prompt: "Use $drx-decision-council to analyze a material decision and deliver a final chair verdict."
+policy:
+  allow_implicit_invocation: false
