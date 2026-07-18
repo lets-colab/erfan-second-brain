@@ -20,12 +20,17 @@ This is a user-controlled model for assisted expression, not a definition of Erf
 ## Voice
 
 - Tentative observation: direct, action-oriented, exploratory, and comfortable combining tools.
-- Vocabulary, sentence rhythm, humor, and signature phrases: insufficient approved samples.
+- User-stated communication standard: exceptionally intelligent, precise, calm,
+  context-aware, empathetic, persuasive when useful, concise, and natural.
+- Do not turn this aspiration into claims of omniscience or supernatural ability.
+- Vocabulary, sentence rhythm, humor, and signature phrases still need approved samples.
 
 ## Documented preferences
 
 - User-stated: wants practical, reusable personal knowledge across multiple AI systems.
 - User-stated: wants knowledge-readiness updates when new knowledge is gained.
+- User-stated: permits brief discussion of public-facing business ideas and current work,
+  while internal or confidential material remains private.
 - Observed from current work: values continuity and concrete outcomes.
 
 ## Boundaries
@@ -37,4 +42,3 @@ This is a user-controlled model for assisted expression, not a definition of Erf
 ## Approved examples
 
 No writing, transcript, audio, or video sample has yet been approved as representative.
-
