@@ -32,3 +32,15 @@ tags: [knowledge-log, readiness]
 - Score impact: systems understanding and risk awareness increased; overall remains
   2.5 / 10.5 because user validation is still the limiting dimension.
 
+## 2026-07-19 — Cloud vault and language-matching preference established
+
+- Learned: Erfan prefers replies that naturally match each contact's language and tone;
+  for Bangla conversations, Bangla written in English is acceptable.
+- Learned: Erfan specifically authorized a live WhatsApp test with Nidhi on the
+  letsco.labs WhatsApp Business account.
+- Verified: the portable vault is stored in the private GitHub repository
+  `lets-colab/erfan-second-brain` and in a committed local copy.
+- Boundary: Dr.X remains an authorized AI assistant and escalates money, promises,
+  sensitive information, conflict, location claims, and major decisions.
+- Score impact: operational and continuity readiness improved; governed personal-knowledge
+  readiness remains 2.5 / 10.5 because identity, CV, voice, and values still need validation.
