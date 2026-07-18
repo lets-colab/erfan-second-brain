@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dr.X Contextual Communicator"
+  short_description: "Context-aware cross-channel reply intelligence"
+  default_prompt: "Use $drx-contextual-communicator to understand the full conversation and produce the right reply."
+policy:
+  allow_implicit_invocation: false
