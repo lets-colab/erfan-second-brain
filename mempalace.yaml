@@ -1,0 +1,50 @@
+wing: erfan_second_brain
+rooms:
+- name: inbox
+  description: Files from inbox/
+  keywords:
+  - inbox
+  - inbox
+- name: archive
+  description: Files from archive/
+  keywords:
+  - archive
+  - archive
+- name: areas
+  description: Files from areas/
+  keywords:
+  - areas
+  - areas
+- name: projects
+  description: Files from projects/
+  keywords:
+  - projects
+  - projects
+- name: decisions
+  description: Files from decisions/
+  keywords:
+  - decisions
+  - decisions
+- name: documentation
+  description: Files from notes/
+  keywords:
+  - documentation
+  - notes
+- name: team
+  description: Files from people/
+  keywords:
+  - team
+  - people
+- name: sources
+  description: Files from sources/
+  keywords:
+  - sources
+  - sources
+- name: reviews
+  description: Files from reviews/
+  keywords:
+  - reviews
+  - reviews
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []
