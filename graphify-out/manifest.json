@@ -1,0 +1,57 @@
+{
+  "entities.json": {
+    "mtime": 1784414788.6955838,
+    "ast_hash": "5dc7f3d0e7d500c5166950c033fa97dc",
+    "semantic_hash": "5dc7f3d0e7d500c5166950c033fa97dc"
+  },
+  "AGENTS.md": {
+    "mtime": 1784414767.1684368,
+    "ast_hash": "2a086aecfd93642f5feb88e9fc1e88fb",
+    "semantic_hash": "2a086aecfd93642f5feb88e9fc1e88fb"
+  },
+  "README.md": {
+    "mtime": 1784414755.7569892,
+    "ast_hash": "7b34ff9e201841406c0e929444abd568",
+    "semantic_hash": "7b34ff9e201841406c0e929444abd568"
+  },
+  "areas/digital-presenter-profile.md": {
+    "mtime": 1784414755.7686,
+    "ast_hash": "ff2b5ec3dc5772bbb88b9a3dd69421d1",
+    "semantic_hash": "ff2b5ec3dc5772bbb88b9a3dd69421d1"
+  },
+  "areas/knowledge-readiness.md": {
+    "mtime": 1784414755.759589,
+    "ast_hash": "a5ebd1dbc9885ece85a7767217f7f6c6",
+    "semantic_hash": "a5ebd1dbc9885ece85a7767217f7f6c6"
+  },
+  "areas/operating-charter.md": {
+    "mtime": 1784414755.767857,
+    "ast_hash": "08d6fc2e645de7fbe61aa39b81c8775d",
+    "semantic_hash": "08d6fc2e645de7fbe61aa39b81c8775d"
+  },
+  "decisions/2026-07-19-obsidian-first-knowledge-base.md": {
+    "mtime": 1784414755.7699685,
+    "ast_hash": "95a73d9ad729a890393b4421fc074e76",
+    "semantic_hash": "95a73d9ad729a890393b4421fc074e76"
+  },
+  "mempalace.yaml": {
+    "mtime": 1784414791.0125575,
+    "ast_hash": "db4176b5e96b1c78ba908b8334db5cf8",
+    "semantic_hash": "db4176b5e96b1c78ba908b8334db5cf8"
+  },
+  "notes/source-inventory.md": {
+    "mtime": 1784414755.7691717,
+    "ast_hash": "459378de822d7788c6fcce92672015d0",
+    "semantic_hash": "459378de822d7788c6fcce92672015d0"
+  },
+  "projects/personal-second-brain.md": {
+    "mtime": 1784414755.7591343,
+    "ast_hash": "a9b94a173a36a53662a9613cbd585569",
+    "semantic_hash": "a9b94a173a36a53662a9613cbd585569"
+  },
+  "reviews/knowledge-change-log.md": {
+    "mtime": 1784414755.7695906,
+    "ast_hash": "3987ec8b1bfd6d95e52f32448ec06a58",
+    "semantic_hash": "3987ec8b1bfd6d95e52f32448ec06a58"
+  }
+}
