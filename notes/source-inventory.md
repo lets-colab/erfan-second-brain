@@ -28,6 +28,11 @@ tags: [sources, provenance]
 - DR.X continuity system and clean-room memory rules.
 - Instagram lead-finding continuation assets and outreach rules.
 - Last Bench and multiple lets-colab repositories are known but not fully modeled.
+- Google Drive `Co.Lab` document (`1FofYyftUn0OF8kYKqRj70HB1YHQ7sweftvtiMsTeJ6Q`) —
+  primary approved source for public Co.lab positioning and service lanes.
+- Google Drive `Last Bench Blueprint` (`1tWcaoBhLSxabu5FB7Yz0F2w_ZbK7cF7m`) — strategic
+  plan source; product and launch claims require freshness checks before public use.
+- Drive search found no file matching `Nidhi`; no recipient-specific backup has been verified.
 
 ## Not found or not yet approved
 
@@ -40,4 +45,3 @@ tags: [sources, provenance]
 
 Inspect the most relevant source rather than bulk-copying everything. Add only knowledge
 that helps a defined decision or assistant capability, with provenance and exclusions.
-
