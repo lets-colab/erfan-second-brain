@@ -1,0 +1,37 @@
+version: 1
+status: locked-design
+required_fields:
+  - task_id
+  - timestamp
+  - project_namespace
+  - request_summary
+  - agent
+  - model
+  - skill
+  - sources
+  - tools
+  - actions
+  - approvals
+  - changes
+  - result_status
+  - failures
+  - usage
+
+field_contracts:
+  task_id: unique_string
+  project_namespace: isolated_project_or_business_slug
+  sources: list_of_source_refs_with_provenance
+  tools: list_of_invoked_tools
+  actions: list_of_material_steps
+  approvals: list_of_requested_and_granted_approvals
+  changes: list_of_files_records_or_external_state_changed
+  result_status: [passed, failed, blocked, needs_approval, partial]
+  failures: list_of_error_or_quality_failures
+  usage: provider_usage_or_cost_when_available
+
+rules:
+  - do_not_log_secrets
+  - preserve_source_provenance
+  - material_writes_must_be_reconstructable
+  - approval_records_must_precede_protected_actions
+  - cross_project_events_must_be_explicitly_linked
