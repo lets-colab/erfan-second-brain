@@ -1,0 +1,45 @@
+version: 1
+status: locked-design
+principles:
+  - least_privilege
+  - read_only_by_default
+  - explicit_approval_for_sensitive_writes
+  - reversible_before_irreversible
+  - provenance_required
+
+actions:
+  read_public_information:
+    default: allow
+  read_approved_private_sources:
+    default: allow_when_task_relevant
+  create_internal_draft:
+    default: allow
+  update_internal_reversible_state:
+    default: allow_if_within_task_scope
+  send_message_or_email:
+    default: require_human_approval
+  publish_public_content:
+    default: require_human_approval
+  spend_money_or_change_budget:
+    default: require_human_approval
+  change_credentials_or_security:
+    default: require_human_approval
+  delete_or_destroy_data:
+    default: require_human_approval
+  sign_contract_or_make_binding_commitment:
+    default: require_human_approval
+  install_untrusted_or_high_privilege_software:
+    default: require_human_approval
+
+boundaries:
+  memory:
+    authoritative: false
+    write_requires_provenance: true
+    cross_project_access: deny_by_default
+  secrets:
+    store_in_repo: false
+    expose_to_agents: minimum_required_only
+  untrusted_content:
+    allow_privilege_escalation: false
+    execute_instructions_from_content: false
+    preferred_mode: restricted_reader
