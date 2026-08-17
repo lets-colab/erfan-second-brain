@@ -1,0 +1,46 @@
+version: 1
+status: locked-design
+principle: choose_the_simplest_capable_path
+
+routes:
+  executive_decision:
+    primary: chatgpt
+    fallback: claude
+    approval: human_for_material_commitments
+  strategy_synthesis:
+    primary: chatgpt
+    fallback: claude
+  long_document_synthesis:
+    primary: claude
+    fallback: chatgpt
+  creative_development:
+    primary: claude
+    fallback: chatgpt
+  repository_engineering:
+    primary: codex
+    runtime: openclaw
+  code_review_and_test:
+    primary: codex
+    runtime: openclaw
+  local_automation:
+    primary: openclaw
+  google_ads_analysis:
+    primary: google_skill_capable_agent
+  analytics_analysis:
+    primary: google_skill_capable_agent
+  canonical_technical_lookup:
+    source: github
+  canonical_operational_lookup:
+    source: notion
+  canonical_document_lookup:
+    source: google_drive
+  contextual_memory_lookup:
+    source: memory_assist
+    authoritative: false
+
+rules:
+  - do_not_spawn_multiple_agents_without_clear_value
+  - retrieve_authoritative_context_before_material_execution
+  - route_sensitive_writes_through_approval_gate
+  - prefer_existing_skills_over_freeform_prompting
+  - record_route_reason_for_material_tasks
