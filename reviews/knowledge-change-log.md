@@ -8,6 +8,25 @@ tags: [knowledge-log, readiness]
 
 # Knowledge Change Log
 
+## 2026-08-17 — Fable-2036 reasoning protocol + Founder Intelligence full re-audit
+
+- User correction: Erfan identified that repeated audits were drifting because the reasoning process kept generating new architecture before completing the requested full audit/simulation sequence.
+- Verified external fact: Claude Fable 5 is a real 2026 Anthropic model built for demanding long-horizon reasoning and agentic work. The requested "Fable from 2036" remains a speculative capability lens, not a factual future model claim.
+- Installed: `skills/drx-fable2036-reasoner/SKILL.md`, combining verified Fable-5-style long-horizon/self-evaluating reasoning with explicit 2036-lens capabilities such as temporal consistency, contradiction detection, counterfactual breadth, recursive self-critique, and convergence while preserving 2026 reality boundaries.
+- Installed earlier in the same refinement cycle: `skills/drx-architecture-convergence/SKILL.md`; upgraded `skills/drx-prelive-simulator/SKILL.md` with canonical-path binding and 2036-in-2026 mode.
+- Market correction: 2026 primary-source review shows that AI chief of staff, outcome/work graphs, human+agent planning, strategy-to-funds alignment, scenario planning, meeting intelligence, and strategy-to-outcome tracing are already being productized by Asana, Atlassian, Notion, Planview, WorkBoard, Slack, and others. These mechanisms cannot honestly be claimed as unique inventions.
+- Product correction: Founder Intelligence should differentiate through founder-native cognitive compression, Visual Action Branch navigation, Detour behavior, temporal decision/outcome memory, correction-first company-model construction, learned company-specific guidance, and Co.lab implementation/distribution know-how. These are hypotheses, not proven moat.
+- Architecture correction: the temporal event/decision contract is foundational, but building a sophisticated graph database or event-sourcing backend before proving founder behavior would be another overcorrection. The new V0 co-builds a lightweight decision/outcome record with one real LastBench MAP.
+- New trust mechanism: graph relationships must preserve epistemic status so operational dependencies, strategic hypotheses, observed associations, recorded outcomes, and simulations are not visually confused with proven causality.
+- Target-user correction: the preferred early external ICP is founder-led operating teams with real recurring workflows, money, customers/leads, and fragmented context; idea-stage founders and large enterprise strategic-portfolio buyers are poor initial fit.
+- Canonical artifact replaced in-place (prior version preserved in git history): `decisions/founder-intelligence-canonical-lock-2026-08-17.md` now contains the v2 fresh-audit architecture and a two-stage 30-day LastBench V0.
+- Classification: user-stated correction + verified 2026 market evidence + model product judgment/hypothesis.
+- Previous overall readiness: 3.5 / 10.5.
+- New overall readiness: 3.5 / 10.5.
+- Delta: 0.0 overall because the score is governed by the lowest material dimension; systems understanding, freshness, provenance, operational reasoning, and contradiction awareness improved materially while deeper personal validation and real product-market evidence remain limiting.
+- Confidence: high on the recorded product/architecture decisions and current competitor overlap; medium on the proposed Founder Intelligence differentiation; low/unknown on external retention, pricing, willingness-to-pay, and standalone SaaS success until real pilots occur.
+- Remaining gap: run the 30-day LastBench pilot, measure maintenance burden and decision-change value, test correction-first capture, and validate 3–5 external operating teams before crossing into expensive SaaS engineering.
+
 ## 2026-08-17 — Founder Command Center + OS product hypothesis added
 
 - Learned: Erfan wants the LastBench Founder OS to evolve into a one-glance Founder Command Center with calendar and meeting intelligence, collaborative chat integrations, task assignment, live financial state, scenario projections, gamified execution, visual roadmap, long-term goals, community-impact tasks, and an always-visible reminder of why the founders started.
