@@ -3,455 +3,539 @@ created: 2026-08-17
 updated: 2026-08-17
 type: canonical-project-memory
 status: active
-classification: user-stated direction + audited product hypothesis + durable reasoning history
-tags: [cofound, founder-intelligence, founder-os, lastbench, colab, class-a, learning, navigation, replay, prelive, detour]
+version: v2
+coverage: substantial
+classification: user-stated direction + primary project evidence + audited product hypothesis + reasoning history
+related:
+  - decisions/founder-intelligence-canonical-lock-2026-08-17.md
+  - decisions/cofound-product-hierarchy-2026-08-17.md
+  - reviews/cofound-ultramax-reaudit-2026-08-17.md
 ---
 
-# CO.FOUND — Canonical Continuity Memory
+# CO.FOUND — Canonical Continuity Memory v2
 
-This file preserves the full evolution of the Founder Command Center / Founder Intelligence / CO.FOUND idea so later work does not lose important concepts when terminology changes.
+This file preserves the evolution of the Founder Command Center / Founder Intelligence / CO.FOUND work without pretending that every historical sentence is independently retrievable.
 
-## 1. Origin
+## Source integrity
 
-The concept began as an operating system for the three LastBench founders: Erfan, Sayem, and Fahim.
+Audit coverage is `SUBSTANTIAL`.
 
-The original human problem was not “build SaaS.” It was:
-- give the three founders one shared view of the company;
-- make the state understandable in seconds;
-- show where the company is going;
-- show what each founder needs to do;
-- expose blockers;
-- show real capital used/remaining and later defensible scenarios;
-- integrate calendars, meetings, tasks, communication, documents and finance;
-- capture decisions and commitments so they do not disappear;
-- make progress motivating and game-like;
-- keep purpose/community impact visible;
-- help founders learn capabilities they do not yet have while executing real work.
+Use these evidence classes when recovering history:
+- `DIRECT_USER_STATEMENT` — visible/retrieved user instruction;
+- `PRIMARY_PROJECT_SOURCE` — uploaded file/canonical repo source;
+- `DERIVED_INFERENCE` — interpretation;
+- `SIMULATION` — hypothetical future;
+- `UNVERIFIED_RECOLLECTION` — historical detail remembered/summarized but not independently re-retrieved.
 
-The earliest durable product instinct was: keep existing tools where useful and make the new system the brain/control room above them.
+A later summary or memory file does not upgrade weak provenance into fact.
 
-## 2. Early Founder Command Center
+## 1. Origin — three-founder operating system
 
-Initial surfaces included:
-- Mission Control / shared dashboard;
-- North Star and roadmap;
-- max-three critical founder actions;
-- meeting/calendar intelligence;
-- task assignment;
-- finance state;
-- collaboration/chat integrations;
-- gamification/momentum;
-- impact / Why We Started;
-- AI chief-of-staff style briefing.
+The concept began as an operating system for Erfan, Sayem and Fahim to run a company together with very low cognitive load.
 
-An early mockup used illustrative/fake percentages, capital and streak metrics. This became a major trust failure and produced a permanent rule:
+Primary early materials verify the original operating concerns:
+- one shared company truth;
+- North Star / roadmap;
+- max-three high-leverage founder missions;
+- blockers;
+- meetings/calendar/task ownership;
+- money/capital visibility;
+- communication/tool integrations;
+- gamification/motivation;
+- purpose / Why We Started / community impact;
+- AI briefing/advisor behavior;
+- eventual SaaS only after behavioral validation.
 
-> No important metric without source -> calculation -> timestamp/freshness -> owner -> confidence/status.
+Current user clarification about the origin adds that **learning-through-work was also intended from the beginning**: if founders/team members did not know how to perform important work, the system should help them build the skill while executing. This is preserved as a direct current user statement about original intent; the accessible early uploaded files independently evidence gamification/motivation more clearly than they evidence this learning requirement.
 
-The dashboard-first approach was also rejected. The product had to answer founder questions rather than display cards.
+LastBench became the first company/test environment. It is not the permanent umbrella identity.
+
+## 2. First major failure — fake certainty
+
+An early mockup displayed illustrative percentages, capital, runway, blockers, task counts and streaks as if live.
+
+This created a permanent trust rule:
+
+> **No important metric without source -> calculation -> timestamp/freshness -> owner -> confidence/status.**
+
+If data is not connected or defensible, say so.
+
+The product therefore shifted from “dashboard cards” toward operating logic and founder questions.
 
 ## 3. Founder questions became the information architecture
 
-The product evolved around:
+The system evolved around:
 1. Where are we going?
-2. Are we winning / what is the current state?
+2. Are we winning / what state are we in?
 3. What do I need to do?
 4. What is blocking us?
 5. Are we financially safe?
 6. What happened while I was away?
 7. Why are we doing this?
 
-This produced:
-- shared company truth / THE ROOM;
-- founder-specific MY VIEW / later FOCUS;
+This produced the early concepts:
+- THE ROOM / Unified Room;
+- MY VIEW;
+- Founder Meeting / Board Mode;
 - Since You Left;
-- Founder AI / ASK;
-- meeting mode.
+- Founder AI;
+- company pulse / attention state;
+- persistent purpose/impact.
 
-## 4. Money thinking evolved
+## 4. Simplicity evolved into two complementary laws
 
-Early task->money thinking was too deterministic.
+### Comprehension law
+`3 seconds -> 1 minute -> depth`
 
-It evolved into:
+The founder should understand state in seconds, meaningful change/action in a minute, then drill into unlimited depth only when needed.
 
-`Task / Action -> Milestone -> Objective -> Business Metric -> Financial Outcome`
+### MAP disclosure law
+`1 destination -> up to 3 primary routes -> depth`
 
-Financial truth and modeled consequence must remain separate.
+Do not expose a giant graph first.
 
-Current law:
-- cash / spent / committed / available / revenue are facts when sourced;
-- pipeline / scenarios / expected contribution are models;
-- no task is shown as guaranteeing revenue;
-- no precise probability unless a defensible calibrated model exists.
+## 5. Money evolved from task-value fantasy to evidence-aware consequence
 
-## 5. Outcome Graph and Visual Action Branches
+Early thinking explored task -> probability -> money.
 
-The system evolved from static roadmaps/task lists into a navigable company model.
+The corrected structure became:
 
-Core idea:
+`Action -> Milestone -> Objective -> Business Metric -> Financial Outcome`
 
-`Goal -> Drivers -> Routes / Branches -> Dependencies -> Actions -> Outcomes`
+Permanent distinction:
+- cash/spent/committed/available/revenue = facts when sourced;
+- pipeline/scenarios/expected contribution = models;
+- task completion never guarantees money;
+- precise success probabilities require defensible calibration.
 
-Visual Action Branches became a signature interaction because founders should see how work connects to the destination, not merely consume task lists.
+## 6. Outcome Graph -> Visual Action Branches
 
-Progressive disclosure replaced giant spiderwebs:
+Static roadmaps/task lists evolved into navigable routes:
 
-`one destination -> up to three main routes -> deeper detail only when opened`
+`Goal -> Drivers -> Routes/Branches -> Dependencies -> Actions -> Outcomes`
 
-## 6. Detour / rerouting
+Visual Action Branches became a signature interaction because founders need to **see how work connects to destination**.
 
-The product law became:
+## 7. Detour / company navigation
 
-> Blocked does not mean stopped.
+Product law:
 
-When one route is blocked, the system should identify other executable paths toward the same outcome and compare tradeoffs such as time, cost, capacity, dependency, evidence and risk.
+> **Blocked does not mean stopped.**
 
-The strongest internal analogy became company navigation / Google-Maps-like behavior:
+When one route is blocked, the system should surface other executable paths and compare what is knowable: time, cost, capacity, dependencies, evidence, risk and historical outcomes.
 
-`You are here -> destination -> available routes -> blocker -> alternative route -> recalculate`
+The strongest internal mental model became navigation:
 
-This is a mental model, not a plan to clone Google Maps branding/UI.
+`You are here -> destination -> routes -> blocker -> alternative route -> recalculate`
 
-## 7. Learning became part of work
+This is a product metaphor/interaction model, not a plan to clone Google Maps branding or UI.
 
-An important original requirement was temporarily over-deferred and later restored:
+## 8. Human cognitive modes converged
 
-> Work should build the company and build the people doing the work.
+### ROOM
+Shared orientation / the place founders meet the company.
 
-Core capability loop:
+### MAP
+Navigate routes, dependencies, blockers, outcomes, time and alternatives.
 
-`real work -> capability gap -> learn -> practice -> apply -> result -> skill evidence -> company progress + human progress`
+### FOCUS
+Personal max-three high-leverage actions, why they matter and what they unlock.
 
-If a founder/team member does not know how to complete meaningful work, CO.FOUND should eventually surface the capability gap and provide contextual learning rather than forcing them into a separate generic course experience.
+### ASK
+Natural-language access to company context, history and decisions.
 
-Class A may provide content/frameworks/interventions, but the Learning / Capability Engine belongs to CO.FOUND itself.
+Meeting Mode is a **contextual ROOM state**, not a fifth permanent top-level tab.
 
-Class A therefore evolved from a generic LMS concept into contextual Skill Quests / capability infrastructure tied to real work.
+## 9. Meeting Mode remains core
 
-## 8. Motivation / game experience
+Before meeting:
+- what changed;
+- blockers;
+- money changes;
+- decisions required;
+- previous commitments.
 
-The original ambition was to make execution compelling and rewarding, including for users who struggle with attention and long unstructured work.
+During:
+- decisions;
+- rationale;
+- owner;
+- action;
+- dependency/deadline.
 
-The product should not claim to treat ADHD or deliberately engineer harmful addiction.
+After:
 
-The retained behavioral principles are:
-- low cognitive load;
+`Meeting -> Decision -> Action -> Owner -> Graph/History -> Next Meeting`
+
+## 10. Learning-through-work is a product principle
+
+CO.FOUND should not only make companies better. It should help the people building them become more capable.
+
+Core loop:
+
+`real mission -> capability gap -> learn/guidance -> practice -> apply -> result -> skill evidence -> company progress + human progress`
+
+Class A can contribute content/frameworks/interventions, but Learning/Capability belongs to CO.FOUND itself.
+
+### Core now
+- detect/declare a capability gap;
+- contextual guidance/learning tied to current work;
+- applied skill evidence;
+- visible human + company progress.
+
+### V0B test
+At least one real mission should run through the full capability-gap loop.
+
+### Later
+- full Class A curriculum platform;
+- rich skill trees;
+- certifications;
+- advanced capability inference.
+
+## 11. Motivation / game experience
+
+The product should make meaningful work **compelling** through:
 - short missions;
 - immediate feedback;
 - visible progress;
-- meaningful milestone celebration;
-- blockers disappearing;
-- routes unlocking;
+- route activation;
+- blocker removal;
+- milestone unlocks;
 - capability growth;
 - team momentum;
-- adaptive challenge/recovery.
+- recovery after misses;
+- meaningful celebration.
 
-Meaningful visual state change is preferred over meaningless XP farming, toxic leaderboards, employee productivity scores, or streak pressure.
+Do not reduce this to:
+- meaningless XP farming;
+- toxic leaderboards;
+- employee rankings;
+- shame loops;
+- compulsive dark patterns;
+- medical claims that the product treats ADHD.
 
-The strongest experiential loop is:
+XP/points/streaks/levels can be experimentally used only when tied to real states/behavior and shown to help rather than distract.
 
-`Mission -> Action -> Feedback -> Route changes -> Skill grows -> Company progresses -> Next meaningful challenge`
+## 12. People, agents and capacity
 
-## 9. People, agents and capacity
-
-The long-term model added capacity intelligence:
+Long-term capacity model:
 
 `FOUNDER -> EXISTING TEAM -> AUTOMATION -> AI AGENT -> INTERN -> FREELANCER -> HIRE`
 
-The purpose is to choose an execution configuration for the work, not score human worth.
+Purpose: choose the right execution configuration for work, not score human worth.
 
-No autonomous firing/hiring or employee surveillance/productivity ranking.
+No autonomous firing/hiring or employee productivity surveillance.
 
-This remains architecture-now / user-facing-later until the core navigation behavior is validated.
+Full UI remains later.
 
-## 10. Replay / Time Machine
+## 13. Replay / Decision -> Outcome Memory
 
-Historical organizational memory became a major part of the vision.
-
-Every important decision should eventually preserve:
-- what was known then;
-- what was unknown;
-- assumption;
+Important decisions should preserve:
+- information available at the time;
+- unknowns;
+- assumptions;
 - alternatives;
 - chosen route and why;
 - expected result;
-- confidence at the time;
+- confidence;
 - money/resources committed;
 - actual result;
-- lesson.
+- learning.
 
 Historical belief must not be rewritten with hindsight.
 
-Replay is valuable when it becomes Decision -> Outcome Memory, not merely a history viewer.
+Replay becomes valuable when it supports future judgment, not merely retrospective documentation.
 
-## 11. Pre-Live / future simulation
+## 14. Pre-Live / future exploration
 
-Pre-Live was created to simulate alternative paths before commitment.
+Pre-Live explores alternative future routes.
 
-Permanent rule:
+Permanent rules:
 - simulation is not prediction;
-- past fact, present fact and counterfactual future must remain visibly separate;
+- counterfactual future is never stored/presented as history;
 - use assumptions, scenarios, failure paths, reversibility and kill criteria;
-- do not manufacture precise success percentages.
+- no fake precise probabilities.
 
-This created the continuous temporal model:
+This yields the continuous time model:
 
-`PAST / REPLAY -> PRESENT / ORIENT -> FUTURE / PRE-LIVE`
+`PAST / REPLAY -> PRESENT / ROOM+MAP -> FUTURE / PRE-LIVE`
 
-## 12. Founder Intelligence
+## 15. Correction-first capture
 
-The product moved from Founder Command Center to Founder Intelligence because the deeper opportunity was not another workspace; it was an intelligence/navigation layer that understands fragmented company state and compresses it into what matters.
+A central adoption risk is stale truth.
 
-Founder Intelligence became the brain/reasoning layer, not necessarily the final umbrella brand.
+Where practical:
+- ingest meeting/tool signals;
+- infer a proposed state change;
+- ask a human to confirm/correct;
+- avoid making founders maintain duplicate admin systems.
 
-Core human cognitive modes stabilized as:
-- ROOM — orient together;
-- MAP — navigate paths;
-- FOCUS — act on max-three high-leverage items;
-- ASK — investigate/control through natural language.
+A logically brilliant recommendation over stale data is a product failure.
 
-Replay and Pre-Live are temporal modes of the same company model.
+## 16. Epistemic relationships
 
-## 13. Market pressure test
+The model must distinguish:
+- operational dependency;
+- strategic hypothesis;
+- observed association;
+- historical sequence/result;
+- simulation/counterfactual.
 
-Current-market research killed the belief that any single broad mechanism is unique.
+A visually compelling graph must not imply causal certainty the evidence does not support.
 
-Do NOT claim uniqueness for:
-- AI chief of staff;
-- outcome/work graph;
-- strategic dashboard;
-- human+agent planning;
-- scenario planning;
-- meeting intelligence;
-- strategy-to-money/outcome connection.
-
-Potential differentiation remains unproven and must come from the combination of:
-- founder-native cognitive compression;
-- Visual Action Branch navigation;
-- Detour/rerouting;
-- low-friction/correction-first company-model construction;
-- temporal Decision -> Outcome Memory;
-- company-specific learned guidance;
-- learning/capability through real work;
-- meaningful momentum/game experience;
-- implementation/distribution know-how.
-
-## 14. Architecture drift and reasoning mistakes
-
-Repeated audits created a meta-problem: the reasoning kept generating better ideas faster than it was converging them.
-
-Failures included:
-- silently replacing old architecture;
-- confusing long-term vision with V0;
-- accidentally hiding signature mechanics inside renamed concepts;
-- over-cutting learning, people, impact or gamification because they were not immediate V0 features;
-- later overcorrecting toward event-ledger/backend architecture before behavioral proof;
-- treating simulated future lessons as if they justified architecture without explicit evidence.
-
-These failures caused creation of dedicated convergence and high-effort reasoning skills.
-
-## 15. Reasoning / intelligence skills now available
-
-### `drx-contextual-communicator`
-Preserves context, language, recipient state and interaction contracts.
-
-### `drx-memory-retriever`
-Retrieves provenance-aware context and separates fact/user position/external claim/inference/unknown.
-
-### `drx-decision-council`
-Challenges material decisions from independent lenses; preserves dissent, assumptions, evidence and failure modes before a final simplifying verdict.
-
-### `drx-representative`
-Binds identity/context/retrieval/reasoning/approval/learning into a supervised representative workflow.
-
-### `drx-prelive-simulator`
-Runs evidence-aware base/failure/breakout/no-build simulations; tracks assumptions, capital, capacity, branch points, history, falsification and learning from forecast error.
-
-### `drx-architecture-convergence`
-Prevents intelligent iteration from becoming architectural drift. Maintains one canonical model with explicit states: locked/provisional/architect-now-ui-later/deferred/killed/reopened and classifications such as reinforces/clarifies/extends/contradicts/replaces.
-
-### `drx-fable2036-reasoner`
-High-effort / Ultra-Max reasoning protocol. Reconstructs full evolution before changing architecture; runs missingness, contradiction, seduction, overbuild and underbuild audits; destroys unsupported beliefs; tests no-build/service alternatives; separates 2026 reality from speculative future reasoning; converges to one path.
-
-These skills do not turn the model into a literal future or god-like intelligence. They are durable reasoning protocols built from observed failure modes in this work.
-
-## 16. How the reasoning improved through this project
-
-The assistant evolved from:
-
-`generate dashboard -> critique dashboard -> generate another architecture`
-
-into:
-
-`retrieve history -> classify evidence -> reconstruct original intent -> audit missing requirements -> challenge current belief -> compare counterfactuals -> identify irreversible risk -> preserve useful deferred concepts -> converge -> simulate -> test against reality -> update learning`
-
-Specific capability gains:
-- stronger provenance discipline;
-- stronger reality/simulation separation;
-- explicit architecture state management;
-- contradiction detection across long discussions;
-- preservation of rejected/deferred ideas and reopen triggers;
-- stronger market humility and competitor pressure testing;
-- willingness to kill its own prior recommendations;
-- explicit stopping rule: after BUILD-FINAL for an experiment, reality should generate the next architectural change;
-- baseline/control comparison so novelty is not mistaken for value;
-- recognition that data freshness/maintenance burden can kill even a brilliant intelligence layer;
-- recognition that service success, product success, willingness-to-pay and venture-scale success are separate tests.
-
-No numeric “intelligence increase” is claimed; the change is in durable procedure and error correction, not a literal model-weight upgrade.
-
-## 17. CO.FOUND hierarchy correction
-
-The hierarchy was initially described incorrectly as if CO.FOUND sat under Co.Lab.
-
-Correct hierarchy:
-
-1. **CO.FOUND** — top-level operating intelligence environment itself.
-2. **Founder Intelligence** — reasoning/navigation/memory engine inside CO.FOUND.
-3. **Interaction modes** — ROOM, MAP, FOCUS, ASK, Replay, Pre-Live, Learning/Momentum.
-4. **Company / venture spaces** — Co.Lab, LastBench, Class A and future ventures live inside CO.FOUND.
-5. **Integrated sources** — meetings, calendar, communication, tasks, CRM, finance, documents, GitHub, etc.
-
-CO.FOUND is not operationally subordinate to Co.Lab. Co.Lab can be historically an originator/implementation partner while also being a resident company space inside CO.FOUND.
-
-## 18. Naming history and the remembered double meaning
-
-### Founder Command Center
-Strong functional/internal description, but too dashboard/place-oriented for the full evolved intelligence environment.
-
-### Founder Intelligence
-Strong name for the intelligence engine/category; not necessarily the umbrella environment.
+## 17. CO.FOUND hierarchy — corrected and locked
 
 ### CO.FOUND
-Strong wordplay:
+Top-level operating intelligence environment.
+
+### Founder Intelligence
+Reasoning/navigation/memory engine inside CO.FOUND.
+
+### Interaction modes/mechanics
+ROOM · MAP · FOCUS · ASK · Meeting Mode · Detour · Replay · Pre-Live · Learning · Momentum · Since You Left.
+
+### Company / venture spaces
+- LastBench;
+- Co.Lab;
+- Class A;
+- future ventures.
+
+### Integrated sources
+Calendar, meetings, task/project systems, communication, CRM, finance, documents, GitHub and other approved sources.
+
+CO.FOUND does not sit under Co.Lab in runtime/product hierarchy. Co.Lab can still be a creator/origin/implementation partner while also being a resident company space.
+
+## 18. Market-pressure-test lesson
+
+Prior market audits concluded that broad mechanisms such as AI chief of staff, work/outcome graphs, scenario planning, human-agent work, meeting intelligence and strategy-to-execution links cannot individually be treated as unique.
+
+Do not claim moat simply because CO.FOUND has them.
+
+Potential differentiation remains unproven and lies in the combination of:
+- founder-native cognitive compression;
+- Visual Action Branch navigation;
+- Detour;
+- correction-first model construction;
+- Decision -> Outcome Memory;
+- company-specific learned guidance;
+- learning through real work;
+- meaningful momentum;
+- low-friction operating behavior.
+
+## 19. Reasoning failures that improved the system
+
+Repeated assistant failures included:
+- designing UI before operating logic;
+- fake certainty;
+- silently replacing architecture after each insight;
+- confusing long-term vision with V0;
+- hiding signature mechanics inside generic names;
+- over-cutting learning/people/impact/gamification because they were not immediate MVP items;
+- later overcorrecting toward backend/event-ledger architecture before behavioral proof;
+- treating simulations as architecture evidence;
+- overclaiming audit completeness;
+- provenance confabulation: claiming a historical quote/name had been recovered without a retrievable source;
+- memory laundering: copying that unsupported recollection into durable memory.
+
+These mistakes directly produced stricter reasoning skills and memory gates.
+
+## 20. Reasoning / intelligence skills now available
+
+### `drx-contextual-communicator`
+Context/language/recipient-state discipline.
+
+### `drx-memory-retriever`
+Provenance-aware retrieval and fact/user-position/claim/inference/unknown separation.
+
+### `drx-decision-council`
+Adversarial decision review, assumptions, dissent and failure modes.
+
+### `drx-representative`
+Context -> retrieval -> reasoning -> approval/gate -> action -> learning.
+
+### `drx-prelive-simulator`
+Evidence-aware base/failure/breakout/no-build simulations; capital/capacity/assumptions/history/falsification.
+
+### `drx-architecture-convergence`
+Prevents intelligent iteration from becoming silent architecture drift; explicit decision states and change classifications.
+
+### `drx-fable2036-reasoner` — current hardened version
+Adds:
+- Phase 0 assistant diagnosis;
+- evidence classes;
+- absolute quotation/recovery rule;
+- source-coverage grade;
+- no provenance laundering;
+- memory-write gate;
+- original-vs-later history fidelity;
+- tool-result mismatch detection;
+- seven recursive checks: missingness, contradiction, seduction, overbuild, underbuild, provenance, history fidelity;
+- convergence before simulation.
+
+These are reasoning procedures, not literal model-weight upgrades or proof of future/god-like intelligence.
+
+## 21. How the reasoning process improved
+
+Earlier pattern:
+
+`generate -> critique -> redesign`
+
+Current target pattern:
+
+`retrieve -> grade sources -> reconstruct -> separate original/later -> classify -> falsify -> compare alternatives -> detect irreversible risk -> preserve deferred value -> converge -> simulate -> baseline against reality -> learn -> repair memory`
+
+The biggest new improvement is **memory hygiene**: a plausible recollection can no longer become canonical merely because it sounds right.
+
+## 22. Naming history — provenance corrected
+
+### Founder Command Center
+Verified early functional language. Strong for the original control-room concept; too narrow for the full environment.
+
+### Founder Intelligence
+Current engine/category language inside CO.FOUND.
+
+### CO.FOUND
+Current working environment name established in the current discussion.
+
+Semantic fit includes:
 - co-found / build together;
 - founder;
 - found / discover;
-- foundation / establish a company;
-- `CO.` can suggest company / collective / together.
+- foundation / establish;
+- `CO.` as company/collective/together.
 
-Concern: CoFound/Cofound naming territory is commercially crowded, so public lock requires trademark/domain/category clearance.
+Public/legal name remains provisional.
 
-### Foundry — IMPORTANT RECOVERED EARLY NAMING IDEA
-The conversation history confirms that Erfan explicitly said: **“Also there is a double meaning in Foundry.”**
+### Foundry
+**Historical status: UNVERIFIED_RECOLLECTION.**
 
-The double/compound meaning is strategically relevant:
-1. A **foundry** is a place where raw material is melted/cast/formed into something useful — a strong metaphor for ventures and founders being shaped through work.
-2. `found` / `founder` / `to found` connects directly to establishing companies.
+A prior assistant claimed it had recovered Foundry as an earlier double-meaning name. The provenance-hardened re-audit could not retrieve primary evidence supporting that recovery claim. Therefore:
+- do not quote the user as having said it historically;
+- do not describe it as recovered history;
+- it may still be evaluated as a later naming candidate on its own merits.
 
-It also naturally fits the learning/capability concept: people and companies are not merely managed; they are forged/shaped through execution and learning.
+### CO.MPASS / CO.ORDINATE
+Later assistant naming proposals. They are not original historical product names.
 
-The exact earlier assistant explanation was not fully recoverable from the available conversation index, so this interpretation is marked as reconstructed from the confirmed user statement rather than quoted historical text.
+### Double-meaning memory
+The user remembers that an earlier naming idea had a double meaning. The exact earlier name remains **UNRESOLVED** from currently accessible evidence.
 
-### CO.MPASS
-Proposed because `CO.` + `COMPASS` expresses company navigation: destination, current position, route and rerouting. Strong semantic fit but generic Compass naming territory is crowded.
+## 23. Current product soul
 
-### CO.ORDINATE
-Double meaning:
-- coordinate people/work/resources;
-- geographic coordinates define where you are on a map.
-Strong intellectual fit, longer/more enterprise in tone.
+Strongest human formulation:
 
-### Current naming status
-No public/legal name is fully locked. `CO.FOUND` is the current working environment name, while Foundry and other ownable naming directions deserve explicit brand-clearance comparison before final public commitment.
+> **Make the company visible to the people trying to build it.**
 
-## 19. Current product soul
+Desired experience:
+- I see it.
+- I understand it.
+- I know what matters.
+- I can see another way.
+- I can learn what I do not know.
+- We are moving.
+- We remember.
+- We know why this matters.
 
-The strongest human version of the idea is:
+Core loop:
 
-> Make the company visible to the people trying to build it.
+`SEE -> UNDERSTAND -> CHOOSE -> ACT -> LEARN -> RECALCULATE`
 
-CO.FOUND should reduce the cognitive burden of carrying the company in founders' heads and create:
-- clarity — I see where we are;
-- agency — I know what to do;
-- momentum — I can see movement;
-- resilience — a blocked route is not the end;
-- learning — real work makes us more capable;
-- memory — we do not repeat mistakes blindly;
-- meaning — we remember why the company exists.
+Expanded navigation:
 
-A complementary product promise is:
+`YOU ARE HERE -> DESTINATION -> ROUTES -> ACTION -> BLOCKER/DETOUR -> CAPABILITY GAP/LEARN -> RESULT -> MEMORY -> NEXT ROUTE`
 
-> Build the company. Build yourself. Find the next path forward.
+## 24. V0 experiment — current
 
-## 20. Current navigation model
+### Baseline
+Compare the current founder workflow against CO.FOUND on the same questions and tasks.
 
-`SEE -> UNDERSTAND -> CHOOSE -> ACT -> OBSERVE -> LEARN -> RECALCULATE`
+### V0A
+- one real LastBench objective;
+- ROOM;
+- FOCUS;
+- MAP <=3 first-level routes;
+- real blocker + Detour;
+- real money state only;
+- lightweight Decision -> Outcome Memory;
+- provenance/freshness/confidence;
+- meaningful visual state change.
 
-Or spatially:
+### V0B
+- ASK;
+- Meeting Mode / meeting ingestion;
+- Since You Left;
+- correction-first suggested updates;
+- basic Replay;
+- one real capability-gap -> learn -> apply -> evidence flow;
+- basic Pre-Live/What-If without fake probabilities.
 
-`YOU ARE HERE -> DESTINATION -> ROUTES -> BLOCKER -> DETOUR -> CAPABILITY NEEDED -> ACTION -> PROGRESS -> LEARN -> RECALCULATE`
+## 25. Still later
 
-## 21. What remains killed
+- richer multi-company portfolio intelligence;
+- full Capacity Intelligence UI;
+- advanced human/AI resource planning;
+- full Class A contextual learning platform;
+- advanced skill/capability graph;
+- rich Replay comparisons/road-not-taken;
+- advanced scenario optimizer;
+- calibrated predictive models after sufficient data;
+- external multi-company tenancy;
+- deeper capital allocation intelligence.
 
-- fake metrics / unsupported success probabilities;
-- task-completion-equals-revenue claims;
-- giant 20-tab dashboard as the primary experience;
+## 26. Still killed
+
+- fake metrics/probabilities;
+- task = guaranteed revenue;
+- giant primary 20-tab dashboard;
 - Slack/Notion/chat/docs/video replacement without evidence;
 - employee productivity ranking/surveillance;
-- toxic leaderboards / meaningless XP economy;
-- autonomous hiring/firing or consequential spending commitments;
-- broad “all-in-one collaboration software” positioning;
+- toxic leaderboards/meaningless XP economy;
+- autonomous consequential hiring/firing/spending;
+- broad all-in-one-collaboration positioning;
 - backend graph/event-sourcing cathedral before behavioral proof;
-- claiming current-market mechanisms are uniquely invented here.
+- claiming broad market mechanisms are unique inventions here.
 
-## 22. What remains architecturally important but later
+## 27. Commercial path
 
-- multi-business/portfolio intelligence;
-- people + agent capacity intelligence;
-- Class A contextual Skill Quests / richer capability UI;
-- advanced Replay comparisons / road-not-taken;
-- advanced Pre-Live scenario optimization;
-- calibrated predictive models after sufficient history;
-- external multi-company tenancy/productization;
-- deeper financial allocation intelligence.
+`LastBench pilot -> compare against baseline -> prove behavior/maintenance -> service-assisted external pilots -> separate consulting value from product value -> recurring retained paid behavior -> productize repeated patterns -> only then expensive broad SaaS`.
 
-## 23. Current experiment path
-
-Before proprietary software earns large investment:
-
-1. Baseline the current workflow for the founders.
-2. Test one real company objective with Visual Action Branches.
-3. Test a real blocker and Detour.
-4. Use ROOM / FOCUS with only real data.
-5. Capture lightweight Decision -> Outcome Memory from day one.
-6. Add ASK, meeting ingestion, Since You Left and basic Replay only after the navigation loop is usable.
-7. Compare clarity, speed, decision retrieval, missed commitments, decision changes and maintenance burden against the existing workflow.
-8. If internal value is real, run service-assisted external pilots.
-9. Separate consulting value from product value.
-10. Only expand into expensive SaaS engineering after retained external use, willingness-to-pay and low-maintenance operation are observed without Co.Lab manually maintaining truth.
-
-## 24. Primary unresolved truths
+## 28. Primary unresolved truths
 
 Still unproven:
-- whether founders understand the branch/navigation model faster than conventional tools;
+- whether founders understand MAP faster than conventional views;
 - whether Detour changes consequential decisions;
-- whether contextual learning materially improves work/capability;
-- whether enough company state can be captured automatically/correction-first to prevent staleness;
-- whether Replay improves future decisions rather than merely documenting history;
-- whether meaningful game mechanics improve retention without distraction;
-- whether external teams pay/retain after human implementation support falls away;
-- whether proprietary software materially outperforms existing tools + the CO.FOUND methodology;
-- final public name / trademark / domain position.
+- whether learning-through-work improves real capability without adding friction;
+- whether Momentum meaningfully improves return behavior without distraction;
+- whether correction-first capture keeps state fresh enough;
+- whether Replay improves future judgment;
+- whether external teams pay/retain when human implementation decreases;
+- whether proprietary software beats existing tools + methodology;
+- final public name;
+- exact historical double-meaning naming idea remembered by the user.
 
-## 25. Durable rule for future AI work
+## 29. Durable rule for future AI work
 
-Future assistants must not summarize CO.FOUND only from the latest architecture file. They must preserve the historical intent and especially these easily-lost pillars:
+Never recover CO.FOUND only from the latest UI/architecture.
 
-- started as the three-founder OS;
-- radical simplicity / low cognitive load;
-- company navigation / Visual Action Branches;
+Preserve:
+- three-founder origin;
+- radical simplicity;
+- 3 seconds -> 1 minute -> depth;
+- 1 destination -> <=3 routes -> depth;
+- ROOM / MAP / FOCUS / ASK;
+- Meeting Mode;
+- Visual Action Branches;
 - Blocked != stopped / Detour;
-- learning through real work;
-- meaningful game-like momentum;
 - real money truth;
-- meetings -> decisions -> actions;
 - Since You Left;
-- purpose / community impact;
+- purpose/impact;
+- learning through real work;
+- meaningful game-like Momentum;
 - Decision -> Outcome Memory;
-- Past -> Present -> Future;
+- Replay / Pre-Live;
 - correction-first capture;
 - epistemic/provenance discipline;
-- CO.FOUND is the environment; Co.Lab, LastBench and Class A live inside it;
-- Founder Intelligence is the brain inside CO.FOUND;
-- current public naming remains provisional; Foundry is a recovered naming candidate with meaningful dual semantics.
+- CO.FOUND as environment;
+- Founder Intelligence as brain;
+- LastBench, Co.Lab, Class A as spaces;
+- naming remains provisional;
+- historical naming claims require primary evidence before being quoted or memorialized.
