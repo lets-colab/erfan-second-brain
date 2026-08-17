@@ -1,0 +1,82 @@
+version: 1
+status: active
+principle: measure_before_modifying
+
+purpose: >-
+  Track whether production skill versions improve real outcomes. This registry is evidence,
+  not a vanity score. A skill may not be labeled improved until representative benchmarks
+  and regression checks support that claim.
+
+metrics:
+  requirement_coverage: percent_of_critical_requirements_with_direct_pass_evidence
+  unsupported_claim_rate: material_unsupported_claims_per_run
+  false_completion_rate: completion_claims_later_found_unverified_per_run
+  first_pass_rate: runs_passing_without_material_repair
+  repair_rate: material_repairs_per_run
+  repeatability: benchmark_runs_passing_over_total_runs
+  regression_rate: previously_passing_cases_that_fail_after_version_change
+  user_correction_rate: material_user_corrections_per_run
+  user_acceptance_rate: accepted_runs_over_runs_with_explicit_user_verdict
+  usage: provider_tokens_or_cost_when_available
+
+promotion_rule:
+  minimum_repeated_runs: 5
+  requirements:
+    - no_open_critical_regression
+    - no_increase_in_false_completion_rate
+    - no_unexplained_drop_in_requirement_coverage
+    - representative_benchmark_evidence_recorded
+    - final_state_verification_evidence_recorded
+  note: A lower-cost or faster version may be preferred when quality remains within the accepted threshold.
+
+skills:
+  drx-architecture-convergence:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  drx-contextual-communicator:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  drx-decision-council:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  drx-execution-qc:
+    version: 1.1.0
+    previous_version: 1.0.0
+    benchmark_status: not_run
+    runs: []
+  drx-fable2036-reasoner:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  drx-memory-retriever:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  drx-prelive-simulator:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  drx-representative:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  founder-command-center-operator:
+    version: unknown_until_baselined
+    benchmark_status: not_run
+    runs: []
+  drx-systematic-debugger:
+    version: 1.0.0
+    benchmark_status: not_run
+    runs: []
+
+rules:
+  - do_not_invent_scores_without_runs
+  - keep_raw_evidence_retrievable
+  - distinguish_user_correction_from_model_detected_failure
+  - compare_like_for_like_benchmark_cases_across_versions
+  - record_cost_only_when_provider_usage_is_available
+  - do_not_promote_a_skill_version_on_a_single_successful_run
+  - regression_failure_blocks_improvement_claim_until_repaired_or_explicitly_accepted
