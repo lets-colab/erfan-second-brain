@@ -40,3 +40,20 @@ Every durable addition must record its source, date, confidence, and whether it 
 verified fact, user-stated position, or inference. Each addition must update the
 knowledge-readiness assessment when it materially changes assistant capability.
 
+
+## Session bootstrap
+
+Cloud Claude Code sessions run in a throwaway container, so MemPalace and
+Graphify have to be reinstalled each time. Rather than re-deriving context in
+tokens, run:
+
+```bash
+bash bootstrap.sh
+```
+
+It installs both tools, registers MemPalace as a user-scope MCP server,
+installs the Graphify skill, and mines this repo into the palace. Idempotent —
+re-run it after any restart. `--no-mine` skips the mining step.
+
+Then `mempalace wake-up` gives ~800 tokens of session context instead of
+re-reading the repository.
