@@ -1,12 +1,31 @@
 ---
 created: 2026-07-19
-updated: 2026-08-17
+updated: 2026-08-18
 type: reflection
 status: active
 tags: [knowledge-log, readiness]
 ---
 
 # Knowledge Change Log
+
+## 2026-08-18 — DR.X Learning Engine core + systematic debugging
+
+- User request: after a Fable-2036 review of the Erfan Second Brain skills, Erfan authorized the recommended `10.5/10` action rather than another conceptual architecture pass.
+- Installed: `skills/drx-systematic-debugger/SKILL.md` v1.0.0 as the dedicated failure-diagnosis path for reproduction, failing-boundary isolation, falsifiable causal hypotheses, minimal discriminating tests, root-cause repair, regression checks, and escalation after three materially different failed repair hypotheses.
+- Upgraded: `skills/drx-execution-qc/SKILL.md` from v1.0.0 to v1.1.0 with a fresh-final-state rule: a relevant material change invalidates affected earlier verification, delegated-agent success is not final proof, and PASS requires current evidence bound to a final-state reference when technically possible.
+- Upgraded: `routing/task-router.yaml` to v2. Failure diagnosis now routes through `drx-systematic-debugger`; material execution uses an explicit objective -> acceptance criteria -> dependencies/order -> engine -> proof -> rollback -> execution -> QC contract instead of adding a redundant universal planning skill.
+- Upgraded: `observability/event-schema.yaml` to v2 so material executions can record skill version, acceptance criteria, verification evidence, final-state reference, failure class, root cause, repair count, regression status, user correction/acceptance, benchmark context, and invalidated stale evidence.
+- Upgraded: `evaluations/acceptance-tests.yaml` to v2 with critical release gates for fresh verification, root-cause debugging, and skill regression in addition to existing handoff, isolation, approval, provenance, repeatability, injection-resistance and recovery gates.
+- Added: `evaluations/skill-fitness.yaml`, a non-vanity registry that requires representative repeated runs, regression evidence, requirement coverage, repair/correction rates and final-state verification before a skill version is labeled improved.
+- Added: `evaluations/acceptance-evidence.yaml`, which explicitly records the current suite as not production-certified and initializes acceptance tests as `not_run` until retrievable execution evidence exists.
+- Updated: `AGENTS.md` and `README.md` now make systematic debugging, fresh verification, skill fitness, and evidence-based learning part of the canonical operating contract.
+- Readiness reassessment: `areas/knowledge-readiness.md` remains **3.5 / 10.5 overall**. Design readiness, causal debugging discipline, completion governance and measurement capability improved; personal knowledge gaps and repeated end-to-end runtime verification remain limiting.
+- Classification: direct user authorization + verified GitHub repository changes + model systems/QC judgment. No claim is made that these contracts are already proven across all live runtimes.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 overall; design/measurement readiness improved materially, operational verification did not yet clear the wider acceptance suite.
+- Confidence: high on committed repository-state changes; medium on expected reliability benefit until representative live benchmark runs and real debugging incidents are recorded.
+- Remaining gap: fresh-verify this repository change, execute the acceptance suite, baseline each production skill with repeated cases, exercise the debugger on real failures, and use observed corrections/regressions—not prompt sophistication—to drive future skill changes.
 
 ## 2026-08-17 — Second Brain system audit, branch repair, and execution-QC sync
 
