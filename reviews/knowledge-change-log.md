@@ -8,6 +8,24 @@ tags: [knowledge-log, readiness]
 
 # Knowledge Change Log
 
+## 2026-08-17 — Second Brain system audit, branch repair, and execution-QC sync
+
+- User request: rate and review the GitHub Second Brain, then update skills and synchronize the system based on the audit rather than assuming prior setup was complete.
+- Verified repository state: `lets-colab/erfan-second-brain` is the canonical repository; `main` contained the newest CO.FOUND / Founder Intelligence / skill work, while `build/drx-ai-os-v1` still contained six valid DR.X AI OS contract files and was 22 commits behind `main` at audit time.
+- Repair: promoted only the six valid missing contracts into current `main` instead of blindly merging the stale branch: `architecture/DRX-AI-OS.md`, `evaluations/acceptance-tests.yaml`, `governance/authority-matrix.yaml`, `observability/event-schema.yaml`, `routing/task-router.yaml`, and `skills/_template/SKILL.md`.
+- Installed: `skills/drx-execution-qc/SKILL.md`, a mandatory material-completion gate that reconstructs requirements, tests definition-of-done evidence, inspects the actual artifact/system, distinguishes attempts from verified outcomes, repairs safe failures, and permits only PASS / PARTIAL / BLOCKED / NEEDS_APPROVAL / FAIL verdicts.
+- Updated: `AGENTS.md` now requires canonical retrieval, correct source ownership, production skill contracts, routing discipline, final-state proof, execution QC, observability, and acceptance-test honesty before completion claims.
+- Updated: `README.md` now reflects the current DR.X AI OS / CO.FOUND architecture instead of only the July Obsidian-first vault model.
+- Audit finding: `graphify-out/GRAPH_REPORT.md` is stale from 2026-07-19 and covers only about 2,031 words / 34 nodes / 31 edges; `entities.json` contains only Erfan and no projects/topics, so the explicit graph/entity layer materially under-represents the current August system.
+- Audit finding: architecture, governance and skill quality are strong, but acceptance tests and wider OpenClaw/Claude/Codex/memory/Notion/Drive runtime behavior are not established as fully live end-to-end by this repository audit.
+- Durable artifact added: `reviews/second-brain-system-audit-2026-08-17.md` with a strict working-system rating of 7.2 / 10.5 after this sync and a verification-first path toward 10.5.
+- Classification: verified GitHub repository state + user-stated synchronization request + model systems/QC judgment.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 on governed personal knowledge readiness. Design readiness, canonical clarity and completion governance improved materially, but verified personal knowledge and live runtime acceptance evidence remain limiting.
+- Confidence: high on repository-state findings and committed repairs; medium on system-level operational score because complete live runtime verification was outside the evidence available in this audit.
+- Remaining gap: rebuild the graph/entity layer, execute the acceptance suite, and verify each claimed cross-tool/runtime integration with health checks and real end-to-end results.
+
 ## 2026-08-17 — Fable-2036 reasoning protocol + Founder Intelligence full re-audit
 
 - User correction: Erfan identified that repeated audits were drifting because the reasoning process kept generating new architecture before completing the requested full audit/simulation sequence.
