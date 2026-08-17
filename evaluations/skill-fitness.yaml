@@ -45,8 +45,26 @@ skills:
   drx-execution-qc:
     version: 1.1.0
     previous_version: 1.0.0
-    benchmark_status: not_run
-    runs: []
+    benchmark_status: in_progress
+    runs:
+      - id: 2026-08-18-learning-engine-repository-change
+        task_type: repository_engineering_qc
+        result: passed
+        final_state_ref: 9f8c2ee8f8a34c8cebb327f07d1174c2a225c2a6
+        requirement_coverage: all_critical_requirements_in_this_change_verified
+        unsupported_claim_rate: not_measured
+        false_completion_rate: 0_in_this_run
+        repair_count: 0
+        regression_status: not_run
+        user_correction: []
+        user_acceptance: not_requested
+        verification_evidence:
+          - skills/drx-systematic-debugger/SKILL.md@01eb10efee8dbd8b4e7b7284758ceecd6415bf44
+          - skills/drx-execution-qc/SKILL.md@e67c27e910996baf05720bdfa407f3466ab43a18
+          - routing/task-router.yaml@224162e432f8890c5ec20646e9029c03acc5a3d0
+          - observability/event-schema.yaml@1c13a1a0026cb2d2a54cc8131aef9b9a1c3f3091
+          - evaluations/acceptance-tests.yaml@54aa2f9fbedc8a9b6ca2ab6b863dcf25af7b0dbb
+        limitation: One successful run does not establish repeatability or prove v1.1.0 is better than v1.0.0.
   drx-fable2036-reasoner:
     version: unknown_until_baselined
     benchmark_status: not_run
