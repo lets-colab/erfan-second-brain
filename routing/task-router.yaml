@@ -1,4 +1,4 @@
-version: 1
+version: 2
 status: locked-design
 principle: choose_the_simplest_capable_path
 
@@ -22,6 +22,11 @@ routes:
   code_review_and_test:
     primary: codex
     runtime: openclaw
+  system_failure:
+    process_skill: drx-systematic-debugger
+    primary: codex
+    fallback: chatgpt
+    runtime: openclaw_when_runtime_access_is_required
   local_automation:
     primary: openclaw
   google_ads_analysis:
@@ -38,9 +43,23 @@ routes:
     source: memory_assist
     authoritative: false
 
+material_execution_contract:
+  - define_objective
+  - reconstruct_acceptance_criteria
+  - identify_dependencies_and_order
+  - choose_execution_engine
+  - define_required_proof
+  - preserve_rollback_path_when_applicable
+  - execute
+  - run_drx_execution_qc_with_fresh_final_state_evidence
+
 rules:
   - do_not_spawn_multiple_agents_without_clear_value
   - retrieve_authoritative_context_before_material_execution
   - route_sensitive_writes_through_approval_gate
   - prefer_existing_skills_over_freeform_prompting
   - record_route_reason_for_material_tasks
+  - diagnose_root_cause_before_material_repair
+  - parallelize_only_independent_work_with_clear_value
+  - any_material_change_invalidates_affected_prior_verification
+  - do_not_add_a_new_skill_when_an_existing_contract_can_own_the_job_cleanly
