@@ -3,341 +3,509 @@ created: 2026-08-17
 updated: 2026-08-17
 type: decision
 status: locked
-classification: fresh full-chat audit + Fable-2036 reasoning protocol
-supersedes: prior contents of this file (preserved in git history)
-tags: [founder-intelligence, architecture, build-final, lastbench, colab, fable2036]
+version: v3
+classification: provenance-hardened full-system audit
+supersedes: v2 contents of this same file, preserved in git history
+related:
+  - decisions/cofound-product-hierarchy-2026-08-17.md
+  - reviews/cofound-ultramax-reaudit-2026-08-17.md
+  - projects/cofound.md
 ---
 
-# Founder Intelligence OS — Canonical Architecture Lock v2
+# CO.FOUND / Founder Intelligence — Canonical Architecture Lock v3
 
-This is the canonical state after a fresh end-to-end re-audit of the 2026-08-17 Founder Command Center / Founder Intelligence discussion using the DR.X Fable-2036 Reasoner. Prior locks and simulations were treated as hypotheses, not authority. Git history preserves earlier versions.
+This is the current canonical architecture after the provenance-hardened Ultra-Max re-audit.
 
-## MARKET TRUTH — LOCKED
+`BUILD-FINAL` here means final enough for the LastBench experiment. It does **not** mean business-proven, market-proven, or immune to real evidence.
 
-The broad concepts are not unique in 2026. Current platforms already connect strategy, work, people, funds, AI agents, scenario planning, and outcomes. Some explicitly use work/outcome graphs and AI chief-of-staff positioning.
+## 1. Product hierarchy — LOCKED
 
-Therefore the moat is NOT any single one of:
-- AI chief of staff;
-- outcome graph;
-- work graph;
-- human + agent resource planning;
-- scenario planning;
-- meeting intelligence;
-- strategic dashboard;
-- strategy-to-execution alignment.
+### CO.FOUND
+The top-level operating intelligence environment.
 
-Founder Intelligence must win through founder-native cognitive compression, visual navigation, low-friction company-model construction, temporal decision/outcome memory, learned company-specific guidance, and distribution/implementation know-how. These remain hypotheses until proven by behavior.
+CO.FOUND is not a runtime sub-product of Co.Lab. Co.Lab, LastBench, Class A and future ventures can live inside CO.FOUND as company/venture spaces.
 
-## PRODUCT_SOUL — LOCKED
+### Founder Intelligence
+The reasoning, navigation, memory and decision-support engine inside CO.FOUND.
 
-**Founder Intelligence helps a founder-led company remember how it got here, understand where it is now, and choose the best available path toward where it wants to go.**
+### Human interaction modes
+- ROOM
+- MAP
+- FOCUS
+- ASK
 
-Product laws:
+### Contextual modes/mechanics
+- Meeting Mode
+- Replay
+- Pre-Live
+- Detour
+- Since You Left
+- Learning / Capability
+- Momentum
+
+### Company spaces
+- LastBench — first live pilot space;
+- Co.Lab — resident company space and possible implementation/origin partner;
+- Class A — resident venture and potential capability-content contributor;
+- future ventures.
+
+Product hierarchy and go-to-market/origin relationship are separate. Co.Lab may help create/implement CO.FOUND without sitting above it in the in-product operating model.
+
+## 2. Product soul — LOCKED
+
+> **Make the company visible to the people trying to build it.**
+
+CO.FOUND should reduce the cognitive burden of carrying a company in founders' heads and create:
+- **clarity** — I see where we are;
+- **agency** — I know what to do;
+- **momentum** — I can see meaningful movement;
+- **resilience** — a blocked route is not the end;
+- **learning** — real work makes us more capable;
+- **memory** — we do not repeat mistakes blindly;
+- **meaning** — we remember why the company exists.
+
+Complementary product promise:
+
+> **Build the company. Build yourself. Find the next path forward.**
+
+## 3. Product laws — LOCKED
 
 1. **Complex underneath. Radical clarity on top.**
 2. **Blocked does not mean stopped.**
 3. **Every important action must answer: toward what outcome?**
-4. **Reality outranks the model.** Stale, missing, or conflicting data must be visible.
-5. **Correction beats data entry.** Prefer proposing an interpreted state for humans to confirm/correct instead of forcing heavy manual maintenance.
-6. **Past -> Present -> Future.** Replay, orientation, and simulation share one temporal model but never blur recorded history with counterfactuals.
-7. **Confidence must never exceed evidence.** No false causal certainty or invented probabilities.
+4. **Reality outranks the model.** Stale, missing, conflicting or unverified information must be visible.
+5. **Correction beats data entry.** Prefer inferred/proposed updates for humans to confirm/correct over duplicated manual administration.
+6. **Past -> Present -> Future.** Recorded history, current state and counterfactual simulation share one temporal model without being confused.
+7. **Confidence must never exceed evidence.** No fake probabilities, fabricated metrics or causal certainty.
+8. **Work should create two outputs when possible: company progress + human capability.**
+9. **Motivation should come from meaningful progress, not performative activity.**
 
-## TARGET USER — PROVISIONAL, SHARPENED
+## 4. Simplicity laws — LOCKED
 
-Initial external ICP after LastBench:
+### Comprehension
+`3 seconds -> 1 minute -> depth`
 
+- 3 seconds: current destination/state/attention;
+- 1 minute: what changed, why, what needs action;
+- depth: evidence, history, graph, scenarios and operating systems.
+
+### MAP disclosure
+`1 destination -> up to 3 primary routes -> depth`
+
+Never begin with a giant graph/spiderweb.
+
+## 5. Target user — PROVISIONAL
+
+First external hypothesis after LastBench:
 - founder-led operating teams, roughly 3–30 people;
-- real recurring workflows, customers/leads, money, and decisions;
-- fragmented operating context across WhatsApp/Slack/email, Sheets, Notion/Drive, Calendar, meetings, CRM/tasks;
-- founders still personally coordinating work and lacking a dedicated operating-intelligence layer.
+- real recurring workflows, money, customers/leads and decisions;
+- company state fragmented across meetings, chat/email, calendar, documents, tasks, CRM, finance and founder memory;
+- founders still personally coordinating a meaningful share of execution.
 
 Poor early fit:
-- idea-stage founders with almost no repeatable operations or data;
+- idea-stage teams with almost no recurring operations/data;
 - large enterprises already buying full strategic-portfolio suites;
-- teams seeking only generic task/project management.
+- teams wanting only generic project/task management.
 
-LastBench remains the first dogfood environment, not proof of external market fit.
+## 6. Human experience layer — LOCKED
 
-## CORE_ARCHITECTURE — LOCKED
+### ROOM — orient together
+The place founders meet the company.
 
-### A. Human experience layer
+Default shared truth:
+- current destination/objective;
+- evidence-based status, never an unexplained health percentage;
+- real money state where sourced;
+- max three critical team/founder missions;
+- one major blocker;
+- one decision requiring attention;
+- meaningful changes / Since You Left;
+- subtle mission/impact.
 
-Four primary cognitive modes:
+### MAP — navigate
+A visual time-aware company route model showing:
+- destination;
+- drivers;
+- routes/branches;
+- dependencies;
+- owners/resources;
+- blockers;
+- alternatives;
+- evidence;
+- costs/time/capacity where known;
+- consequences/results.
 
-1. **ROOM — ORIENT TOGETHER**
-   Shared founder truth: current objective, health, real money state, max three critical founder missions, one major blocker, one decision requiring attention, meaningful changes, and subtle mission/impact.
+Replay and Pre-Live are temporal modes of the same model.
 
-2. **MAP — NAVIGATE THE COMPANY**
-   Visual time-aware Outcome / Action Branch Graph showing routes, dependencies, owners, money, blockers, alternatives, evidence, and consequences. Replay and What-If are time controls/modes of MAP, not separate competing products.
+### FOCUS — act
+Individual founder state:
+- max three highest-leverage actions;
+- why each matters;
+- what it unlocks;
+- commitments/approvals;
+- capability gap if the person cannot yet execute the work.
 
-3. **FOCUS — ACT**
-   Individual founder state with max three highest-leverage actions, what each unlocks, commitments, and approvals.
+### ASK — investigate/control
+Natural-language access to approved company context.
 
-4. **ASK — INVESTIGATE / CONTROL**
-   Founder AI over approved company context. Initial questions are constrained; later it can query history, simulate routes, prepare meetings, compare resource options, and explain recommendations.
+Early questions:
+- What matters?
+- What changed?
+- What is blocked?
+- What can we do instead?
+- Why?
+- What do I need to decide?
 
-These are cognitive modes, not permanent rigid page architecture.
+Later ASK can query history, compare routes/resources, prepare meetings, run scenarios and explain recommendations.
 
-### B. Intelligence layer
+## 7. Meeting Mode — LOCKED contextual ROOM state
 
-- Outcome Intelligence
-- Detour / Route Intelligence
+Do not create a fifth permanent top-level tab.
+
+When founders enter a meeting, ROOM transforms.
+
+### Before
+- meaningful changes;
+- unresolved blockers;
+- real money changes;
+- decisions required;
+- prior commitments.
+
+### During
+- decision capture;
+- rationale;
+- owner;
+- action;
+- deadline/dependency.
+
+### After
+`meeting -> decision -> action -> owner -> graph/history -> next meeting`
+
+Meeting capture itself is not the moat; the value is feeding company navigation, accountability and memory.
+
+## 8. Signature mechanics — LOCKED
+
+### 1. Visual Action Branches
+`action -> dependency/path -> driver -> outcome`
+
+Progressive disclosure; no giant spiderweb.
+
+### 2. Detour
+A blocked route triggers comparison of other executable paths using available evidence such as:
+- time;
+- cost;
+- capacity;
+- dependencies;
+- risk;
+- historical result;
+- expected contribution.
+
+Core experiential message:
+> **This route is blocked. The destination may not be.**
+
+### 3. Decision -> Outcome Memory / Replay
+Preserve:
+- information available at the time;
+- assumption;
+- options;
+- chosen route and rationale;
+- expected result;
+- confidence;
+- resources/money committed;
+- actual result;
+- lesson.
+
+Do not overwrite historical belief with hindsight.
+
+### 4. Pre-Live / What-If
+Explore alternative future routes with explicit assumptions. Simulation is never stored/presented as fact or guaranteed prediction.
+
+### 5. Since You Left
+Compress meaningful changes and end with the most important founder action/decision.
+
+### 6. Explainability / Why
+Consequential recommendations expose source, freshness, assumption and confidence.
+
+### 7. Correction-first capture
+Where practical, infer state changes from meetings/tools and ask humans to confirm/correct.
+
+### 8. Meaningful state change / Momentum
+Real completion should change what becomes possible:
+- path activation;
+- blocker removal;
+- dependency unlock;
+- milestone activation;
+- capability growth;
+- visible team movement.
+
+No requirement for meaningless XP farming.
+
+### 9. Learning through real work
+When meaningful work exposes a capability gap:
+`mission -> gap -> learn/guidance -> practice -> apply -> result -> skill evidence -> company + human progress`
+
+Class A may contribute content/interventions, but Learning/Capability is a CO.FOUND platform principle.
+
+## 9. Intelligence layer — LOCKED architecture
+
+- Outcome / Route Intelligence
+- Detour Intelligence
 - Financial / Capital Intelligence
 - Decision Intelligence
 - Risk Intelligence
 - Temporal / Replay Intelligence
 - Scenario / Pre-Live Intelligence
-- Capacity Intelligence (architect now; later user-facing)
-- Capability / Skill Intelligence (architect now; later user-facing)
+- Learning / Capability Intelligence
+- Capacity Intelligence (architecture now; fuller UI later)
 
-### C. Time-aware company graph + decision/event ledger
+## 10. Durable company model — LOCKED
 
-The durable model connects:
-
-- business unit;
-- goal / objective;
-- outcome / metric;
+The time-aware model should be able to represent:
+- company/venture space;
+- goal/objective;
+- outcome/metric;
 - driver;
-- path / branch;
-- task / action;
-- blocker / dependency;
-- person / role;
-- AI agent / automation;
+- route/branch;
+- action/task;
+- blocker/dependency;
+- person/role;
+- AI agent/automation;
+- capability/skill;
 - decision;
 - meeting;
 - assumption;
-- evidence / source;
-- money / capital event;
+- evidence/source;
+- money/capital event;
 - result;
 - learning;
 - document;
-- customer / lead where relevant;
-- impact outcome;
-- capability / skill.
+- customer/lead where relevant;
+- impact outcome.
 
-For material decisions preserve:
-- timestamp;
-- information available at the time;
-- assumption;
-- options considered;
-- selected route and rationale;
-- expected result;
-- confidence at the time;
-- owner;
-- resources/capital committed;
-- blocker/dependencies;
-- actual result;
-- retrospective learning.
+Do not build a sophisticated graph/event-sourcing backend before behavior justifies it. The **data contract matters now; the backend cathedral does not.**
 
-Historical belief must never be overwritten by hindsight.
+## 11. Epistemic relationship rule — LOCKED
 
-### D. Epistemic edge types — LOCKED
+The model must distinguish relationships such as:
+- `REQUIRES` — operational dependency;
+- `CONTRIBUTES_TO` — strategic hypothesis;
+- `OBSERVED_WITH` — observed association;
+- `FOLLOWED_BY_RESULT` — historical sequence/result;
+- `SIMULATED` — counterfactual/future relation.
 
-The graph must not visually imply causal certainty where none exists. Relationships should be classifiable as, for example:
+Exact labels may evolve. The epistemic distinction may not disappear.
 
-- `REQUIRES` — operational dependency / prerequisite;
-- `CONTRIBUTES_TO` — declared strategic hypothesis;
-- `OBSERVED_WITH` — observed association without proven causality;
-- `FOLLOWED_BY_RESULT` — recorded historical outcome after an action/decision;
-- `SIMULATED` — counterfactual/future relationship only.
-
-Exact implementation names may change, but the epistemic distinction is mandatory.
-
-### E. Operations / source layer
+## 12. Source / operations layer — LOCKED direction
 
 Integrate existing systems before replacing them:
-- calendar / scheduling;
-- meeting capture such as Fireflies;
+- calendar/scheduling;
+- meeting capture;
 - task/project tools;
-- CRM / pipeline;
+- CRM/pipeline;
 - finance sources;
 - GitHub;
-- Google Drive / documents;
-- communication such as WhatsApp Business, Slack, Teams, Google Chat, or email where technically and legally appropriate.
+- Google Drive/documents;
+- communication where technically/legal appropriate.
 
-## SIGNATURE MECHANICS — LOCKED
+Do not rebuild Slack/Notion/video meetings simply to make the product feel complete.
 
-1. **Visual Action Branches** — action -> dependency/path -> driver -> outcome, navigable through progressive disclosure rather than a giant spiderweb.
-2. **Detour Engine** — blocked route -> compare alternative executable paths by evidence, time, cost, capacity, risk, dependencies, and expected contribution.
-3. **Living Company Timeline / Replay** — reconstruct what the team knew, believed, chose, spent, did, and learned at that historical moment.
-4. **Pre-Live / What-If** — simulate alternative future routes with explicit assumptions; counterfactuals never appear as history or guaranteed probability.
-5. **Founder Catch-Up / Since You Left** — compress meaningful change and end with the most important founder action/decision.
-6. **Explainability / Why** — consequential outputs expose source, freshness, assumption, confidence, and reasoning.
-7. **Meaningful visual state change** — real completion activates branches, removes blockers, unlocks dependencies, and changes what becomes possible. No performative XP economy.
-8. **Correction-first capture** — where feasible, infer proposed state changes from meetings/tools and ask humans to confirm/correct rather than maintaining duplicated admin work.
+## 13. Money truth — LOCKED
 
-## V0 — 30-DAY LASTBENCH PILOT — LOCKED
+Facts and models must remain distinct.
 
-The V0 is split into two execution stages to avoid both UI-only demos and backend overengineering.
+### Facts when sourced
+- starting/invested capital;
+- spent;
+- committed;
+- available;
+- revenue collected;
+- actual budget/expense values.
 
-### V0A — Core navigation loop (first 7–14 days)
+### Models
+- pipeline;
+- scenarios;
+- projected outcome ranges;
+- expected contribution;
+- future runway assumptions.
 
-Build/prototype:
+Never equate task completion with guaranteed revenue. Do not show precise success probabilities before defensible calibration.
 
+## 14. Motivation / attention-support — LOCKED interpretation
+
+Core now:
+- low cognitive load;
+- short missions;
+- immediate feedback;
+- meaningful visual progress;
+- route/blocker state change;
+- milestones;
+- capability growth;
+- team momentum;
+- recovery after misses.
+
+Experimental only:
+- XP/points if tied to meaningful behavior and validated;
+- non-coercive streaks;
+- levels representing real company/capability states.
+
+Killed:
+- activity farming;
+- toxic leaderboards;
+- employee ranking;
+- shame loops;
+- compulsive dark patterns;
+- medical claims that CO.FOUND treats ADHD.
+
+## 15. V0 — LastBench 30-day experiment
+
+LastBench is the first live company-space, not the umbrella product identity.
+
+### Baseline before build
+Using the current workflow, measure/reconstruct:
+- Where are we going?
+- What is blocked?
+- What should I do?
+- What changed?
+- What money is available/committed?
+- Why was decision X made?
+- What alternate route exists?
+- What happens when a founder does not know how to execute a mission?
+
+### V0A — core navigation/orientation
 1. One real LastBench objective.
-2. MAP with no more than three first-level routes and interactive Visual Action Branches.
-3. At least one real blocker with Detour alternatives.
-4. ROOM with only real objective/health, real invested-spent-committed-available money if available, max three founder missions, one blocker, and one decision.
-5. FOCUS for Erfan, Sayem, and Fahim: max three actions, with `why / what this unlocks`.
-6. Lightweight decision/outcome record for material choices. Do NOT build a graph-database cathedral or full event-sourcing infrastructure before proving behavior.
-7. Provenance/freshness/confidence labels for important information.
-8. Meaningful visual state change when a real action or blocker changes.
+2. ROOM.
+3. FOCUS for Erfan/Sayem/Fahim.
+4. MAP with <=3 first-level Visual Action Branches.
+5. At least one real blocker + Detour.
+6. Real money state only where sourced.
+7. Lightweight Decision -> Outcome record.
+8. Provenance/freshness/confidence.
+9. Meaningful visual state change.
 
-### V0B — Learning and capture loop (remainder of 30 days)
+### V0B — learning/capture
+1. ASK limited to high-value founder questions.
+2. Meeting Mode + meeting ingestion.
+3. Since You Left.
+4. Correction-first suggested updates where practical.
+5. Basic Replay from real captured history.
+6. **At least one real capability-gap flow:** mission -> gap -> learn/guidance -> practice -> apply -> result -> skill evidence.
+7. Basic What-If / Pre-Live with assumptions, no fake probabilities.
 
-Add only after V0A is usable:
+## 16. V0 success — behavioral, not aesthetic
 
-1. ASK limited to: `What matters?`, `What changed?`, `What is blocked?`, `What can we do instead?`, `Why?`.
-2. Meeting import/ingestion: meeting -> decision -> action -> owner -> graph.
-3. Since You Left from meaningful recorded changes.
-4. Basic Replay from the history actually captured during the pilot.
-5. Correction-first suggested updates where practical.
-6. Basic What-If / Pre-Live may be used through ASK or a simple MAP mode, but advanced scenario engines are deferred.
+Compare CO.FOUND against the existing workflow on:
+- speed to understand state;
+- accuracy/agreement between founders;
+- personal next-action clarity;
+- blocker detection;
+- decision retrieval;
+- meeting commitment loss;
+- decision acceleration/change;
+- maintenance burden;
+- return behavior;
+- capability learned/applied;
+- whether meaningful progress encourages continued use without coercive mechanics.
 
-### V0 success is behavioral, not aesthetic
+Do not treat “looks amazing” as evidence.
 
-Evidence sought:
-- founders voluntarily return without repeated prompting;
-- company goal, blocker, personal next action, and money truth become faster to understand;
-- at least some real decisions are accelerated, changed, or clarified by the MAP/Detour/Replay logic;
-- meeting commitments are less likely to disappear;
-- maintenance burden is low enough that WhatsApp/manual memory does not remain easier;
-- founders would feel materially less operationally clear if the system were removed.
+## 17. ARCHITECT_NOW_UI_LATER — LOCKED
 
-Exact thresholds remain pilot hypotheses, not market facts.
-
-## ARCHITECT_NOW_UI_LATER — LOCKED
-
-Support these concepts in the data model/boundaries without building full V0 surfaces:
-
-- multiple business units: LastBench/Malaysia, Class A, Co.lab;
-- people, roles, ownership, capacity;
-- AI agents / automation as execution resources;
-- capabilities / skills;
-- capital allocation by business unit;
+- multiple company spaces / portfolio relationships;
+- shared founders/roles/ownership/capacity;
+- AI agents/automation as resources;
+- richer capability/skill graph;
+- capital allocation across spaces;
 - impact outcomes;
-- temporal states / historical replay;
+- advanced temporal state comparison;
 - scenario states;
-- edge epistemic status;
-- privacy/permission boundary between Erfan Second Brain and company-safe context;
-- source provenance and freshness;
-- eventual business-model templates.
+- privacy/permission boundaries;
+- source provenance/freshness;
+- reusable business-model templates.
 
-## DEFERRED — LOCKED
+## 18. DEFERRED — LOCKED
 
 - full Capacity Intelligence UI: automate vs agent vs intern vs freelancer vs hire;
-- Class A contextual Skill Quests;
-- advanced calibrated probability and financial forecasting;
-- rich org/capability visualization;
-- advanced Time Machine comparison and road-not-taken counterfactual analysis;
+- full Class A contextual curriculum/Skill Quest platform;
+- rich skill trees/certifications;
+- advanced calibrated probability/financial forecasting;
+- advanced road-not-taken comparison;
 - full scenario optimizer;
-- multi-company tenancy / external-client admin;
-- benchmarking across companies unless privacy-safe and truly useful;
-- native communication threads unless integrations prove insufficient;
-- native document authoring unless integrations prove insufficient;
-- native accounting/ERP functions unless repeated evidence requires them.
+- multi-company external admin/tenancy;
+- cross-company benchmarking unless privacy-safe/useful;
+- native communications/docs/accounting unless integrations repeatedly fail.
 
-Deferred means strategically retained, not rejected.
+## 19. KILLED — LOCKED
 
-## KILLED — LOCKED
-
-- giant 20-tab dashboard;
-- fake metrics, success scores, or precision;
+- giant 20-tab primary dashboard;
+- fake metrics/success scores/precision;
+- task = guaranteed revenue;
 - generic Slack/chat clone;
 - generic Notion/docs clone;
-- generic task/project-management positioning;
+- generic project-management positioning;
 - native video-meeting platform without repeated need;
-- XP farming / meaningless badges;
-- founder or employee leaderboards as primary motivation;
+- meaningless XP farming;
+- founder/employee leaderboards as primary motivation;
 - employee productivity scoring/ranking;
-- autonomous firing/hiring decisions;
-- autonomous consequential spending, contracts, or commitments without approval;
-- constant trend/news feed;
-- probability claims without defensible calibration;
-- positioning as `all-in-one collaboration software`;
-- claiming Outcome Graph, work graph, AI chief of staff, human-agent planning, or scenario planning are unique inventions.
+- autonomous firing/hiring;
+- autonomous consequential spending/contracts/commitments without approval;
+- constant trend feed;
+- unsupported probability claims;
+- all-in-one-collaboration positioning;
+- backend graph/event-sourcing cathedral before behavior proof;
+- claiming Outcome Graph, Work Graph, AI Chief of Staff, human-agent planning, meeting intelligence or scenario planning are unique inventions.
 
-### Reopen rule
-
-A killed feature reopens only when repeated observed behavior shows that retained mechanisms/integrations cannot solve the underlying problem, or material new evidence changes the economics, adoption, trust, or technical tradeoff.
-
-## GAMIFICATION / MOTIVATION — LOCKED INTERPRETATION
-
-Keep intrinsic visual motivation:
-- path activation;
-- milestone unlocks;
-- blocker removal;
-- team momentum;
-- meaningful progress/impact;
-- carefully used celebration for real milestones.
-
-Do not center the product on points, streak pressure, badges, or founder competition.
-
-## MISSION / IMPACT — LOCKED INTERPRETATION
-
-Keep `why we started` and measurable impact subtle and persistent enough to reconnect work with meaning, but never let purpose cards compete with current action or hide financial weakness.
-
-## DR.X / ERFAN SECOND BRAIN BOUNDARY — LOCKED
-
-Reuse methods and explicitly approved relevant context, not private memory indiscriminately.
-
-Reusable infrastructure:
-- provenance-aware retrieval;
-- MemPalace semantic recall;
-- Graphify / relationship intelligence where useful;
-- Decision Council;
-- Fable-2036 Reasoner;
-- Architecture Convergence;
-- Pre-Live Simulator;
-- learning ledger;
-- confidence/freshness discipline;
-- communication and approval gates.
-
-Private Erfan information remains outside shared company truth unless explicitly approved and relevant.
-
-## COMMERCIAL PATH — PROVISIONAL BUT PREFERRED
+## 20. Commercial path — PROVISIONAL
 
 1. LastBench dogfood.
-2. Prove repeated founder behavior and actual decision value.
-3. Use Founder Intelligence as a Co.lab methodology / service-assisted installation.
-4. Pilot with 3–5 external founder-led operating teams, not idea-stage startups.
-5. Seek recurring willingness to pay and continued use without Co.lab manually reconstructing company state every week.
-6. Productize repeated onboarding/business-model patterns.
-7. Build broad SaaS/multi-tenancy only after retention and low-maintenance operation are observed.
+2. Prove behavioral value and maintenance feasibility.
+3. Use a service-assisted implementation path where helpful.
+4. Pilot with 3–5 external founder-led operating teams.
+5. Separate consulting value from product value.
+6. Seek recurring paid/retained behavior with declining implementation dependence.
+7. Productize repeated onboarding/business-model patterns.
+8. Build expensive broad SaaS/multi-tenancy only after evidence.
 
-The standalone SaaS thesis remains unproven.
+CO.FOUND being implemented/originated through Co.Lab does not make CO.FOUND subordinate to Co.Lab in product hierarchy.
 
-## POTENTIAL MOAT — HYPOTHESIS, NOT FACT
+## 21. Potential moat — UNPROVEN
 
-Potential compounding assets:
-- high-fidelity longitudinal decision -> resource -> action -> outcome history;
-- company-specific learned patterns and corrections;
-- repeatable business-model templates from implementations;
-- correction-first automatic company-model construction;
-- founder-native interaction language/habits around ROOM/MAP/FOCUS/ASK;
-- Co.lab distribution and implementation know-how.
+Possible compounding assets:
+- longitudinal decision -> resource -> action -> result history;
+- company-specific learned corrections/patterns;
+- low-friction company-model construction;
+- founder-native navigation language/behavior;
+- learning-through-work data and capability evidence;
+- repeatable implementation/business-model patterns.
 
-No hard moat is proven today.
+None is a proven moat today.
 
-## UNRESOLVED HYPOTHESES / KILL RISKS
+## 22. Naming status — PROVISIONAL
 
-- Will founders understand the branch model faster than normal dashboards and task views?
-- Will Detour actually change decisions rather than state obvious alternatives?
-- Can company state stay fresh with sufficiently low maintenance burden?
-- Can the system infer enough context from existing tools without producing dangerous stale/wrong conclusions?
-- Will historical decision/outcome memory improve future guidance meaningfully?
-- Will founders trust epistemically labeled, non-certain reasoning?
-- Will external operating teams pay enough to support onboarding and integration costs?
-- Can service-assisted setup become increasingly automated, or does Co.lab remain the hidden human operator?
-- Does the product create enough value beyond a well-designed Notion/Asana/Sheets + AI workflow to justify proprietary software?
-- Is Bangladesh a commercial wedge or only the first laboratory?
+- **CO.FOUND** is the current working environment name.
+- **Founder Intelligence** is the engine/category inside it.
+- Final public/legal naming remains open pending real naming/trademark/domain clearance.
+- **Foundry must NOT be treated as a verified recovered historical name.** A previous assistant made an unsupported recovery claim. It may be evaluated as a later naming candidate only unless primary evidence is retrieved.
 
-## IRREVERSIBLE-MOMENT RULE — LOCKED
+## 23. Irreversible-moment rule — LOCKED
 
-Do not cross into expensive multi-tenant engineering, broad native collaboration features, a large dedicated software team, or substantial irreversible capital deployment until external recurring use and willingness-to-pay show that the product works without Co.lab manually holding it together.
+Do not commit to:
+- broad multi-tenant engineering;
+- a large dedicated software team;
+- native replacement collaboration features;
+- substantial irreversible capital;
 
-## BUILD-FINAL STATUS
+until external recurring use, willingness-to-pay, low maintenance burden and product-native decision behavior exist without humans manually maintaining the truth behind the system.
 
-This architecture is `BUILD-FINAL` for the LastBench experiment, not `BUSINESS-PROVEN`.
+## 24. What would reopen this architecture
 
-New ideas must be classified through `drx-fable2036-reasoner` + `drx-architecture-convergence` as reinforcement, clarification, extension, contradiction, or replacement. Further quality gains should now come primarily from prototype behavior and observed evidence.
+Material observed evidence such as:
+- founders find MAP slower/confusing;
+- Detour rarely changes real decisions;
+- learning-in-work creates friction without capability gain;
+- meaningful momentum does not improve return behavior;
+- state freshness cannot be maintained;
+- Replay adds documentation but not better judgment;
+- external teams value only consulting;
+- existing-tool implementation provides equivalent value at materially lower cost.
+
+Until then, further conceptual redesign has lower expected value than real LastBench evidence.
