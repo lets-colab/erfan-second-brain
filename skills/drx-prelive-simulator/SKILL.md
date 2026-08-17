@@ -27,8 +27,56 @@ Never assign a precise success probability unless a defensible calibrated model 
 2. Define success in measurable terms.
 3. Identify current state, resources, constraints, team, capital, dependencies, and deadlines.
 4. Retrieve relevant verified context with `$drx-memory-retriever` when personal, project, financial, or prior-decision context matters.
-5. For material high-impact decisions, use `$drx-decision-council` after the simulation to independently challenge the result.
-6. Separate what is known today from what the simulation invents in order to explore the future.
+5. If the subject has accumulated multiple architectures or reversals, run `$drx-architecture-convergence` first and bind the simulation to the current canonical architecture.
+6. For material high-impact decisions, use `$drx-decision-council` after the simulation to independently challenge the result.
+7. Separate what is known today from what the simulation invents in order to explore the future.
+
+## Canonical-path binding
+
+A simulation must not invent a new product architecture merely because a future scenario makes a different design sound attractive.
+
+Before the simulation starts, record:
+
+- current `PRODUCT_SOUL`;
+- current `CORE_ARCHITECTURE`;
+- current `SIGNATURE_MECHANICS`;
+- current `V0_BUILD`;
+- current `DEFERRED` and `KILLED` decisions.
+
+During the simulation, new ideas are labeled as `REINFORCES`, `CLARIFIES`, `EXTENDS`, `CONTRADICTS`, or `REPLACES`.
+
+Only `CONTRADICTS` or `REPLACES` may reopen the canonical path, and only when the simulation reveals a concrete failure or a materially stronger mechanism. Otherwise preserve the locked architecture.
+
+## 2036-in-2026 mode
+
+Use this mode when Erfan asks for reasoning as if a far more capable future AI were available **now**, while the company, market, money, team, data, and technical reality remain in 2026.
+
+This is a capability-lens simulation, not time travel.
+
+Assume the reasoning system is much stronger at:
+
+- long-horizon consistency;
+- temporal memory and event reconstruction;
+- contradiction detection;
+- causal uncertainty modeling;
+- multi-agent orchestration;
+- counterfactual simulation;
+- dynamic interface reasoning;
+- resource allocation;
+- learning from forecast error;
+- maintaining one coherent world model across years.
+
+Do **not** assume unknown 2036 products, laws, prices, market sizes, model capabilities, or competitor actions as facts.
+
+Run two realities simultaneously:
+
+### Intelligence reality
+Ask: `If a much stronger reasoning system were advising us today, what would it notice, preserve, reject, or sequence differently?`
+
+### 2026 execution reality
+Ask: `What can the actual 2026 team build, afford, integrate, validate, and trust right now?`
+
+The answer must reconcile the two. Future-level insight may change priorities, schemas, evidence collection, and decision rules; it may not justify building impossible future technology today.
 
 ## Simulation horizons
 
@@ -39,8 +87,9 @@ Use the smallest useful set of horizons. Default for a new company or product:
 - `T+90 days` — retention, repeated use, economics, organizational strain.
 - `T+12 months` — product/company shape if the mechanism works.
 - `T+24–36 months` — only when strategic evolution materially matters.
+- `T+5–10 years` — only for compounding assets, platform evolution, organizational learning, or irreversible architecture decisions.
 
-Do not narrate every month. Jump to decision-relevant moments.
+Do not narrate every month, day, or hour unless an event actually changes state. Compress uneventful time and expand decision-relevant moments.
 
 ## Required scenario set
 
@@ -68,7 +117,8 @@ Add a fourth `NO-BUILD / ALTERNATIVE` scenario when the opportunity cost is mate
 7. **Track learning.** Record assumption -> decision -> action -> observed result -> learning.
 8. **Watch for pull.** Distinguish founder enthusiasm from user pull. Strong signals include voluntary repeated use, workflows moving into the product, users referring to product-native concepts, willingness to pay, expansion requests, and distress when removed.
 9. **Find the irreversible moment.** Identify when the project becomes expensive to reverse, and require stronger evidence before that point.
-10. **End with decision.** Return `GO`, `MODIFY`, `PILOT ONLY`, `DEFER`, or `KILL` and state exactly what evidence would reverse the decision.
+10. **Run contradiction checks.** Compare future lessons against the canonical architecture; do not silently mutate it.
+11. **End with decision.** Return `GO`, `MODIFY`, `PILOT ONLY`, `DEFER`, or `KILL` and state exactly what evidence would reverse the decision.
 
 ## Branch and history model
 
@@ -94,6 +144,16 @@ This enables historical playback: `what did we believe then? -> what did we choo
 
 Do not rewrite history using current knowledge. Preserve the information state that existed at the time of the decision.
 
+## Temporal operating model
+
+For company-intelligence products, reason across three linked states:
+
+- `PAST / REPLAY` — reconstruct the information state, decisions, actions, and outcomes without hindsight contamination.
+- `PRESENT / ORIENT` — determine current truth, blockers, resources, and next-best action.
+- `FUTURE / PRE-LIVE` — simulate alternative routes with explicit assumptions and uncertainty.
+
+These should share one underlying event ledger and time-aware graph. The model must distinguish recorded history from counterfactual history.
+
 ## Financial discipline
 
 For money-related simulations:
@@ -117,17 +177,24 @@ Evaluate required judgment, repetition, confidentiality, error cost, supervision
 A strong pre-live result contains:
 
 1. **Decision being simulated**
-2. **What is known vs assumed**
-3. **Base-case journey** with key moments only
-4. **Near-death / failure journey**
-5. **Breakout journey**
-6. **Critical branch points** and alternatives
-7. **What becomes the real product/business** if the idea works
-8. **What we should deliberately not build**
-9. **Leading indicators to watch**
-10. **Kill / pivot triggers**
-11. **Final recommendation** with confidence
-12. **Evidence that would change the recommendation**
+2. **Canonical architecture being preserved**
+3. **What is known vs assumed**
+4. **Base-case journey** with key moments only
+5. **Near-death / failure journey**
+6. **Breakout journey**
+7. **Critical branch points** and alternatives
+8. **What becomes the real product/business** if the idea works
+9. **What we should deliberately not build**
+10. **Leading indicators to watch**
+11. **Kill / pivot triggers**
+12. **Architecture deltas revealed by the simulation**
+13. **Final recommendation** with confidence
+14. **Evidence that would change the recommendation**
+
+In `2036-in-2026` mode, also include:
+
+15. **What future-level reasoning notices that 2026 reasoning missed**
+16. **What to change today without assuming future technology exists**
 
 For founder-facing outputs, write vividly enough that the user can mentally experience the future, but keep every simulated consequence clearly distinguishable from verified reality.
 
@@ -144,6 +211,9 @@ Before publishing, verify:
 - The first experiment is smaller than the long-term vision.
 - The recommendation states what would falsify it.
 - Any historical replay preserves the original information state and avoids hindsight bias.
+- The canonical architecture did not drift silently during the simulation.
+- Future-AI capabilities were used as reasoning lenses, not invented future facts.
+- The output ends with one coherent path, not a menu of incompatible product directions.
 
 ## Learning rule
 
@@ -153,6 +223,7 @@ After a real-world experiment reaches a meaningful checkpoint, compare the simul
 - what surprised us;
 - which assumption failed;
 - which branch was actually chosen;
-- what should change in this skill or future simulations.
+- what should change in this skill or future simulations;
+- whether any locked architecture decision now has enough evidence to reopen.
 
 Record durable corrections in the Second Brain learning / review ledger when appropriate. A pre-live skill that never learns from forecast error is incomplete.
