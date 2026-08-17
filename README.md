@@ -1,6 +1,6 @@
 ---
 created: 2026-07-19
-updated: 2026-08-17
+updated: 2026-08-18
 type: resource
 status: active
 tags: [second-brain, drx-ai-os, cofound, portability, governance]
@@ -8,7 +8,7 @@ tags: [second-brain, drx-ai-os, cofound, portability, governance]
 
 # Erfan Second Brain
 
-Erfan Second Brain is the user-controlled knowledge, decision, skill, and technical-governance layer for the DR.X AI OS and the evolving CO.FOUND operating-intelligence environment.
+Erfan Second Brain is the user-controlled knowledge, decision, skill, evaluation, and technical-governance layer for the DR.X AI OS and the evolving CO.FOUND operating-intelligence environment.
 
 It is designed to remain portable across ChatGPT, Claude, Codex, OpenClaw, Obsidian, MemPalace, Graphify, and other approved tools without making any single model or memory service the source of truth.
 
@@ -18,7 +18,7 @@ GitHub is authoritative here for:
 - DR.X skills and agent instructions;
 - AI OS architecture and routing contracts;
 - technical governance and approval boundaries;
-- evaluation and acceptance-test definitions;
+- evaluation, skill-fitness, and acceptance-test definitions/evidence;
 - versioned technical decisions;
 - durable knowledge structures that must be reviewable and provenance-aware.
 
@@ -39,6 +39,7 @@ See [`architecture/DRX-AI-OS.md`](architecture/DRX-AI-OS.md).
 - Separate source facts, user-stated positions, external claims, inferences, simulations and unknowns.
 - Reduce context loss and repeated decisions across AI tools.
 - Turn repeatable judgment into explicit skills with evidence and QA contracts.
+- Turn execution outcomes, failures, repairs, regressions, and user corrections into measurable learning evidence.
 - Measure readiness honestly and expose important blind spots.
 
 ## Production discipline
@@ -47,13 +48,24 @@ A file, prompt, install attempt, config change, or successful tool call is not p
 
 Material work should use:
 - [`skills/_template/SKILL.md`](skills/_template/SKILL.md) for production skill contracts;
-- [`skills/drx-execution-qc/SKILL.md`](skills/drx-execution-qc/SKILL.md) before claiming completion;
+- [`skills/drx-systematic-debugger/SKILL.md`](skills/drx-systematic-debugger/SKILL.md) for root-cause diagnosis before material repair;
+- [`skills/drx-execution-qc/SKILL.md`](skills/drx-execution-qc/SKILL.md) before claiming completion, using fresh final-state evidence;
 - [`evaluations/acceptance-tests.yaml`](evaluations/acceptance-tests.yaml) for AI OS release gates;
+- [`evaluations/acceptance-evidence.yaml`](evaluations/acceptance-evidence.yaml) for executed acceptance evidence and explicit `not_run` state;
+- [`evaluations/skill-fitness.yaml`](evaluations/skill-fitness.yaml) for measured skill-version performance and regressions;
 - [`governance/authority-matrix.yaml`](governance/authority-matrix.yaml) for protected-action boundaries;
-- [`observability/event-schema.yaml`](observability/event-schema.yaml) for reconstructable execution;
-- [`routing/task-router.yaml`](routing/task-router.yaml) for default agent/source routing.
+- [`observability/event-schema.yaml`](observability/event-schema.yaml) for reconstructable execution and learning evidence;
+- [`routing/task-router.yaml`](routing/task-router.yaml) for default agent/source/process routing.
 
 The `10.5/10` label is an internal quality target. Production status requires evidence and acceptance tests; it is never inferred from design sophistication alone.
+
+## Learning loop
+
+The intended DR.X improvement loop is:
+
+`execute -> inspect -> fresh verification -> record outcome -> classify failure/correction -> evaluate skill version -> repair skill/process only when evidence warrants -> regression test`
+
+A longer prompt is not automatically a better skill. Skill changes should be promoted only when representative evidence shows improved or preserved quality without hidden critical regression.
 
 ## Current skill layer
 
@@ -64,6 +76,7 @@ Active skills on `main` include:
 - architecture convergence;
 - pre-live simulation;
 - Fable-2036 reasoning;
+- systematic root-cause debugging;
 - DR.X representation;
 - Founder Command Center operation;
 - DR.X execution/completion QC.
