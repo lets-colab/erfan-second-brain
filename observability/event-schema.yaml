@@ -1,5 +1,7 @@
-version: 1
+version: 2
 status: locked-design
+principle: execution_must_generate_learning_evidence
+
 required_fields:
   - task_id
   - timestamp
@@ -8,26 +10,59 @@ required_fields:
   - agent
   - model
   - skill
+  - skill_version
   - sources
   - tools
   - actions
   - approvals
   - changes
+  - acceptance_criteria
+  - verification_evidence
+  - final_state_ref
   - result_status
   - failures
+  - failure_class
+  - root_cause
+  - repair_count
+  - regression_status
+  - user_correction
+  - user_acceptance
   - usage
+
+optional_fields:
+  - benchmark_case
+  - previous_skill_version
+  - invalidated_evidence
+  - expected_result
+  - observed_result
 
 field_contracts:
   task_id: unique_string
   project_namespace: isolated_project_or_business_slug
+  skill: skill_name_or_not_applicable
+  skill_version: semantic_version_or_legacy_unversioned_or_not_applicable
   sources: list_of_source_refs_with_provenance
   tools: list_of_invoked_tools
   actions: list_of_material_steps
   approvals: list_of_requested_and_granted_approvals
   changes: list_of_files_records_or_external_state_changed
+  acceptance_criteria: list_of_testable_requirements
+  verification_evidence: list_of_fresh_evidence_refs_or_empty_when_not_available
+  final_state_ref: commit_sha_artifact_version_deployment_id_timestamped_state_or_not_available
   result_status: [passed, failed, blocked, needs_approval, partial]
   failures: list_of_error_or_quality_failures
+  failure_class: list_or_empty_of_[retrieval, requirement_capture, reasoning, execution, tooling, verification, design, communication, governance, security, integration, other]
+  root_cause: supported_cause_or_unknown_or_not_applicable
+  repair_count: non_negative_integer
+  regression_status: [passed, failed, not_run, not_applicable]
+  user_correction: list_of_material_user_corrections_or_empty
+  user_acceptance: [accepted, rejected, corrected, unknown, not_requested]
   usage: provider_usage_or_cost_when_available
+  benchmark_case: benchmark_identifier_or_not_applicable
+  previous_skill_version: prior_version_when_comparing_or_not_applicable
+  invalidated_evidence: list_of_evidence_made_stale_by_later_changes
+  expected_result: optional_test_or_execution_expectation
+  observed_result: optional_actual_result
 
 rules:
   - do_not_log_secrets
@@ -35,3 +70,9 @@ rules:
   - material_writes_must_be_reconstructable
   - approval_records_must_precede_protected_actions
   - cross_project_events_must_be_explicitly_linked
+  - any_material_change_invalidates_affected_prior_verification
+  - verification_evidence_must_reference_the_current_final_state_when_claiming_pass
+  - delegated_agent_success_is_not_final_verification_by_itself
+  - unknown_root_cause_must_remain_unknown_until_supported
+  - user_corrections_are_learning_evidence_not_automatic_canonical_fact
+  - skill_changes_require_regression_evidence_before_claiming_improvement
