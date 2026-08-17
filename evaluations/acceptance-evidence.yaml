@@ -24,8 +24,23 @@ results:
     status: not_run
     evidence: []
   fresh-verification:
-    status: not_run
-    evidence: []
+    status: passed
+    scope: one_material_repository_change
+    final_state_ref: 9f8c2ee8f8a34c8cebb327f07d1174c2a225c2a6
+    evidence:
+      - path: skills/drx-systematic-debugger/SKILL.md
+        blob_sha: 01eb10efee8dbd8b4e7b7284758ceecd6415bf44
+      - path: skills/drx-execution-qc/SKILL.md
+        blob_sha: e67c27e910996baf05720bdfa407f3466ab43a18
+      - path: routing/task-router.yaml
+        blob_sha: 224162e432f8890c5ec20646e9029c03acc5a3d0
+      - path: observability/event-schema.yaml
+        blob_sha: 1c13a1a0026cb2d2a54cc8131aef9b9a1c3f3091
+      - path: evaluations/acceptance-tests.yaml
+        blob_sha: 54aa2f9fbedc8a9b6ca2ab6b863dcf25af7b0dbb
+      - path: evaluations/skill-fitness.yaml
+        blob_sha: e8091b72e53c32df917b0fafbd6b51d2cc210432
+    limitation: This proves the freshness discipline for this repository change only; it does not certify wider runtime integrations or repeated behavior.
   root-cause-debugging:
     status: not_run
     evidence: []
