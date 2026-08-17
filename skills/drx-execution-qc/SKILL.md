@@ -3,7 +3,7 @@ name: drx-execution-qc
 description: Mandatory final execution and quality-control gate for material DR.X work. Use before claiming a task, artifact, integration, system, report, presentation, workflow, or repository change is complete. Convert user requirements into acceptance criteria, verify evidence and live state, inspect output quality, identify missing or duplicated work, and return PASS, PARTIAL, BLOCKED, NEEDS_APPROVAL, or FAIL without overstating completion.
 status: active
 owner: drx-ai-os
-version: 1.0.0
+version: 1.1.0
 ---
 
 # DR.X Execution QC
@@ -76,7 +76,21 @@ For technical or operational systems, completion requires the applicable proof c
 
 If any required proof is missing, use `NOT VERIFIED`, `PARTIAL`, or `BLOCKED` rather than `DONE`.
 
-### 3. Completeness sweep
+### 3. Enforce fresh final-state verification
+
+Completion evidence must describe the current final state, not an earlier state that existed before the last relevant change.
+
+Rules:
+- any material change invalidates earlier verification evidence affected by that change;
+- after the last material change, rerun every check necessary to prove the claimed outcome;
+- when possible, bind verification to a final-state reference such as commit SHA, artifact hash/version, deployment ID, timestamped runtime state, or connector result;
+- an old passing test, build, screenshot, health check, or delegated-agent report cannot prove a newer state;
+- a delegated agent saying `done` or `tests pass` is supporting information only until the actual final artifact/state and relevant test output are inspected independently;
+- if a final-state reference cannot be established, state the limitation and lower the verdict rather than laundering stale evidence into completion.
+
+A repair performed during QC invalidates the affected checks. Rerun them before assigning `PASS`.
+
+### 4. Completeness sweep
 
 Check specifically for:
 - omitted requirements;
@@ -90,7 +104,7 @@ Check specifically for:
 - mismatched terminology or naming;
 - unfinished handoffs.
 
-### 4. Accuracy and provenance sweep
+### 5. Accuracy and provenance sweep
 
 For every material claim verify that it is:
 - supported by retrievable evidence;
@@ -100,7 +114,7 @@ For every material claim verify that it is:
 
 Never allow confidence of wording to exceed evidence strength.
 
-### 5. Artifact-specific QC
+### 6. Artifact-specific QC
 
 When an artifact exists, inspect the artifact itself rather than only its source text or generation code.
 
@@ -126,7 +140,7 @@ For code/systems check as applicable:
 - configuration drift;
 - actual end-to-end behavior.
 
-### 6. Adversarial review
+### 7. Adversarial review
 
 Ask:
 - What would make the user reject this despite it looking polished?
@@ -136,16 +150,16 @@ Ask:
 - What would an expert reviewer identify in under 60 seconds?
 - What is the single largest remaining failure risk?
 
-### 7. Repair before reporting
+### 8. Repair before reporting
 
 If a failed requirement can be safely and reversibly repaired within the current task and authority, repair it and rerun the failed checks.
 
 Do not merely describe a fix when the user asked for execution and the fix can be completed now.
 
-### 8. Final verdict
+### 9. Final verdict
 
 Allowed final states:
-- `PASS` — every critical requirement has direct evidence and all material acceptance checks clear.
+- `PASS` — every critical requirement has direct fresh evidence from the current final state and all material acceptance checks clear.
 - `PARTIAL` — useful work is complete but one or more material requirements remain unverified or incomplete.
 - `BLOCKED` — completion depends on unavailable evidence, access, or external dependency.
 - `NEEDS_APPROVAL` — the next required step crosses a protected boundary.
@@ -159,10 +173,11 @@ Return, proportionate to task size:
 1. verdict;
 2. requirement coverage summary;
 3. verified evidence;
-4. failures/gaps;
-5. repairs performed;
-6. remaining risk;
-7. exact next action if not PASS.
+4. final-state reference and verification freshness;
+5. failures/gaps;
+6. repairs performed;
+7. remaining risk;
+8. exact next action if not PASS.
 
 For user-facing responses, keep this concise unless a detailed audit was requested.
 
@@ -171,11 +186,11 @@ For user-facing responses, keep this concise unless a detailed audit was request
 A completion claim must point to direct evidence from the final state, not merely evidence that an attempt occurred.
 
 Examples:
-- repository commit + file contents + test result;
-- live URL + rendered inspection + interaction result;
-- installed service + health check + successful end-to-end invocation;
-- report artifact + inspected pages + requirement matrix;
-- connector state + successful read/write result when authorized.
+- repository commit/final-state ref + file contents + fresh test result;
+- live URL + current rendered inspection + interaction result;
+- installed service + current health check + successful end-to-end invocation;
+- report artifact/version + inspected pages + requirement matrix;
+- connector state + successful current read/write result when authorized.
 
 ## QA gate
 
@@ -184,20 +199,25 @@ PASS only if all applicable critical checks are true:
 - later corrections incorporated;
 - no critical requirement missing;
 - direct final-state evidence exists;
+- affected evidence was regenerated after the last material change;
+- final-state reference is recorded when technically available;
 - completion wording matches verification level;
 - no unsupported material claims;
 - no protected action occurred without authority;
 - artifact/system itself was inspected when inspectable;
+- delegated results were independently checked when they materially support completion;
 - the largest identified risk is below the task's acceptance threshold or explicitly accepted by the user.
 
 ## Learning loop
 
 When QC catches a material failure:
 1. identify the root cause, not only the symptom;
-2. classify it: retrieval, requirement capture, reasoning, execution, tooling, verification, design, communication, or governance;
-3. update the relevant skill/checklist or canonical lesson when durable;
-4. record what evidence would have prevented the error earlier;
-5. reuse the new check on future similar work.
+2. classify it: retrieval, requirement capture, reasoning, execution, tooling, verification, design, communication, governance, or other explicit class;
+3. record the skill and skill version involved when available;
+4. record repair count, user correction, regression result, and final evidence in the observability/evaluation layer when applicable;
+5. update the relevant skill/checklist or canonical lesson when durable;
+6. record what evidence would have prevented the error earlier;
+7. reuse the new check on future similar work.
 
 Repeated failure of the same class is a system defect and must trigger a skill/process update rather than another one-off correction.
 
