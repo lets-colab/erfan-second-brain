@@ -14,12 +14,15 @@
 8. Follow `governance/authority-matrix.yaml`. Sending, publishing, spending, contracts, security changes, destructive actions, and material commitments require explicit current approval unless a narrower approved charter grants authority.
 9. Prefer an existing skill over freeform prompting when a matching skill exists. Production skills should follow `skills/_template/SKILL.md` and define inputs, sources, tools, workflow, output, evidence, QA, pass/fail and escalation.
 10. Use `skills/drx-fable2036-reasoner/SKILL.md` for deep long-horizon audits, contradiction recovery and ultra-max reasoning. Treat it as a reasoning protocol, never as evidence of a future or superhuman system.
-11. Use `skills/drx-execution-qc/SKILL.md` as the mandatory final gate before claiming a material task, artifact, integration, system, report, workflow, or repository change is complete.
-12. Never treat setup evidence, install attempts, generated files, config changes, or successful tool calls as completion by themselves. When applicable, require the final-state proof chain: change exists -> configuration valid -> health/status succeeds -> real execution/connection succeeds -> expected result observed -> dashboard/state reflects it -> acceptance/regression checks pass.
-13. If final-state evidence is incomplete, say `not verified`, `partial`, `blocked`, `needs approval`, or `failed` rather than implying `done`.
-14. Use `routing/task-router.yaml` to choose the simplest capable agent/source path. Do not spawn multiple agents for theatrical complexity.
-15. For material execution, preserve reconstructable evidence compatible with `observability/event-schema.yaml`.
-16. `evaluations/acceptance-tests.yaml` defines the AI OS design release gates. Never call the wider AI OS production-ready solely because architecture files exist.
-17. After adding durable knowledge or capability, update `reviews/knowledge-change-log.md` and reassess `areas/knowledge-readiness.md`. Report whether the change improves design readiness, operational verification, or both.
-18. Preserve history. Mark superseded decisions rather than silently rewriting them, and treat user corrections as higher authority than inferred patterns.
-19. Do not bulk-ingest a source merely because it is accessible. Retrieve the minimum relevant approved material needed for the task.
+11. Use `skills/drx-systematic-debugger/SKILL.md` when a technical or operational system is broken, regressed, inconsistent, or producing unexpected results. Reproduce and isolate the failure before material repair; do not stack speculative fixes.
+12. Use `skills/drx-execution-qc/SKILL.md` as the mandatory final gate before claiming a material task, artifact, integration, system, report, workflow, or repository change is complete.
+13. Never treat setup evidence, install attempts, generated files, config changes, or successful tool calls as completion by themselves. When applicable, require the final-state proof chain: change exists -> configuration valid -> health/status succeeds -> real execution/connection succeeds -> expected result observed -> dashboard/state reflects it -> acceptance/regression checks pass.
+14. Any material change invalidates earlier verification evidence affected by that change. Final completion evidence must be regenerated after the last relevant change and bound to the current final state when technically possible.
+15. If final-state evidence is incomplete, say `not verified`, `partial`, `blocked`, `needs approval`, or `failed` rather than implying `done`.
+16. Use `routing/task-router.yaml` to choose the simplest capable agent/source/process path. Do not spawn multiple agents for theatrical complexity.
+17. For material execution, preserve reconstructable evidence compatible with `observability/event-schema.yaml`, including skill version, acceptance criteria, verification evidence, failures, repair count, regression state, and user correction/acceptance when applicable.
+18. `evaluations/acceptance-tests.yaml` defines the AI OS design release gates. `evaluations/skill-fitness.yaml` tracks measured skill performance. Never call the wider AI OS production-ready solely because architecture files or skills exist.
+19. A skill version is not an improvement because its prompt is longer or more sophisticated. Improvement requires benchmark evidence with no hidden critical regression.
+20. After adding durable knowledge or capability, update `reviews/knowledge-change-log.md` and reassess `areas/knowledge-readiness.md`. Report whether the change improves design readiness, operational verification, or both.
+21. Preserve history. Mark superseded decisions rather than silently rewriting them, and treat user corrections as higher authority than inferred patterns.
+22. Do not bulk-ingest a source merely because it is accessible. Retrieve the minimum relevant approved material needed for the task.
