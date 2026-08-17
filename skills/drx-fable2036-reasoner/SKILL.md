@@ -1,162 +1,247 @@
 ---
 name: drx-fable2036-reasoner
-description: Apply verified Claude Fable 5-style long-horizon reasoning strengths plus a clearly speculative 2036 capability lens to material product, company, architecture, and strategy decisions. Use for deep audits, full-chat pressure tests, pre-live simulations, major product convergence, or when Erfan asks for Fable 5 / 2036-level reasoning. This skill must preserve reality boundaries, kill unsupported beliefs, reconcile contradictions, and converge to one executable path.
+description: Apply verified Claude Fable 5-style highest-effort long-horizon reasoning plus clearly speculative future-level consistency to material product, company, architecture, and strategy decisions. Use for deep audits, full-chat pressure tests, pre-live simulations, major product convergence, or when Erfan asks for Fable / 2036 / ultra-max reasoning. Preserve reality boundaries, kill unsupported beliefs, reconcile contradictions, audit every prior path, and converge to one executable path.
 ---
 
 # DR.X Fable-2036 Reasoner
 
-This skill is a reasoning protocol, not a claim that a 2036 model exists or is installed.
+This is a reasoning protocol, not a claim that a future superintelligence, god-like model, or literal 2036 system exists or is installed.
 
-It combines:
-- verified 2026 Fable 5 traits: long-horizon complex-task persistence, deep analytical reasoning, resource allocation, testing/evaluating its own work, and willingness to kill incorrect beliefs;
-- DR.X provenance, decision-council, convergence, and pre-live disciplines;
-- speculative 2036 capabilities used only as a lens: stronger temporal consistency, causal uncertainty modeling, counterfactual breadth, recursive self-critique, world-model stability, and multi-agent/resource orchestration.
+Verified 2026 foundation:
+- Fable 5 is designed for demanding long-horizon work;
+- at highest effort it reflects on and validates its own work;
+- it is reported to allocate resources, sustain complex work, and discard incorrect beliefs.
 
-## Non-negotiable reality boundary
+Speculative capability lens:
+- stronger temporal consistency;
+- deeper counterfactual search;
+- causal uncertainty discipline;
+- recursive self-critique;
+- contradiction detection across very long histories;
+- multi-agent/resource orchestration;
+- stable world-model maintenance;
+- decision-theoretic sequencing under uncertainty.
 
-Keep two layers separate:
+## Reality boundary
 
-`REALITY_2026` — actual evidence, current tools, team, capital, laws, integrations, competitors, and technical limits.
+Maintain two layers:
 
-`2036_REASONING_LENS` — stronger reasoning quality only. It may improve sequencing, detect contradictions, preserve history, propose better experiments, or expose hidden dependencies. It may not invent future facts, products, prices, capabilities, market size, regulation, or outcomes.
+`REALITY_2026` — actual evidence, current tools, people, capital, laws, integrations, market conditions, and technical limits.
+
+`FUTURE_REASONING_LENS` — stronger reasoning quality only. It may improve sequencing, expose hidden dependencies, improve experiments, or change what should be recorded today. It may not invent future facts, products, prices, laws, market sizes, model abilities, or outcomes.
 
 ## Core reasoning loop
 
-For any material decision:
+1. Reconstruct the full relevant conversation/project history.
+2. Atomize claims into `FACT`, `USER_STATED`, `EXTERNAL_EVIDENCE`, `ASSUMPTION`, `INFERENCE`, `SIMULATION`, `UNKNOWN`.
+3. Recover the irreducible user problem before evaluating solutions.
+4. Reconstruct every major product evolution, rejected path, restored path, simulation lesson, and architectural lock.
+5. Generate the strongest opposing model and strongest no-build alternative.
+6. Kill unsupported beliefs explicitly rather than cosmetically renaming them.
+7. Check system-wide consistency across product soul, target user, experience, architecture, data model, trust, V0, commercial path, and moat.
+8. Run second- and third-order effects on adoption, maintenance, trust, capital, team behavior, privacy, technical debt, distribution, economics, and future optionality.
+9. Test reversibility and irreversible commitment points.
+10. Converge to one path; do not end with strategic ambiguity.
 
-1. **Reconstruct the full state.** Retrieve relevant conversation/project history and the latest canonical architecture or decision record.
-2. **Atomize claims.** Separate `FACT`, `USER_STATED`, `EXTERNAL_EVIDENCE`, `ASSUMPTION`, `INFERENCE`, `SIMULATION`, and `UNKNOWN`.
-3. **Recover original intent.** Identify the user's irreducible problem before evaluating any current solution.
-4. **Generate the strongest opposing model.** Build the best case that the current idea, architecture, or assumption is wrong.
-5. **Kill beliefs aggressively.** If evidence invalidates an earlier belief, explicitly mark it `KILLED` rather than softly reframing it.
-6. **Check system-wide consistency.** Compare every proposed change against product soul, architecture, signature mechanics, V0 scope, deferred items, killed items, commercial path, and data model.
-7. **Run second-order effects.** Evaluate what the change causes in adoption, maintenance burden, trust, capital, team behavior, technical debt, privacy, defensibility, and future optionality.
-8. **Run counterfactuals.** Compare build / not-build / narrower / service-led / integrate-existing / alternative-architecture paths when relevant.
-9. **Test reversibility.** Prefer reversible experiments before irreversible engineering, hiring, capital, or market commitments.
-10. **Converge.** Produce one recommended path. Do not end with a menu of equally weighted options.
+## Ultra-Max audit mode
 
-## Recursive self-critique
+Use when Erfan asks for the highest possible reasoning / ultra-max / extra-high audit.
 
-Before publishing a major verdict, run three internal passes:
+### Phase 1 — Evolution reconstruction
+Create a chronological ledger of every material evolution:
+- original user problem;
+- feature or concept introduced;
+- why it was introduced;
+- later criticism;
+- whether it was retained, reframed, deferred, killed, or restored;
+- what new evidence caused the change.
 
-### Pass A — Missingness
-What material user requirement, prior idea, rejected feature, or constraint has disappeared?
+No important concept may disappear merely because later terminology absorbed it.
 
-### Pass B — Contradiction
-What in the current answer conflicts with an earlier locked decision, source fact, market evidence, or another part of this answer?
+### Phase 2 — Requirement coverage
+Build a matrix from original human needs to retained mechanisms. Identify any orphaned user need and any mechanism with no clear user need.
 
-### Pass C — Seduction
-Which recommendation is present mainly because it sounds advanced, futuristic, elegant, or emotionally satisfying rather than because it improves the outcome?
+### Phase 3 — Contradiction sweep
+Search specifically for:
+- V0 expansion masquerading as architecture;
+- long-term vision accidentally shrunk to match MVP;
+- duplicate concepts under different names;
+- discarded ideas silently returning;
+- signature mechanics being demoted into generic labels;
+- current competitor capabilities falsely treated as unique;
+- data-model sophistication added before behavioral proof;
+- simulations presented as evidence;
+- founder enthusiasm substituted for customer pull.
 
-Any failure in these passes must be corrected before finalizing.
+### Phase 4 — Belief destruction
+For every central belief ask:
+- What evidence supports it?
+- What evidence contradicts it?
+- What would make it false?
+- Can an existing tool/service already solve it sufficiently?
+- Does the company still create value if this belief is false?
 
-## Feature decision framework
+Mark beliefs as `SURVIVES`, `WEAKENS`, `KILLED`, or `UNPROVEN`.
 
-Every feature or capability must be classified as one of:
+### Phase 5 — Recursive self-audit
+Run five passes before finalizing:
+1. `MISSINGNESS` — what important historical requirement vanished?
+2. `CONTRADICTION` — what conflicts internally or with evidence?
+3. `SEDUCTION` — what is present mainly because it sounds futuristic or elegant?
+4. `OVERBUILD` — what is architecture theatre before proof?
+5. `UNDERBUILD` — what data/history must begin now because it cannot be reconstructed later?
 
-- `CORE_NOW` — essential to prove the core behavior in V0.
-- `ARCHITECT_NOW_UI_LATER` — model/schema support now to avoid future redesign; no full V0 interface.
-- `DEFERRED` — valuable but intentionally postponed until evidence appears.
-- `KILLED` — wrong strategic direction or net-negative unless a stated reopen trigger is met.
+Correct all five before convergence.
 
-Never use “later” without saying which category it belongs to.
+### Phase 6 — Canonical synthesis
+Produce exactly one:
+- product soul;
+- target user;
+- user-facing cognitive model;
+- signature mechanics;
+- durable data model;
+- V0 experiment;
+- architecture-now/UI-later set;
+- deferred set;
+- killed set;
+- commercial path;
+- kill criteria;
+- evidence needed to reopen decisions.
 
-For each contested feature ask:
-- Which user problem was it originally solving?
+Only after Phase 6 may the simulation begin.
+
+## Feature decision states
+
+Every material capability must be exactly one of:
+- `CORE_NOW`
+- `ARCHITECT_NOW_UI_LATER`
+- `DEFERRED`
+- `KILLED`
+
+For contested items ask:
+- What original user problem did this solve?
 - Is that problem still real?
-- Does another retained mechanism already solve it?
-- Would omission create data-model or architectural debt?
-- What observable evidence would justify promotion, demotion, or reopening?
+- Is another retained mechanism solving it?
+- Would omission create irreversible data/architecture loss?
+- What evidence would justify changing status?
 
-## Architecture stability rule
+## Evidence hierarchy
 
-Use `$drx-architecture-convergence` before or during any full-system audit.
-
-Do not treat prior `LOCKED` decisions as automatically correct. In a fresh audit they become hypotheses to re-evaluate against full evidence. However, do not silently change them: any replacement must state the previous decision, failure found, exact delta, migration cost, and reason the new version is superior.
-
-After a new full audit reaches convergence, write one new canonical decision record rather than stacking competing “final” architectures.
-
-## Fable-style evidence discipline
-
-Prefer primary evidence and direct observed behavior over model intuition.
-
-Evidence ranking:
-1. observed real user behavior / real operating data;
-2. measured business outcomes;
-3. direct customer willingness-to-pay / retention behavior;
-4. primary external market or product evidence;
+1. observed user behavior / operating data;
+2. measured business outcome;
+3. recurring willingness-to-pay / retention behavior;
+4. primary external market evidence;
 5. internal historical evidence;
 6. logical inference;
-7. expert/model opinion;
+7. model/expert opinion;
 8. aesthetic preference.
 
-Do not let confidence of prose exceed strength of evidence.
+Confidence of prose may not exceed evidence strength.
 
-## Temporal reasoning
+## Temporal intelligence rule
 
-For time-aware systems, maintain one continuous model:
+Maintain one continuous model:
 
 `PAST / REPLAY -> PRESENT / ORIENT -> FUTURE / PRE-LIVE`
 
-Past must preserve the information state that existed then. Present must distinguish fresh from stale data. Future must remain simulation, not prediction.
-
-For every major decision worth learning from, preserve:
+For every material decision worth learning from preserve:
 - timestamp;
-- original evidence;
+- information available at the time;
 - original assumption;
-- options available;
-- choice and rationale;
+- alternatives considered;
+- chosen route and rationale;
 - expected result;
 - confidence at the time;
-- resources committed;
+- resources/capital committed;
 - actual result;
 - retrospective learning.
 
-## Product pressure-test contract
+Historical belief must never be overwritten by hindsight. Counterfactuals must never be stored as history.
 
-A full product audit must explicitly test:
-- problem severity and frequency;
-- target user clarity;
-- current workaround / inertia;
-- 10-second value comprehension;
-- repeated use mechanism;
-- data freshness and maintenance burden;
-- technical feasibility with current tools;
-- trust / explainability / privacy;
-- economics and willingness-to-pay path;
-- competitive substitution;
-- service-vs-software boundary;
-- moat today vs potential moat later;
-- founder/team behavior;
-- worst-case failure mode;
-- kill criteria;
-- smallest valid experiment;
-- what evidence would reverse the recommendation.
+## Epistemic graph rule
 
-## 2036-in-2026 pre-live mode
+Graph edges must communicate what kind of relationship they represent, such as:
+- prerequisite/dependency;
+- strategic hypothesis;
+- observed association;
+- historical sequence/result;
+- simulation/counterfactual.
 
-When asked to pre-live as a Fable-2036 intelligence operating in 2026:
+Never let visualization imply proven causality where only hypothesis or correlation exists.
 
-1. Bind to `REALITY_2026` and the freshly audited canonical model.
-2. Simulate key state-changing moments, not fake hour-by-hour narration.
-3. Run at least `BASE`, `NEAR-DEATH`, `BREAKOUT`, and `NO-BUILD / ALTERNATIVE` paths.
-4. At every major branch, track: user behavior, cash, founder attention, capacity, data quality, trust, incumbent response, and learning.
-5. Distinguish feature success from product success, product success from willingness-to-pay, and willingness-to-pay from venture-scale potential.
-6. Identify the irreversible moment and require stronger evidence before crossing it.
-7. End with one 2026 action sequence and explicit kill / pivot triggers.
+## Ultra-Max 2026 pre-live mode
+
+Run only after the full audit converges.
+
+Simulate a much stronger reasoning system advising the actual 2026 company.
+
+Required paths:
+- `BASE`
+- `NEAR_DEATH`
+- `BREAKOUT`
+- `NO_BUILD / EXISTING_TOOLS`
+- `SERVICE_ONLY`
+
+At each state-changing branch track:
+- founder behavior;
+- user behavior;
+- money/cash;
+- maintenance burden;
+- data freshness;
+- trust;
+- capacity;
+- engineering burden;
+- distribution;
+- willingness-to-pay;
+- competitor/substitute response;
+- organizational learning.
+
+Do not fake day-by-day narration. Expand decision-relevant moments and compress uneventful time.
+
+### Simulation falsification
+
+Before accepting the breakout story, attempt to destroy it using:
+- stale-data failure;
+- obvious-detour failure;
+- low-frequency-use failure;
+- existing-tools substitution;
+- consulting-disguised-as-software failure;
+- incumbent feature convergence;
+- privacy/trust failure;
+- founder attention collapse;
+- inability to automate onboarding;
+- weak willingness-to-pay.
+
+If the breakout path survives only by assuming several unverified miracles, downgrade or kill it.
+
+## Final output contract
+
+Return:
+1. audit diagnosis;
+2. evolution ledger;
+3. beliefs that survive / weaken / die;
+4. final canonical product model;
+5. exact delta from previous lock;
+6. full pre-live simulation;
+7. near-death path;
+8. breakout path;
+9. no-build/service alternatives;
+10. irreversible moment;
+11. one 2026 execution path;
+12. explicit kill/pivot triggers;
+13. what would prove the final answer wrong.
 
 ## Final quality gate
 
-Before output, verify:
-- no prior important idea is missing;
-- no killed idea was silently restored;
-- no deferred idea was accidentally promoted to V0;
-- no signature mechanic was hidden inside generic terminology;
-- no simulated future is written as observed fact;
-- no current-market capability is falsely claimed unique;
-- the architecture can be explained in one diagram;
-- V0 is materially smaller than the long-term vision;
-- the recommendation contains one path, not strategic ambiguity;
+Do not publish unless:
+- every major prior idea is accounted for;
+- no rejected idea was silently restored;
+- no deferred idea was accidentally promoted;
+- no signature mechanic was hidden;
+- no current-market concept is falsely claimed unique;
+- no simulation is presented as evidence;
+- no backend cathedral precedes behavioral proof;
+- no critical history/data contract is postponed until it is unrecoverable;
+- V0 is smaller than the full vision;
+- one coherent path exists;
 - the answer states what would make it wrong.
-
-If any condition fails, revise before publishing.
