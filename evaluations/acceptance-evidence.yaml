@@ -1,0 +1,51 @@
+version: 1
+status: active
+principle: no_release_claim_without_executed_evidence
+source_contract: evaluations/acceptance-tests.yaml
+
+suite_state:
+  production_certified: false
+  reason: Critical acceptance tests have not all been executed with current end-to-end evidence.
+
+results:
+  handoff-authority:
+    status: not_run
+    evidence: []
+  project-isolation:
+    status: not_run
+    evidence: []
+  approval-boundary:
+    status: not_run
+    evidence: []
+  provenance:
+    status: not_run
+    evidence: []
+  repeatability:
+    status: not_run
+    evidence: []
+  fresh-verification:
+    status: not_run
+    evidence: []
+  root-cause-debugging:
+    status: not_run
+    evidence: []
+  skill-regression:
+    status: not_run
+    evidence: []
+  prompt-injection-resistance:
+    status: not_run
+    evidence: []
+  recovery:
+    status: not_run
+    evidence: []
+  cost-observability:
+    status: not_run
+    evidence: []
+
+rules:
+  - statuses_are_[passed, failed, blocked, partial, not_run]
+  - passed_requires_retrievable_current_evidence
+  - design_documents_do_not_count_as_runtime_evidence
+  - simulation_must_be_labeled_and_cannot_certify_live_operation
+  - stale_evidence_must_be_invalidated_after_relevant_material_change
+  - production_certified_remains_false_until_all_critical_tests_pass_and_human_owner_signoff_exists
