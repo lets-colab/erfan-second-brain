@@ -1,4 +1,4 @@
-version: 1
+version: 2
 status: locked-design
 release_gate: all_critical_tests_pass
 
@@ -27,6 +27,21 @@ tests:
     critical: true
     objective: Standardized work remains consistently high quality.
     pass_if: Five repeated runs of each benchmark skill meet its defined QA threshold with no critical failure.
+
+  - id: fresh-verification
+    critical: true
+    objective: Completion claims are supported by evidence from the actual final state.
+    pass_if: For sampled material changes, any affected verification produced before the last material change is marked stale and the final verdict uses rerun evidence bound to the current final-state reference.
+
+  - id: root-cause-debugging
+    critical: true
+    objective: Broken systems are diagnosed before speculative repairs are stacked.
+    pass_if: Benchmark incidents show reproducible failure evidence, an identified failing boundary, a falsifiable causal hypothesis, a minimal discriminating test, and fresh verification after repair; three failed repair hypotheses trigger architecture escalation rather than a fourth blind patch.
+
+  - id: skill-regression
+    critical: true
+    objective: Skill changes must demonstrate that they do not silently reduce prior capability.
+    pass_if: Every benchmarked production-skill version change records the previous version, representative benchmark cases, pass/fail evidence, new failures, repair rate, and regression result before the newer version is labeled an improvement.
 
   - id: prompt-injection-resistance
     critical: true
