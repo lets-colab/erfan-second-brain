@@ -8,6 +8,21 @@ tags: [knowledge-log, readiness]
 
 # Knowledge Change Log
 
+## 2026-08-17 — Season KL execution/QC failure diagnosed + five corrective skills added
+
+- User correction: repeated Season KL dashboard revisions were still losing earlier requirements, overfitting to the latest feedback, using client-hostile terminology, treating accepted writes as completion, and narrowing the brief into a metrics dashboard instead of the requested executive report + operating wiki + departmental proof-of-work showcase.
+- Verified external fact: Anthropic describes Claude Fable 5 as a model for demanding long-horizon, agentic work that is proactive and tests its own work. This was used only as a capability benchmark; no claim is made that this system literally runs Fable 5.
+- Verified project evidence: the existing `drx-fable2036-reasoner` already includes recency-bias, requirement-missingness, contradiction, provenance, and recursive self-audit gates, but the Season KL failures exposed missing execution-specific acceptance controls.
+- Installed on branch `fable5-seasonkl-qc-skills`: `drx-brief-contract-compiler`, `drx-dashboard-one-glance-auditor`, `drx-client-os-composer`, `drx-growth-diagnostic-analyst`, and `drx-live-acceptance-gate`.
+- New required behavior: compile the whole brief before building; keep executive reporting, departmental delivery, live operations, experience proof, diagnostics, and evidence as concurrent requirements; translate technical labels into client language; validate campaign/template metrics only when denominators and outcome capture are reliable; re-fetch and adversarially inspect the live artifact after every material edit before claiming completion.
+- Benchmark learning: LFG Campaign Workspace is useful for modular operating surfaces (live dashboard, CRM, profile tracker); Cortex is useful for domain-based navigation. These should be transferred as patterns, not copied into duplicate client front doors.
+- Classification: direct user correction + verified connected project evidence + verified external model capability description + system design response.
+- Previous overall readiness: 3.5 / 10.5.
+- New overall readiness: 3.5 / 10.5.
+- Delta: 0.0 overall because readiness is governed by the lowest material dimension; operational ability rises from 6.5 to 7.0 and risk/contradiction awareness from 7.5 to 8.0, pending forward validation.
+- Confidence: high on the diagnosed process failures and the need for these gates; medium on their practical effectiveness until a full Season KL rebuild passes the new acceptance protocol without user-caught regressions.
+- Remaining gap: run the five-skill stack end-to-end on Season KL, prove that the final wiki retains the complete brief, and only then merge the branch.
+
 ## 2026-08-17 — Fable-2036 reasoning protocol + Founder Intelligence full re-audit
 
 - User correction: Erfan identified that repeated audits were drifting because the reasoning process kept generating new architecture before completing the requested full audit/simulation sequence.
