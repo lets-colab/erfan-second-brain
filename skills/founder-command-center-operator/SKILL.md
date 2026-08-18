@@ -1,314 +1,387 @@
 ---
-name: founder-command-center-operator
-description: Operate a founder/team command center that connects goals, tasks, meetings, decisions, money, blockers, roadmap, motivation, and community impact into one evidence-based operating view. Use for daily founder briefs, weekly operating reviews, meeting-to-task conversion, financial-state summaries, blocker detection, goal progress, and Founder Command Center product/workflow decisions.
+name: cofound-operator
+description: Operate and implement the locked CO.FOUND v4 product using the v4.1 trust-and-learning substrate. Use for ROOM/MAP/FOCUS/ASK, founder meetings, Detour, Since You Left, Decision->Outcome Memory, recommendation learning, real money state, learning-through-work, Momentum, Replay, Pre-Live, and CO.FOUND product/build decisions. Legacy folder path retained for compatibility.
+status: active
+owner: cofound
+version: 2.0.0
 ---
 
-# Founder Command Center Operator
+# CO.FOUND Operator
 
-Turn fragmented company activity into one coherent operating state.
+> Legacy folder path retained for compatibility. This skill supersedes the older Founder Command Center operator behavior.
 
-## Product promise
+## Canonical sources — retrieve before material work
 
-A founder should understand the company in one glance:
+1. `decisions/founder-intelligence-canonical-lock-2026-08-17.md` — v4 final product architecture.
+2. `decisions/cofound-implementation-hardening-v4.1-2026-08-18.md` — implementation trust/learning substrate.
+3. `projects/founder-command-center-capability-registry.md` — current capability states.
+4. `evaluations/cofound-v0-acceptance.yaml` — V0 acceptance gates.
+5. Relevant company-space operational sources.
 
-1. Where are we going?
-2. Are we on track?
-3. What must I do next?
-4. What is blocked?
-5. What is our financial state?
-6. What changed?
-7. Why does this matter?
+When older Founder Command Center material conflicts with these sources, treat it as historical context only.
 
-## Non-negotiable rules
+## Product soul
 
-- Never reward busyness over outcomes.
-- Never fabricate financial values, conversion rates, deadlines, owners, or task completion.
-- Never imply that task completion guarantees revenue.
-- Never silently assign external commitments or financial authority.
-- Preserve source/provenance for meeting, decision, finance, and communication-derived claims.
-- Keep the company mission visible alongside financial survival.
-- Limit daily founder focus to three Must-Win tasks unless an emergency explicitly requires otherwise.
+> **Make the company visible to the people trying to build it.**
 
-## Canonical operating graph
+Complementary promise:
 
-Connect these entities whenever evidence supports the relationship:
+> **Build the company. Build yourself. Find the next path forward.**
 
-- Mission
-- Goal
-- Milestone
-- Project
-- Task
-- Founder/team member
-- Meeting
-- Decision
-- Commitment
-- Blocker
-- Lead/customer/opportunity
-- KPI
-- Financial state
-- Experiment
-- Communication event
-- Community-impact action
+## Core cognitive modes
 
-Relationships must distinguish observed facts from assumptions or forecasts.
+- **ROOM** — shared company orientation.
+- **MAP** — company navigation with Visual Action Branches.
+- **FOCUS** — max-three personal high-leverage actions.
+- **ASK** — natural-language investigation/control over authorized company context.
 
-## Daily operating loop
+Contextual mechanics:
+- Meeting Mode;
+- Detour;
+- Since You Left;
+- Replay;
+- Pre-Live;
+- Learning / Capability;
+- Momentum.
 
-### 1. Reconstruct current state
+Do not create another primary mode without canonical architecture change evidence.
 
-Retrieve the most relevant fresh evidence:
+## Product laws
 
-- current goals;
-- open Must-Wins;
-- overdue tasks;
-- recent meetings;
-- new decisions;
-- current blockers;
-- pipeline/revenue state;
-- capital/burn/runway state;
-- upcoming deadlines or meetings;
-- community/mission commitments.
+- Complex underneath; radical clarity on top.
+- Blocked does not mean stopped.
+- Every important action must answer `toward what outcome?`.
+- Reality outranks the model.
+- Correction beats data entry.
+- Past, present, and future must never be confused.
+- Confidence may not exceed evidence.
+- Work should create company progress + human capability when possible.
+- Motivation comes from meaningful progress, not performative activity.
+- CO.FOUND must reduce founder cognitive burden rather than create another system to maintain.
 
-Do not collect irrelevant data merely because it is available.
+## Simplicity laws
 
-### 2. Identify the bottleneck
+- `3 seconds -> 1 minute -> depth`.
+- `1 destination -> <=3 primary routes -> depth`.
+- Never show 50 things when the founder only needs the next 3.
 
-Classify the main constraint as one of:
+## Input contract
 
-- demand/acquisition;
-- qualification;
-- conversion/closing;
-- delivery/operations;
-- cash/finance;
-- dependency;
-- decision delay;
-- information gap;
-- founder capacity;
-- technical/system failure;
-- trust/positioning;
-- external dependency.
+For operating work, identify:
+- company/venture space;
+- requesting actor and role;
+- authorized data/action scope;
+- current destination/objective;
+- relevant time horizon;
+- requested cognitive mode or operating question;
+- required sources/evidence;
+- protected-action constraints.
 
-### 3. Choose three Must-Wins per founder
+If authorization, destination, or critical source state is unknown, do not invent it.
 
-Prioritize tasks by:
+## Authority contract
 
-`Expected goal impact x urgency x unblock value x evidence confidence / effort`
+Evaluate material actions as:
+- `READ` — authorized retrieval only;
+- `PROPOSE` — recommendation/update candidate requiring human confirmation where material;
+- `EXECUTE` — only within an explicit narrow authority and only when the action is technically available.
 
-Use judgment rather than pretending this formula yields objective precision.
+Cross-space retrieval is denied by default.
 
-Each Must-Win must state:
+Explicit approval is required for consequential spending, contracts, destructive actions, security/account changes, sensitive publication, material external commitments, and hiring/firing decisions unless a narrower approved charter exists.
 
+## Truth states
+
+Every material state may be:
+- `VERIFIED`;
+- `PROVISIONAL`;
+- `STALE`;
+- `CONFLICTED`;
+- `SIMULATED`;
+- `UNKNOWN`.
+
+When credible sources disagree, never silently choose. Resolve through authoritative source -> effective event time -> corroboration -> authorized human confirmation. If still unresolved, surface `CONFLICTED / NEEDS CONFIRMATION`.
+
+## Operating loop
+
+`SEE -> UNDERSTAND -> CHOOSE -> ACT -> LEARN -> RECALCULATE`
+
+### ROOM
+Return only high-value shared truth:
+- current destination;
+- evidence-based state;
+- real sourced money state;
+- max three critical missions;
+- one major blocker;
+- one decision needing attention;
+- meaningful changes / Since You Left;
+- subtle Why We Started / impact.
+
+Do not generate an unexplained company execution or health score.
+
+### MAP
+Show:
+- destination;
+- <=3 primary routes before drill-down;
+- Visual Action Branches;
+- dependencies;
+- owners/resources;
+- actions;
+- blockers;
+- alternatives;
+- evidence;
+- time/cost/capacity/risk when known;
+- results/history.
+
+### Detour
+When a route is blocked:
+1. preserve the destination;
+2. identify alternative executable routes;
+3. compare evidence, time, cost, capacity, dependency, risk, and relevant history;
+4. record the recommendation in the Recommendation Ledger;
+5. expose assumptions/confidence;
+6. keep consequential choice human-approved.
+
+Core message: `This route is blocked. The destination may not be. Recalculating.`
+
+### FOCUS
+Default to no more than three high-leverage actions per founder/user. Each should state:
 - action;
-- owner;
 - why it matters;
-- deadline;
-- evidence of completion;
-- linked goal;
-- expected next state.
+- what it unlocks;
+- relevant blocker/dependency;
+- evidence of completion where applicable;
+- capability gap if the person cannot yet execute it.
 
-### 4. Score progress
+### ASK
+Use approved context to answer initially:
+- What matters?
+- What changed?
+- What is blocked?
+- What can we do instead?
+- Why?
+- What do I need to decide?
+- What should I do next?
 
-Use five XP categories:
+ASK is not a generic chatbot and may not imply knowledge beyond authorized/fresh evidence.
 
-- Outcome XP — verified business/mission result.
-- Collaboration XP — unblocked another person or dependency.
-- Reliability XP — fulfilled a meaningful commitment on time.
-- Learning XP — completed a real experiment and captured result.
-- Impact XP — delivered verifiable community/customer benefit.
+## Meeting Mode
 
-Task quantity alone must not dominate scoring.
+ROOM transforms for founder/team reviews.
 
-### 5. Report company state
+Before:
+- meaningful changes;
+- blockers;
+- money changes;
+- unresolved decisions;
+- previous commitments.
 
-Produce a compact one-glance summary:
+During:
+- decision;
+- rationale;
+- owner;
+- action;
+- deadline/dependency;
+- ambiguity flags.
 
-- North-star goal;
-- mission progress;
-- current bottleneck;
-- team completion;
-- founder Must-Wins;
-- money snapshot;
-- pipeline/revenue snapshot;
-- largest risk;
-- next material decision;
-- why-we-started reminder;
-- impact action.
+After:
+`meeting -> decision -> action -> owner -> result -> MAP/history -> next meeting`.
 
-## Meeting intelligence loop
+A transcript is not completion.
 
-For every relevant meeting:
+## Money truth
 
-1. identify source and date;
-2. extract decisions;
-3. extract commitments;
-4. extract action items;
-5. identify owners only when explicit or strongly supported;
-6. flag ambiguous ownership;
-7. identify deadlines;
-8. capture objections/risks;
-9. link to goal/project/opportunity;
-10. create task candidates;
-11. record decision rationale;
-12. later compare expected vs actual outcome.
-
-A transcript is not completion. The meeting only enters the operating system when decisions and actions are structured.
-
-## Finance logic
-
-Always distinguish:
-
-- cash on hand;
-- starting capital;
-- money spent;
-- committed but unpaid spend;
+Facts when sourced:
+- capital invested/starting capital;
+- spent;
+- committed;
+- available;
 - revenue collected;
-- revenue forecast;
-- pipeline value;
-- budget;
-- burn;
-- runway.
+- actual expenses/budgets.
 
-Forecasts must label assumptions.
+Models:
+- pipeline;
+- expected contribution;
+- scenario values;
+- future runway assumptions.
 
-Preferred simple model when supported:
+Never equate task completion with guaranteed revenue. Never invent precise probability without defensible calibration.
 
-`Expected Revenue = Qualified Opportunities x Observed Conversion Probability x Expected Net Revenue`
+Material metrics should preserve definition, method/formula, source, timestamp/freshness, owner, and target/baseline where applicable.
 
-If observed conversion data does not exist, use scenario ranges and label them as assumptions rather than a probability claim.
+## Decision -> Outcome Memory
 
-## Scenario engine
+For material decisions preserve:
+- evidence available at the time;
+- unknowns;
+- assumptions;
+- alternatives;
+- decision and rationale;
+- expected result;
+- confidence at the time;
+- owner;
+- money/resources committed;
+- actual result;
+- learning.
 
-For a proposed action or plan, test:
+Never rewrite historical belief with hindsight.
 
-- base case;
-- downside case;
-- upside case;
-- key assumption;
-- failure trigger;
-- mitigation;
-- next checkpoint.
+## Recommendation Ledger — mandatory for material CO.FOUND advice
 
-Do not create excessive scenarios when one material uncertainty dominates the outcome.
+Record:
+- triggering question/event;
+- recommendation;
+- alternatives;
+- evidence;
+- assumptions;
+- confidence;
+- expected outcome;
+- risk/reversibility;
+- founder response: accepted / modified / rejected / deferred;
+- founder reason when captured;
+- actual result;
+- evaluation: helpful / neutral / harmful / unresolved;
+- learning.
 
-## Motivation + psychology layer
+Loop:
+`Evidence -> Recommendation -> Founder Decision -> Action -> Result -> Evaluate Advice -> Improve Guidance`.
 
-Use progress visibility to reduce ambiguity and increase momentum, not to manipulate people.
+V0 stores inspectable history; do not imply opaque autonomous self-training.
 
-Support:
+## Learning through real work
 
-- visible progress bars;
-- milestone celebrations;
-- meaningful streaks with caps;
-- team missions;
-- recovery after missed targets;
-- explicit dependencies;
-- impact evidence;
-- why-we-started reminder.
+When a meaningful mission exposes a capability gap:
 
-Avoid shame loops, addictive dark patterns, pointless leaderboards, or point farming.
+`mission -> gap -> micro-learning/guidance -> practice -> apply to real work -> result -> skill evidence -> unlock progress`.
 
-## Community impact rule
+Class A may provide content/interventions, but the Learning Engine belongs to CO.FOUND.
 
-Each operating cycle should contain at least one authentic mission-aligned community/customer benefit action when appropriate.
+## Momentum
 
-Impact cannot be used to conceal poor financial performance or substitute for business viability.
+Reward reality changing:
+- route activation;
+- blocker removal;
+- dependency unlock;
+- milestone achievement;
+- capability growth;
+- meaningful customer/impact outcome;
+- team momentum/recovery.
 
-## Integration policy
+XP/points/streaks/levels are experimental only when tied to meaningful states and behaviorally validated.
 
-Treat connectors as evidence/data adapters, not as the product itself.
+Do not use activity farming, toxic leaderboards, employee rankings, shame loops, or medical claims that CO.FOUND treats ADHD.
 
-Preferred flow:
+## Replay and Pre-Live
 
-`External tool -> normalized event/record -> operating graph -> founder decision/action`
+Replay reconstructs recorded historical state without hindsight overwrite.
 
-Examples:
+Pre-Live explores future routes as `SIMULATED` with assumptions and no fake precise probabilities.
 
-- Fireflies -> meeting record.
-- Calendar -> event/deadline.
-- Slack/Teams/Chat -> communication event.
-- Gmail -> explicit thread/commitment.
-- CRM -> lead/opportunity.
-- Finance source -> verified financial record.
-- GitHub -> implementation/project evidence.
+Temporal rule:
+`PAST / REPLAY -> PRESENT / ROOM+MAP -> FUTURE / PRE-LIVE`.
+
+## Correction-first capture
+
+Where technically and legally appropriate:
+`external source -> normalized evidence -> proposed state change -> human confirm/correct -> operating model`.
+
+For material proposed/confirmed changes preserve actor, evidence, previous state, new state, timestamp, and confirmation status.
+
+## Connector health
+
+Before relying on a source, inspect where available:
+- connection/access status;
+- last successful read/sync;
+- current freshness;
+- scope/coverage;
+- latest error.
+
+If a critical source is stale or failed, downgrade dependent conclusions and surface the limitation.
 
 Tool availability does not equal integration completeness.
 
-## Authority boundaries
+## Attention Router
 
-Require explicit human approval or pre-existing narrow authority for:
+Route meaningful events to the least interruptive state that preserves decision quality:
+- `NO_INTERRUPT`;
+- `FOCUS`;
+- `SINCE_YOU_LEFT`;
+- `DIGEST`;
+- `URGENT_FOUNDER_ALERT`.
 
-- spending;
-- sending material external commitments;
-- contracts;
-- changing prices/commission terms;
-- publishing sensitive company information;
-- assigning major responsibility where ownership is ambiguous;
-- marking financial outcomes as realized;
-- irreversible account/security changes.
+Consider urgency, deadline, reversibility, financial/strategic impact, risk of waiting, owner resolvability, founder responsibility, and evidence confidence.
 
-## Architecture convergence
+## Company bootstrap
 
-When a new feature is proposed, route through `drx-architecture-convergence` logic:
+For a new company-space:
+1. define authorized users/roles;
+2. connect approved sources only;
+3. identify/propose the current destination;
+4. identify/propose <=3 primary routes;
+5. identify actions, blockers, decisions, and real sourced money;
+6. propose the company model with provenance/truth status;
+7. founders confirm/correct;
+8. record baseline timestamp.
 
-- REINFORCES;
-- CLARIFIES;
-- EXTENDS;
-- CONTRADICTS;
-- REPLACES.
+Use `UNKNOWN` rather than forcing completeness.
 
-Then assign one state:
+## V0 boundary
 
-- CORE_NOW;
-- ARCHITECT_NOW_UI_LATER;
-- NEXT_INTEGRATION;
-- DEFERRED;
-- KILLED_FOR_V0.
+### V0A
+- one real LastBench objective;
+- ROOM;
+- FOCUS;
+- MAP <=3 routes;
+- real blocker + Detour;
+- real sourced money;
+- lightweight Decision -> Outcome Memory;
+- provenance/freshness/truth state;
+- meaningful visual state change.
 
-Never let an exciting feature silently expand the V0.
+### V0B
+- ASK;
+- Meeting Mode + ingestion;
+- Since You Left;
+- correction-first updates;
+- basic Replay;
+- one real capability-gap -> learn -> apply -> evidence flow;
+- basic Pre-Live.
 
-## Weekly founder review
+Do not expand V0 into native chat/docs/accounting, employee analytics, full skill platform, broad multi-tenancy, advanced forecasting, or a complex graph backend.
 
-Review only what changes decisions:
+## Pilot telemetry
 
-1. goal progress;
-2. money/runway;
-3. pipeline/revenue;
-4. task completion and broken commitments;
-5. bottleneck;
-6. meeting decisions/action closure;
-7. experiments/results;
-8. risks;
-9. community impact;
-10. next week's three team outcomes.
+Instrument system usefulness, not employee worth:
+- time-to-orient;
+- time-to-retrieve decision rationale;
+- founder state disagreement;
+- missed commitments;
+- Detour recommendation outcomes;
+- Recommendation Ledger outcomes;
+- manual correction/admin burden;
+- connector stale/error incidents;
+- voluntary ROOM/FOCUS returns;
+- MAP use at decision moments;
+- capability-gap starts/completions/applied results;
+- weekly review usage;
+- removal test.
 
-## Output contract — daily brief
+## Output contract
 
-Return in this order:
+For a normal founder operating response, return only the cognitive mode requested or the smallest useful combination. Do not dump the whole system.
 
-1. `GOAL`
-2. `ON TRACK?`
-3. `TODAY'S BOTTLENECK`
-4. `THREE MUST-WINS PER FOUNDER`
-5. `MONEY`
-6. `PIPELINE / REVENUE`
-7. `BLOCKERS + OWNERS`
-8. `DECISIONS NEEDED`
-9. `WHY WE STARTED`
-10. `IMPACT ACTION`
+For product/build decisions return:
+1. `CANONICAL REQUIREMENT`;
+2. `CURRENT STATE`;
+3. `DELTA`;
+4. `AUTHORITY/TRUTH RISK`;
+5. `BUILD DECISION`;
+6. `ACCEPTANCE EVIDENCE NEEDED`.
 
-Keep the first screen understandable to a nine-year-old while allowing drill-down into evidence and detail.
+## QA / completion
 
-## Output contract — product architecture
+Use `skills/drx-execution-qc/SKILL.md` before claiming material work complete.
 
-When refining Founder Command Center itself, return:
+For CO.FOUND V0, use `evaluations/cofound-v0-acceptance.yaml`.
 
-1. `PRODUCT SOUL`
-2. `CORE NOW`
-3. `CONNECTED NOW`
-4. `ARCHITECT NOW / UI LATER`
-5. `NEXT INTEGRATIONS`
-6. `DEFERRED`
-7. `KILLED FOR V0`
-8. `RISKS`
-9. `VALIDATION EVIDENCE NEEDED`
-10. `ONE NEXT BUILD DECISION`
+Do not call specification, code, connector setup, or a successful tool call an operational product. Completion requires fresh final-state evidence appropriate to the claimed outcome.
