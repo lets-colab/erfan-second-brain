@@ -32,6 +32,20 @@ Canonical ownership across the wider OS:
 
 See [`architecture/DRX-AI-OS.md`](architecture/DRX-AI-OS.md).
 
+## CO.FOUND continuity and recovery
+
+For substantive CO.FOUND work, do not reconstruct the product only from the latest screen idea or an old Founder Command Center file.
+
+Retrieve in this order when history/rationale matters:
+1. [`projects/cofound-evolution-ledger.md`](projects/cofound-evolution-ledger.md) — canonical historical evolution: what changed, why, what was killed/restored/deferred, and how the reasoning system evolved;
+2. [`decisions/founder-intelligence-canonical-lock-2026-08-17.md`](decisions/founder-intelligence-canonical-lock-2026-08-17.md) — current v4 product architecture;
+3. [`decisions/cofound-implementation-hardening-v4.1-2026-08-18.md`](decisions/cofound-implementation-hardening-v4.1-2026-08-18.md) — implementation trust/learning substrate;
+4. [`projects/founder-command-center-capability-registry.md`](projects/founder-command-center-capability-registry.md) — current capability states;
+5. [`skills/founder-command-center-operator/SKILL.md`](skills/founder-command-center-operator/SKILL.md) — active CO.FOUND Operator v2.0.0 at the legacy folder path;
+6. [`evaluations/cofound-v0-acceptance.yaml`](evaluations/cofound-v0-acceptance.yaml) — behavioral acceptance gates.
+
+The historical Founder Command Center file is retained only as a superseded pointer; its original body remains available in Git history for reconstruction.
+
 ## Core purpose
 
 - Preserve verified knowledge, decisions, projects, preferences, corrections and lessons.
@@ -40,6 +54,7 @@ See [`architecture/DRX-AI-OS.md`](architecture/DRX-AI-OS.md).
 - Reduce context loss and repeated decisions across AI tools.
 - Turn repeatable judgment into explicit skills with evidence and QA contracts.
 - Turn execution outcomes, failures, repairs, regressions, and user corrections into measurable learning evidence.
+- Preserve product evolution so later AI systems understand not only **what** was decided but **why** it changed.
 - Measure readiness honestly and expose important blind spots.
 
 ## Production discipline
@@ -53,6 +68,7 @@ Material work should use:
 - [`evaluations/acceptance-tests.yaml`](evaluations/acceptance-tests.yaml) for AI OS release gates;
 - [`evaluations/acceptance-evidence.yaml`](evaluations/acceptance-evidence.yaml) for executed acceptance evidence and explicit `not_run` state;
 - [`evaluations/skill-fitness.yaml`](evaluations/skill-fitness.yaml) for measured skill-version performance and regressions;
+- [`evaluations/cofound-v0-acceptance.yaml`](evaluations/cofound-v0-acceptance.yaml) for CO.FOUND V0 gates;
 - [`governance/authority-matrix.yaml`](governance/authority-matrix.yaml) for protected-action boundaries;
 - [`observability/event-schema.yaml`](observability/event-schema.yaml) for reconstructable execution and learning evidence;
 - [`routing/task-router.yaml`](routing/task-router.yaml) for default agent/source/process routing.
@@ -64,6 +80,10 @@ The `10.5/10` label is an internal quality target. Production status requires ev
 The intended DR.X improvement loop is:
 
 `execute -> inspect -> fresh verification -> record outcome -> classify failure/correction -> evaluate skill version -> repair skill/process only when evidence warrants -> regression test`
+
+For CO.FOUND product evolution, preserve an additional historical loop:
+
+`previous state -> new evidence/correction -> change classification -> new state -> result -> durable lesson`
 
 A longer prompt is not automatically a better skill. Skill changes should be promoted only when representative evidence shows improved or preserved quality without hidden critical regression.
 
@@ -78,7 +98,7 @@ Active skills on `main` include:
 - Fable-2036 reasoning;
 - systematic root-cause debugging;
 - DR.X representation;
-- Founder Command Center operation;
+- CO.FOUND operation (active content at legacy `skills/founder-command-center-operator/` path);
 - DR.X execution/completion QC.
 
 Skills are reusable operating contracts, not claims that every connector or runtime is live.
@@ -86,8 +106,11 @@ Skills are reusable operating contracts, not claims that every connector or runt
 ## Main knowledge notes
 
 - [Personal assistant mission](projects/personal-second-brain.md)
-- [CO.FOUND](projects/cofound.md)
-- [Founder Command Center](projects/founder-command-center-os.md)
+- [CO.FOUND continuity memory](projects/cofound.md)
+- [CO.FOUND evolution ledger](projects/cofound-evolution-ledger.md)
+- [CO.FOUND v4 product lock](decisions/founder-intelligence-canonical-lock-2026-08-17.md)
+- [CO.FOUND v4.1 implementation hardening](decisions/cofound-implementation-hardening-v4.1-2026-08-18.md)
+- [Historical Founder Command Center pointer](projects/founder-command-center-os.md)
 - [Knowledge readiness](areas/knowledge-readiness.md)
 - [Operating charter](areas/operating-charter.md)
 - [Digital presenter profile](areas/digital-presenter-profile.md)
@@ -103,6 +126,8 @@ Account or connector access is not authority to communicate, publish, spend, cha
 ## Update rule
 
 Every durable knowledge addition must record its source, date, confidence, and classification where material. Preserve history rather than silently rewriting it. User corrections override inferred patterns.
+
+For material CO.FOUND evolution, update `projects/cofound-evolution-ledger.md` instead of replacing the previous reasoning with only the latest conclusion.
 
 After a meaningful durable knowledge or capability change:
 1. update `reviews/knowledge-change-log.md`;
