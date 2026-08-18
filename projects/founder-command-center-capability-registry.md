@@ -1,485 +1,395 @@
 ---
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-08-18
 type: capability-registry
 status: active
-tags: [founder-command-center, tools, integrations, skills, sync, architecture]
+version: v4.1
+canonical_product: decisions/founder-intelligence-canonical-lock-2026-08-17.md
+implementation_hardening: decisions/cofound-implementation-hardening-v4.1-2026-08-18.md
+tags: [cofound, founder-intelligence, capabilities, integrations, v0, trust, learning]
 ---
 
-# Founder Command Center — Capability, Skill & Tool Registry
+# CO.FOUND — Capability, Skill & Tool Registry v4.1
+
+> Legacy file path retained for continuity. This registry supersedes the older Founder Command Center capability states.
 
 ## Purpose
 
-Keep one canonical map of what the Founder Command Center can do now, what can be integrated next, what should be architected now but exposed later, and what should not enter V0.
+Keep one current map of what CO.FOUND requires now, what is verified/connected, what must be architected now but exposed later, what is deferred, and what is killed.
 
-This registry prevents feature drift and separates product vision from verified implementation capability.
+When this file conflicts with the v4 product lock or v4.1 hardening decision, the decisions win.
 
 ## Decision states
 
-- `CORE_NOW` — required for the LastBench V0 operating loop.
-- `CONNECTED_NOW` — already verified through an accessible connector or existing system in the current workflow.
-- `ARCHITECT_NOW_UI_LATER` — data model or permissions should anticipate it now; full UI later.
-- `NEXT_INTEGRATION` — high-value integration after the V0 loop works.
-- `DEFERRED` — useful, but not required to validate the product thesis.
-- `KILLED_FOR_V0` — deliberately excluded because it increases complexity or adoption friction without proving the core value.
+- `CORE_FOUNDATION_NOW` — invisible trust/learning/measurement infrastructure required before reliable V0.
+- `V0A_CORE` — required to test orientation/navigation.
+- `V0B_CORE` — required to test capture/learning/memory after V0A is usable.
+- `CONNECTED_OR_REUSED` — existing verified capability/source pattern that can be reused, subject to live revalidation before production reliance.
+- `ARCHITECT_NOW_UI_LATER` — preserve in contracts/data model; richer UI later.
+- `NEXT_INTEGRATION` — high-value integration only after core loop works.
+- `DEFERRED` — strategically retained but not needed for V0 proof.
+- `EXPERIMENTAL` — may be tested but is not required architecture.
+- `KILLED` — excluded unless material observed evidence reopens it.
 
 # 1. PRODUCT SOUL — LOCKED
 
-The Founder Command Center is not another task manager or chat application.
+> **Make the company visible to the people trying to build it.**
 
-Its job is to answer, in one glance:
+Complementary promise:
 
-1. What is our mission?
-2. What is the current goal?
-3. Are we on track?
-4. What must each person do next?
-5. What is blocking progress?
-6. What is our financial state and runway?
-7. What changed in meetings/decisions?
-8. Why does this work matter?
+> **Build the company. Build yourself. Find the next path forward.**
 
-# 2. CORE V0 FEATURES
+Primary cognitive modes:
+- ROOM;
+- MAP;
+- FOCUS;
+- ASK.
 
-## Mission Control — CORE_NOW
+Contextual mechanics:
+- Meeting Mode;
+- Detour;
+- Since You Left;
+- Replay;
+- Pre-Live;
+- Learning / Capability;
+- Momentum.
 
-- North-star goal always visible.
-- 30-day and 90-day targets.
-- Visual progress bar.
-- Founder-specific progress.
-- Company execution score.
-- Current bottleneck.
-- Three Must-Win tasks per founder.
-- Daily and weekly operating rhythm.
+# 2. CORE FOUNDATION NOW
 
-## Goal -> Work graph — CORE_NOW
+## Authority + permission model — CORE_FOUNDATION_NOW
 
-Every meaningful task must link to at least one goal, milestone, blocker, customer/revenue outcome, or operational requirement.
+Minimum contract:
+`Actor -> Role -> Company Space -> Data Scope -> Action Scope`.
 
-The system must show why a task matters, not merely that it exists.
+AI modes:
+- READ;
+- PROPOSE;
+- explicitly authorized EXECUTE.
 
-## Founder task engine — CORE_NOW
+Cross-space access denied by default.
 
-Each task record should support:
+## Truth arbitration — CORE_FOUNDATION_NOW
 
+Truth states:
+- VERIFIED;
+- PROVISIONAL;
+- STALE;
+- CONFLICTED;
+- SIMULATED;
+- UNKNOWN.
+
+Credible source disagreement must surface as conflict unless resolved through authoritative source, effective event timestamp, corroboration, or authorized human confirmation.
+
+## Recommendation Ledger — CORE_FOUNDATION_NOW
+
+Record material CO.FOUND advice:
+`evidence -> recommendation -> founder response -> action -> actual result -> evaluate advice -> learning`.
+
+Minimum state includes evidence, assumptions, confidence, alternatives, expected result, accepted/modified/rejected/deferred, founder reason when captured, actual result, helpful/neutral/harmful/unresolved, and learning.
+
+## Connector health + observability — CORE_FOUNDATION_NOW
+
+Track where technically available:
+- connection/access status;
+- last successful read/sync;
+- last attempted read/sync;
+- freshness state/SLA;
+- scope/coverage;
+- latest error;
+- permission state.
+
+Material changes need an audit trail with actor, evidence, prior state, new/proposed state, timestamp, confirmation, and rollback pointer where possible.
+
+## Metric contract — CORE_FOUNDATION_NOW
+
+Material metrics should preserve:
+- definition;
+- method/formula;
+- unit;
+- baseline;
+- target/timeframe;
+- source;
 - owner;
-- due date;
-- priority;
-- status;
-- goal link;
-- dependency;
-- evidence of completion;
-- expected outcome;
-- points/XP category;
-- blocker;
-- actual result.
+- current actual;
+- update cadence/freshness;
+- truth state/confidence.
 
-## Gamified execution — CORE_NOW
+## Attention Router — CORE_FOUNDATION_NOW
 
-Reward categories:
+Route meaningful events to:
+- NO_INTERRUPT;
+- FOCUS;
+- SINCE_YOU_LEFT;
+- DIGEST;
+- URGENT_FOUNDER_ALERT.
 
-- Outcome XP.
-- Collaboration XP.
-- Reliability XP.
-- Learning XP.
-- Impact XP.
+Default to the least interruptive state that preserves decision quality.
 
-Do not reward raw task volume as the main score.
+## Company bootstrap — CORE_FOUNDATION_NOW
 
-## Why We Started — CORE_NOW
+For a new company-space:
+- authorized users/roles;
+- approved sources;
+- proposed destination;
+- <=3 primary routes;
+- current actions/blockers/decisions;
+- sourced money where available;
+- provenance/truth status;
+- founder confirmation/correction;
+- baseline timestamp.
 
-Persistent mission and emotional motivation card containing:
+## Pilot telemetry — CORE_FOUNDATION_NOW
 
-- founder-defined purpose;
-- community/customer beneficiary;
-- long-term change the company wants to create;
-- evidence of impact when permission allows.
+Measure system usefulness rather than employee productivity:
+- time-to-orient;
+- decision-rationale retrieval time;
+- state disagreement;
+- missed commitments;
+- Detour outcomes;
+- Recommendation Ledger outcomes;
+- correction/admin burden;
+- connector incidents;
+- voluntary return behavior;
+- MAP decision-moment use;
+- capability-gap flow outcomes;
+- weekly review use;
+- removal test.
 
-## Community mission — CORE_NOW
+# 3. V0A — ORIENTATION / NAVIGATION
 
-At least one real community-impact action per operating cycle, with evidence and owner.
+## ROOM — V0A_CORE
 
-# 3. MEETING + COMPANY MEMORY
+Show only:
+- current destination/objective;
+- evidence-based state;
+- real sourced money;
+- max three critical missions;
+- one major blocker;
+- one decision needing attention;
+- meaningful change / Since You Left preview where available;
+- subtle Why We Started / impact.
 
-## Fireflies meeting ingestion — CONNECTED_NOW / CORE_NOW
+No unexplained execution/health score.
 
-The current workflow has already used Fireflies meeting retrieval to obtain meeting summaries and action items.
+## MAP + Visual Action Branches — V0A_CORE
 
-Target behavior:
+`1 destination -> <=3 primary routes -> depth`.
 
-Meeting -> transcript/summary -> decisions -> promises -> tasks -> owners -> deadlines -> goal/revenue links.
+Connect action -> dependency/path -> driver -> outcome with provenance/truth state.
 
-Every meeting should create structured company memory rather than a dead transcript.
+## Detour — V0A_CORE
 
-## Meeting decision ledger — CORE_NOW
+At least one real blocker must support alternative executable routes compared on available evidence such as time, cost, capacity, dependency, risk, and history.
 
-Every material decision should store:
+Detour is core V0A, not a later feature.
 
-- decision;
-- date;
-- meeting/source;
-- decision maker(s);
-- rationale;
-- assumptions;
-- expected result;
-- revisit trigger;
-- later outcome.
+## FOCUS — V0A_CORE
 
-## Calendar event linking — NEXT_INTEGRATION
+Default max three high-leverage actions per founder/user with:
+- why it matters;
+- what it unlocks;
+- blocker/dependency;
+- evidence of completion where applicable;
+- capability gap if relevant.
 
-Google Calendar connector exists in the current broader ChatGPT tool environment, but the Founder Command Center workflow has not yet validated an end-to-end calendar sync.
+## Real money state — V0A_CORE
 
-Target behavior:
-
-Calendar event -> meeting prep card -> meeting record -> actions -> follow-up.
-
-## Scheduler / booking layer — ARCHITECT_NOW_UI_LATER
-
-Support external scheduling identifiers and booking links in the data model.
-
-Potential providers:
-
-- Calendly;
-- Google Calendar appointment schedules;
-- Microsoft scheduling equivalents;
-- eventual native scheduler.
-
-Do not build a native scheduling product in V0.
-
-# 4. COMMUNICATION
-
-## Communication strategy — LOCKED
-
-Integrate existing channels rather than forcing founders to abandon them.
-
-Founder Command Center becomes the operating brain over communication, not another mandatory chat network.
-
-## Gmail / email — NEXT_INTEGRATION
-
-Gmail is available in the current ChatGPT tool environment. Use for explicit, permissioned operating workflows such as:
-
-- important founder/customer thread retrieval;
-- turning explicit commitments into tasks;
-- meeting follow-up drafts/actions;
-- opportunity and risk detection.
-
-Do not silently ingest all email.
-
-## Slack — NEXT_INTEGRATION WHEN CONNECTOR/API IS AVAILABLE
-
-Desired capabilities:
-
-- ingest selected channels;
-- detect commitments and blockers;
-- create task candidates;
-- push concise daily/weekly operating briefs;
-- preserve message provenance.
-
-## Microsoft Teams — NEXT_INTEGRATION WHEN CONNECTOR/API IS AVAILABLE
-
-Same operating pattern as Slack; avoid separate product logic when a common communication-event adapter can serve both.
-
-## Google Chat — DEFERRED
-
-Use the same communication adapter architecture if real user demand appears.
-
-## WhatsApp Business — ARCHITECT_NOW_UI_LATER
-
-High-value for founder-led businesses but higher privacy/consent/identity risk.
-
-Required before general use:
-
-- explicit account and thread scope;
-- sender/principal identity separation;
-- permission boundaries;
-- audit log;
-- no silent personal-chat ingestion;
-- clear human approval gates for money, promises, sensitive topics, or commitments.
-
-# 5. FINANCE COMMAND CENTER
-
-## Capital dashboard — CORE_NOW
-
-Show:
-
-- starting capital;
-- spent to date;
-- remaining capital;
-- committed future costs;
+Facts only when sourced:
+- invested/starting capital;
+- spent;
+- committed;
+- available;
 - revenue collected;
-- cash position;
-- monthly burn;
-- runway.
+- actual expenses/budget values.
 
-## Budget vs actual — CORE_NOW
+Models/scenarios must be visibly distinct.
 
-Every material spend category should show budget, actual, variance, owner, and purpose.
+## Decision -> Outcome Memory — V0A_CORE
 
-## Scenario projection — CORE_NOW with manual/verified inputs
+Lightweight material decision record from day one.
 
-Never claim that completing a task guarantees money.
+## Provenance/freshness/truth status — V0A_CORE
 
-Use models such as:
+Important state must expose source/freshness/status and conflict rather than fake certainty.
 
-`Expected Revenue = Qualified Opportunities x Observed Conversion Probability x Expected Net Revenue`
+## Meaningful state change — V0A_CORE
 
-Show base, upside and downside cases.
+Real progress visibly changes routes, blockers, dependencies, milestones, or capabilities.
 
-## Accounting/bank automation — DEFERRED
+# 4. V0B — CAPTURE / LEARNING / MEMORY
 
-Do not connect banking or move money in V0.
+## ASK — V0B_CORE
 
-Architecture should allow later read-only finance connectors, but spending and payment execution remain explicit human checkpoints.
+Initial supported questions:
+- What matters?
+- What changed?
+- What is blocked?
+- What can we do instead?
+- Why?
+- What do I need to decide?
+- What should I do next?
 
-# 6. ROADMAP + STRATEGY
+## Meeting Mode + ingestion — V0B_CORE
 
-## Visual roadmap — CORE_NOW
+`meeting -> decision -> action -> owner -> result -> MAP/history -> next meeting`.
 
-One line of sight:
+Ambiguous ownership/commitments must be flagged, not invented.
 
-Today -> 30 days -> 90 days -> 1 year -> long-term mission.
+## Since You Left — V0B_CORE
 
-Every milestone shows:
+Meaningful change only; end with the most important founder attention item.
 
-- owner;
-- completion percentage;
-- dependency;
-- confidence;
-- evidence;
-- current risk.
+## Correction-first updates — V0B_CORE
 
-## Scenario and detour logic — ARCHITECT_NOW_UI_LATER
+`source -> evidence -> proposed state -> authorized human confirm/correct -> model`.
 
-The system should eventually show alternate paths when a milestone becomes blocked or assumptions fail, without silently rewriting the main strategy.
+## Basic Replay — V0B_CORE
 
-# 7. AI CHIEF-OF-STAFF CAPABILITIES
+Reconstruct captured historical state without hindsight overwrite.
 
-## Daily operating brief — CORE_NOW
+## Learning through real work — V0B_CORE
 
-Generate a concise founder-specific brief:
+At least one real flow:
+`mission -> capability gap -> learn/guidance -> practice -> apply -> result -> skill evidence`.
 
-- one goal;
-- three Must-Wins;
-- overdue commitment;
-- highest-value opportunity;
-- blocker;
-- money/risk alert;
-- one mission/impact reminder.
+Class A can contribute content; Learning Engine remains CO.FOUND platform capability.
 
-## Meeting-to-action extraction — CORE_NOW
+## Basic Pre-Live — V0B_CORE
 
-AI proposes structured tasks, decisions, owners and deadlines from meeting records.
+Explicit simulation with visible assumptions and no invented precise probability.
 
-Human confirmation should be required where ownership, financial commitment, external promise or interpretation is uncertain.
+# 5. MOTIVATION / MOMENTUM
 
-## Blocker detection — CORE_NOW
+## Meaningful Momentum — V0A_CORE / V0B_CORE
 
-Detect:
+Reward real change:
+- route activation;
+- blocker removal;
+- dependency unlock;
+- milestone achievement;
+- capability growth;
+- customer/impact outcome;
+- team recovery/momentum.
 
-- overdue dependencies;
-- unowned action items;
-- conflicting deadlines;
-- repeated objections;
-- stalled opportunities;
-- commitments mentioned but not captured.
+## XP / points / streaks / levels — EXPERIMENTAL
 
-## Next-best-action — ARCHITECT_NOW_UI_LATER
+Not required V0 architecture.
 
-Rank recommendations by expected effect on the current bottleneck, not generic productivity scoring.
+May be tested only if:
+- tied to meaningful behavior/state;
+- non-coercive;
+- not used for employee ranking;
+- shown to improve useful behavior rather than create activity farming.
 
-## Decision memory — CORE_NOW
+# 6. SOURCE / INTEGRATION STRATEGY
 
-Retrieve why a decision was made and whether the expected result occurred.
+Integrate before replacing.
 
-## Company-state explanation — CORE_NOW
+## Reusable/previously demonstrated patterns — CONNECTED_OR_REUSED
 
-The OS should be able to answer in plain language:
+- GitHub — canonical technical/project/skill storage and change history.
+- Google Drive — approved document/evidence retrieval pattern.
+- Fireflies — meeting retrieval has been used in prior Founder OS workflow.
 
-- Are we on track?
-- What changed today?
-- Where are we losing time/money?
-- What should happen next?
-- What needs founder attention?
+These are not automatically production-grade CO.FOUND integrations. Revalidate connection scope, health, permissions, freshness, and end-to-end behavior before relying on them.
 
-# 8. VERIFIED EXISTING DR.X SKILLS TO REUSE
+## High-value next integrations — NEXT_INTEGRATION
 
-## drx-architecture-convergence
+- Calendar/scheduling;
+- task/project source;
+- CRM/pipeline;
+- selected email/communication sources;
+- finance read sources.
 
-Use to maintain one canonical product architecture and prevent feature drift.
+## WhatsApp Business — ARCHITECT_NOW_UI_LATER / NEXT_INTEGRATION ONLY AFTER SCOPE SAFETY
 
-Founder OS application:
+Requires explicit account/thread scope, identity separation, permission boundaries, audit logs, no silent personal-chat ingestion, and approval gates for material commitments.
 
-- lock product soul;
-- separate V0 from later capabilities;
-- classify new requests;
-- prevent accidental expansion into an all-in-one suite.
+# 7. ARCHITECT NOW / UI LATER
 
-## drx-memory-retriever
+- multiple company/venture spaces;
+- shared people/roles/ownership/capacity;
+- AI agents/automation as execution resources;
+- richer capability graph;
+- capital allocation across spaces;
+- impact outcomes;
+- richer historical/simulation state comparison;
+- reusable business-model templates;
+- mobile-first approval/FOCUS/ASK patterns;
+- data export/portability and retention controls.
 
-Use as a pattern for context retrieval and provenance-aware company memory.
+# 8. DEFERRED
 
-Founder OS application:
+- full Capacity Intelligence UI;
+- full Class A curriculum/Skill Quest platform;
+- rich skill trees/certification;
+- advanced calibrated probability/forecasting;
+- advanced road-not-taken analysis;
+- full scenario optimizer;
+- external multi-company tenancy/admin;
+- cross-company benchmarking;
+- native communications/docs/accounting unless integrations repeatedly fail.
 
-- retrieve meetings;
-- decisions;
-- prior commitments;
-- project context;
-- relevant operating history.
+# 9. KILLED
 
-## drx-decision-council
+- fake metrics or unsupported success/probability scores;
+- task = guaranteed revenue;
+- giant 20-tab primary dashboard;
+- generic Slack/Notion/task-manager clone;
+- native video meeting product without repeated need;
+- employee surveillance/productivity ranking;
+- toxic leaderboards;
+- meaningless XP farming;
+- autonomous consequential hiring/firing/spending/contracts;
+- all-in-one collaboration positioning;
+- graph/event-sourcing backend cathedral before behavioral proof;
+- claiming common market mechanisms are uniquely invented here.
 
-Use for high-consequence decisions and adversarial review.
+# 10. ACTIVE SKILLS / PROCESS
 
-Founder OS application:
+## `skills/founder-command-center-operator/SKILL.md`
 
-- investment decisions;
-- strategic pivots;
-- high-cost launches;
-- major partnership terms;
-- high-risk assumptions.
+Legacy path; active content is now **CO.FOUND Operator v2.0.0** and must follow v4/v4.1.
 
-## drx-contextual-communicator
+## `drx-fable2036-reasoner`
 
-Use as a pattern for channel-aware, context-aware communication.
+Use for deep contradiction/history/counterfactual audits, not as evidence of future intelligence.
 
-Founder OS application:
+## `drx-architecture-convergence`
 
-- meeting follow-ups;
-- partner communication;
-- founder messages;
-- communication summaries;
-- channel-specific tone/context.
+Use to classify any proposed product change and prevent architecture drift.
 
-## drx-prelive-simulator
+## `drx-memory-retriever`
 
-Use before releasing major workflows or automations.
+Use provenance-aware retrieval patterns.
 
-Founder OS application:
+## `drx-decision-council`
 
-- simulate a week of founder use;
-- test failure states;
-- test task overload;
-- test bad financial data;
-- test missing meeting context;
-- test false AI recommendations.
+Use for high-consequence adversarial review.
 
-## drx-fable2036-reasoner
+## `drx-prelive-simulator`
 
-Use as an advanced reasoning lens, not as a factual future capability claim.
+Use for evidence-aware simulations only after canonical reconstruction.
 
-Founder OS application:
+## `drx-execution-qc`
 
-- long-horizon roadmap consistency;
-- counterfactual testing;
-- contradiction detection;
-- decision consequence analysis.
+Mandatory final gate before completion claims.
 
-# 9. NEW PRODUCT SKILL
+# 11. ACCEPTANCE AUTHORITY
 
-Install and maintain `founder-command-center-operator` as the execution skill for this product concept.
+Use `evaluations/cofound-v0-acceptance.yaml` for CO.FOUND V0 acceptance.
 
-Its responsibilities:
+Specification/code/tool setup is not operational completion. Behavioral requirements require live behavioral evidence.
 
-- reconstruct company state;
-- generate one-glance founder brief;
-- connect goals, tasks, meetings, money and decisions;
-- classify blockers;
-- calculate evidence-based progress;
-- enforce three-Must-Win focus;
-- preserve provenance;
-- escalate uncertain money/promises/ownership decisions;
-- keep mission and community impact visible.
+# 12. SYNC RULE
 
-# 10. TOOL / CONNECTOR STATUS
-
-## Verified in current workflow
-
-- GitHub — canonical project/skill storage and change history.
-- Google Drive — approved document discovery and context retrieval.
-- Fireflies — meeting summary/action-item retrieval used in the Founder OS workflow.
-
-## Available in broader connected tool environment; validate before relying on production sync
-
-- Google Calendar.
-- Gmail.
-- Notion.
-- Google Drive/Docs/Sheets.
-- GitHub.
-- Microsoft Outlook email.
-
-Availability does not mean the Founder Command Center has completed an end-to-end integration.
-
-## Planned external integrations
-
-- Slack.
-- Microsoft Teams.
-- Google Chat.
-- WhatsApp Business.
-- Calendly or equivalent scheduler.
-- future finance/accounting read connectors.
-
-# 11. V0 BUILD BOUNDARY — LOCKED
-
-Build only enough to answer:
-
-> Does a founder team make better, faster, more aligned decisions when goals, meetings, tasks, money, decisions and mission are compressed into one operating view?
-
-V0 includes:
-
-- Mission Control dashboard.
-- founder tasks / three Must-Wins.
-- goal and roadmap view.
-- meeting/action/decision capture.
-- capital + runway snapshot.
-- revenue pipeline snapshot.
-- points/XP tied to meaningful outcomes.
-- blockers.
-- daily brief.
-- weekly review.
-- why-we-started + impact mission.
-
-# 12. ARCHITECT NOW / UI LATER
-
-- calendar event entities;
-- communication event entities;
-- external scheduling link/provider IDs;
-- permission and audit model;
-- scenario records;
-- structured financial connectors;
-- multi-business/workspace support;
-- people + AI agent identities;
-- source/provenance fields;
-- decision-to-outcome history.
-
-# 13. DEFERRED
-
-- native chat replacement;
-- native video meetings;
-- full accounting software;
-- payroll;
-- banking/payment execution;
-- complex enterprise resource planning;
-- public marketplace;
-- broad employee surveillance/analytics;
-- deep customization marketplace.
-
-# 14. KILLED FOR V0
-
-- forcing migration away from Slack/Teams/WhatsApp;
-- points based primarily on task quantity;
-- fake task-to-revenue certainty;
-- auto-sending external commitments without explicit authority;
-- full-company data ingestion by default;
-- building every integration before LastBench proves daily usage.
-
-# 15. SYNC RULE
-
-Whenever a new Founder Command Center feature, skill, connector or automation is proposed:
-
-1. retrieve this registry;
-2. classify the change;
-3. identify the user problem;
-4. check whether an existing mechanism already solves it;
-5. assign a decision state;
-6. update the canonical registry only when the change is accepted;
-7. preserve rejected/deferred ideas and reopen triggers;
-8. do not silently treat tool availability as a finished product integration.
+For any new CO.FOUND feature, skill, connector, or automation:
+1. retrieve v4 product lock;
+2. retrieve v4.1 hardening decision;
+3. retrieve this registry;
+4. identify the user problem;
+5. classify through architecture convergence;
+6. assign a decision state;
+7. update the canonical registry only when accepted;
+8. preserve historical/rejected/deferred ideas;
+9. never treat tool availability or generated files as completion.
