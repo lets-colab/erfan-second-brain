@@ -8,6 +8,23 @@ tags: [knowledge-log, readiness]
 
 # Knowledge Change Log
 
+## 2026-08-18 — CO.FOUND canonical evolution ledger + cross-AI recovery path
+
+- User correction/request: Erfan explicitly required **every meaningful evolution from this chat** to become a durable source of knowledge so future AI systems can understand how the product and reasoning evolved rather than seeing only the latest snapshot.
+- Added: `projects/cofound-evolution-ledger.md` as the canonical historical source. It records 32 major evolution stages from the original three-founder OS through Founder Command Center, trust correction, founder-question architecture, money/outcome logic, Outcome/Decision Graphs, Visual Action Branches, Detour/Google-Maps-like navigation, ROOM/MAP/FOCUS/ASK, Meeting Mode, Since You Left, learning-through-work, Momentum/game psychology, people/agents/capacity, Replay, Pre-Live, correction-first capture, epistemic relationships, multi-company CO.FOUND hierarchy, naming evolution, market-pressure testing, reasoning/convergence skill evolution, provenance-confabulation repair, v4 final convergence, v4.1 hardening, spec freeze, experimental success logic, and commercial path.
+- Provenance discipline: the ledger labels evidence classes and explicitly states `SUBSTANTIAL` coverage rather than claiming every historical sentence is independently retrievable. It preserves the Foundry historical-name issue as `UNVERIFIED_RECOLLECTION` rather than repeating the earlier unsupported recovery claim.
+- Added cross-AI recovery instructions to `README.md`: substantive CO.FOUND history/rationale work now retrieves Evolution Ledger -> v4 product lock -> v4.1 hardening -> capability registry -> active operator -> V0 acceptance gates.
+- Upgraded `routing/task-router.yaml` to v2.1 with a `cofound_product_work` route that points to the same recovery sequence and prohibits inferring current behavior from superseded Founder Command Center files.
+- Preservation rule: material future CO.FOUND evolution should update the evolution ledger with previous state, new evidence/correction, change classification, new state, and durable lesson rather than overwriting history.
+- Attempted but not applied: an additional `AGENTS.md` edit was blocked by the connector/safety layer. This does not invalidate the recovery path because README and task-router now provide explicit canonical retrieval instructions; no claim is made that AGENTS.md was changed.
+- Readiness reassessment: `areas/knowledge-readiness.md` remains **3.5 / 10.5 overall**. Historical continuity, provenance, source coverage, systems understanding, cross-AI recoverability, and contradiction resistance improved materially; live product/runtime evidence and broader personal validation remain the limiting dimensions.
+- Classification: direct user instruction + verified repository changes + model continuity/QC judgment.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 overall; strong increase in design/history continuity and retrieval quality, no new proof of live CO.FOUND product behavior or product-market fit.
+- Confidence: high on committed repository-state changes; medium-high that the recovery path will reduce future architecture drift, subject to future agents actually following repository routing/governance.
+- Remaining gap: rebuild Graphify/entity structures from the current August corpus so the explicit relationship graph also reflects the CO.FOUND evolution; then build/run the real LastBench V0 and collect acceptance evidence.
+
 ## 2026-08-18 — CO.FOUND v4.1 trust, learning, and build-authority hardening
 
 - User authorization: after the final expert audit identified missing implementation foundations, Erfan explicitly asked to execute the hardening rather than continue ideation.
