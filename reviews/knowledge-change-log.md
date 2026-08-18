@@ -8,6 +8,25 @@ tags: [knowledge-log, readiness]
 
 # Knowledge Change Log
 
+## 2026-08-18 — CO.FOUND v4.1 trust, learning, and build-authority hardening
+
+- User authorization: after the final expert audit identified missing implementation foundations, Erfan explicitly asked to execute the hardening rather than continue ideation.
+- Added: `decisions/cofound-implementation-hardening-v4.1-2026-08-18.md`. This extends the locked v4 product without redesigning it and defines eight implementation contracts: authority/permissions, truth arbitration, Recommendation Ledger, connector health/observability, metric contract, Attention Router, company bootstrap, and pilot telemetry.
+- Added: `evaluations/cofound-v0-acceptance.yaml` with explicit critical gates for build authority, authorization/truth, recommendation-to-result learning, connector freshness/auditability, V0A, V0B, pilot telemetry, and kill conditions. The file explicitly forbids calling code/specification/tool setup an operational product without fresh behavioral evidence.
+- Upgraded in place: `skills/founder-command-center-operator/SKILL.md` -> active **CO.FOUND Operator v2.0.0** while retaining the legacy folder path for compatibility. The old XP-first/Mission-Control behavior is superseded; ROOM/MAP/FOCUS/ASK, Detour, Decision->Outcome Memory, Recommendation Ledger, learning-through-work, Momentum, truth states, authority, connector health, Attention Router, bootstrap, and V0 telemetry now govern the skill.
+- Upgraded in place: `projects/founder-command-center-capability-registry.md` -> **CO.FOUND Capability Registry v4.1**. XP/points/streaks/levels are now experimental rather than core; Detour is V0A core; authority, truth arbitration, recommendation learning, connector observability, metrics, attention routing, bootstrap, and telemetry are core foundations.
+- Spec-freeze repair: `projects/founder-command-center-os.md` is now explicitly `superseded` and retained only as a historical pointer. Its original full content remains preserved in Git history at blob `e1586d87a3a419109b5e1bfe2e7ff7f8d7aeec1d`.
+- Key new product-learning mechanism: CO.FOUND now has an explicit Recommendation Ledger so it can later compare `evidence -> recommendation -> founder response -> action -> actual result -> advice quality -> learning`. This is the missing inspectable substrate for company-specific learned guidance; no opaque autonomous self-training is claimed for V0.
+- Key trust mechanism: material state can be `VERIFIED`, `PROVISIONAL`, `STALE`, `CONFLICTED`, `SIMULATED`, or `UNKNOWN`; credible source conflicts must remain visible unless resolved through authoritative source, effective event time, corroboration, or authorized human confirmation.
+- Key governance mechanism: minimum authorization model is `Actor -> Role -> Company Space -> Data Scope -> Action Scope`, with AI modes `READ`, `PROPOSE`, and narrowly authorized `EXECUTE`; cross-space access is denied by default.
+- Readiness reassessment: `areas/knowledge-readiness.md` remains **3.5 / 10.5 overall** because the lowest material personal/user-validation dimensions did not change. Source/provenance, systems understanding, operational design, and risk/contradiction awareness improved materially.
+- Classification: direct user authorization + verified repository changes + model implementation/QC judgment. These contracts improve readiness; they do not prove CO.FOUND live behavior, product-market fit, or the wider DR.X runtime chain.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 overall; build readiness and measurement quality increased, live operational/product evidence remains the next gate.
+- Confidence: high on committed repository-state changes; medium on expected product-reliability benefit until the real LastBench V0 acceptance suite runs.
+- Remaining gap: build the real LastBench V0, gather baseline and telemetry, run `evaluations/cofound-v0-acceptance.yaml`, then test service-assisted external teams. Do not interpret this specification hardening as a completed or operational CO.FOUND product.
+
 ## 2026-08-18 — DR.X Learning Engine core + systematic debugging
 
 - User request: after a Fable-2036 review of the Erfan Second Brain skills, Erfan authorized the recommended `10.5/10` action rather than another conceptual architecture pass.
