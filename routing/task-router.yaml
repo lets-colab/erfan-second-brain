@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 status: locked-design
 principle: choose_the_simplest_capable_path
 
@@ -33,6 +33,18 @@ routes:
     primary: google_skill_capable_agent
   analytics_analysis:
     primary: google_skill_capable_agent
+  cofound_product_work:
+    primary: chatgpt
+    engineering: codex
+    long_synthesis_fallback: claude
+    retrieve_when_history_or_rationale_matters:
+      - projects/cofound-evolution-ledger.md
+      - decisions/founder-intelligence-canonical-lock-2026-08-17.md
+      - decisions/cofound-implementation-hardening-v4.1-2026-08-18.md
+      - projects/founder-command-center-capability-registry.md
+      - skills/founder-command-center-operator/SKILL.md
+      - evaluations/cofound-v0-acceptance.yaml
+    rule: do_not_infer_current_cofound_behavior_from_superseded_founder_command_center_files
   canonical_technical_lookup:
     source: github
   canonical_operational_lookup:
@@ -63,3 +75,4 @@ rules:
   - parallelize_only_independent_work_with_clear_value
   - any_material_change_invalidates_affected_prior_verification
   - do_not_add_a_new_skill_when_an_existing_contract_can_own_the_job_cleanly
+  - preserve_material_product_evolution_in_the_canonical_evolution_ledger
