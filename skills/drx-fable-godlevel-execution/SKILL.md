@@ -1,6 +1,9 @@
 ---
 name: drx-fable-godlevel-execution
 description: Maximum-discipline execution and QC protocol for material DR.X client deliverables, dashboards, operating systems, reports, builds and integrations. Complements drx-fable2036-reasoner by preventing brief loss, scope collapse, jargon leakage, false completion, overbuilding before delivery, and unverified 10.5/10 claims.
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # DR.X Fable God-Level Execution
