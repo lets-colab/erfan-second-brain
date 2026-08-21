@@ -1,4 +1,4 @@
-version: 1
+version: 1.1
 status: active
 principle: measure_before_modifying
 
@@ -69,6 +69,13 @@ skills:
     version: unknown_until_baselined
     benchmark_status: not_run
     runs: []
+  drx-fable-godlevel-execution:
+    version: unversioned
+    benchmark_status: not_run
+    role: specialist_execution_protocol_for_material_client_deliverables
+    final_gate: drx-execution-qc
+    runs: []
+    limitation: Presence in the repository does not establish superiority or repeatability; benchmark before any improvement claim.
   drx-memory-retriever:
     version: unknown_until_baselined
     benchmark_status: not_run
@@ -89,6 +96,13 @@ skills:
     version: 1.0.0
     benchmark_status: not_run
     runs: []
+  drx-brand-asset-lock:
+    version: 1.0.3
+    benchmark_status: not_run
+    role: mandatory_protected_asset_integrity_gate_for_branded_artifacts
+    final_gate: drx-execution-qc
+    runs: []
+    limitation: The protocol addresses known logo/portrait failure modes, but effectiveness is not proven until final exported artifacts pass source-comparison and user-acceptance benchmarks repeatedly.
 
 rules:
   - do_not_invent_scores_without_runs
@@ -98,3 +112,4 @@ rules:
   - record_cost_only_when_provider_usage_is_available
   - do_not_promote_a_skill_version_on_a_single_successful_run
   - regression_failure_blocks_improvement_claim_until_repaired_or_explicitly_accepted
+  - every_active_specialist_skill_used_for_material_work_must_be_registered_here
