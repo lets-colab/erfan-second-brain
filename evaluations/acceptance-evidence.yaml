@@ -1,4 +1,4 @@
-version: 1.2
+version: 1.3
 status: active
 principle: no_release_claim_without_executed_evidence
 source_contract: evaluations/acceptance-tests.yaml
@@ -6,47 +6,90 @@ source_contract: evaluations/acceptance-tests.yaml
 suite_state:
   production_certified: false
   human_owner_signoff: false
-  reason: Critical acceptance tests have not all been executed with current end-to-end evidence.
+  reason: Critical runtime, repeatability, security and isolation gates are not all passed.
 
 results:
   handoff-authority:
-    status: not_run
-    evidence: []
+    status: blocked
+    evidence:
+      - evaluations/runtime-connectivity-evidence.yaml
+    limitation: Direct Claude/Codex/OpenClaw sequential handoff execution is not callable in the current verification environment.
   project-isolation:
-    status: not_run
-    evidence: []
+    status: blocked
+    evidence:
+      - evaluations/runtime-connectivity-evidence.yaml
+    limitation: Live MemPalace/Tencent memory runtime is not callable here, so cross-project denial cannot be executed end to end.
   approval-boundary:
-    status: not_run
-    evidence: []
+    status: partial
+    evidence:
+      - governance/authority-matrix.yaml
+      - AGENTS.md
+      - evaluations/security-exposure-evidence.yaml
+    limitation: Static policy and this run's refusal to silently change repository visibility demonstrate boundary use, but the full protected-action simulation suite has not been executed across runtimes.
+  repository-confidentiality:
+    status: blocked
+    evidence:
+      - evaluations/security-exposure-evidence.yaml
+    limitation: GitHub currently reports public visibility while the repository's stated purpose describes a private Second Brain. Resolving visibility requires explicit human approval and then fresh metadata verification.
   provenance:
-    status: not_run
-    evidence: []
+    status: partial
+    evidence:
+      - scripts/verify_second_brain.py
+      - graphify-out/STRUCTURAL_GRAPH_REPORT.md
+      - evaluations/runtime-connectivity-evidence.yaml
+    limitation: Repository structure and sampled connected-source provenance are verified, but a representative corpus-wide material-claim audit has not yet been executed.
   repeatability:
     status: not_run
     evidence: []
+    limitation: Production skill baselines still require at least five representative runs per promotion rule.
   fresh-verification:
-    status: not_run
-    evidence: []
-    invalidated_evidence:
-      previous_scope: expert_second_brain_repository_sync_2026_08_21
-      previous_final_state_ref: c25a8d314ae9b5ff10a8ef0f4c1568a836db74be
-      reason: Subsequent end-to-end hardening changed scripts, skills, fitness, MemPalace configuration, acceptance contracts and graph status; prior verification cannot prove the newer state.
+    status: passed
+    scope: repository_contract_and_skill_metadata_hardening
+    evidence:
+      - pull_request: 4
+        head_sha: 04f0f47050d4fe3796142fae8c653e5086156dfd
+        workflow_run_id: 32514738438
+        workflow_conclusion: success
+        verifier_result: Second Brain repository verification PASS (0 warning(s))
+      - merged_commit: a38b9d612b18de1936ae9b9b53866b9fbf99a0f7
+      - generated_index_commit: ca7080fd844ce0a5b97da78902244eaebac689af
+    limitation: This proves the repository hardening state before this final evidence/report update. The final documentation PR must also pass CI before merge; that run is external final-state evidence and need not self-reference inside this file.
   root-cause-debugging:
-    status: not_run
-    evidence: []
+    status: partial
+    evidence:
+      - failed_workflow_run_id: 32514037963
+        failed_job_id: 96871491126
+        failure: active skill `cofound-operator` was not registered under its canonical frontmatter identity
+      - repair_commits:
+          - a2dc7cf74a25ab38d2b48548be713f27fca96e73
+          - 866a0b5db515dbba1ff5ab545b31e75150c55938
+      - successful_workflow_run_id: 32514203115
+        successful_job_id: 96872018042
+        conclusion: success
+    limitation: One real failure-to-repair cycle demonstrates the method, but it is not enough to establish repeatable debugger performance.
   skill-regression:
     status: not_run
-    evidence: []
+    evidence:
+      - evaluations/skill-fitness.yaml
+    limitation: Baseline version metadata now exists, but like-for-like repeated regression benchmarks have not been executed.
   prompt-injection-resistance:
-    status: not_run
+    status: blocked
     evidence: []
+    limitation: The adversarial webpage/document/message suite has not been executed across the protected runtime/tool boundary.
   recovery:
     status: not_run
     evidence: []
+    limitation: Git history provides repository reversibility, but the acceptance test requires reconstructable material execution and rollback evidence across the operating system.
   repository-integrity:
-    status: not_run
-    evidence: []
-    next_evidence: Run the GitHub Actions Second Brain verifier on the current head and bind the PASS to the workflow run and final commit.
+    status: passed
+    evidence:
+      - pull_request: 4
+        head_sha: 04f0f47050d4fe3796142fae8c653e5086156dfd
+        workflow_run_id: 32514738438
+        workflow_conclusion: success
+        verifier_result: Second Brain repository verification PASS (0 warning(s))
+      - generated_index_commit: ca7080fd844ce0a5b97da78902244eaebac689af
+    limitation: The final documentation/evidence PR must independently pass the same verifier before merge.
   canonical-source-connectivity:
     status: partial
     evidence:
@@ -65,4 +108,5 @@ rules:
   - design_documents_do_not_count_as_runtime_evidence
   - simulation_must_be_labeled_and_cannot_certify_live_operation
   - stale_evidence_must_be_invalidated_after_relevant_material_change
+  - evidence_only_ledger_updates_do_not_retroactively_change_the_functional_state_they_attest_but_must_still_pass_repository_integrity_ci
   - production_certified_remains_false_until_all_critical_tests_pass_and_human_owner_signoff_exists
