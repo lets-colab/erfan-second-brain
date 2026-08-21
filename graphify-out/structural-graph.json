@@ -210,8 +210,8 @@
       "id": "skills/drx-architecture-convergence/SKILL.md",
       "title": "DR.X Architecture Convergence",
       "kind": "skills",
-      "status": "unknown",
-      "word_count": 804
+      "status": "active",
+      "word_count": 812
     },
     {
       "id": "skills/drx-brand-asset-lock/SKILL.md",
@@ -456,7 +456,7 @@
   "summary": {
     "documents": 46,
     "edges": 25,
-    "words": 43694,
+    "words": 43702,
     "isolated_documents": 16
   }
 }

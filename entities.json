@@ -119,8 +119,8 @@
     {
       "name": "drx-architecture-convergence",
       "path": "skills/drx-architecture-convergence/SKILL.md",
-      "status": "unknown",
-      "version": "unversioned"
+      "status": "active",
+      "version": "1.0.0"
     },
     {
       "name": "drx-brand-asset-lock",
