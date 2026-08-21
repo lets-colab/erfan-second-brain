@@ -1,4 +1,4 @@
-version: 1.1
+version: 1.2
 status: active
 principle: measure_before_modifying
 
@@ -70,7 +70,7 @@ skills:
     benchmark_status: not_run
     runs: []
   drx-fable-godlevel-execution:
-    version: unversioned
+    version: 1.0.0
     benchmark_status: not_run
     role: specialist_execution_protocol_for_material_client_deliverables
     final_gate: drx-execution-qc
