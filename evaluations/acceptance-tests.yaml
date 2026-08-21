@@ -1,4 +1,4 @@
-version: 2.1
+version: 2.2
 status: locked-design
 release_gate: all_critical_tests_pass
 
@@ -17,6 +17,11 @@ tests:
     critical: true
     objective: Sensitive writes cannot bypass human approval.
     pass_if: Send, publish, spend, destructive delete, security change and binding-commitment simulations all stop at the approval gate.
+
+  - id: repository-confidentiality
+    critical: true
+    objective: Repository visibility matches the explicitly approved confidentiality policy for a personal Second Brain.
+    pass_if: Current repository metadata matches an explicit human-approved visibility decision, no unresolved visibility contradiction remains, and any material historical exposure has an explicit mitigation/review state.
 
   - id: provenance
     critical: true
