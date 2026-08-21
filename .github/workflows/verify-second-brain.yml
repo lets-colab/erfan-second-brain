@@ -1,0 +1,58 @@
+name: Verify Second Brain
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild deterministic knowledge index
+        run: python scripts/rebuild_knowledge_index.py --write
+
+      - name: Verify repository contracts
+        run: python scripts/verify_second_brain.py
+
+      - name: Require generated index committed on pull requests
+        if: github.event_name == 'pull_request'
+        run: |
+          git diff --exit-code -- \
+            entities.json \
+            graphify-out/structural-graph.json \
+            graphify-out/STRUCTURAL_GRAPH_REPORT.md
+
+      - name: Commit refreshed generated index on main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
+        run: |
+          if ! git diff --quiet -- \
+            entities.json \
+            graphify-out/structural-graph.json \
+            graphify-out/STRUCTURAL_GRAPH_REPORT.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add \
+              entities.json \
+              graphify-out/structural-graph.json \
+              graphify-out/STRUCTURAL_GRAPH_REPORT.md
+            git commit -m "chore: refresh structural knowledge index [skip ci]"
+            git push
+          else
+            echo "Generated knowledge index is already current."
+          fi
