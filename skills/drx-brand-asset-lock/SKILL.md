@@ -3,7 +3,7 @@ name: drx-brand-asset-lock
 description: Mandatory integrity gate for branded DR.X artifacts. Use whenever a deliverable contains an approved logo, wordmark, brand mark, QR code, identity asset, approved real-person portrait, or other protected visual. Prevents generative reconstruction, logo drift, portrait/identity drift, fake QR codes, audience-mixing, false asset authority, and final-render brand regressions.
 status: active
 owner: drx-ai-os
-version: 1.0.2
+version: 1.0.3
 ---
 
 # DR.X Brand Asset Lock
@@ -65,9 +65,26 @@ Before execution, resolve the protected asset in this order:
 
 A poster, screenshot, mockup, social post, previous AI generation, filename, generated guideline, or generated manifest is not a canonical source merely because it looks authoritative.
 
-## Two-layer production architecture
+## HARD TOOLCHAIN RULE — memory lock is not enough
 
-For branded visuals, separate production into two layers.
+Once a logo, portrait, QR, or other protected asset is locked, the final production path must also preserve it.
+
+If an image-generation/editing tool would re-render, reinterpret, or touch the protected pixels in the final artifact, **do not use that tool for the final composite**.
+
+Required architecture:
+
+`OPTIONAL GENERATED BACKGROUND -> DETERMINISTIC PROTECTED LAYERS -> FINAL SOURCE COMPARISON`
+
+For a poster with a locked logo and a real supplied portrait:
+- image generation may be used only for an isolated background/decorative layer that contains neither protected asset;
+- the exact logo must be composited afterward with deterministic tooling;
+- the exact original portrait must be composited afterward with deterministic tooling;
+- names/dates/contact text must be rendered deterministically when accuracy matters;
+- the exported final file must be inspected after compositing.
+
+If the available toolchain cannot guarantee this separation, create the final artifact entirely with deterministic layout/compositing tools.
+
+## Two-layer production architecture
 
 ### Generative layer
 May generate:
