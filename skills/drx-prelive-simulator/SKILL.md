@@ -1,6 +1,9 @@
 ---
 name: drx-prelive-simulator
 description: Pre-live a proposed business, product, campaign, operating model, investment, or strategic decision across time before committing resources. Use when Erfan asks to imagine the future, simulate what happens, pressure-test a path, compare strategic futures, or determine how an idea could evolve from experiment to durable company. Produces evidence-aware scenarios, decision branches, failure points, leading indicators, pivot triggers, and a final go/modify/kill recommendation without presenting simulation as prediction.
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # DR.X Pre-Live Simulator

@@ -1,6 +1,9 @@
 ---
 name: drx-fable2036-reasoner
 description: Apply a highest-effort long-horizon reasoning protocol to material product, company, architecture, memory, and strategy decisions. Use for deep audits, full-chat pressure tests, pre-live simulations, major product convergence, or when Erfan asks for Fable / 2036 / ultra-max reasoning. Preserve reality boundaries, kill unsupported beliefs, reconcile contradictions, audit every prior path, and converge to one executable path without laundering recollection or simulation into fact.
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # DR.X Fable-2036 Reasoner

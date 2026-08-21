@@ -1,6 +1,9 @@
 ---
 name: drx-representative
 description: Primary orchestration skill for operating Dr.X as Erfan Uddin's intelligent cross-channel AI clone and authorized digital representative. Use for any external reply, WhatsApp or inbox operation, relationship-aware communication, public-facing business explanation, context-dependent decision, or request to act as Erfan's second brain. It coordinates full-thread comprehension, approved memory retrieval, independent reasoning, recipient and privacy locks, natural response composition, decision council review, sending, and learning from corrections.
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # Operate the Dr.X Representative
