@@ -1,6 +1,6 @@
 ---
 created: 2026-07-19
-updated: 2026-08-18
+updated: 2026-08-21
 type: resource
 status: active
 tags: [second-brain, drx-ai-os, cofound, portability, governance]
@@ -63,8 +63,10 @@ A file, prompt, install attempt, config change, or successful tool call is not p
 
 Material work should use:
 - [`skills/_template/SKILL.md`](skills/_template/SKILL.md) for production skill contracts;
+- [`skills/drx-fable-godlevel-execution/SKILL.md`](skills/drx-fable-godlevel-execution/SKILL.md) for material client deliverables where brief integrity, delivery order, executive readability, and submission readiness matter;
+- [`skills/drx-brand-asset-lock/SKILL.md`](skills/drx-brand-asset-lock/SKILL.md) for branded artifacts containing protected logos, portraits, QR codes, or identity assets;
 - [`skills/drx-systematic-debugger/SKILL.md`](skills/drx-systematic-debugger/SKILL.md) for root-cause diagnosis before material repair;
-- [`skills/drx-execution-qc/SKILL.md`](skills/drx-execution-qc/SKILL.md) before claiming completion, using fresh final-state evidence;
+- [`skills/drx-execution-qc/SKILL.md`](skills/drx-execution-qc/SKILL.md) as the mandatory final completion gate using fresh final-state evidence;
 - [`evaluations/acceptance-tests.yaml`](evaluations/acceptance-tests.yaml) for AI OS release gates;
 - [`evaluations/acceptance-evidence.yaml`](evaluations/acceptance-evidence.yaml) for executed acceptance evidence and explicit `not_run` state;
 - [`evaluations/skill-fitness.yaml`](evaluations/skill-fitness.yaml) for measured skill-version performance and regressions;
@@ -73,7 +75,13 @@ Material work should use:
 - [`observability/event-schema.yaml`](observability/event-schema.yaml) for reconstructable execution and learning evidence;
 - [`routing/task-router.yaml`](routing/task-router.yaml) for default agent/source/process routing.
 
-The `10.5/10` label is an internal quality target. Production status requires evidence and acceptance tests; it is never inferred from design sophistication alone.
+The `10.5/10` label is an internal quality target. Production status requires executed evidence and acceptance tests; it is never inferred from design sophistication, prompt length, installed skills, or repository commits alone.
+
+## Verification state
+
+The repository contains a strong verification framework, but the wider DR.X AI OS is **not production-certified** until `evaluations/acceptance-evidence.yaml` shows all critical tests passed and human owner signoff exists.
+
+A specialist skill is not considered proven merely because it is active. Register it in `evaluations/skill-fitness.yaml`, benchmark it on representative tasks, record regressions, and use fresh final-state evidence.
 
 ## Learning loop
 
@@ -96,12 +104,14 @@ Active skills on `main` include:
 - architecture convergence;
 - pre-live simulation;
 - Fable-2036 reasoning;
+- Fable God-Level Execution for material client deliverables;
 - systematic root-cause debugging;
 - DR.X representation;
 - CO.FOUND operation (active content at legacy `skills/founder-command-center-operator/` path);
-- DR.X execution/completion QC.
+- Brand Asset Lock for protected branded artifacts;
+- DR.X execution/completion QC as the mandatory final gate.
 
-Skills are reusable operating contracts, not claims that every connector or runtime is live.
+Skills are reusable operating contracts, not claims that every connector or runtime is live or that every skill has passed repeatability benchmarks.
 
 ## Main knowledge notes
 
@@ -111,6 +121,7 @@ Skills are reusable operating contracts, not claims that every connector or runt
 - [CO.FOUND v4 product lock](decisions/founder-intelligence-canonical-lock-2026-08-17.md)
 - [CO.FOUND v4.1 implementation hardening](decisions/cofound-implementation-hardening-v4.1-2026-08-18.md)
 - [Historical Founder Command Center pointer](projects/founder-command-center-os.md)
+- [Last Bench canonical brand asset lock](decisions/last-bench-brand-asset-lock-2026-08-21.md)
 - [Knowledge readiness](areas/knowledge-readiness.md)
 - [Operating charter](areas/operating-charter.md)
 - [Digital presenter profile](areas/digital-presenter-profile.md)
@@ -132,4 +143,5 @@ For material CO.FOUND evolution, update `projects/cofound-evolution-ledger.md` i
 After a meaningful durable knowledge or capability change:
 1. update `reviews/knowledge-change-log.md`;
 2. reassess `areas/knowledge-readiness.md`;
-3. state clearly whether the change improved design readiness, operational verification, or both.
+3. update routing/fitness registries when a material specialist skill is added or changed;
+4. state clearly whether the change improved design readiness, operational verification, or both.
