@@ -1,50 +1,74 @@
 wing: erfan_second_brain
 rooms:
-- name: inbox
-  description: Files from inbox/
+- name: architecture
+  description: DR.X AI OS architecture files from architecture/
   keywords:
-  - inbox
-  - inbox
-- name: archive
-  description: Files from archive/
-  keywords:
-  - archive
-  - archive
+  - architecture
+  - ai os
 - name: areas
-  description: Files from areas/
+  description: Durable operating areas and identity/governance notes from areas/
   keywords:
   - areas
-  - areas
+  - identity
+  - readiness
 - name: projects
-  description: Files from projects/
+  description: Current project continuity and operating knowledge from projects/
   keywords:
   - projects
-  - projects
+  - cofound
+  - colab
 - name: decisions
-  description: Files from decisions/
+  description: Versioned canonical decisions and locks from decisions/
   keywords:
   - decisions
-  - decisions
+  - canonical
+  - lock
+- name: skills
+  description: Reusable DR.X operating skill contracts from skills/
+  keywords:
+  - skills
+  - qc
+  - debugging
+  - reasoning
+- name: evaluations
+  description: Acceptance tests, evidence, skill fitness and product validation from evaluations/
+  keywords:
+  - evaluations
+  - acceptance
+  - evidence
+  - benchmarks
+- name: governance
+  description: Authority and protected-action policy from governance/
+  keywords:
+  - governance
+  - authority
+  - permissions
+- name: observability
+  description: Execution and learning evidence contracts from observability/
+  keywords:
+  - observability
+  - evidence
+  - execution
+- name: routing
+  description: Agent, source and specialist-skill routing from routing/
+  keywords:
+  - routing
+  - agents
+  - sources
 - name: documentation
-  description: Files from notes/
+  description: Supporting documentation and source inventory from notes/
   keywords:
   - documentation
   - notes
-- name: team
-  description: Files from people/
-  keywords:
-  - team
-  - people
-- name: sources
-  description: Files from sources/
-  keywords:
-  - sources
   - sources
 - name: reviews
-  description: Files from reviews/
+  description: Audits, change logs and verification reviews from reviews/
   keywords:
   - reviews
-  - reviews
+  - audits
+  - change log
 - name: general
-  description: Files that don't fit other rooms
-  keywords: []
+  description: Root-level durable files that do not fit another room
+  keywords:
+  - readme
+  - agents
