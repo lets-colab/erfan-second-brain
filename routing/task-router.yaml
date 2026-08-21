@@ -1,4 +1,4 @@
-version: 2.2
+version: 2.3
 status: locked-design
 principle: choose_the_simplest_capable_path
 
@@ -45,6 +45,7 @@ routes:
     primary: google_skill_capable_agent
   cofound_product_work:
     primary: chatgpt
+    process_skill: cofound-operator
     engineering: codex
     long_synthesis_fallback: claude
     retrieve_when_history_or_rationale_matters:
@@ -88,3 +89,4 @@ rules:
   - do_not_add_a_new_skill_when_an_existing_contract_can_own_the_job_cleanly
   - specialist_skills_do_not_replace_the_mandatory_drx_execution_qc_final_gate
   - preserve_material_product_evolution_in_the_canonical_evolution_ledger
+  - canonical_skill_identity_comes_from_skill_frontmatter_not_legacy_folder_name
