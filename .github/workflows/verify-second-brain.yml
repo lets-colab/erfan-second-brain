@@ -30,13 +30,14 @@ jobs:
       - name: Verify repository contracts
         run: python scripts/verify_second_brain.py
 
-      - name: Require generated index committed on pull requests
+      - name: Show generated-index delta on pull requests
         if: github.event_name == 'pull_request'
         run: |
-          git diff --exit-code -- \
+          git status --short -- \
             entities.json \
             graphify-out/structural-graph.json \
             graphify-out/STRUCTURAL_GRAPH_REPORT.md
+          echo "PR verification checks the generated working tree. The main-branch run owns persistence of generated index files."
 
       - name: Commit refreshed generated index on main
         if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
