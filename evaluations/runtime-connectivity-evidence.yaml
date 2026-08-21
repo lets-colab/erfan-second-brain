@@ -1,0 +1,95 @@
+version: 1
+status: active
+observed_date: 2026-08-22
+principle: connector_presence_is_not_full_runtime_verification
+
+sources:
+  github:
+    status: passed
+    scope:
+      - repository_read
+      - repository_write
+      - commit_verification
+    evidence:
+      repository: lets-colab/erfan-second-brain
+      default_branch: main
+      write_evidence:
+        - 30a8325bf0e97faee2fc3f228b12ce90d1c205af
+        - 5909461fa20af02e8b931e4ce3ffea26a92ca4dc
+        - cdcdcf2d270fa4fb8d271c7a3921c88c9f37d8a0
+        - c2c8d84d4ade9aef7030549ea3c36600a46d338e
+        - 7ec74f873b08868efe60b7245b79a24a36363a59
+    limitation: GitHub repository access does not prove OpenClaw/Codex runtime dispatch or cross-tool handoffs.
+
+  google_drive:
+    status: passed
+    scope:
+      - search
+      - document_content_retrieval
+    evidence:
+      retrieved_source_title: Last Bench Blueprint
+      retrieved_source_id: 1N1RuWK1zuqUiujwX83kIjEUEnBOfVSstlzlU6XCmkc8
+      retrieval_observation: Search returned the document and best-effort fetch exposed source content from the blueprint.
+    limitation: This proves current Drive retrieval through the connected source, not completeness of all Drive permissions or project folders.
+
+  notion:
+    status: partial
+    scope:
+      - search
+      - page_fetch
+    evidence:
+      fetched_page_title: Cortex - Founder’s Second Brain | Onboarding
+      fetched_page_id: abfb35c3-fd42-8290-9f92-81505f6c8ba0
+      retrieval_observation: Search and page fetch succeeded.
+      permission_gap: One or more synced blocks referenced source pages that are not shared with this connection.
+    limitation: Notion is reachable, but canonical operational completeness cannot be certified while referenced synced content is unavailable.
+
+runtimes:
+  openclaw_gateway:
+    status: blocked
+    reason: No callable OpenClaw runtime/health connector is available in the current verification environment.
+    required_to_pass:
+      - current_health_status
+      - real_dispatch
+      - execution_result
+      - logs
+      - failure_recovery_test
+
+  claude_execution_engine:
+    status: blocked
+    reason: No direct Claude execution-runtime health/dispatch surface is available in the current verification environment.
+    required_to_pass:
+      - direct_handoff
+      - preserved_authoritative_context
+      - returned_result
+      - traceable_execution_evidence
+
+  codex_execution_engine:
+    status: blocked
+    reason: GitHub is reachable, but no direct Codex runtime health/dispatch verification surface is available in the current environment.
+    required_to_pass:
+      - direct_repository_job_dispatch
+      - test_or_execution_result
+      - traceable_runtime_evidence
+
+  memory_assist:
+    status: blocked
+    reason: MemPalace/TencentDB memory configuration can be inspected in GitHub, but the live memory runtime is not callable here.
+    required_to_pass:
+      - health_status
+      - project_namespace_isolation
+      - provenance_preserving_write_or_read_test
+      - cross_project_denial_test
+
+  cross_device_sync:
+    status: blocked
+    reason: No enrolled-device or synchronization health surface is available in the current verification environment.
+    required_to_pass:
+      - current_sync_status
+      - version_consistency
+      - conflict_behavior
+      - recovery_test
+
+certification_effect:
+  production_certified: false
+  rule: Passed source connectors improve verified retrieval coverage but cannot substitute for blocked runtime acceptance gates.
