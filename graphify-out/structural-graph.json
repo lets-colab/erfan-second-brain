@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "generated_by": "scripts/rebuild_knowledge_index.py",
+  "graph_type": "deterministic_structural_reference_graph",
+  "documents": [
+    {
+      "id": "AGENTS.md",
+      "title": "AI Instructions for Erfan Second Brain",
+      "kind": "root",
+      "status": "unknown",
+      "word_count": 717
+    },
+    {
+      "id": "README.md",
+      "title": "Erfan Second Brain",
+      "kind": "resource",
+      "status": "active",
+      "word_count": 1102
+    },
+    {
+      "id": "architecture/DRX-AI-OS.md",
+      "title": "DR.X AI OS — Locked Architecture v1.0",
+      "kind": "architecture",
+      "status": "unknown",
+      "word_count": 698
+    },
+    {
+      "id": "areas/channel-registry.md",
+      "title": "Channel Registry",
+      "kind": "note",
+      "status": "active",
+      "word_count": 105
+    },
+    {
+      "id": "areas/digital-presenter-profile.md",
+      "title": "Digital Presenter Profile",
+      "kind": "note",
+      "status": "waiting",
+      "word_count": 325
+    },
+    {
+      "id": "areas/drx-identity-covenant.md",
+      "title": "Dr.X Identity Covenant",
+      "kind": "decision",
+      "status": "active",
+      "word_count": 349
+    },
+    {
+      "id": "areas/knowledge-readiness.md",
+      "title": "Knowledge Readiness",
+      "kind": "note",
+      "status": "active",
+      "word_count": 871
+    },
+    {
+      "id": "areas/operating-charter.md",
+      "title": "Operating Charter — Draft for Erfan's Approval",
+      "kind": "decision",
+      "status": "waiting",
+      "word_count": 566
+    },
+    {
+      "id": "decisions/2026-07-19-obsidian-first-knowledge-base.md",
+      "title": "Decision: Obsidian-ready local knowledge base",
+      "kind": "decision",
+      "status": "active",
+      "word_count": 111
+    },
+    {
+      "id": "decisions/cofound-implementation-hardening-v4.1-2026-08-18.md",
+      "title": "CO.FOUND — v4.1 Implementation Hardening",
+      "kind": "implementation-decision",
+      "status": "locked",
+      "word_count": 1288
+    },
+    {
+      "id": "decisions/cofound-product-hierarchy-2026-08-17.md",
+      "title": "CO.FOUND — Product Hierarchy Lock",
+      "kind": "decision",
+      "status": "locked",
+      "word_count": 505
+    },
+    {
+      "id": "decisions/founder-intelligence-canonical-lock-2026-08-17.md",
+      "title": "CO.FOUND / Founder Intelligence — FINAL CONVERGENCE LOCK v4",
+      "kind": "decision",
+      "status": "locked",
+      "word_count": 2429
+    },
+    {
+      "id": "decisions/last-bench-brand-asset-lock-2026-08-21.md",
+      "title": "Last Bench Canonical Brand Asset Lock — 2026-08-21",
+      "kind": "decision",
+      "status": "active",
+      "word_count": 699
+    },
+    {
+      "id": "notes/last-bench-legal-review-source.md",
+      "title": "Last Bench Legal Review Source",
+      "kind": "resource",
+      "status": "waiting",
+      "word_count": 194
+    },
+    {
+      "id": "notes/source-inventory.md",
+      "title": "Source Inventory",
+      "kind": "resource",
+      "status": "active",
+      "word_count": 250
+    },
+    {
+      "id": "projects/cofound-evolution-ledger.md",
+      "title": "CO.FOUND — Evolution Ledger",
+      "kind": "canonical-evolution-ledger",
+      "status": "active",
+      "word_count": 3781
+    },
+    {
+      "id": "projects/cofound.md",
+      "title": "CO.FOUND — Canonical Continuity Memory v2",
+      "kind": "canonical-project-memory",
+      "status": "active",
+      "word_count": 2187
+    },
+    {
+      "id": "projects/colab.md",
+      "title": "Co.lab",
+      "kind": "project",
+      "status": "active",
+      "word_count": 340
+    },
+    {
+      "id": "projects/founder-command-center-capability-registry.md",
+      "title": "CO.FOUND — Capability, Skill & Tool Registry v4.1",
+      "kind": "capability-registry",
+      "status": "active",
+      "word_count": 1332
+    },
+    {
+      "id": "projects/founder-command-center-os.md",
+      "title": "Founder Command Center + OS — HISTORICAL / SUPERSEDED",
+      "kind": "historical-project-idea",
+      "status": "superseded",
+      "word_count": 310
+    },
+    {
+      "id": "projects/personal-second-brain.md",
+      "title": "Personal Second Brain",
+      "kind": "project",
+      "status": "active",
+      "word_count": 221
+    },
+    {
+      "id": "reviews/cofound-final-convergence-audit-2026-08-18.md",
+      "title": "CO.FOUND — Final Convergence Audit",
+      "kind": "product-audit",
+      "status": "complete",
+      "word_count": 2127
+    },
+    {
+      "id": "reviews/cofound-ultramax-reaudit-2026-08-17.md",
+      "title": "CO.FOUND — Provenance-Hardened Ultra-Max Re-Audit",
+      "kind": "product-audit",
+      "status": "complete",
+      "word_count": 2020
+    },
+    {
+      "id": "reviews/cofound-v4.1-execution-qc-2026-08-18.md",
+      "title": "CO.FOUND v4/v4.1 — Execution QC",
+      "kind": "execution-qc",
+      "status": "complete",
+      "word_count": 849
+    },
+    {
+      "id": "reviews/founder-intelligence-ultramax-audit-2026-08-17.md",
+      "title": "Founder Intelligence — Ultra-Max Audit + Pre-Live Review",
+      "kind": "product-audit",
+      "status": "complete",
+      "word_count": 1212
+    },
+    {
+      "id": "reviews/knowledge-change-log.md",
+      "title": "Knowledge Change Log",
+      "kind": "reflection",
+      "status": "active",
+      "word_count": 3737
+    },
+    {
+      "id": "reviews/second-brain-system-audit-2026-08-17.md",
+      "title": "Erfan Second Brain — System Audit",
+      "kind": "audit",
+      "status": "active",
+      "word_count": 1094
+    },
+    {
+      "id": "reviews/second-brain-verification-audit-2026-08-21.md",
+      "title": "Erfan Second Brain — Strict Expert Verification Audit",
+      "kind": "audit",
+      "status": "active",
+      "word_count": 1364
+    },
+    {
+      "id": "skills/_template/SKILL.md",
+      "title": "Skill Contract",
+      "kind": "skills",
+      "status": "draft",
+      "word_count": 247
+    },
+    {
+      "id": "skills/drx-architecture-convergence/SKILL.md",
+      "title": "DR.X Architecture Convergence",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 804
+    },
+    {
+      "id": "skills/drx-brand-asset-lock/SKILL.md",
+      "title": "DR.X Brand Asset Lock",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 1233
+    },
+    {
+      "id": "skills/drx-contextual-communicator/SKILL.md",
+      "title": "Operate Dr.X in Conversations",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 475
+    },
+    {
+      "id": "skills/drx-contextual-communicator/references/interaction-contract.md",
+      "title": "Dr.X Interaction Contract",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 201
+    },
+    {
+      "id": "skills/drx-decision-council/SKILL.md",
+      "title": "Convene the Dr.X Decision Council",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 344
+    },
+    {
+      "id": "skills/drx-decision-council/references/council-and-chair-rubric.md",
+      "title": "Council and Product-Chair Rubric",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 181
+    },
+    {
+      "id": "skills/drx-execution-qc/SKILL.md",
+      "title": "DR.X Execution QC",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 1269
+    },
+    {
+      "id": "skills/drx-fable-godlevel-execution/SKILL.md",
+      "title": "DR.X Fable God-Level Execution",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 823
+    },
+    {
+      "id": "skills/drx-fable2036-reasoner/SKILL.md",
+      "title": "DR.X Fable-2036 Reasoner",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 1583
+    },
+    {
+      "id": "skills/drx-memory-retriever/SKILL.md",
+      "title": "Retrieve Context Before Acting",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 353
+    },
+    {
+      "id": "skills/drx-memory-retriever/references/source-ranking-and-packet.md",
+      "title": "Source Ranking and Context Packet",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 221
+    },
+    {
+      "id": "skills/drx-prelive-simulator/SKILL.md",
+      "title": "DR.X Pre-Live Simulator",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 1528
+    },
+    {
+      "id": "skills/drx-representative/SKILL.md",
+      "title": "Operate the Dr.X Representative",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 533
+    },
+    {
+      "id": "skills/drx-representative/references/business-offer-playbook.md",
+      "title": "Public-Facing Business Offer Playbook",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 386
+    },
+    {
+      "id": "skills/drx-representative/references/reply-pipeline-and-tests.md",
+      "title": "Dr.X Reply Pipeline and Acceptance Tests",
+      "kind": "skills",
+      "status": "unknown",
+      "word_count": 379
+    },
+    {
+      "id": "skills/drx-systematic-debugger/SKILL.md",
+      "title": "DR.X Systematic Debugger",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 949
+    },
+    {
+      "id": "skills/founder-command-center-operator/SKILL.md",
+      "title": "CO.FOUND Operator",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 1402
+    }
+  ],
+  "edges": [
+    {
+      "source": "README.md",
+      "target": "architecture/DRX-AI-OS.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "areas/digital-presenter-profile.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "areas/knowledge-readiness.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "areas/operating-charter.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "decisions/cofound-implementation-hardening-v4.1-2026-08-18.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "decisions/founder-intelligence-canonical-lock-2026-08-17.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "decisions/last-bench-brand-asset-lock-2026-08-21.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/source-inventory.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "projects/cofound-evolution-ledger.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "projects/cofound.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "projects/founder-command-center-capability-registry.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "projects/founder-command-center-os.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "projects/personal-second-brain.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/knowledge-change-log.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "skills/_template/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "skills/drx-brand-asset-lock/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "skills/drx-execution-qc/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "skills/drx-fable-godlevel-execution/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "skills/drx-systematic-debugger/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
+      "target": "skills/founder-command-center-operator/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "skills/drx-contextual-communicator/SKILL.md",
+      "target": "skills/drx-contextual-communicator/references/interaction-contract.md",
+      "type": "references"
+    },
+    {
+      "source": "skills/drx-decision-council/SKILL.md",
+      "target": "skills/drx-decision-council/references/council-and-chair-rubric.md",
+      "type": "references"
+    },
+    {
+      "source": "skills/drx-memory-retriever/SKILL.md",
+      "target": "skills/drx-memory-retriever/references/source-ranking-and-packet.md",
+      "type": "references"
+    },
+    {
+      "source": "skills/drx-representative/SKILL.md",
+      "target": "skills/drx-representative/references/business-offer-playbook.md",
+      "type": "references"
+    },
+    {
+      "source": "skills/drx-representative/SKILL.md",
+      "target": "skills/drx-representative/references/reply-pipeline-and-tests.md",
+      "type": "references"
+    }
+  ],
+  "summary": {
+    "documents": 46,
+    "edges": 25,
+    "words": 43694,
+    "isolated_documents": 16
+  }
+}
