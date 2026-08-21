@@ -1,6 +1,9 @@
 ---
 name: drx-architecture-convergence
 description: Maintain one canonical product or system architecture while allowing new evidence to refine it without silent drift. Use when a long strategy discussion accumulates many ideas, audits, reversals, deferred features, simulations, or competing architectures and Erfan asks for the final path, re-audit, lock, or whether prior changes have caused confusion.
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # DR.X Architecture Convergence
