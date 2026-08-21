@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 status: locked-design
 release_gate: all_critical_tests_pass
 
@@ -52,6 +52,16 @@ tests:
     critical: true
     objective: Material execution can be reconstructed and reversible errors rolled back.
     pass_if: Logs reconstruct the source/tool/action path and test changes can be reverted without loss of canonical state.
+
+  - id: repository-integrity
+    critical: false
+    objective: Repository contracts and generated indexes remain structurally coherent after changes.
+    pass_if: The current head passes the automated Second Brain verifier, including required paths, skill registration, acceptance-evidence alignment, internal-link integrity, basic secret scanning and a current deterministic structural knowledge index.
+
+  - id: canonical-source-connectivity
+    critical: false
+    objective: Canonical private-source retrieval paths are observed directly rather than inferred from connector presence.
+    pass_if: Current GitHub, Google Drive and Notion retrieval paths are successfully exercised and any permissions gap is explicitly surfaced; full PASS requires no material permission gap in the sampled canonical path.
 
   - id: cost-observability
     critical: false
