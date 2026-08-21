@@ -1,4 +1,4 @@
-version: 1
+version: 1.1
 status: active
 principle: no_release_claim_without_executed_evidence
 source_contract: evaluations/acceptance-tests.yaml
@@ -25,22 +25,27 @@ results:
     evidence: []
   fresh-verification:
     status: passed
-    scope: one_material_repository_change
-    final_state_ref: 9f8c2ee8f8a34c8cebb327f07d1174c2a225c2a6
+    scope: expert_second_brain_repository_sync_2026_08_21
+    final_state_ref: c25a8d314ae9b5ff10a8ef0f4c1568a836db74be
     evidence:
-      - path: skills/drx-systematic-debugger/SKILL.md
-        blob_sha: 01eb10efee8dbd8b4e7b7284758ceecd6415bf44
-      - path: skills/drx-execution-qc/SKILL.md
-        blob_sha: e67c27e910996baf05720bdfa407f3466ab43a18
       - path: routing/task-router.yaml
-        blob_sha: 224162e432f8890c5ec20646e9029c03acc5a3d0
-      - path: observability/event-schema.yaml
-        blob_sha: 1c13a1a0026cb2d2a54cc8131aef9b9a1c3f3091
-      - path: evaluations/acceptance-tests.yaml
-        blob_sha: 54aa2f9fbedc8a9b6ca2ab6b863dcf25af7b0dbb
+        blob_sha: 0063d3124eef674a7ab9aab39fb77da277545067
       - path: evaluations/skill-fitness.yaml
-        blob_sha: e8091b72e53c32df917b0fafbd6b51d2cc210432
-    limitation: This proves the freshness discipline for this repository change only; it does not certify wider runtime integrations or repeated behavior.
+        blob_sha: feae3d8d0043bcda0e85d6138bcf76a7fce07413
+      - path: AGENTS.md
+        blob_sha: f1d217c96dd68908cfdb22ec211739805d7bb75d
+      - path: README.md
+        blob_sha: 04ddda23db8ae0324774433af9141edc75cada33
+      - path: skills/drx-fable-godlevel-execution/SKILL.md
+        blob_sha: 40de5da85ac995771c9d55c9337d1203b659d68b
+      - path: skills/drx-brand-asset-lock/SKILL.md
+        blob_sha: 350a517b6f8a4e42c1d45509158ac2b17641adc0
+    verification:
+      - specialist client-deliverable route resolves to drx-fable-godlevel-execution and terminates at drx-execution-qc
+      - branded-artifact route resolves to drx-brand-asset-lock and terminates at drx-execution-qc
+      - both specialist skills are explicitly registered as not benchmarked in the fitness registry
+      - AGENTS and README expose the same specialist-skill roles and preserve the production-certification boundary
+    limitation: This verifies the repository synchronization change only. It does not certify wider OpenClaw, Claude, Codex, Notion, Drive, memory-assist, cross-device, or repeated-skill behavior.
   root-cause-debugging:
     status: not_run
     evidence: []
