@@ -1,0 +1,28 @@
+version: 1
+status: active
+observed_date: 2026-08-22
+principle: security_state_requires_explicit_verification_and_authority
+
+repository:
+  name: lets-colab/erfan-second-brain
+  observed_visibility: public
+  observed_description_claim: Private, portable second brain for Erfan Uddin — Markdown knowledge, MemPalace recall, and Graphify relationships.
+  state: needs_approval
+  risk: >-
+    The observed GitHub visibility conflicts with the repository's stated private-second-brain purpose.
+    The repository contains personal and operational context, so public visibility expands exposure beyond the intended trust model.
+  action_not_taken: >-
+    Visibility was not changed during this hardening run because repository/security changes are protected actions under governance/authority-matrix.yaml and require explicit current human approval.
+  interim_controls:
+    - automated high-confidence secret-pattern scan in scripts/verify_second_brain.py
+    - provenance and least-privilege rules in AGENTS.md and governance/authority-matrix.yaml
+    - no claim that secret scanning makes a public personal knowledge repository safe
+  required_to_resolve:
+    - explicit human approval to change repository visibility or an explicit decision to keep it public
+    - after any visibility change, re-read repository metadata and record the resulting state
+    - review public-history exposure separately if sensitive content was ever committed, because making a repository private does not erase historical copies or prior exposure
+
+certification_effect:
+  production_certified: false
+  note: >-
+    This gate alone is not the only reason production certification is false, but the mismatch must remain visible and cannot be silently normalized.
