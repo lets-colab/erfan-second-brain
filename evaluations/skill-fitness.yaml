@@ -1,4 +1,4 @@
-version: 1.2
+version: 1.3
 status: active
 principle: measure_before_modifying
 
@@ -88,10 +88,13 @@ skills:
     version: unknown_until_baselined
     benchmark_status: not_run
     runs: []
-  founder-command-center-operator:
-    version: unknown_until_baselined
+  cofound-operator:
+    version: 2.0.0
     benchmark_status: not_run
+    role: active_cofound_v4_v4_1_operator
+    path: skills/founder-command-center-operator/SKILL.md
     runs: []
+    limitation: Legacy folder path is retained for compatibility; canonical skill identity comes from frontmatter name `cofound-operator`.
   drx-systematic-debugger:
     version: 1.0.0
     benchmark_status: not_run
@@ -113,3 +116,4 @@ rules:
   - do_not_promote_a_skill_version_on_a_single_successful_run
   - regression_failure_blocks_improvement_claim_until_repaired_or_explicitly_accepted
   - every_active_specialist_skill_used_for_material_work_must_be_registered_here
+  - canonical_skill_identity_comes_from_skill_frontmatter_not_legacy_folder_name
