@@ -1,4 +1,4 @@
-version: 2.1
+version: 2.2
 status: locked-design
 principle: choose_the_simplest_capable_path
 
@@ -16,6 +16,16 @@ routes:
   creative_development:
     primary: claude
     fallback: chatgpt
+  client_material_deliverable:
+    primary: chatgpt
+    process_skill: drx-fable-godlevel-execution
+    final_gate: drx-execution-qc
+    rule: deliverable_first_then_improve_system
+  branded_artifact:
+    primary: chatgpt
+    process_skill: drx-brand-asset-lock
+    final_gate: drx-execution-qc
+    rule: protected_assets_require_verified_provenance_and_deterministic_final_compositing
   repository_engineering:
     primary: codex
     runtime: openclaw
@@ -60,6 +70,7 @@ material_execution_contract:
   - reconstruct_acceptance_criteria
   - identify_dependencies_and_order
   - choose_execution_engine
+  - invoke_matching_specialist_skill_when_required
   - define_required_proof
   - preserve_rollback_path_when_applicable
   - execute
@@ -75,4 +86,5 @@ rules:
   - parallelize_only_independent_work_with_clear_value
   - any_material_change_invalidates_affected_prior_verification
   - do_not_add_a_new_skill_when_an_existing_contract_can_own_the_job_cleanly
+  - specialist_skills_do_not_replace_the_mandatory_drx_execution_qc_final_gate
   - preserve_material_product_evolution_in_the_canonical_evolution_ledger
