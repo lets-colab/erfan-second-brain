@@ -224,8 +224,8 @@
       "id": "skills/drx-contextual-communicator/SKILL.md",
       "title": "Operate Dr.X in Conversations",
       "kind": "skills",
-      "status": "unknown",
-      "word_count": 475
+      "status": "active",
+      "word_count": 483
     },
     {
       "id": "skills/drx-contextual-communicator/references/interaction-contract.md",
@@ -238,8 +238,8 @@
       "id": "skills/drx-decision-council/SKILL.md",
       "title": "Convene the Dr.X Decision Council",
       "kind": "skills",
-      "status": "unknown",
-      "word_count": 344
+      "status": "active",
+      "word_count": 352
     },
     {
       "id": "skills/drx-decision-council/references/council-and-chair-rubric.md",
@@ -266,15 +266,15 @@
       "id": "skills/drx-fable2036-reasoner/SKILL.md",
       "title": "DR.X Fable-2036 Reasoner",
       "kind": "skills",
-      "status": "unknown",
-      "word_count": 1583
+      "status": "active",
+      "word_count": 1591
     },
     {
       "id": "skills/drx-memory-retriever/SKILL.md",
       "title": "Retrieve Context Before Acting",
       "kind": "skills",
-      "status": "unknown",
-      "word_count": 353
+      "status": "active",
+      "word_count": 361
     },
     {
       "id": "skills/drx-memory-retriever/references/source-ranking-and-packet.md",
@@ -287,15 +287,15 @@
       "id": "skills/drx-prelive-simulator/SKILL.md",
       "title": "DR.X Pre-Live Simulator",
       "kind": "skills",
-      "status": "unknown",
-      "word_count": 1528
+      "status": "active",
+      "word_count": 1536
     },
     {
       "id": "skills/drx-representative/SKILL.md",
       "title": "Operate the Dr.X Representative",
       "kind": "skills",
-      "status": "unknown",
-      "word_count": 533
+      "status": "active",
+      "word_count": 541
     },
     {
       "id": "skills/drx-representative/references/business-offer-playbook.md",
@@ -456,7 +456,7 @@
   "summary": {
     "documents": 46,
     "edges": 25,
-    "words": 43702,
+    "words": 43750,
     "isolated_documents": 16
   }
 }

@@ -131,14 +131,14 @@
     {
       "name": "drx-contextual-communicator",
       "path": "skills/drx-contextual-communicator/SKILL.md",
-      "status": "unknown",
-      "version": "unversioned"
+      "status": "active",
+      "version": "1.0.0"
     },
     {
       "name": "drx-decision-council",
       "path": "skills/drx-decision-council/SKILL.md",
-      "status": "unknown",
-      "version": "unversioned"
+      "status": "active",
+      "version": "1.0.0"
     },
     {
       "name": "drx-execution-qc",
@@ -155,26 +155,26 @@
     {
       "name": "drx-fable2036-reasoner",
       "path": "skills/drx-fable2036-reasoner/SKILL.md",
-      "status": "unknown",
-      "version": "unversioned"
+      "status": "active",
+      "version": "1.0.0"
     },
     {
       "name": "drx-memory-retriever",
       "path": "skills/drx-memory-retriever/SKILL.md",
-      "status": "unknown",
-      "version": "unversioned"
+      "status": "active",
+      "version": "1.0.0"
     },
     {
       "name": "drx-prelive-simulator",
       "path": "skills/drx-prelive-simulator/SKILL.md",
-      "status": "unknown",
-      "version": "unversioned"
+      "status": "active",
+      "version": "1.0.0"
     },
     {
       "name": "drx-representative",
       "path": "skills/drx-representative/SKILL.md",
-      "status": "unknown",
-      "version": "unversioned"
+      "status": "active",
+      "version": "1.0.0"
     },
     {
       "name": "drx-systematic-debugger",
