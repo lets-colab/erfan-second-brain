@@ -1,4 +1,4 @@
-version: 1.3
+version: 1.4
 status: active
 principle: measure_before_modifying
 
@@ -31,17 +31,20 @@ promotion_rule:
 
 skills:
   drx-architecture-convergence:
-    version: unknown_until_baselined
+    version: 1.0.0
     benchmark_status: not_run
     runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
   drx-contextual-communicator:
-    version: unknown_until_baselined
+    version: 1.0.0
     benchmark_status: not_run
     runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
   drx-decision-council:
-    version: unknown_until_baselined
+    version: 1.0.0
     benchmark_status: not_run
     runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
   drx-execution-qc:
     version: 1.1.0
     previous_version: 1.0.0
@@ -66,9 +69,10 @@ skills:
           - evaluations/acceptance-tests.yaml@54aa2f9fbedc8a9b6ca2ab6b863dcf25af7b0dbb
         limitation: One successful run does not establish repeatability or prove v1.1.0 is better than v1.0.0.
   drx-fable2036-reasoner:
-    version: unknown_until_baselined
+    version: 1.0.0
     benchmark_status: not_run
     runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
   drx-fable-godlevel-execution:
     version: 1.0.0
     benchmark_status: not_run
@@ -77,17 +81,20 @@ skills:
     runs: []
     limitation: Presence in the repository does not establish superiority or repeatability; benchmark before any improvement claim.
   drx-memory-retriever:
-    version: unknown_until_baselined
+    version: 1.0.0
     benchmark_status: not_run
     runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
   drx-prelive-simulator:
-    version: unknown_until_baselined
+    version: 1.0.0
     benchmark_status: not_run
     runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
   drx-representative:
-    version: unknown_until_baselined
+    version: 1.0.0
     benchmark_status: not_run
     runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
   cofound-operator:
     version: 2.0.0
     benchmark_status: not_run
@@ -117,3 +124,4 @@ rules:
   - regression_failure_blocks_improvement_claim_until_repaired_or_explicitly_accepted
   - every_active_specialist_skill_used_for_material_work_must_be_registered_here
   - canonical_skill_identity_comes_from_skill_frontmatter_not_legacy_folder_name
+  - version_metadata_alone_is_not_an_improvement_claim
