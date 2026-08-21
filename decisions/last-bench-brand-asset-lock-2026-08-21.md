@@ -7,77 +7,87 @@ project: Last Bench
 owner: drx-ai-os
 ---
 
-# Last Bench Brand Asset Authority Correction — 2026-08-21
+# Last Bench Canonical Brand Asset Lock — 2026-08-21
 
-## Current authoritative state
+## Current authoritative state — VERIFIED BY DIRECT USER APPROVAL
 
-The Last Bench canonical logo is **NOT CURRENTLY VERIFIED in the repository/library by provenance alone**.
+On 21 August 2026, Erfan/Dr.X directly supplied and explicitly approved the exact Last Bench logo reference shown in the current conversation and said to lock it as the logo.
 
-Erfan/Dr.X explicitly corrected the prior AI claim on 21 August 2026: he did **not** approve the files previously labeled `master-logo-light.png` / `master-logo-dark.png` as the official Last Bench logo.
+The canonical approved source is now:
+- Conversation source file: `16544.jpg`
+- Conversation file id: `file_0000000007c4821187d7369b250cea6d`
+- SHA-256: `49c59068654d9067608f681bd96744cd3ea532d54ade2742238530ede028af86`
+- Persistent Library copy: `/LAST BENCH/LOCKED ASSETS/LastBench_Canonical_Logo_UserApproved_2026-08-21.jpg`
+- Persistent Library file id: `file_000000006f14820793a9d13057b1e475`
+- Persistent Library library_file_id: `libfile_f18a5bec16fc819198b8648e8ac19f71`
 
-Therefore the following files are **REVOKED AS CANONICAL SOURCES** unless Erfan explicitly re-approves them in a later interaction:
+The directly approved supporting guideline/reference board is:
+- Conversation source file: `16545.png`
+- Conversation file id: `file_00000000272c8207bb5a1205d3f19517`
+- SHA-256: `54f2ad2132db4cdb4ec2f2fadc277899187d5ab3403b84f1386b783555acc213`
+- Persistent Library copy: `/LAST BENCH/LOCKED ASSETS/LastBench_Canonical_Logo_Guideline_UserApproved_2026-08-21.png`
+- Persistent Library file id: `file_0000000014f88211b70497b12bac58d5`
+- Persistent Library library_file_id: `libfile_3a8d7ba101ac8191834bf0a82178a999`
+
+This direct current user approval supersedes the earlier temporary `UNKNOWN / NEEDS USER CONFIRMATION` state and any prior AI-generated or inferred logo lock.
+
+## Canonical logo identity
+
+The approved logo is the exact supplied artwork showing:
+- stacked `LAST` over `BENCH` wordmark;
+- green bench symbol;
+- green rising arrow integrated from the bench;
+- tagline `CREATING A LASTING BENCHMARK` beneath.
+
+The exact source pixels are authoritative. Visual similarity is not sufficient.
+
+## Revoked prior inferred assets
+
+The following remain revoked as canonical sources unless explicitly re-approved by Erfan/Dr.X:
 - `master-logo-light.png`
 - `master-logo-dark.png`
 - `last-bench-logo-lambda-light.png`
 - `last-bench-logo-lambda-dark.png`
 
-Any AI-generated manifest, guideline, lock file, filename, caption, metadata, or prior assistant statement that claims these assets were approved by Dr.X is insufficient authority and is superseded by the user's direct correction.
+Any AI-generated manifest, guideline, lock file, filename, caption, metadata, or prior assistant statement that previously claimed those assets were approved is insufficient authority and remains superseded.
+
+## Production rule — HARD LOCK
+
+For every Last Bench artifact containing the logo:
+
+`VERIFIED USER-APPROVED SOURCE -> DETERMINISTIC PLACEMENT -> FINAL SOURCE COMPARISON`
+
+Never regenerate, redraw, trace, reinterpret, reconstruct, retype, or visually approximate the confirmed logo with an image model.
+
+If a generative image tool would touch the logo layer, do not use that tool for the final composite. Generate only non-protected background material if needed, then place the exact approved logo afterward using deterministic compositing.
+
+## Real-person portrait rule — HARD LOCK
+
+For recognition posts, the exact supplied real-person portrait must also be treated as a protected asset whenever likeness accuracy matters.
+
+Allowed:
+- proportional scaling;
+- cropping;
+- deterministic masking/background removal;
+- non-destructive color/contrast adjustment.
+
+Not allowed unless the user explicitly asks for stylization:
+- changing the face;
+- changing hair/beard/facial structure;
+- inventing a different pose;
+- changing clothing by generation;
+- recreating the person from a poster/reference;
+- using an AI-generated lookalike.
+
+If the exact original portrait cannot be tied to a user-supplied source, stop and request the exact photo instead of guessing.
 
 ## Incident diagnosis
 
-The failure was not merely a bad logo rendering. It was an **authority/provenance failure**.
+The repeated failure was a production-path failure, not a memory failure alone.
 
-The assistant searched the persistent Library, found files with authoritative-looking names such as `master-logo-*`, and found AI-generated metadata/lock files asserting that they were approved. It then elevated those derived artifacts to canonical status without finding direct user approval tied to the exact pixels.
+The assistant correctly retrieved or was shown a protected logo/photo, but then routed the entire final poster through image generation. The generator re-rendered both the logo and the person's face, causing drift even though the intended assets had been 'locked'.
 
-This created a false chain:
-
-`AI-GENERATED ASSET/MANIFEST -> AUTHORITATIVE-SOUNDING FILENAME -> ASSUMED USER APPROVAL -> FALSE CANONICAL LOCK`
-
-That chain is invalid.
-
-## Root cause
-
-Failure class: **retrieval + provenance laundering + verification**.
-
-1. Filename semantics (`master`, `official`, `locked`) were mistaken for approval evidence.
-2. Model-generated Library assets and model-generated brand-lock metadata were treated as though they were user-authored sources.
-3. A prior AI statement claiming user approval was reused as evidence for later work.
-4. The exact source image was not traced back to a user-uploaded/explicitly approved asset.
-5. Direct current user correction was not available until now; once given, it supersedes all inferred approval.
-
-## Permanent Last Bench logo authority rule
-
-A Last Bench logo may be called canonical only if at least one of these is true:
-
-1. Erfan/Dr.X explicitly uploads the exact logo asset and states that it is the official/current/correct logo; or
-2. Erfan/Dr.X explicitly identifies an existing exact file/image as the official/current/correct logo; or
-3. a repository/Drive source has retrievable provenance showing it originated from such direct user approval, with no later user correction superseding it.
-
-The following are **never sufficient by themselves**:
-- a filename containing `official`, `master`, `final`, or `locked`;
-- AI-generated Library metadata;
-- an AI-generated brand guideline or manifest;
-- a previous assistant's claim that the user approved something;
-- a logo appearing in an AI-generated poster/mockup;
-- visual similarity to another Last Bench asset.
-
-If approval provenance cannot be established, the correct state is:
-
-`CANONICAL LOGO = UNKNOWN / NEEDS USER CONFIRMATION`
-
-Do not guess.
-
-## Production rule after confirmation
-
-Once Erfan identifies the correct source asset, branded work must use:
-
-`VERIFIED USER-APPROVED SOURCE -> DETERMINISTIC PLACEMENT -> FINAL PIXEL/SOURCE COMPARISON`
-
-Never regenerate, redraw, trace, reinterpret, or reconstruct the confirmed logo with an image model.
-
-## Real-person portrait rule
-
-Supplied real-person portraits used for recognition posts are also protected assets when likeness accuracy is required. They may be cropped, masked, background-removed, or color-adjusted non-destructively, but the person's face must not be reconstructed by generation unless Erfan explicitly requests a stylized transformation.
+Therefore 'locked in memory' is not enough. The final production toolchain must also preserve the asset deterministically.
 
 ## Campaign isolation for 24 August
 
@@ -91,15 +101,16 @@ Keep these assets distinct unless Erfan explicitly merges them:
 ## Mandatory acceptance test before handoff
 
 A Last Bench branded artifact is not ready until:
-- logo approval provenance is verified;
-- exact approved source asset is retrieved;
+- exact user-approved logo source is retrieved;
+- exact logo hash/provenance matches this decision;
 - logo is placed deterministically, never generated;
-- supplied real-person portrait is preserved when likeness accuracy is required;
-- final render is compared to the approved source after the last edit;
+- exact original real-person portrait is retrieved if likeness accuracy matters;
+- no facial reconstruction or AI identity drift occurred;
+- final render is compared to the approved logo source and original portrait after the last edit;
 - names, titles, event date/day, address and contacts are checked;
 - campaign purpose/audience is not mixed with another asset;
 - any QR decodes from the final exported artifact to the approved destination.
 
 ## Escalation rule
 
-Any future use of a Last Bench logo whose exact user approval cannot be proven is a **process regression**. Stop before rendering and request/resolve the authoritative source instead of inferring one.
+Any future Last Bench logo drift or real-person identity drift is a **process regression**. Stop the generative final-render path immediately and return to deterministic compositing with the protected sources.
