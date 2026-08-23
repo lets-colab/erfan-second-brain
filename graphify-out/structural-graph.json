@@ -25,6 +25,13 @@
       "word_count": 698
     },
     {
+      "id": "architecture/DRX-AION-SIGMA.md",
+      "title": "DR.X AION SIGMA — Compound Intelligence Standard",
+      "kind": "architecture",
+      "status": "active",
+      "word_count": 1462
+    },
+    {
       "id": "areas/channel-registry.md",
       "title": "Channel Registry",
       "kind": "note",
@@ -454,9 +461,9 @@
     }
   ],
   "summary": {
-    "documents": 46,
+    "documents": 47,
     "edges": 25,
-    "words": 43750,
-    "isolated_documents": 16
+    "words": 45212,
+    "isolated_documents": 17
   }
 }
