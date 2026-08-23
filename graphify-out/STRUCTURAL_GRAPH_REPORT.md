@@ -6,10 +6,10 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 
 ## Current corpus
 
-- Documents indexed: **47**
-- Approximate words: **45,212**
+- Documents indexed: **48**
+- Approximate words: **45,662**
 - Explicit internal reference edges: **25**
-- Structurally isolated documents: **17**
+- Structurally isolated documents: **18**
 - Project records: **6**
 - Skill records: **12**
 - Topics from frontmatter tags: **49**
@@ -30,6 +30,7 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 - `areas/drx-identity-covenant.md`
 - `decisions/2026-07-19-obsidian-first-knowledge-base.md`
 - `decisions/cofound-product-hierarchy-2026-08-17.md`
+- `decisions/drx-ai-aion-sigma-integration-2026-08-23.md`
 - `notes/last-bench-legal-review-source.md`
 - `projects/colab.md`
 - `reviews/cofound-final-convergence-audit-2026-08-18.md`

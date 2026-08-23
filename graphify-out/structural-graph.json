@@ -88,6 +88,13 @@
       "word_count": 505
     },
     {
+      "id": "decisions/drx-ai-aion-sigma-integration-2026-08-23.md",
+      "title": "DR.X AI — AION SIGMA Integration Decision",
+      "kind": "decision",
+      "status": "active",
+      "word_count": 450
+    },
+    {
       "id": "decisions/founder-intelligence-canonical-lock-2026-08-17.md",
       "title": "CO.FOUND / Founder Intelligence — FINAL CONVERGENCE LOCK v4",
       "kind": "decision",
@@ -461,9 +468,9 @@
     }
   ],
   "summary": {
-    "documents": 47,
+    "documents": 48,
     "edges": 25,
-    "words": 45212,
-    "isolated_documents": 17
+    "words": 45662,
+    "isolated_documents": 18
   }
 }
