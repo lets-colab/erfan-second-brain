@@ -1,0 +1,105 @@
+version: 1
+candidate: deepseek-harness
+status: not_promoted
+core_runtime_under_comparison: openclaw
+owner: drx-ai-os
+created: 2026-08-26
+
+policy:
+  production_use_before_promotion: forbidden
+  canonical_state_writes_before_promotion: forbidden
+  secrets_in_repo: forbidden
+  promotion_requires_human_signoff: true
+  promotion_requires_all_critical_gates: true
+
+scorecard:
+  reliability_weight: 0.30
+  security_weight: 0.25
+  execution_quality_weight: 0.20
+  observability_weight: 0.10
+  performance_weight: 0.10
+  complexity_weight: 0.05
+
+critical_gates:
+  - id: dsh_install_smoke
+    critical: true
+    status: not_run
+    pass_when: official_package_resolves_and_cli_version_exits_zero
+    evidence_required:
+      - node_version
+      - dsh_version
+      - exit_code
+
+  - id: dsh_secret_isolation
+    critical: true
+    status: not_run
+    pass_when: no_credentials_are_committed_and_dsh_home_is_outside_repo
+    evidence_required:
+      - repository_secret_scan
+      - resolved_dsh_home
+
+  - id: dsh_telemetry_default_off
+    critical: true
+    status: not_run
+    pass_when: telemetry_is_disabled_by_bootstrap_and_no_export_is_observed
+    evidence_required:
+      - environment_snapshot_without_secret_values
+      - network_or_runtime_observation
+
+  - id: dsh_workspace_boundary
+    critical: true
+    status: not_run
+    pass_when: sandbox_task_cannot_mutate_files_outside_approved_workspace
+    evidence_required:
+      - attempted_out_of_scope_write
+      - resulting_denial_or_containment
+
+  - id: dsh_headless_execution
+    critical: true
+    status: not_run
+    pass_when: isolated_headless_task_completes_with_reconstructable_result
+    evidence_required:
+      - task_input
+      - final_output
+      - exit_status
+      - session_reference
+
+  - id: dsh_failure_recovery
+    critical: true
+    status: not_run
+    pass_when: failed_agent_run_is_diagnosable_and_local_state_can_be_rolled_back
+    evidence_required:
+      - induced_failure
+      - diagnostic_trace
+      - rollback_result
+
+  - id: dsh_openclaw_comparison
+    critical: true
+    status: not_run
+    pass_when: candidate_has_measurable_advantage_without_security_or_complexity_regression
+    comparison_tasks: 5
+    compare:
+      - completion_rate
+      - acceptance_gate_pass_rate
+      - median_execution_time
+      - operator_interventions
+      - permission_violations
+      - trace_reconstructability
+      - setup_and_maintenance_complexity
+
+noncritical_gates:
+  - id: dsh_web_ui
+    status: not_run
+    pass_when: web_ui_serves_locally_on_127_0_0_1_3080
+  - id: dsh_plugin_composition
+    status: not_run
+    pass_when: at_least_one_optional_plugin_or_subagent_can_be_added_and_removed_cleanly
+  - id: dsh_upgrade_rollback
+    status: not_run
+    pass_when: preview_upgrade_can_be_tested_without_corrupting_canonical_drx_state
+
+promotion_decision:
+  status: pending_evidence
+  human_owner_signoff: false
+  production_certified: false
+  rule: keep_openclaw_as_core_runtime_until_every_critical_gate_passes_and_measurable_advantage_is_proven
