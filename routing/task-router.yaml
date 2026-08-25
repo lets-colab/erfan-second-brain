@@ -1,4 +1,4 @@
-version: 2.3
+version: 2.4
 status: locked-design
 principle: choose_the_simplest_capable_path
 
@@ -65,6 +65,23 @@ routes:
   contextual_memory_lookup:
     source: memory_assist
     authoritative: false
+
+runtime_experiments:
+  deepseek_harness:
+    status: sandbox_candidate
+    manifest: runtime/deepseek-harness/manifest.yaml
+    admission_gate: evaluations/deepseek-harness-admission.yaml
+    current_core_runtime: openclaw
+    allowed_for:
+      - isolated_agent_harness_evaluation
+      - plugin_composition_experiments
+      - disposable_repository_tasks
+      - headless_execution_tests
+    forbidden_for:
+      - production_automation
+      - canonical_state_writes
+      - sensitive_credential_migration
+      - replacing_openclaw_without_promotion_evidence
 
 material_execution_contract:
   - define_objective
