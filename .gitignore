@@ -6,3 +6,6 @@
 graphify-out/.graphify_*
 graphify-out/cache/
 graphify-out/cost.json
+.env
+.dsh/
+runtime/deepseek-harness/.state/
