@@ -15,7 +15,7 @@
       "title": "Erfan Second Brain",
       "kind": "resource",
       "status": "active",
-      "word_count": 1102
+      "word_count": 1191
     },
     {
       "id": "architecture/DRX-AI-OS.md",
@@ -440,6 +440,11 @@
     },
     {
       "source": "README.md",
+      "target": "skills/drx-founder-portfolio-trendcraft/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
       "target": "skills/drx-systematic-debugger/SKILL.md",
       "type": "references"
     },
@@ -476,8 +481,8 @@
   ],
   "summary": {
     "documents": 49,
-    "edges": 25,
-    "words": 47516,
-    "isolated_documents": 19
+    "edges": 26,
+    "words": 47605,
+    "isolated_documents": 18
   }
 }
