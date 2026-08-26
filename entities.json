@@ -1,7 +1,187 @@
 {
+  "schema_version": 2,
+  "generated_by": "scripts/rebuild_knowledge_index.py",
   "people": [
     "Erfan"
   ],
-  "projects": [],
-  "topics": []
+  "projects": [
+    "CO.FOUND — Canonical Continuity Memory v2",
+    "CO.FOUND — Capability, Skill & Tool Registry v4.1",
+    "CO.FOUND — Evolution Ledger",
+    "Co.lab",
+    "Founder Command Center + OS — HISTORICAL / SUPERSEDED",
+    "Personal Second Brain"
+  ],
+  "skills": [
+    "cofound-operator",
+    "drx-architecture-convergence",
+    "drx-brand-asset-lock",
+    "drx-contextual-communicator",
+    "drx-decision-council",
+    "drx-execution-qc",
+    "drx-fable-godlevel-execution",
+    "drx-fable2036-reasoner",
+    "drx-memory-retriever",
+    "drx-prelive-simulator",
+    "drx-representative",
+    "drx-systematic-debugger"
+  ],
+  "topics": [
+    "acceptance",
+    "approval-required",
+    "architecture",
+    "authority",
+    "brand-development",
+    "capabilities",
+    "channels",
+    "class-a",
+    "cofound",
+    "colab",
+    "community",
+    "creators",
+    "digital-clone",
+    "drx",
+    "drx-ai-os",
+    "evolution",
+    "founder-command-center",
+    "founder-intelligence",
+    "governance",
+    "historical",
+    "identity",
+    "integrations",
+    "knowledge-log",
+    "knowledge-readiness",
+    "last-bench",
+    "lastbench",
+    "learning",
+    "legal-review",
+    "letsco-labs",
+    "obsidian",
+    "personal-assistant",
+    "portability",
+    "production-readiness",
+    "provenance",
+    "qc",
+    "readiness",
+    "representation",
+    "scoring",
+    "second-brain",
+    "skills",
+    "source-quality",
+    "sources",
+    "sync",
+    "trust",
+    "user-validation",
+    "v0",
+    "verification",
+    "voice",
+    "whatsapp"
+  ],
+  "project_records": [
+    {
+      "name": "CO.FOUND — Canonical Continuity Memory v2",
+      "path": "projects/cofound.md",
+      "status": "active"
+    },
+    {
+      "name": "CO.FOUND — Capability, Skill & Tool Registry v4.1",
+      "path": "projects/founder-command-center-capability-registry.md",
+      "status": "active"
+    },
+    {
+      "name": "CO.FOUND — Evolution Ledger",
+      "path": "projects/cofound-evolution-ledger.md",
+      "status": "active"
+    },
+    {
+      "name": "Co.lab",
+      "path": "projects/colab.md",
+      "status": "active"
+    },
+    {
+      "name": "Founder Command Center + OS — HISTORICAL / SUPERSEDED",
+      "path": "projects/founder-command-center-os.md",
+      "status": "superseded"
+    },
+    {
+      "name": "Personal Second Brain",
+      "path": "projects/personal-second-brain.md",
+      "status": "active"
+    }
+  ],
+  "skill_records": [
+    {
+      "name": "cofound-operator",
+      "path": "skills/founder-command-center-operator/SKILL.md",
+      "status": "active",
+      "version": "2.0.0"
+    },
+    {
+      "name": "drx-architecture-convergence",
+      "path": "skills/drx-architecture-convergence/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-brand-asset-lock",
+      "path": "skills/drx-brand-asset-lock/SKILL.md",
+      "status": "active",
+      "version": "1.0.3"
+    },
+    {
+      "name": "drx-contextual-communicator",
+      "path": "skills/drx-contextual-communicator/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-decision-council",
+      "path": "skills/drx-decision-council/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-execution-qc",
+      "path": "skills/drx-execution-qc/SKILL.md",
+      "status": "active",
+      "version": "1.1.0"
+    },
+    {
+      "name": "drx-fable-godlevel-execution",
+      "path": "skills/drx-fable-godlevel-execution/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-fable2036-reasoner",
+      "path": "skills/drx-fable2036-reasoner/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-memory-retriever",
+      "path": "skills/drx-memory-retriever/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-prelive-simulator",
+      "path": "skills/drx-prelive-simulator/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-representative",
+      "path": "skills/drx-representative/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "name": "drx-systematic-debugger",
+      "path": "skills/drx-systematic-debugger/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    }
+  ],
+  "source_documents": 48
 }

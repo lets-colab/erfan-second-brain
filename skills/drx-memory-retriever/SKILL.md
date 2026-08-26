@@ -1,6 +1,9 @@
 ---
 name: drx-memory-retriever
 description: Assemble a verified, privacy-aware Dr.X context packet from the current conversation, full accessible contact thread, approved chat backups, Google Drive, the Erfan Second Brain, MemPalace, and project sources. Use before replies or decisions that depend on relationship history, prior commitments, business knowledge, identity, tone, or facts not fully present in the latest message.
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # Retrieve Context Before Acting

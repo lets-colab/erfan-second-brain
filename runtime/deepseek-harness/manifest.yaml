@@ -1,0 +1,62 @@
+version: 1
+status: sandbox_candidate
+owner: drx-ai-os
+installed_on: 2026-08-26
+
+identity:
+  name: deepseek-harness
+  upstream_repository: deepseek-ai/deepseek-harness
+  upstream_package: '@deepseek-ai/dsh'
+  upstream_license: MIT
+  upstream_release_observed: 0.1.1-rc.2
+  maturity: developer_preview
+
+role:
+  classification: candidate_agent_harness
+  core_runtime_replaced: false
+  current_core_runtime: openclaw
+  purpose:
+    - evaluate_composable_agent_harness_architecture
+    - evaluate_plugin_based_models_tools_skills_sessions_sandboxes_storage_loops_scheduling_ui
+    - test_headless_and_web_agent_execution
+    - test_subagent_composition_with_existing_execution_engines
+
+architecture_rules:
+  - do_not_create_parallel_second_brain
+  - do_not_treat_deepseek_harness_as_a_drx_skill
+  - do_not_promote_to_core_runtime_without_evidence
+  - preserve_chatgpt_as_executive_interface
+  - preserve_github_as_canonical_technical_source
+  - preserve_openclaw_as_core_runtime_until_admission_gate_passes
+  - preserve_drx_execution_qc_as_final_gate_for_material_work
+
+security:
+  secrets_in_repository: forbidden
+  credential_reference: DEEPSEEK_API_KEY
+  dsh_home_default: '~/.drx-ai/dsh'
+  telemetry_default: disabled
+  production_writes: forbidden_while_sandbox
+  canonical_state_writes: forbidden_while_sandbox
+  sensitive_actions: require_human_approval
+
+runtime:
+  node_requirement: '^22.19.0 || >=24.0.0'
+  quickstart_command: 'npx --yes @deepseek-ai/dsh web --no-open'
+  default_web_url: 'http://127.0.0.1:3080'
+  bootstrap_windows: 'runtime/deepseek-harness/install.ps1'
+  bootstrap_macos_linux: 'runtime/deepseek-harness/install.sh'
+
+admission:
+  evaluation_file: evaluations/deepseek-harness-admission.yaml
+  promotion_requires:
+    - all_critical_gates_passed
+    - no_security_regression
+    - measurable_advantage_over_current_path
+    - human_owner_signoff
+
+rollback:
+  method:
+    - stop_deepseek_harness_process
+    - remove_local_dsh_home_if_desired
+    - delete_runtime_candidate_files_if_rejected
+    - retain_openclaw_routes_unchanged

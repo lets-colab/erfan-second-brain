@@ -1,0 +1,144 @@
+version: "1.0"
+project: "CO.FOUND"
+status: "active"
+canonical_product_spec: "decisions/founder-intelligence-canonical-lock-2026-08-17.md"
+implementation_hardening: "decisions/cofound-implementation-hardening-v4.1-2026-08-18.md"
+
+verdicts:
+  allowed:
+    - PASS
+    - PARTIAL
+    - BLOCKED
+    - NEEDS_APPROVAL
+    - FAIL
+
+build_authority:
+  critical: true
+  checks:
+    - id: BA-01
+      requirement: "v4 product lock is the authoritative product architecture"
+    - id: BA-02
+      requirement: "v4.1 hardening is the authoritative implementation substrate"
+    - id: BA-03
+      requirement: "active operator skill does not require killed or superseded behavior"
+    - id: BA-04
+      requirement: "active capability registry matches v4/v4.1 states"
+
+foundation:
+  critical: true
+  checks:
+    - id: FND-01
+      requirement: "authorization model can distinguish actor, role, company space, data scope, and action scope"
+    - id: FND-02
+      requirement: "AI action modes distinguish READ, PROPOSE, and explicitly authorized EXECUTE"
+    - id: FND-03
+      requirement: "cross-space retrieval is denied by default unless authorized"
+    - id: FND-04
+      requirement: "truth states include VERIFIED, PROVISIONAL, STALE, CONFLICTED, SIMULATED, UNKNOWN"
+    - id: FND-05
+      requirement: "conflicting credible sources are surfaced as CONFLICTED unless resolved by authority/timestamp/corroboration/human confirmation"
+    - id: FND-06
+      requirement: "material metrics preserve definition, method, source, freshness, owner, and target/baseline where applicable"
+
+recommendation_learning:
+  critical: true
+  checks:
+    - id: RL-01
+      requirement: "CO.FOUND records its own material recommendation with evidence, assumptions, confidence, alternatives, and expected outcome"
+    - id: RL-02
+      requirement: "founder response is recorded as accepted, modified, rejected, or deferred when material"
+    - id: RL-03
+      requirement: "actual result can later be linked to the recommendation and founder decision"
+    - id: RL-04
+      requirement: "recommendation outcome can be labeled helpful, neutral, harmful, or unresolved"
+
+connector_observability:
+  critical: true
+  checks:
+    - id: CO-01
+      requirement: "critical sources expose last successful read/sync and current freshness state"
+    - id: CO-02
+      requirement: "source failure or stale state downgrades dependent conclusions"
+    - id: CO-03
+      requirement: "material proposed/confirmed state changes preserve actor, evidence, previous state, new state, timestamp, and confirmation status"
+    - id: CO-04
+      requirement: "reversible changes preserve rollback/reversal information where technically possible"
+
+v0a:
+  critical: true
+  checks:
+    - id: V0A-01
+      requirement: "one real LastBench objective is represented without fake metrics"
+    - id: V0A-02
+      requirement: "ROOM answers destination/state/money/three critical missions/blocker/decision using sourced or explicitly unknown data"
+    - id: V0A-03
+      requirement: "FOCUS shows no more than three high-leverage actions per founder by default"
+    - id: V0A-04
+      requirement: "MAP shows no more than three first-level primary routes before drill-down"
+    - id: V0A-05
+      requirement: "at least one real blocker can trigger Detour alternatives"
+    - id: V0A-06
+      requirement: "money state is sourced and fact/model/simulation distinctions are visible"
+    - id: V0A-07
+      requirement: "lightweight Decision -> Outcome Memory exists for material choices"
+    - id: V0A-08
+      requirement: "meaningful real-world progress changes visible route/blocker/dependency state"
+
+v0b:
+  critical: true
+  checks:
+    - id: V0B-01
+      requirement: "ASK can answer the constrained founder questions from approved company context"
+    - id: V0B-02
+      requirement: "Meeting Mode converts meeting evidence into decisions/actions/owners with ambiguity flagged"
+    - id: V0B-03
+      requirement: "Since You Left summarizes only meaningful change and ends with the most important founder attention item"
+    - id: V0B-04
+      requirement: "correction-first update proposals can be confirmed or rejected by an authorized human"
+    - id: V0B-05
+      requirement: "Replay reconstructs captured historical state without hindsight overwrite"
+    - id: V0B-06
+      requirement: "at least one real capability-gap -> learn/guidance -> practice -> apply -> result -> skill-evidence flow is completed"
+    - id: V0B-07
+      requirement: "Pre-Live is visibly labeled simulation and does not present invented precise probabilities"
+
+attention_router:
+  critical: false
+  checks:
+    - id: AR-01
+      requirement: "meaningful events can route to NO_INTERRUPT, FOCUS, SINCE_YOU_LEFT, DIGEST, or URGENT_FOUNDER_ALERT"
+    - id: AR-02
+      requirement: "default routing is the least interruptive state that preserves decision quality"
+
+pilot_telemetry:
+  critical: true
+  checks:
+    - id: PT-01
+      requirement: "baseline exists for the current workflow before judging CO.FOUND"
+    - id: PT-02
+      requirement: "time-to-orient and time-to-retrieve-decision-rationale can be measured"
+    - id: PT-03
+      requirement: "manual correction/admin burden can be measured"
+    - id: PT-04
+      requirement: "Detour recommendation acceptance/modification/rejection can be measured"
+    - id: PT-05
+      requirement: "recommendation helpful/neutral/harmful/unresolved outcomes can be measured"
+    - id: PT-06
+      requirement: "capability-gap starts/completions/applied results can be measured"
+    - id: PT-07
+      requirement: "voluntary return behavior and weekly founder-review use can be measured without employee surveillance"
+
+kill_conditions:
+  - "MAP is consistently slower or more confusing than the baseline workflow"
+  - "Detour rarely changes or accelerates real decisions"
+  - "learning-through-work adds friction without applied capability gain"
+  - "state freshness requires substantial duplicate manual administration"
+  - "Replay documents history but does not improve judgment"
+  - "external teams value only human consulting rather than the product/system"
+  - "existing tools plus methodology provide materially equivalent value at substantially lower cost"
+
+completion_rule: >-
+  Do not call CO.FOUND V0 implemented or operational because specifications or code exist.
+  PASS requires fresh final-state evidence for every critical applicable check, including
+  live behavior where the requirement is behavioral. If live evidence is unavailable,
+  use PARTIAL or BLOCKED.

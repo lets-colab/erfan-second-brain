@@ -1,0 +1,109 @@
+version: 2.4
+status: locked-design
+principle: choose_the_simplest_capable_path
+
+routes:
+  executive_decision:
+    primary: chatgpt
+    fallback: claude
+    approval: human_for_material_commitments
+  strategy_synthesis:
+    primary: chatgpt
+    fallback: claude
+  long_document_synthesis:
+    primary: claude
+    fallback: chatgpt
+  creative_development:
+    primary: claude
+    fallback: chatgpt
+  client_material_deliverable:
+    primary: chatgpt
+    process_skill: drx-fable-godlevel-execution
+    final_gate: drx-execution-qc
+    rule: deliverable_first_then_improve_system
+  branded_artifact:
+    primary: chatgpt
+    process_skill: drx-brand-asset-lock
+    final_gate: drx-execution-qc
+    rule: protected_assets_require_verified_provenance_and_deterministic_final_compositing
+  repository_engineering:
+    primary: codex
+    runtime: openclaw
+  code_review_and_test:
+    primary: codex
+    runtime: openclaw
+  system_failure:
+    process_skill: drx-systematic-debugger
+    primary: codex
+    fallback: chatgpt
+    runtime: openclaw_when_runtime_access_is_required
+  local_automation:
+    primary: openclaw
+  google_ads_analysis:
+    primary: google_skill_capable_agent
+  analytics_analysis:
+    primary: google_skill_capable_agent
+  cofound_product_work:
+    primary: chatgpt
+    process_skill: cofound-operator
+    engineering: codex
+    long_synthesis_fallback: claude
+    retrieve_when_history_or_rationale_matters:
+      - projects/cofound-evolution-ledger.md
+      - decisions/founder-intelligence-canonical-lock-2026-08-17.md
+      - decisions/cofound-implementation-hardening-v4.1-2026-08-18.md
+      - projects/founder-command-center-capability-registry.md
+      - skills/founder-command-center-operator/SKILL.md
+      - evaluations/cofound-v0-acceptance.yaml
+    rule: do_not_infer_current_cofound_behavior_from_superseded_founder_command_center_files
+  canonical_technical_lookup:
+    source: github
+  canonical_operational_lookup:
+    source: notion
+  canonical_document_lookup:
+    source: google_drive
+  contextual_memory_lookup:
+    source: memory_assist
+    authoritative: false
+
+runtime_experiments:
+  deepseek_harness:
+    status: sandbox_candidate
+    manifest: runtime/deepseek-harness/manifest.yaml
+    admission_gate: evaluations/deepseek-harness-admission.yaml
+    current_core_runtime: openclaw
+    allowed_for:
+      - isolated_agent_harness_evaluation
+      - plugin_composition_experiments
+      - disposable_repository_tasks
+      - headless_execution_tests
+    forbidden_for:
+      - production_automation
+      - canonical_state_writes
+      - sensitive_credential_migration
+      - replacing_openclaw_without_promotion_evidence
+
+material_execution_contract:
+  - define_objective
+  - reconstruct_acceptance_criteria
+  - identify_dependencies_and_order
+  - choose_execution_engine
+  - invoke_matching_specialist_skill_when_required
+  - define_required_proof
+  - preserve_rollback_path_when_applicable
+  - execute
+  - run_drx_execution_qc_with_fresh_final_state_evidence
+
+rules:
+  - do_not_spawn_multiple_agents_without_clear_value
+  - retrieve_authoritative_context_before_material_execution
+  - route_sensitive_writes_through_approval_gate
+  - prefer_existing_skills_over_freeform_prompting
+  - record_route_reason_for_material_tasks
+  - diagnose_root_cause_before_material_repair
+  - parallelize_only_independent_work_with_clear_value
+  - any_material_change_invalidates_affected_prior_verification
+  - do_not_add_a_new_skill_when_an_existing_contract_can_own_the_job_cleanly
+  - specialist_skills_do_not_replace_the_mandatory_drx_execution_qc_final_gate
+  - preserve_material_product_evolution_in_the_canonical_evolution_ledger
+  - canonical_skill_identity_comes_from_skill_frontmatter_not_legacy_folder_name

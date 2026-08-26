@@ -1,12 +1,118 @@
 ---
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-08-18
 type: reflection
 status: active
 tags: [knowledge-log, readiness]
 ---
 
 # Knowledge Change Log
+
+## 2026-08-18 — CO.FOUND canonical evolution ledger + cross-AI recovery path
+
+- User correction/request: Erfan explicitly required **every meaningful evolution from this chat** to become a durable source of knowledge so future AI systems can understand how the product and reasoning evolved rather than seeing only the latest snapshot.
+- Added: `projects/cofound-evolution-ledger.md` as the canonical historical source. It records 32 major evolution stages from the original three-founder OS through Founder Command Center, trust correction, founder-question architecture, money/outcome logic, Outcome/Decision Graphs, Visual Action Branches, Detour/Google-Maps-like navigation, ROOM/MAP/FOCUS/ASK, Meeting Mode, Since You Left, learning-through-work, Momentum/game psychology, people/agents/capacity, Replay, Pre-Live, correction-first capture, epistemic relationships, multi-company CO.FOUND hierarchy, naming evolution, market-pressure testing, reasoning/convergence skill evolution, provenance-confabulation repair, v4 final convergence, v4.1 hardening, spec freeze, experimental success logic, and commercial path.
+- Provenance discipline: the ledger labels evidence classes and explicitly states `SUBSTANTIAL` coverage rather than claiming every historical sentence is independently retrievable. It preserves the Foundry historical-name issue as `UNVERIFIED_RECOLLECTION` rather than repeating the earlier unsupported recovery claim.
+- Added cross-AI recovery instructions to `README.md`: substantive CO.FOUND history/rationale work now retrieves Evolution Ledger -> v4 product lock -> v4.1 hardening -> capability registry -> active operator -> V0 acceptance gates.
+- Upgraded `routing/task-router.yaml` to v2.1 with a `cofound_product_work` route that points to the same recovery sequence and prohibits inferring current behavior from superseded Founder Command Center files.
+- Preservation rule: material future CO.FOUND evolution should update the evolution ledger with previous state, new evidence/correction, change classification, new state, and durable lesson rather than overwriting history.
+- Attempted but not applied: an additional `AGENTS.md` edit was blocked by the connector/safety layer. This does not invalidate the recovery path because README and task-router now provide explicit canonical retrieval instructions; no claim is made that AGENTS.md was changed.
+- Readiness reassessment: `areas/knowledge-readiness.md` remains **3.5 / 10.5 overall**. Historical continuity, provenance, source coverage, systems understanding, cross-AI recoverability, and contradiction resistance improved materially; live product/runtime evidence and broader personal validation remain the limiting dimensions.
+- Classification: direct user instruction + verified repository changes + model continuity/QC judgment.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 overall; strong increase in design/history continuity and retrieval quality, no new proof of live CO.FOUND product behavior or product-market fit.
+- Confidence: high on committed repository-state changes; medium-high that the recovery path will reduce future architecture drift, subject to future agents actually following repository routing/governance.
+- Remaining gap: rebuild Graphify/entity structures from the current August corpus so the explicit relationship graph also reflects the CO.FOUND evolution; then build/run the real LastBench V0 and collect acceptance evidence.
+
+## 2026-08-18 — CO.FOUND v4.1 trust, learning, and build-authority hardening
+
+- User authorization: after the final expert audit identified missing implementation foundations, Erfan explicitly asked to execute the hardening rather than continue ideation.
+- Added: `decisions/cofound-implementation-hardening-v4.1-2026-08-18.md`. This extends the locked v4 product without redesigning it and defines eight implementation contracts: authority/permissions, truth arbitration, Recommendation Ledger, connector health/observability, metric contract, Attention Router, company bootstrap, and pilot telemetry.
+- Added: `evaluations/cofound-v0-acceptance.yaml` with explicit critical gates for build authority, authorization/truth, recommendation-to-result learning, connector freshness/auditability, V0A, V0B, pilot telemetry, and kill conditions. The file explicitly forbids calling code/specification/tool setup an operational product without fresh behavioral evidence.
+- Upgraded in place: `skills/founder-command-center-operator/SKILL.md` -> active **CO.FOUND Operator v2.0.0** while retaining the legacy folder path for compatibility. The old XP-first/Mission-Control behavior is superseded; ROOM/MAP/FOCUS/ASK, Detour, Decision->Outcome Memory, Recommendation Ledger, learning-through-work, Momentum, truth states, authority, connector health, Attention Router, bootstrap, and V0 telemetry now govern the skill.
+- Upgraded in place: `projects/founder-command-center-capability-registry.md` -> **CO.FOUND Capability Registry v4.1**. XP/points/streaks/levels are now experimental rather than core; Detour is V0A core; authority, truth arbitration, recommendation learning, connector observability, metrics, attention routing, bootstrap, and telemetry are core foundations.
+- Spec-freeze repair: `projects/founder-command-center-os.md` is now explicitly `superseded` and retained only as a historical pointer. Its original full content remains preserved in Git history at blob `e1586d87a3a419109b5e1bfe2e7ff7f8d7aeec1d`.
+- Key new product-learning mechanism: CO.FOUND now has an explicit Recommendation Ledger so it can later compare `evidence -> recommendation -> founder response -> action -> actual result -> advice quality -> learning`. This is the missing inspectable substrate for company-specific learned guidance; no opaque autonomous self-training is claimed for V0.
+- Key trust mechanism: material state can be `VERIFIED`, `PROVISIONAL`, `STALE`, `CONFLICTED`, `SIMULATED`, or `UNKNOWN`; credible source conflicts must remain visible unless resolved through authoritative source, effective event time, corroboration, or authorized human confirmation.
+- Key governance mechanism: minimum authorization model is `Actor -> Role -> Company Space -> Data Scope -> Action Scope`, with AI modes `READ`, `PROPOSE`, and narrowly authorized `EXECUTE`; cross-space access is denied by default.
+- Readiness reassessment: `areas/knowledge-readiness.md` remains **3.5 / 10.5 overall** because the lowest material personal/user-validation dimensions did not change. Source/provenance, systems understanding, operational design, and risk/contradiction awareness improved materially.
+- Classification: direct user authorization + verified repository changes + model implementation/QC judgment. These contracts improve readiness; they do not prove CO.FOUND live behavior, product-market fit, or the wider DR.X runtime chain.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 overall; build readiness and measurement quality increased, live operational/product evidence remains the next gate.
+- Confidence: high on committed repository-state changes; medium on expected product-reliability benefit until the real LastBench V0 acceptance suite runs.
+- Remaining gap: build the real LastBench V0, gather baseline and telemetry, run `evaluations/cofound-v0-acceptance.yaml`, then test service-assisted external teams. Do not interpret this specification hardening as a completed or operational CO.FOUND product.
+
+## 2026-08-18 — DR.X Learning Engine core + systematic debugging
+
+- User request: after a Fable-2036 review of the Erfan Second Brain skills, Erfan authorized the recommended `10.5/10` action rather than another conceptual architecture pass.
+- Installed: `skills/drx-systematic-debugger/SKILL.md` v1.0.0 as the dedicated failure-diagnosis path for reproduction, failing-boundary isolation, falsifiable causal hypotheses, minimal discriminating tests, root-cause repair, regression checks, and escalation after three materially different failed repair hypotheses.
+- Upgraded: `skills/drx-execution-qc/SKILL.md` from v1.0.0 to v1.1.0 with a fresh-final-state rule: a relevant material change invalidates affected earlier verification, delegated-agent success is not final proof, and PASS requires current evidence bound to a final-state reference when technically possible.
+- Upgraded: `routing/task-router.yaml` to v2. Failure diagnosis now routes through `drx-systematic-debugger`; material execution uses an explicit objective -> acceptance criteria -> dependencies/order -> engine -> proof -> rollback -> execution -> QC contract instead of adding a redundant universal planning skill.
+- Upgraded: `observability/event-schema.yaml` to v2 so material executions can record skill version, acceptance criteria, verification evidence, final-state reference, failure class, root cause, repair count, regression status, user correction/acceptance, benchmark context, and invalidated stale evidence.
+- Upgraded: `evaluations/acceptance-tests.yaml` to v2 with critical release gates for fresh verification, root-cause debugging, and skill regression in addition to existing handoff, isolation, approval, provenance, repeatability, injection-resistance and recovery gates.
+- Added: `evaluations/skill-fitness.yaml`, a non-vanity registry that requires representative repeated runs, regression evidence, requirement coverage, repair/correction rates and final-state verification before a skill version is labeled improved.
+- Added: `evaluations/acceptance-evidence.yaml`, which explicitly records the current suite as not production-certified and initializes acceptance tests as `not_run` until retrievable execution evidence exists.
+- Updated: `AGENTS.md` and `README.md` now make systematic debugging, fresh verification, skill fitness, and evidence-based learning part of the canonical operating contract.
+- Readiness reassessment: `areas/knowledge-readiness.md` remains **3.5 / 10.5 overall**. Design readiness, causal debugging discipline, completion governance and measurement capability improved; personal knowledge gaps and repeated end-to-end runtime verification remain limiting.
+- Classification: direct user authorization + verified GitHub repository changes + model systems/QC judgment. No claim is made that these contracts are already proven across all live runtimes.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 overall; design/measurement readiness improved materially, operational verification did not yet clear the wider acceptance suite.
+- Confidence: high on committed repository-state changes; medium on expected reliability benefit until representative live benchmark runs and real debugging incidents are recorded.
+- Remaining gap: fresh-verify this repository change, execute the acceptance suite, baseline each production skill with repeated cases, exercise the debugger on real failures, and use observed corrections/regressions—not prompt sophistication—to drive future skill changes.
+
+## 2026-08-17 — Second Brain system audit, branch repair, and execution-QC sync
+
+- User request: rate and review the GitHub Second Brain, then update skills and synchronize the system based on the audit rather than assuming prior setup was complete.
+- Verified repository state: `lets-colab/erfan-second-brain` is the canonical repository; `main` contained the newest CO.FOUND / Founder Intelligence / skill work, while `build/drx-ai-os-v1` still contained six valid DR.X AI OS contract files and was 22 commits behind `main` at audit time.
+- Repair: promoted only the six valid missing contracts into current `main` instead of blindly merging the stale branch: `architecture/DRX-AI-OS.md`, `evaluations/acceptance-tests.yaml`, `governance/authority-matrix.yaml`, `observability/event-schema.yaml`, `routing/task-router.yaml`, and `skills/_template/SKILL.md`.
+- Installed: `skills/drx-execution-qc/SKILL.md`, a mandatory material-completion gate that reconstructs requirements, tests definition-of-done evidence, inspects the actual artifact/system, distinguishes attempts from verified outcomes, repairs safe failures, and permits only PASS / PARTIAL / BLOCKED / NEEDS_APPROVAL / FAIL verdicts.
+- Updated: `AGENTS.md` now requires canonical retrieval, correct source ownership, production skill contracts, routing discipline, final-state proof, execution QC, observability, and acceptance-test honesty before completion claims.
+- Updated: `README.md` now reflects the current DR.X AI OS / CO.FOUND architecture instead of only the July Obsidian-first vault model.
+- Audit finding: `graphify-out/GRAPH_REPORT.md` is stale from 2026-07-19 and covers only about 2,031 words / 34 nodes / 31 edges; `entities.json` contains only Erfan and no projects/topics, so the explicit graph/entity layer materially under-represents the current August system.
+- Audit finding: architecture, governance and skill quality are strong, but acceptance tests and wider OpenClaw/Claude/Codex/memory/Notion/Drive runtime behavior are not established as fully live end-to-end by this repository audit.
+- Durable artifact added: `reviews/second-brain-system-audit-2026-08-17.md` with a strict working-system rating of 7.2 / 10.5 after this sync and a verification-first path toward 10.5.
+- Classification: verified GitHub repository state + user-stated synchronization request + model systems/QC judgment.
+- Previous overall personal knowledge readiness: 3.5 / 10.5.
+- New overall personal knowledge readiness: 3.5 / 10.5.
+- Delta: 0.0 on governed personal knowledge readiness. Design readiness, canonical clarity and completion governance improved materially, but verified personal knowledge and live runtime acceptance evidence remain limiting.
+- Confidence: high on repository-state findings and committed repairs; medium on system-level operational score because complete live runtime verification was outside the evidence available in this audit.
+- Remaining gap: rebuild the graph/entity layer, execute the acceptance suite, and verify each claimed cross-tool/runtime integration with health checks and real end-to-end results.
+
+## 2026-08-17 — Fable-2036 reasoning protocol + Founder Intelligence full re-audit
+
+- User correction: Erfan identified that repeated audits were drifting because the reasoning process kept generating new architecture before completing the requested full audit/simulation sequence.
+- Verified external fact: Claude Fable 5 is a real 2026 Anthropic model built for demanding long-horizon reasoning and agentic work. The requested "Fable from 2036" remains a speculative capability lens, not a factual future model claim.
+- Installed: `skills/drx-fable2036-reasoner/SKILL.md`, combining verified Fable-5-style long-horizon/self-evaluating reasoning with explicit 2036-lens capabilities such as temporal consistency, contradiction detection, counterfactual breadth, recursive self-critique, and convergence while preserving 2026 reality boundaries.
+- Installed earlier in the same refinement cycle: `skills/drx-architecture-convergence/SKILL.md`; upgraded `skills/drx-prelive-simulator/SKILL.md` with canonical-path binding and 2036-in-2026 mode.
+- Market correction: 2026 primary-source review shows that AI chief of staff, outcome/work graphs, human+agent planning, strategy-to-funds alignment, scenario planning, meeting intelligence, and strategy-to-outcome tracing are already being productized by Asana, Atlassian, Notion, Planview, WorkBoard, Slack, and others. These mechanisms cannot honestly be claimed as unique inventions.
+- Product correction: Founder Intelligence should differentiate through founder-native cognitive compression, Visual Action Branch navigation, Detour behavior, temporal decision/outcome memory, correction-first company-model construction, learned company-specific guidance, and Co.lab implementation/distribution know-how. These are hypotheses, not proven moat.
+- Architecture correction: the temporal event/decision contract is foundational, but building a sophisticated graph database or event-sourcing backend before proving founder behavior would be another overcorrection. The new V0 co-builds a lightweight decision/outcome record with one real LastBench MAP.
+- New trust mechanism: graph relationships must preserve epistemic status so operational dependencies, strategic hypotheses, observed associations, recorded outcomes, and simulations are not visually confused with proven causality.
+- Target-user correction: the preferred early external ICP is founder-led operating teams with real recurring workflows, money, customers/leads, and fragmented context; idea-stage founders and large enterprise strategic-portfolio buyers are poor initial fit.
+- Canonical artifact replaced in-place (prior version preserved in git history): `decisions/founder-intelligence-canonical-lock-2026-08-17.md` now contains the v2 fresh-audit architecture and a two-stage 30-day LastBench V0.
+- Classification: user-stated correction + verified 2026 market evidence + model product judgment/hypothesis.
+- Previous overall readiness: 3.5 / 10.5.
+- New overall readiness: 3.5 / 10.5.
+- Delta: 0.0 overall because the score is governed by the lowest material dimension; systems understanding, freshness, provenance, operational reasoning, and contradiction awareness improved materially while deeper personal validation and real product-market evidence remain limiting.
+- Confidence: high on the recorded product/architecture decisions and current competitor overlap; medium on the proposed Founder Intelligence differentiation; low/unknown on external retention, pricing, willingness-to-pay, and standalone SaaS success until real pilots occur.
+- Remaining gap: run the 30-day LastBench pilot, measure maintenance burden and decision-change value, test correction-first capture, and validate 3–5 external operating teams before crossing into expensive SaaS engineering.
+
+## 2026-08-17 — Founder Command Center + OS product hypothesis added
+
+- Learned: Erfan wants the LastBench Founder OS to evolve into a one-glance Founder Command Center with calendar and meeting intelligence, collaborative chat integrations, task assignment, live financial state, scenario projections, gamified execution, visual roadmap, long-term goals, community-impact tasks, and an always-visible reminder of why the founders started.
+- Learned: Erfan sees this as a possible reusable Co.lab product alongside a Presence / Personal Portfolio tool and a Creator / Influencer Collaboration tool.
+- Source: direct user instruction in the 2026-08-17 conversation; Fireflies meeting context from 2026-08-16; external product/gamification research reviewed 2026-08-17.
+- Classification: user-stated product direction plus researched product hypothesis. Market-success claims remain unverified.
+- Product judgment: the concept is credible as an internal operating layer and service-led Co.lab tool, but standalone SaaS differentiation is not yet validated. The recommended path is LastBench dogfood -> behavioral measurement -> external pilots -> paid conversion -> productization.
+- Durable artifact added: `projects/founder-command-center-os.md`; `projects/colab.md` updated with the product/tool hypothesis.
+- Previous overall readiness: 3.5 / 10.5.
+- New overall readiness: 3.5 / 10.5.
+- Delta: 0.0 overall. Project and systems understanding improved, but the readiness score is governed by the lowest material dimension and personal identity/values/user-validation gaps remain limiting.
+- Confidence: high that this reflects the user's stated product direction; medium on eventual market viability until usage and willingness-to-pay data exist.
+- Remaining gap: validate exact Co.lab product naming, target buyer, pricing, distribution wedge, and repeated external willingness to pay.
 
 ## 2026-07-19 — Personal second-brain mission established
 

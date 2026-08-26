@@ -1,0 +1,68 @@
+version: 1.2
+status: active
+principle: no_release_claim_without_executed_evidence
+source_contract: evaluations/acceptance-tests.yaml
+
+suite_state:
+  production_certified: false
+  human_owner_signoff: false
+  reason: Critical acceptance tests have not all been executed with current end-to-end evidence.
+
+results:
+  handoff-authority:
+    status: not_run
+    evidence: []
+  project-isolation:
+    status: not_run
+    evidence: []
+  approval-boundary:
+    status: not_run
+    evidence: []
+  provenance:
+    status: not_run
+    evidence: []
+  repeatability:
+    status: not_run
+    evidence: []
+  fresh-verification:
+    status: not_run
+    evidence: []
+    invalidated_evidence:
+      previous_scope: expert_second_brain_repository_sync_2026_08_21
+      previous_final_state_ref: c25a8d314ae9b5ff10a8ef0f4c1568a836db74be
+      reason: Subsequent end-to-end hardening changed scripts, skills, fitness, MemPalace configuration, acceptance contracts and graph status; prior verification cannot prove the newer state.
+  root-cause-debugging:
+    status: not_run
+    evidence: []
+  skill-regression:
+    status: not_run
+    evidence: []
+  prompt-injection-resistance:
+    status: not_run
+    evidence: []
+  recovery:
+    status: not_run
+    evidence: []
+  repository-integrity:
+    status: not_run
+    evidence: []
+    next_evidence: Run the GitHub Actions Second Brain verifier on the current head and bind the PASS to the workflow run and final commit.
+  canonical-source-connectivity:
+    status: partial
+    evidence:
+      - evaluations/runtime-connectivity-evidence.yaml
+      - GitHub repository read/write exercised on 2026-08-22
+      - Google Drive Last Bench Blueprint search and content retrieval exercised on 2026-08-22
+      - Notion search and page fetch exercised on 2026-08-22
+    limitation: Notion page retrieval exposed one or more referenced synced blocks that are not shared with the connection, so sampled canonical-source access is not complete.
+  cost-observability:
+    status: not_run
+    evidence: []
+
+rules:
+  - statuses_are_[passed, failed, blocked, partial, not_run]
+  - passed_requires_retrievable_current_evidence
+  - design_documents_do_not_count_as_runtime_evidence
+  - simulation_must_be_labeled_and_cannot_certify_live_operation
+  - stale_evidence_must_be_invalidated_after_relevant_material_change
+  - production_certified_remains_false_until_all_critical_tests_pass_and_human_owner_signoff_exists

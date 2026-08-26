@@ -1,6 +1,9 @@
 ---
 name: drx-decision-council
 description: Convene an independent GPT council for Dr.X material decisions, ambiguous communications, strategy, product judgment, public positioning, or high-impact recommendations, then deliver a Steve Jobs-style product-chair verdict focused on simplicity and coherence. Use when Erfan explicitly requests a council or final verdict, or when multiple reasonable options and meaningful downside justify independent review.
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # Convene the Dr.X Decision Council
