@@ -57,7 +57,7 @@
       "title": "Knowledge Readiness",
       "kind": "note",
       "status": "active",
-      "word_count": 871
+      "word_count": 938
     },
     {
       "id": "areas/operating-charter.md",
@@ -489,7 +489,7 @@
   "summary": {
     "documents": 50,
     "edges": 26,
-    "words": 48793,
+    "words": 48860,
     "isolated_documents": 19
   }
 }
