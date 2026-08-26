@@ -109,6 +109,27 @@
       "word_count": 699
     },
     {
+      "id": "integrations/claude-design/CLAUDE_CODE_SYNC_PROMPT.md",
+      "title": "Claude Code prompt — sync Claude Design into the shared DR.X source of truth",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 284
+    },
+    {
+      "id": "integrations/claude-design/SYNC_CONTRACT.md",
+      "title": "Claude Design ↔ DR.X Shared Design-System Sync Contract",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 485
+    },
+    {
+      "id": "integrations/claude-design/snapshots/lastbench-current/DESIGN_SYSTEM.md",
+      "title": "Last Bench — Current Claude-Derived Design System Snapshot",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 510
+    },
+    {
       "id": "notes/last-bench-legal-review-source.md",
       "title": "Last Bench Legal Review Source",
       "kind": "resource",
@@ -359,6 +380,13 @@
       "kind": "skills",
       "status": "active",
       "word_count": 1402
+    },
+    {
+      "id": "tools/claude-design-bridge-mcp/README.md",
+      "title": "DR.X Claude Design Bridge MCP",
+      "kind": "tools",
+      "status": "unknown",
+      "word_count": 428
     }
   ],
   "edges": [
@@ -494,9 +522,9 @@
     }
   ],
   "summary": {
-    "documents": 51,
+    "documents": 55,
     "edges": 26,
-    "words": 49683,
-    "isolated_documents": 20
+    "words": 51390,
+    "isolated_documents": 24
   }
 }

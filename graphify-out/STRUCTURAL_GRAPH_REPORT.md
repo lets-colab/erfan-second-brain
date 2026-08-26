@@ -6,10 +6,10 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 
 ## Current corpus
 
-- Documents indexed: **51**
-- Approximate words: **49,683**
+- Documents indexed: **55**
+- Approximate words: **51,390**
 - Explicit internal reference edges: **26**
-- Structurally isolated documents: **20**
+- Structurally isolated documents: **24**
 - Project records: **6**
 - Skill records: **14**
 - Topics from frontmatter tags: **54**
@@ -31,6 +31,9 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 - `decisions/2026-07-19-obsidian-first-knowledge-base.md`
 - `decisions/cofound-product-hierarchy-2026-08-17.md`
 - `decisions/drx-ai-aion-sigma-integration-2026-08-23.md`
+- `integrations/claude-design/CLAUDE_CODE_SYNC_PROMPT.md`
+- `integrations/claude-design/SYNC_CONTRACT.md`
+- `integrations/claude-design/snapshots/lastbench-current/DESIGN_SYSTEM.md`
 - `notes/last-bench-legal-review-source.md`
 - `projects/colab.md`
 - `reviews/cofound-final-convergence-audit-2026-08-18.md`
@@ -44,6 +47,7 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 - `skills/drx-fable2036-reasoner/SKILL.md`
 - `skills/drx-prelive-simulator/SKILL.md`
 - `skills/flawless/SKILL.md`
+- `tools/claude-design-bridge-mcp/README.md`
 
 ## Maintenance
 
