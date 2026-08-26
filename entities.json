@@ -21,6 +21,7 @@
     "drx-execution-qc",
     "drx-fable-godlevel-execution",
     "drx-fable2036-reasoner",
+    "drx-founder-portfolio-trendcraft",
     "drx-memory-retriever",
     "drx-prelive-simulator",
     "drx-representative",
@@ -40,12 +41,15 @@
     "colab",
     "community",
     "creators",
+    "design",
     "digital-clone",
     "drx",
     "drx-ai-os",
     "evolution",
+    "fable",
     "founder-command-center",
     "founder-intelligence",
+    "founder-portfolio",
     "governance",
     "historical",
     "identity",
@@ -60,6 +64,7 @@
     "obsidian",
     "personal-assistant",
     "portability",
+    "pressure-test",
     "production-readiness",
     "provenance",
     "qc",
@@ -71,6 +76,7 @@
     "source-quality",
     "sources",
     "sync",
+    "trendcraft",
     "trust",
     "user-validation",
     "v0",
@@ -160,6 +166,12 @@
       "version": "1.0.0"
     },
     {
+      "name": "drx-founder-portfolio-trendcraft",
+      "path": "skills/drx-founder-portfolio-trendcraft/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
       "name": "drx-memory-retriever",
       "path": "skills/drx-memory-retriever/SKILL.md",
       "status": "active",
@@ -190,5 +202,5 @@
       "version": "1.0.0"
     }
   ],
-  "source_documents": 49
+  "source_documents": 51
 }

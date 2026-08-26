@@ -15,7 +15,7 @@
       "title": "Erfan Second Brain",
       "kind": "resource",
       "status": "active",
-      "word_count": 1181
+      "word_count": 1270
     },
     {
       "id": "architecture/DRX-AI-OS.md",
@@ -57,7 +57,7 @@
       "title": "Knowledge Readiness",
       "kind": "note",
       "status": "active",
-      "word_count": 871
+      "word_count": 938
     },
     {
       "id": "areas/operating-charter.md",
@@ -193,11 +193,18 @@
       "word_count": 1212
     },
     {
+      "id": "reviews/founder-portfolio-trendcraft-pressure-test-2026-08-26.md",
+      "title": "Founder Portfolio Trendcraft — Pressure Test",
+      "kind": "review",
+      "status": "active",
+      "word_count": 718
+    },
+    {
       "id": "reviews/knowledge-change-log.md",
       "title": "Knowledge Change Log",
       "kind": "reflection",
       "status": "active",
-      "word_count": 3737
+      "word_count": 4207
     },
     {
       "id": "reviews/second-brain-system-audit-2026-08-17.md",
@@ -282,6 +289,13 @@
       "kind": "skills",
       "status": "active",
       "word_count": 1591
+    },
+    {
+      "id": "skills/drx-founder-portfolio-trendcraft/SKILL.md",
+      "title": "DR.X Founder Portfolio Trendcraft",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 1854
     },
     {
       "id": "skills/drx-memory-retriever/SKILL.md",
@@ -440,6 +454,11 @@
     },
     {
       "source": "README.md",
+      "target": "skills/drx-founder-portfolio-trendcraft/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
       "target": "skills/drx-systematic-debugger/SKILL.md",
       "type": "references"
     },
@@ -475,9 +494,9 @@
     }
   ],
   "summary": {
-    "documents": 49,
-    "edges": 25,
-    "words": 46485,
-    "isolated_documents": 19
+    "documents": 51,
+    "edges": 26,
+    "words": 49683,
+    "isolated_documents": 20
   }
 }

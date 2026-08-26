@@ -1,4 +1,4 @@
-version: 2.4
+version: 2.5
 status: locked-design
 principle: choose_the_simplest_capable_path
 
@@ -16,6 +16,14 @@ routes:
   creative_development:
     primary: claude
     fallback: chatgpt
+  founder_portfolio_experience:
+    primary: chatgpt
+    process_skill: drx-founder-portfolio-trendcraft
+    creative_concept: image_generation_or_capable_design_agent_when_useful
+    engineering: codex
+    protected_asset_gate: drx-brand-asset-lock_when_applicable
+    final_gate: drx-execution-qc
+    rule: create_an_ownable_founder_specific_design_system_not_a_trend_collage_or_template_reskin
   client_material_deliverable:
     primary: chatgpt
     process_skill: drx-fable-godlevel-execution
