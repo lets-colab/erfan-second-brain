@@ -6,13 +6,13 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 
 ## Current corpus
 
-- Documents indexed: **49**
-- Approximate words: **47,605**
+- Documents indexed: **50**
+- Approximate words: **48,323**
 - Explicit internal reference edges: **26**
-- Structurally isolated documents: **18**
+- Structurally isolated documents: **19**
 - Project records: **6**
 - Skill records: **13**
-- Topics from frontmatter tags: **49**
+- Topics from frontmatter tags: **54**
 
 ## Provenance rules
 
@@ -37,6 +37,7 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 - `reviews/cofound-ultramax-reaudit-2026-08-17.md`
 - `reviews/cofound-v4.1-execution-qc-2026-08-18.md`
 - `reviews/founder-intelligence-ultramax-audit-2026-08-17.md`
+- `reviews/founder-portfolio-trendcraft-pressure-test-2026-08-26.md`
 - `reviews/second-brain-system-audit-2026-08-17.md`
 - `reviews/second-brain-verification-audit-2026-08-21.md`
 - `skills/drx-architecture-convergence/SKILL.md`

@@ -193,6 +193,13 @@
       "word_count": 1212
     },
     {
+      "id": "reviews/founder-portfolio-trendcraft-pressure-test-2026-08-26.md",
+      "title": "Founder Portfolio Trendcraft — Pressure Test",
+      "kind": "review",
+      "status": "active",
+      "word_count": 718
+    },
+    {
       "id": "reviews/knowledge-change-log.md",
       "title": "Knowledge Change Log",
       "kind": "reflection",
@@ -480,9 +487,9 @@
     }
   ],
   "summary": {
-    "documents": 49,
+    "documents": 50,
     "edges": 26,
-    "words": 47605,
-    "isolated_documents": 18
+    "words": 48323,
+    "isolated_documents": 19
   }
 }
