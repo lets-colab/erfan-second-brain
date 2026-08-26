@@ -6,12 +6,12 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 
 ## Current corpus
 
-- Documents indexed: **48**
-- Approximate words: **45,662**
+- Documents indexed: **49**
+- Approximate words: **46,485**
 - Explicit internal reference edges: **25**
-- Structurally isolated documents: **18**
+- Structurally isolated documents: **19**
 - Project records: **6**
-- Skill records: **12**
+- Skill records: **13**
 - Topics from frontmatter tags: **49**
 
 ## Provenance rules
@@ -42,6 +42,7 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 - `skills/drx-architecture-convergence/SKILL.md`
 - `skills/drx-fable2036-reasoner/SKILL.md`
 - `skills/drx-prelive-simulator/SKILL.md`
+- `skills/flawless/SKILL.md`
 
 ## Maintenance
 

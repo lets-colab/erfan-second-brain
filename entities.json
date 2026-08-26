@@ -24,7 +24,8 @@
     "drx-memory-retriever",
     "drx-prelive-simulator",
     "drx-representative",
-    "drx-systematic-debugger"
+    "drx-systematic-debugger",
+    "flawless"
   ],
   "topics": [
     "acceptance",
@@ -181,7 +182,13 @@
       "path": "skills/drx-systematic-debugger/SKILL.md",
       "status": "active",
       "version": "1.0.0"
+    },
+    {
+      "name": "flawless",
+      "path": "skills/flawless/SKILL.md",
+      "status": "active",
+      "version": "1.0.0"
     }
   ],
-  "source_documents": 48
+  "source_documents": 49
 }

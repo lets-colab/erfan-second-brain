@@ -7,9 +7,9 @@ description: >
   truth, when the output is something a human will look at, or when the user invokes
   /flawless, "ultra mode", "god mode", or asks for flawless / trend-setting /
   perfect work.
-metadata:
-  author: Dr.X / Co.Lab
-  version: "1.0.0"
+status: active
+owner: drx-ai-os
+version: 1.0.0
 ---
 
 # Flawless
