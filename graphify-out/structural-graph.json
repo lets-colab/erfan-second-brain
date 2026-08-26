@@ -204,7 +204,7 @@
       "title": "Knowledge Change Log",
       "kind": "reflection",
       "status": "active",
-      "word_count": 3737
+      "word_count": 4207
     },
     {
       "id": "reviews/second-brain-system-audit-2026-08-17.md",
@@ -489,7 +489,7 @@
   "summary": {
     "documents": 50,
     "edges": 26,
-    "words": 48323,
+    "words": 48793,
     "isolated_documents": 19
   }
 }
