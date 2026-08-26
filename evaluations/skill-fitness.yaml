@@ -1,4 +1,4 @@
-version: 1.4
+version: 1.5
 status: active
 principle: measure_before_modifying
 
@@ -80,6 +80,32 @@ skills:
     final_gate: drx-execution-qc
     runs: []
     limitation: Presence in the repository does not establish superiority or repeatability; benchmark before any improvement claim.
+  drx-founder-portfolio-trendcraft:
+    version: 1.0.0
+    benchmark_status: in_progress
+    role: specialist_founder_portfolio_brand_experience_and_trend_creation_design
+    final_gate: drx-execution-qc
+    benchmark_suite: evaluations/founder-portfolio-trendcraft-benchmarks.yaml
+    runs:
+      - id: 2026-08-26-v0-to-v1-contract-pressure-test
+        task_type: founder_portfolio_design_reasoning_pressure_test
+        result: passed_after_repair
+        requirement_coverage: all_critical_contract_pressure_test_requirements_passed
+        false_completion_rate: 0_in_this_run
+        repair_count: 1
+        regression_status: not_applicable_new_skill
+        user_correction:
+          - require_design_output_to_originate_trends_not_only_follow_current_trends
+        user_acceptance: pending_real_artifact
+        verification_evidence:
+          - skills/drx-founder-portfolio-trendcraft/SKILL.md
+          - evaluations/founder-portfolio-trendcraft-benchmarks.yaml
+          - routing/task-router.yaml
+        limitation: >-
+          This run establishes contract-level pressure-test coverage only. It does not prove
+          repeated production quality, external trend adoption, award recognition, conversion lift,
+          or superiority over other design methods. Five or more representative real runs plus
+          fresh rendered-artifact verification are required before any improvement/promotion claim.
   drx-memory-retriever:
     version: 1.0.0
     benchmark_status: not_run
