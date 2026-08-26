@@ -150,3 +150,20 @@ After a meaningful durable knowledge or capability change:
 2. reassess `areas/knowledge-readiness.md`;
 3. update routing/fitness registries when a material specialist skill is added or changed;
 4. state clearly whether the change improved design readiness, operational verification, or both.
+
+## Session bootstrap
+
+Cloud Claude Code sessions run in a throwaway container, so MemPalace and
+Graphify have to be reinstalled each time. Rather than re-deriving context in
+tokens, run:
+
+```bash
+bash bootstrap.sh
+```
+
+It installs both tools, registers MemPalace as a user-scope MCP server,
+installs the Graphify skill, and mines this repo into the palace. Idempotent —
+re-run it after any restart. `--no-mine` skips the mining step.
+
+Then `mempalace wake-up` gives ~800 tokens of session context instead of
+re-reading the repository.

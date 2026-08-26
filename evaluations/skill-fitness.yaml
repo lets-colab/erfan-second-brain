@@ -140,6 +140,12 @@ skills:
     runs: []
     limitation: The protocol addresses known logo/portrait failure modes, but effectiveness is not proven until final exported artifacts pass source-comparison and user-acceptance benchmarks repeatedly.
 
+  flawless:
+    version: 1.0.0
+    benchmark_status: not_run
+    runs: []
+    limitation: Version metadata establishes the current contract baseline; it does not prove performance.
+
 rules:
   - do_not_invent_scores_without_runs
   - keep_raw_evidence_retrievable

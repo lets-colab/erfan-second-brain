@@ -15,7 +15,7 @@
       "title": "Erfan Second Brain",
       "kind": "resource",
       "status": "active",
-      "word_count": 1191
+      "word_count": 1270
     },
     {
       "id": "architecture/DRX-AI-OS.md",
@@ -368,6 +368,13 @@
       "word_count": 949
     },
     {
+      "id": "skills/flawless/SKILL.md",
+      "title": "Flawless",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 744
+    },
+    {
       "id": "skills/founder-command-center-operator/SKILL.md",
       "title": "CO.FOUND Operator",
       "kind": "skills",
@@ -515,9 +522,9 @@
     }
   ],
   "summary": {
-    "documents": 54,
+    "documents": 55,
     "edges": 26,
-    "words": 50567,
-    "isolated_documents": 23
+    "words": 51390,
+    "isolated_documents": 24
   }
 }
