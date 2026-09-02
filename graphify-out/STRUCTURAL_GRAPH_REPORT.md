@@ -6,13 +6,13 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 
 ## Current corpus
 
-- Documents indexed: **54**
-- Approximate words: **50,567**
-- Explicit internal reference edges: **26**
-- Structurally isolated documents: **23**
+- Documents indexed: **60**
+- Approximate words: **55,007**
+- Explicit internal reference edges: **33**
+- Structurally isolated documents: **25**
 - Project records: **6**
 - Skill records: **13**
-- Topics from frontmatter tags: **54**
+- Topics from frontmatter tags: **58**
 
 ## Provenance rules
 
@@ -25,6 +25,8 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 ## Structurally isolated documents
 
 - `AGENTS.md`
+- `DESIGN.md`
+- `PRODUCT.md`
 - `architecture/DRX-AION-SIGMA.md`
 - `areas/channel-registry.md`
 - `areas/drx-identity-covenant.md`

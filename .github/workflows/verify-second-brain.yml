@@ -30,13 +30,29 @@ jobs:
       - name: Verify repository contracts
         run: python scripts/verify_second_brain.py
 
+      - name: Test console state extractor
+        run: python scripts/test_console_state.py
+
+      # --check compares on-disk state against a fresh read, ignoring the
+      # generated_at stamp. Rewriting only when substantive state changed keeps
+      # the timestamp from producing an empty commit on every run.
+      - name: Rebuild console state
+        run: |
+          if python scripts/build_console_state.py --check; then
+            echo "Console state already reflects the repository."
+          else
+            python scripts/build_console_state.py
+          fi
+
       - name: Show generated-index delta on pull requests
         if: github.event_name == 'pull_request'
         run: |
           git status --short -- \
             entities.json \
             graphify-out/structural-graph.json \
-            graphify-out/STRUCTURAL_GRAPH_REPORT.md
+            graphify-out/STRUCTURAL_GRAPH_REPORT.md \
+            console/state.json \
+            console/state.js
           echo "PR verification checks the generated working tree. The main-branch run owns persistence of generated index files."
 
       - name: Commit refreshed generated index on main
@@ -45,14 +61,18 @@ jobs:
           if ! git diff --quiet -- \
             entities.json \
             graphify-out/structural-graph.json \
-            graphify-out/STRUCTURAL_GRAPH_REPORT.md; then
+            graphify-out/STRUCTURAL_GRAPH_REPORT.md \
+            console/state.json \
+            console/state.js; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add \
               entities.json \
               graphify-out/structural-graph.json \
-              graphify-out/STRUCTURAL_GRAPH_REPORT.md
-            git commit -m "chore: refresh structural knowledge index [skip ci]"
+              graphify-out/STRUCTURAL_GRAPH_REPORT.md \
+              console/state.json \
+              console/state.js
+            git commit -m "chore: refresh structural knowledge index and console state [skip ci]"
             git push
           else
             echo "Generated knowledge index is already current."

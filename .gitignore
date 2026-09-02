@@ -9,3 +9,8 @@ graphify-out/cost.json
 .env
 .dsh/
 runtime/deepseek-harness/.state/
+# NotebookLM MCP drives an authenticated browser session. Never commit session
+# state, cookies, or a browser profile. See integrations/notebooklm/SYNC_CONTRACT.md
+integrations/notebooklm/.session/
+**/storage_state.json
+**/.notebooklm-profile/

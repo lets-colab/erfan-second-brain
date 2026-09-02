@@ -39,8 +39,10 @@
     "cofound",
     "colab",
     "community",
+    "console",
     "creators",
     "design",
+    "design-system",
     "digital-clone",
     "drx",
     "drx-ai-os",
@@ -64,6 +66,7 @@
     "personal-assistant",
     "portability",
     "pressure-test",
+    "product-context",
     "production-readiness",
     "provenance",
     "qc",
@@ -75,6 +78,7 @@
     "source-quality",
     "sources",
     "sync",
+    "tokens",
     "trendcraft",
     "trust",
     "user-validation",
@@ -195,5 +199,5 @@
       "version": "1.0.0"
     }
   ],
-  "source_documents": 54
+  "source_documents": 60
 }
