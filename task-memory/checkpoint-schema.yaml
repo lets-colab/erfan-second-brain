@@ -1,0 +1,27 @@
+version: 1.0
+status: active
+purpose: standardize_long_horizon_agent_state_across_context_resets
+
+required:
+  objective: string
+  current_state: string
+  completed: list
+  pending: list
+  blocked: list
+  decisions: list
+  assumptions: list
+  discoveries: list
+  errors: list
+  approvals: list
+  evidence: list
+  next_action: string
+  last_verified_at: datetime
+  state_version: string
+
+checkpoint_rules:
+  - write_before_context_reset
+  - write_after_material_tool_action
+  - write_after_failure
+  - write_before_handoff
+  - resume_from_latest_verified_checkpoint
+  - never_mark_complete_without_fresh_evidence
