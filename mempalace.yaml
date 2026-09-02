@@ -5,6 +5,10 @@ rooms:
   keywords:
   - architecture
   - ai os
+  - dr.x ai
+  - aion sigma
+  - compound intelligence
+  - strongest-designed
 - name: areas
   description: Durable operating areas and identity/governance notes from areas/
   keywords:
@@ -23,6 +27,8 @@ rooms:
   - decisions
   - canonical
   - lock
+  - aion sigma
+  - dr.x ai
 - name: skills
   description: Reusable DR.X operating skill contracts from skills/
   keywords:
@@ -30,6 +36,8 @@ rooms:
   - qc
   - debugging
   - reasoning
+  - council
+  - fable
 - name: evaluations
   description: Acceptance tests, evidence, skill fitness and product validation from evaluations/
   keywords:
@@ -55,6 +63,7 @@ rooms:
   - routing
   - agents
   - sources
+  - models
 - name: documentation
   description: Supporting documentation and source inventory from notes/
   keywords:

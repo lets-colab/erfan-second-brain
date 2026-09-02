@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T00:55:54+00:00",
+  "generated_at": "2026-09-02T01:11:26+00:00",
   "generator": "scripts/build_console_state.py",
   "contract": "Values are read from repository files. The console authors none of them.",
   "verdict": {
@@ -13,11 +13,11 @@
     "governed_by": "worst material input (AGENTS.md rules 15, 17, 20)"
   },
   "repo": {
-    "commit": "ca7080fd844ce0a5b97da78902244eaebac689af",
-    "short": "ca7080f",
-    "branch": "main",
-    "committed_at": "2026-08-21T18:43:33+00:00",
-    "subject": "chore: refresh structural knowledge index [skip ci]",
+    "commit": "66395274025cd1b4dfadee86ff1ae3babd9c9526",
+    "short": "6639527",
+    "branch": "claude/install-graphify-mempalace-x1tevo",
+    "committed_at": "2026-09-02T01:10:59+00:00",
+    "subject": "Merge origin/main into console branch",
     "dirty": true
   },
   "verification": {
@@ -31,7 +31,7 @@
     "available": true,
     "score": 3.5,
     "scale": 10.5,
-    "assessed_on": "2026-08-21",
+    "assessed_on": "2026-08-26",
     "governing_dimension": "Goals, values, and decision style",
     "governing_rule": "overall score uses the lowest material dimension",
     "dimensions": [
@@ -224,15 +224,15 @@
     ]
   },
   "skills": {
-    "total": 13,
+    "total": 14,
     "counts": {
       "proven": 0,
-      "partial": 1,
+      "partial": 2,
       "unproven": 12,
       "failed": 0,
       "stale": 0
     },
-    "benchmarked": 1,
+    "benchmarked": 2,
     "minimum_runs_for_promotion": 5,
     "items": [
       {
@@ -324,6 +324,17 @@
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
+        "name": "drx-founder-portfolio-trendcraft",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "in_progress",
+        "state": "partial",
+        "runs": 1,
+        "has_contract": true,
+        "registered": true,
+        "limitation": ""
+      },
+      {
         "name": "drx-memory-retriever",
         "version": "1.0.0",
         "previous_version": null,
@@ -394,13 +405,13 @@
       "Founder Command Center + OS — HISTORICAL / SUPERSEDED",
       "Personal Second Brain"
     ],
-    "skills_indexed": 12,
-    "topics": 54,
+    "skills_indexed": 13,
+    "topics": 58,
     "schema_version": 2,
     "corpus": [
       {
         "directory": "architecture",
-        "files": 1
+        "files": 2
       },
       {
         "directory": "areas",
@@ -408,15 +419,19 @@
       },
       {
         "directory": "decisions",
-        "files": 5
+        "files": 6
       },
       {
         "directory": "evaluations",
-        "files": 5
+        "files": 7
       },
       {
         "directory": "governance",
         "files": 1
+      },
+      {
+        "directory": "integrations",
+        "files": 5
       },
       {
         "directory": "notes",
@@ -432,18 +447,26 @@
       },
       {
         "directory": "reviews",
-        "files": 7
+        "files": 8
       },
       {
         "directory": "routing",
         "files": 1
       },
       {
+        "directory": "runtime",
+        "files": 3
+      },
+      {
         "directory": "skills",
-        "files": 22
+        "files": 23
+      },
+      {
+        "directory": "tools",
+        "files": 4
       }
     ],
-    "total_files": 56,
+    "total_files": 74,
     "sources": [
       "entities.json"
     ]
@@ -456,36 +479,54 @@
     "hyperedges": 3,
     "communities": 7,
     "indexed_files": 11,
-    "repository_files": 62,
+    "repository_files": 76,
     "unindexed": [
       "DESIGN.md",
       "PRODUCT.md",
       "architecture/DRX-AI-OS.md",
+      "architecture/DRX-AION-SIGMA.md",
       "areas/channel-registry.md",
       "areas/drx-identity-covenant.md",
       "decisions/cofound-implementation-hardening-v4.1-2026-08-18.md",
       "decisions/cofound-product-hierarchy-2026-08-17.md",
+      "decisions/drx-ai-aion-sigma-integration-2026-08-23.md",
       "decisions/founder-intelligence-canonical-lock-2026-08-17.md",
       "decisions/last-bench-brand-asset-lock-2026-08-21.md",
       "evaluations/acceptance-evidence.yaml",
       "evaluations/acceptance-tests.yaml",
       "evaluations/cofound-v0-acceptance.yaml",
+      "evaluations/deepseek-harness-admission.yaml",
+      "evaluations/founder-portfolio-trendcraft-benchmarks.yaml",
       "evaluations/runtime-connectivity-evidence.yaml",
       "evaluations/skill-fitness.yaml",
       "governance/authority-matrix.yaml",
-      "notes/last-bench-legal-review-source.md",
-      "observability/event-schema.yaml",
-      "projects/cofound-evolution-ledger.md",
-      "projects/cofound.md",
-      "projects/colab.md"
+      "integrations/claude-design/CLAUDE_CODE_SYNC_PROMPT.md"
     ],
-    "unindexed_total": 51,
+    "unindexed_total": 65,
     "sources": [
       "graphify-out/graph.json",
       "graphify-out/manifest.json"
     ]
   },
   "history": [
+    {
+      "kind": "review",
+      "title": "Knowledge Change Log",
+      "date": "2026-08-26",
+      "path": "reviews/knowledge-change-log.md"
+    },
+    {
+      "kind": "review",
+      "title": "Founder Portfolio Trendcraft — Pressure Test",
+      "date": "2026-08-26",
+      "path": "reviews/founder-portfolio-trendcraft-pressure-test-2026-08-26.md"
+    },
+    {
+      "kind": "decision",
+      "title": "DR.X AI — AION SIGMA Integration Decision",
+      "date": "2026-08-23",
+      "path": "decisions/drx-ai-aion-sigma-integration-2026-08-23.md"
+    },
     {
       "kind": "review",
       "title": "Erfan Second Brain — Strict Expert Verification Audit",
@@ -497,12 +538,6 @@
       "title": "Last Bench Canonical Brand Asset Lock — 2026-08-21",
       "date": "2026-08-21",
       "path": "decisions/last-bench-brand-asset-lock-2026-08-21.md"
-    },
-    {
-      "kind": "review",
-      "title": "Knowledge Change Log",
-      "date": "2026-08-18",
-      "path": "reviews/knowledge-change-log.md"
     },
     {
       "kind": "review",

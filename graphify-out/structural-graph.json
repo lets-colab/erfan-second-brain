@@ -29,7 +29,7 @@
       "title": "Erfan Second Brain",
       "kind": "resource",
       "status": "active",
-      "word_count": 1284
+      "word_count": 1373
     },
     {
       "id": "architecture/DRX-AI-OS.md",
@@ -37,6 +37,13 @@
       "kind": "architecture",
       "status": "unknown",
       "word_count": 698
+    },
+    {
+      "id": "architecture/DRX-AION-SIGMA.md",
+      "title": "DR.X AION SIGMA — Compound Intelligence Standard",
+      "kind": "architecture",
+      "status": "active",
+      "word_count": 1462
     },
     {
       "id": "areas/channel-registry.md",
@@ -64,7 +71,7 @@
       "title": "Knowledge Readiness",
       "kind": "note",
       "status": "active",
-      "word_count": 871
+      "word_count": 938
     },
     {
       "id": "areas/operating-charter.md",
@@ -95,6 +102,13 @@
       "word_count": 505
     },
     {
+      "id": "decisions/drx-ai-aion-sigma-integration-2026-08-23.md",
+      "title": "DR.X AI — AION SIGMA Integration Decision",
+      "kind": "decision",
+      "status": "active",
+      "word_count": 450
+    },
+    {
       "id": "decisions/founder-intelligence-canonical-lock-2026-08-17.md",
       "title": "CO.FOUND / Founder Intelligence — FINAL CONVERGENCE LOCK v4",
       "kind": "decision",
@@ -107,6 +121,27 @@
       "kind": "decision",
       "status": "active",
       "word_count": 699
+    },
+    {
+      "id": "integrations/claude-design/CLAUDE_CODE_SYNC_PROMPT.md",
+      "title": "Claude Code prompt — sync Claude Design into the shared DR.X source of truth",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 284
+    },
+    {
+      "id": "integrations/claude-design/SYNC_CONTRACT.md",
+      "title": "Claude Design ↔ DR.X Shared Design-System Sync Contract",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 485
+    },
+    {
+      "id": "integrations/claude-design/snapshots/lastbench-current/DESIGN_SYSTEM.md",
+      "title": "Last Bench — Current Claude-Derived Design System Snapshot",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 510
     },
     {
       "id": "notes/last-bench-legal-review-source.md",
@@ -193,11 +228,18 @@
       "word_count": 1212
     },
     {
+      "id": "reviews/founder-portfolio-trendcraft-pressure-test-2026-08-26.md",
+      "title": "Founder Portfolio Trendcraft — Pressure Test",
+      "kind": "review",
+      "status": "active",
+      "word_count": 718
+    },
+    {
       "id": "reviews/knowledge-change-log.md",
       "title": "Knowledge Change Log",
       "kind": "reflection",
       "status": "active",
-      "word_count": 3737
+      "word_count": 4207
     },
     {
       "id": "reviews/second-brain-system-audit-2026-08-17.md",
@@ -284,6 +326,13 @@
       "word_count": 1591
     },
     {
+      "id": "skills/drx-founder-portfolio-trendcraft/SKILL.md",
+      "title": "DR.X Founder Portfolio Trendcraft",
+      "kind": "skills",
+      "status": "active",
+      "word_count": 1854
+    },
+    {
       "id": "skills/drx-memory-retriever/SKILL.md",
       "title": "Retrieve Context Before Acting",
       "kind": "skills",
@@ -338,6 +387,13 @@
       "kind": "skills",
       "status": "active",
       "word_count": 1402
+    },
+    {
+      "id": "tools/claude-design-bridge-mcp/README.md",
+      "title": "DR.X Claude Design Bridge MCP",
+      "kind": "tools",
+      "status": "unknown",
+      "word_count": 428
     }
   ],
   "edges": [
@@ -433,6 +489,11 @@
     },
     {
       "source": "README.md",
+      "target": "skills/drx-founder-portfolio-trendcraft/SKILL.md",
+      "type": "references"
+    },
+    {
+      "source": "README.md",
       "target": "skills/drx-systematic-debugger/SKILL.md",
       "type": "references"
     },
@@ -468,9 +529,9 @@
     }
   ],
   "summary": {
-    "documents": 48,
-    "edges": 25,
-    "words": 46048,
-    "isolated_documents": 18
+    "documents": 56,
+    "edges": 26,
+    "words": 52865,
+    "isolated_documents": 25
   }
 }

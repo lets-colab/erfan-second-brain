@@ -1,0 +1,53 @@
+{
+  "snapshot": "lastbench-current",
+  "status": "production-derived",
+  "source_repository": "lets-colab/LastBenchBd",
+  "source_ref": "main",
+  "source_commit": "d493b752504c659e71725e801ad371768ca4c630",
+  "captured_at": "2026-08-26",
+  "claude_design_provenance": {
+    "direct_live_export": false,
+    "known_import_commits": [
+      {
+        "sha": "8e38ef6f15eb86e3215d0bc8613d04cffc4dc65d",
+        "note": "Implemented Malaysia Experience cinematic website from Claude Design; imported Claude Design assets/runtime into landing/."
+      },
+      {
+        "sha": "5674cc174d20b388b52b41ec4a1cd0094b216fae",
+        "note": "Cinematic dashboard styling from the imported Claude Design."
+      },
+      {
+        "sha": "a256b4012c3edc7a4731a1f11f776b718668de85",
+        "note": "Amplified the Malaysia Experience while preserving the existing design language and motion system."
+      }
+    ]
+  },
+  "canonical_sources": [
+    "design-system/README.md",
+    "design-system/tokens.json",
+    "design-system/previews/colors.html",
+    "design-system/previews/typography.html",
+    "design-system/previews/logo.html",
+    "PRODUCT.md",
+    "landing/index.html",
+    "landing/support.js",
+    "landing/assets/",
+    "assets/branding/"
+  ],
+  "exact_exports_in_snapshot": [
+    "tokens.json"
+  ],
+  "interpreted_files_in_snapshot": [
+    "DESIGN_SYSTEM.md",
+    "components.md",
+    "screens.md"
+  ],
+  "protected_brand_assets": {
+    "rule": "Reference canonical assets in LastBenchBd; never redraw, reconstruct, recolor, or substitute official Last Bench marks.",
+    "paths": [
+      "assets/branding/",
+      "design-system/logo.svg"
+    ]
+  },
+  "known_gap": "No authenticated live Claude Design project/session is available to ChatGPT yet. This snapshot reflects the current production repository state that contains documented Claude Design imports. Re-sync from Claude Design when direct MCP authorization is available."
+}

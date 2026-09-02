@@ -1,6 +1,6 @@
 ---
 created: 2026-07-19
-updated: 2026-08-21
+updated: 2026-08-26
 type: resource
 status: active
 tags: [second-brain, drx-ai-os, cofound, portability, governance]
@@ -64,12 +64,14 @@ A file, prompt, install attempt, config change, or successful tool call is not p
 Material work should use:
 - [`skills/_template/SKILL.md`](skills/_template/SKILL.md) for production skill contracts;
 - [`skills/drx-fable-godlevel-execution/SKILL.md`](skills/drx-fable-godlevel-execution/SKILL.md) for material client deliverables where brief integrity, delivery order, executive readability, and submission readiness matter;
+- [`skills/drx-founder-portfolio-trendcraft/SKILL.md`](skills/drx-founder-portfolio-trendcraft/SKILL.md) for founder/entrepreneur portfolio, living-biography and personal-brand experience design where the requirement is an ownable, trend-capable visual/interaction system rather than a template or trend collage;
 - [`skills/drx-brand-asset-lock/SKILL.md`](skills/drx-brand-asset-lock/SKILL.md) for branded artifacts containing protected logos, portraits, QR codes, or identity assets;
 - [`skills/drx-systematic-debugger/SKILL.md`](skills/drx-systematic-debugger/SKILL.md) for root-cause diagnosis before material repair;
 - [`skills/drx-execution-qc/SKILL.md`](skills/drx-execution-qc/SKILL.md) as the mandatory final completion gate using fresh final-state evidence;
 - [`evaluations/acceptance-tests.yaml`](evaluations/acceptance-tests.yaml) for AI OS release gates;
 - [`evaluations/acceptance-evidence.yaml`](evaluations/acceptance-evidence.yaml) for executed acceptance evidence and explicit `not_run` state;
 - [`evaluations/skill-fitness.yaml`](evaluations/skill-fitness.yaml) for measured skill-version performance and regressions;
+- [`evaluations/founder-portfolio-trendcraft-benchmarks.yaml`](evaluations/founder-portfolio-trendcraft-benchmarks.yaml) for founder-portfolio design divergence/originality pressure tests;
 - [`evaluations/cofound-v0-acceptance.yaml`](evaluations/cofound-v0-acceptance.yaml) for CO.FOUND V0 gates;
 - [`governance/authority-matrix.yaml`](governance/authority-matrix.yaml) for protected-action boundaries;
 - [`observability/event-schema.yaml`](observability/event-schema.yaml) for reconstructable execution and learning evidence;
@@ -82,6 +84,8 @@ The `10.5/10` label is an internal quality target. Production status requires ex
 The repository contains a strong verification framework, but the wider DR.X AI OS is **not production-certified** until `evaluations/acceptance-evidence.yaml` shows all critical tests passed and human owner signoff exists.
 
 A specialist skill is not considered proven merely because it is active. Register it in `evaluations/skill-fitness.yaml`, benchmark it on representative tasks, record regressions, and use fresh final-state evidence.
+
+For `drx-founder-portfolio-trendcraft`, the current benchmark is a contract-level pressure test. External trend creation, award recognition, conversion lift and repeatable production quality remain unproven until real artifacts and repeated runs generate evidence.
 
 ## DR.X Console
 
@@ -118,6 +122,7 @@ Active skills on `main` include:
 - pre-live simulation;
 - Fable-2036 reasoning;
 - Fable God-Level Execution for material client deliverables;
+- Founder Portfolio Trendcraft for founder/entrepreneur living-biography and trend-capable experience design;
 - systematic root-cause debugging;
 - DR.X representation;
 - CO.FOUND operation (active content at legacy `skills/founder-command-center-operator/` path);

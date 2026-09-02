@@ -50,6 +50,11 @@ STATUS_MAP = {
 
 UNKNOWN_STATUSES: set[str] = set()
 
+# Directories that are generated output or tooling rather than knowledge content.
+# Everything else at the repository root counts toward the corpus and toward the
+# set of files the knowledge graph is expected to cover.
+NON_CORPUS_DIRS = {".git", ".github", "graphify-out", "console", "scripts"}
+
 
 # --------------------------------------------------------------------------
 # Minimal YAML subset reader
@@ -444,15 +449,16 @@ def collect_knowledge() -> dict:
     if entities_path.exists():
         entities = json.loads(entities_path.read_text(encoding="utf-8"))
 
-    tracked = ("architecture", "areas", "decisions", "evaluations", "governance",
-               "notes", "observability", "projects", "reviews", "routing", "skills")
+    # Discovered rather than hardcoded: a fixed list goes stale the moment a new
+    # knowledge directory lands. Only generated output and tooling are excluded.
     corpus = []
-    for name in tracked:
-        directory = ROOT / name
-        if not directory.is_dir():
+    for directory in sorted(ROOT.iterdir()):
+        if not directory.is_dir() or directory.name.startswith("."):
+            continue
+        if directory.name in NON_CORPUS_DIRS:
             continue
         files = [p for p in directory.rglob("*") if p.is_file()]
-        corpus.append({"directory": name, "files": len(files)})
+        corpus.append({"directory": directory.name, "files": len(files)})
 
     return {
         "people": len(entities.get("people") or []),
@@ -488,7 +494,7 @@ def collect_graph() -> dict:
         if not path.is_file():
             continue
         parts = path.relative_to(ROOT).parts
-        if parts[0] in (".git", ".github", "graphify-out", "console", "scripts"):
+        if parts[0] in NON_CORPUS_DIRS:
             continue
         if path.suffix in (".md", ".json", ".yaml", ".yml"):
             indexable.append(rel(path))
@@ -626,7 +632,11 @@ def main() -> int:
             print("console/state.json is missing; run scripts/build_console_state.py", file=sys.stderr)
             return 1
         current = json.loads(json_path.read_text(encoding="utf-8"))
-        volatile = ("generated_at",)
+        # Provenance, not substantive state. "repo" carries the commit this file
+        # was generated at, so committing the file necessarily changes it: were
+        # it compared here, --check could never pass after a commit and CI would
+        # rewrite, commit, and invalidate itself on every run.
+        volatile = ("generated_at", "repo")
         a = {k: v for k, v in current.items() if k not in volatile}
         b = {k: v for k, v in state.items() if k not in volatile}
         if a != b:

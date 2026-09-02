@@ -1,0 +1,171 @@
+version: 1.0
+status: active
+skill: drx-founder-portfolio-trendcraft
+purpose: >-
+  Pressure-test whether the skill can originate multiple ownable founder-design systems
+  rather than decorate one reusable portfolio template. This suite evaluates design reasoning,
+  not external market adoption. A concept may be labeled trend-capable only as a hypothesis
+  until real-world recognition, imitation, sharing or adoption evidence exists.
+
+pass_rule:
+  critical: all_10_cases_must_pass
+  originality: no_case_may_reduce_to_a_saturated_style_label
+  differentiation: narrative_visual_and_interaction_grammar_must_change_with_founder_truth
+  truth: no_invented_biography_or_achievement_claims
+  resilience:
+    - mobile_meaning_preserved
+    - reduced_motion_meaning_preserved
+    - performance_risk_identified
+    - accessibility_not_deferred
+  trend_potential:
+    - memorable_signature_primitive
+    - useful_not_decorative_only
+    - repeatable_system
+    - derivative_potential_without_exact_copy
+    - founder_specific_ownability
+
+failure_patterns:
+  - apple_imitation_as_strategy
+  - awwwards_collage
+  - generic_black_white_minimalism
+  - bento_as_default_information_architecture
+  - gratuitous_webgl
+  - one_site_reused_for_every_founder
+  - fake_founder_mythology
+  - novelty_without_utility
+  - motion_required_for_basic_comprehension
+  - inaccessible_experimental_typography
+  - desktop_shrunk_into_mobile
+  - trend_claim_without_external_adoption_evidence
+
+benchmark_cases:
+  - id: iconic_product_founder
+    founder_problem: high_fame_high_expectation_product_thesis
+    required_design_shift:
+      - product_decisions_over_resume
+      - severe_information_editing
+      - signature_primitive_tied_to_decision_or_product_thesis
+      - proof_through_artifacts_not_vanity_metrics
+    reject_if: design_is_apple_cosplay
+
+  - id: education_community_founder
+    founder_problem: trust_outcomes_students_parents_institutions
+    required_design_shift:
+      - human_outcomes_and_institutional_trust
+      - relationship_or_journey_evidence
+      - warm_but_not_consultancy_template
+      - accessibility_and_low_friction
+    reject_if: generic_startup_founder_aesthetic
+
+  - id: finance_institutional_founder
+    founder_problem: credibility_risk_governance_capital
+    required_design_shift:
+      - proof_before_persuasion
+      - restrained_motion
+      - sourceable_track_record
+      - high_legibility
+    reject_if: novelty_reduces_trust
+
+  - id: creator_entertainment_entrepreneur
+    founder_problem: personality_attention_culture_body_of_work
+    required_design_shift:
+      - media_led_identity
+      - higher_energy_interaction
+      - archive_as_experience
+      - social_shareability
+    reject_if: corporate_case_study_site
+
+  - id: multi_venture_polymath
+    founder_problem: complexity_without_fragmentation
+    required_design_shift:
+      - one_unifying_thesis
+      - venture_constellation_or_chapter_system
+      - temporal_or_causal_structure
+      - clear_current_focus
+    reject_if: logo_wall_plus_cards
+
+  - id: early_founder_low_proof
+    founder_problem: insufficient_metrics_or_press
+    required_design_shift:
+      - transparent_unknowns
+      - process_artifacts
+      - decisions_and_work_in_progress
+      - no_fake_scale_signals
+    reject_if: fabricated_authority
+
+  - id: no_portrait_assets
+    founder_problem: identity_without_good_photography
+    required_design_shift:
+      - artifact_voice_typography_or_environment_led_identity
+      - no_stock_person_substitution
+      - intentional_nonportrait_hero
+    reject_if: fake_ai_portrait_presented_as_real
+
+  - id: low_bandwidth_mobile_first
+    founder_problem: constrained_devices_and_networks
+    required_design_shift:
+      - typography_and_static_media_carry_identity
+      - progressive_enhancement
+      - compressed_assets
+      - interaction_optional_not_required
+    reject_if: desktop_webgl_experience_is_core
+
+  - id: local_to_global_founder
+    founder_problem: preserve_cultural_specificity_while_signaling_global_quality
+    required_design_shift:
+      - local_visual_language_without_exoticizing
+      - bilingual_or_context_aware_content_if_needed
+      - global_editorial_discipline
+      - culturally_specific_signature_primitive
+    reject_if: imported_western_luxury_template
+
+  - id: regulated_reputation_sensitive_founder
+    founder_problem: claims_scrutiny_privacy_compliance
+    required_design_shift:
+      - evidence_class_visibility
+      - restrained_experimentation
+      - clear_disclosures
+      - trust_preserving_navigation
+    reject_if: interaction_obscures_material_information
+
+initial_pressure_test:
+  id: 2026-08-26-v0-to-v1
+  source_request: >-
+    User required a founder portfolio design skill capable not only of following top design trends
+    but of generating trend-capable design outcomes, pressure-tested through the DR.X Fable protocols.
+  pre_repair_verdict: FAIL
+  pre_repair_gaps:
+    - recognized_and_combined_premium_trends_but_no_formal_trend_invention_mechanism
+    - no_required_10_direction_divergence_before_convergence
+    - no_signature_primitive_ownership_test
+    - no_anti_template_distance_test
+    - no_derivative_or_adoption_potential_test
+    - no_explicit_current_saturation_map
+    - no_required_mobile_reduced_motion_survival_gate
+    - no_generalized_10_case_founder_benchmark_suite
+    - risk_of_confusing_award_site_aesthetics_with_originality
+  repairs_applied_to_skill_v1_0_0:
+    - founder_truth_compiler
+    - fresh_trend_and_saturation_scan
+    - cultural_tension_based_trend_creation_engine
+    - exactly_10_divergent_hypotheses
+    - signature_primitive_test
+    - anti_template_distance_test
+    - adoption_and_trend_potential_test
+    - founder_experience_architecture
+    - motion_interaction_law
+    - conversion_without_corporate_ui
+    - mobile_reduced_motion_performance_resilience
+    - explicit_failure_modes
+    - 10_case_pressure_test
+  post_repair_verdict: PASS
+  scope_of_pass: >-
+    The design contract now passes the conceptual pressure-test criteria for generating
+    differentiated, ownable, trend-capable founder design systems across all ten benchmark classes.
+    This does not prove the skill will create a market trend or outperform alternatives in production.
+  external_market_adoption: not_tested
+  repeatability: not_established
+  production_artifact_test: not_run
+  limitation: >-
+    A single contract-level pressure test cannot prove repeated design quality. Real project runs,
+    rendered artifact comparison, user acceptance and regression evidence are still required.

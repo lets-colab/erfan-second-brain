@@ -6,13 +6,13 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 
 ## Current corpus
 
-- Documents indexed: **48**
-- Approximate words: **46,048**
-- Explicit internal reference edges: **25**
-- Structurally isolated documents: **18**
+- Documents indexed: **56**
+- Approximate words: **52,865**
+- Explicit internal reference edges: **26**
+- Structurally isolated documents: **25**
 - Project records: **6**
-- Skill records: **12**
-- Topics from frontmatter tags: **54**
+- Skill records: **13**
+- Topics from frontmatter tags: **58**
 
 ## Provenance rules
 
@@ -27,21 +27,28 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 - `AGENTS.md`
 - `DESIGN.md`
 - `PRODUCT.md`
+- `architecture/DRX-AION-SIGMA.md`
 - `areas/channel-registry.md`
 - `areas/drx-identity-covenant.md`
 - `decisions/2026-07-19-obsidian-first-knowledge-base.md`
 - `decisions/cofound-product-hierarchy-2026-08-17.md`
+- `decisions/drx-ai-aion-sigma-integration-2026-08-23.md`
+- `integrations/claude-design/CLAUDE_CODE_SYNC_PROMPT.md`
+- `integrations/claude-design/SYNC_CONTRACT.md`
+- `integrations/claude-design/snapshots/lastbench-current/DESIGN_SYSTEM.md`
 - `notes/last-bench-legal-review-source.md`
 - `projects/colab.md`
 - `reviews/cofound-final-convergence-audit-2026-08-18.md`
 - `reviews/cofound-ultramax-reaudit-2026-08-17.md`
 - `reviews/cofound-v4.1-execution-qc-2026-08-18.md`
 - `reviews/founder-intelligence-ultramax-audit-2026-08-17.md`
+- `reviews/founder-portfolio-trendcraft-pressure-test-2026-08-26.md`
 - `reviews/second-brain-system-audit-2026-08-17.md`
 - `reviews/second-brain-verification-audit-2026-08-21.md`
 - `skills/drx-architecture-convergence/SKILL.md`
 - `skills/drx-fable2036-reasoner/SKILL.md`
 - `skills/drx-prelive-simulator/SKILL.md`
+- `tools/claude-design-bridge-mcp/README.md`
 
 ## Maintenance
 
