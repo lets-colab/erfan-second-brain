@@ -1,0 +1,40 @@
+version: 1.0
+status: active
+purpose: route_tasks_by_capability_cost_risk_and_context_requirements
+
+principles:
+  - deterministic_first
+  - local_first_when_capable
+  - lowest_sufficient_cost
+  - approval_before_paid_or_external_side_effect
+  - context_build_before_material_execution
+  - evidence_before_completion_claim
+
+cost_classes:
+  free_local: 0
+  free_cloud: 1
+  paid_cloud: 2
+  premium_or_external_side_effect: 3
+
+routing_factors:
+  capability_fit: 0.35
+  reliability: 0.25
+  cost: 0.15
+  latency: 0.10
+  context_fit: 0.10
+  risk: 0.05
+
+approval:
+  paid_cloud: required_when_not_preapproved
+  external_side_effect: required
+  sensitive_write: required
+  canonical_state_write: authorized_path_only
+
+route_record:
+  task_id: string
+  selected_engine: string
+  rejected_alternatives: list
+  reason: string
+  estimated_cost_class: integer
+  approval_required: boolean
+  context_pack_id: string
