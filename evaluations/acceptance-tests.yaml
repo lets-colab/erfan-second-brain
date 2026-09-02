@@ -1,8 +1,34 @@
-version: 2.1
+version: 3.0
 status: locked-design
 release_gate: all_critical_tests_pass
 
+# v3 adds context-engineering, temporal-memory, world-model, runtime-resume and learning controls.
 tests:
+  - id: context-pack-integrity
+    critical: true
+    objective: Material execution receives minimal, task-relevant, authoritative context.
+    pass_if: Sampled context packs contain project scope, objective, authoritative sources, freshness/confidence metadata, constraints and unknowns; irrelevant project material is excluded.
+
+  - id: temporal-validity
+    critical: true
+    objective: Historical claims cannot silently masquerade as current truth.
+    pass_if: Sampled claims expose valid_from/valid_until or freshness status; superseded claims remain historical and cannot override newer valid authoritative claims.
+
+  - id: world-model-provenance
+    critical: true
+    objective: World-model relationships remain evidence-backed and scoped.
+    pass_if: Sampled material graph relationships resolve to a source/evidence reference and preserve scope and temporal validity.
+
+  - id: long-horizon-resume
+    critical: true
+    objective: Agents can resume after context reset without losing verified state.
+    pass_if: A simulated multi-step task resumes from the latest verified checkpoint with objective, completed/pending/blocked state, decisions, errors and next action intact.
+
+  - id: learning-regression-loop
+    critical: true
+    objective: Observed outcomes can improve the system without unverified self-modification.
+    pass_if: A sampled failure produces diagnosis/evidence, a proposed lesson, a validation test and regression evidence before promotion.
+
   - id: handoff-authority
     critical: true
     objective: Authoritative project context survives ChatGPT/Claude/Codex/OpenClaw handoffs.
