@@ -1,0 +1,570 @@
+{
+  "generated_at": "2026-09-02T00:55:54+00:00",
+  "generator": "scripts/build_console_state.py",
+  "contract": "Values are read from repository files. The console authors none of them.",
+  "verdict": {
+    "state": "partial",
+    "headline": "Built, not yet verified",
+    "blocking": [
+      "acceptance suite is not production certified",
+      "10 of 10 critical acceptance tests lack pass evidence",
+      "knowledge graph does not cover the current repository"
+    ],
+    "governed_by": "worst material input (AGENTS.md rules 15, 17, 20)"
+  },
+  "repo": {
+    "commit": "ca7080fd844ce0a5b97da78902244eaebac689af",
+    "short": "ca7080f",
+    "branch": "main",
+    "committed_at": "2026-08-21T18:43:33+00:00",
+    "subject": "chore: refresh structural knowledge index [skip ci]",
+    "dirty": true
+  },
+  "verification": {
+    "state": "proven",
+    "summary": "Second Brain repository verification PASS (0 warning(s))",
+    "warnings": 0,
+    "exit_code": 0,
+    "source": "scripts/verify_second_brain.py"
+  },
+  "readiness": {
+    "available": true,
+    "score": 3.5,
+    "scale": 10.5,
+    "assessed_on": "2026-08-21",
+    "governing_dimension": "Goals, values, and decision style",
+    "governing_rule": "overall score uses the lowest material dimension",
+    "dimensions": [
+      {
+        "name": "Goals, values, and decision style",
+        "score": 3.5,
+        "confidence": "medium"
+      },
+      {
+        "name": "User validation",
+        "score": 3.5,
+        "confidence": "medium"
+      },
+      {
+        "name": "Scope coverage",
+        "score": 5.4,
+        "confidence": "medium-high"
+      },
+      {
+        "name": "Factual accuracy",
+        "score": 5.8,
+        "confidence": "medium"
+      },
+      {
+        "name": "Operational ability",
+        "score": 7.4,
+        "confidence": "medium"
+      },
+      {
+        "name": "Source quality and provenance",
+        "score": 7.5,
+        "confidence": "medium-high"
+      },
+      {
+        "name": "Causal and systems understanding",
+        "score": 8.5,
+        "confidence": "medium-high"
+      },
+      {
+        "name": "Risk and contradiction awareness",
+        "score": 8.6,
+        "confidence": "medium-high"
+      },
+      {
+        "name": "Freshness",
+        "score": 8.9,
+        "confidence": "high"
+      }
+    ],
+    "source": "areas/knowledge-readiness.md"
+  },
+  "acceptance": {
+    "production_certified": false,
+    "human_owner_signoff": false,
+    "reason": "Critical acceptance tests have not all been executed with current end-to-end evidence.",
+    "release_gate": "all_critical_tests_pass",
+    "total": 13,
+    "critical_total": 10,
+    "critical_proven": 0,
+    "executed": 1,
+    "counts": {
+      "proven": 0,
+      "partial": 1,
+      "unproven": 11,
+      "failed": 0,
+      "stale": 1
+    },
+    "tests": [
+      {
+        "id": "handoff-authority",
+        "critical": true,
+        "objective": "Authoritative project context survives ChatGPT/Claude/Codex/OpenClaw handoffs.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "project-isolation",
+        "critical": true,
+        "objective": "Prevent cross-project memory contamination.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "approval-boundary",
+        "critical": true,
+        "objective": "Sensitive writes cannot bypass human approval.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "provenance",
+        "critical": true,
+        "objective": "Material claims are traceable to authoritative evidence.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "repeatability",
+        "critical": true,
+        "objective": "Standardized work remains consistently high quality.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "fresh-verification",
+        "critical": true,
+        "objective": "Completion claims are supported by evidence from the actual final state.",
+        "raw_status": "not_run",
+        "state": "stale",
+        "evidence_count": 0,
+        "invalidated": true
+      },
+      {
+        "id": "root-cause-debugging",
+        "critical": true,
+        "objective": "Broken systems are diagnosed before speculative repairs are stacked.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "skill-regression",
+        "critical": true,
+        "objective": "Skill changes must demonstrate that they do not silently reduce prior capability.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "prompt-injection-resistance",
+        "critical": true,
+        "objective": "Untrusted content cannot expand privileges.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "recovery",
+        "critical": true,
+        "objective": "Material execution can be reconstructed and reversible errors rolled back.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "repository-integrity",
+        "critical": false,
+        "objective": "Repository contracts and generated indexes remain structurally coherent after changes.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      },
+      {
+        "id": "canonical-source-connectivity",
+        "critical": false,
+        "objective": "Canonical private-source retrieval paths are observed directly rather than inferred from connector presence.",
+        "raw_status": "partial",
+        "state": "partial",
+        "evidence_count": 4,
+        "invalidated": false
+      },
+      {
+        "id": "cost-observability",
+        "critical": false,
+        "objective": "Usage is measurable enough to optimize routing.",
+        "raw_status": "not_run",
+        "state": "unproven",
+        "evidence_count": 0,
+        "invalidated": false
+      }
+    ],
+    "sources": [
+      "evaluations/acceptance-tests.yaml",
+      "evaluations/acceptance-evidence.yaml"
+    ]
+  },
+  "skills": {
+    "total": 13,
+    "counts": {
+      "proven": 0,
+      "partial": 1,
+      "unproven": 12,
+      "failed": 0,
+      "stale": 0
+    },
+    "benchmarked": 1,
+    "minimum_runs_for_promotion": 5,
+    "items": [
+      {
+        "name": "cofound-operator",
+        "version": "2.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": false,
+        "registered": true,
+        "limitation": "Legacy folder path is retained for compatibility; canonical skill identity comes from frontmatter name `cofound-operator`."
+      },
+      {
+        "name": "drx-architecture-convergence",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
+      },
+      {
+        "name": "drx-brand-asset-lock",
+        "version": "1.0.3",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "The protocol addresses known logo/portrait failure modes, but effectiveness is not proven until final exported artifacts pass source-comparison and user-acceptance benchmarks repeatedly."
+      },
+      {
+        "name": "drx-contextual-communicator",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
+      },
+      {
+        "name": "drx-decision-council",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
+      },
+      {
+        "name": "drx-execution-qc",
+        "version": "1.1.0",
+        "previous_version": "1.0.0",
+        "benchmark_status": "in_progress",
+        "state": "partial",
+        "runs": 1,
+        "has_contract": true,
+        "registered": true,
+        "limitation": ""
+      },
+      {
+        "name": "drx-fable-godlevel-execution",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Presence in the repository does not establish superiority or repeatability; benchmark before any improvement claim."
+      },
+      {
+        "name": "drx-fable2036-reasoner",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
+      },
+      {
+        "name": "drx-memory-retriever",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
+      },
+      {
+        "name": "drx-prelive-simulator",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
+      },
+      {
+        "name": "drx-representative",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
+      },
+      {
+        "name": "drx-systematic-debugger",
+        "version": "1.0.0",
+        "previous_version": null,
+        "benchmark_status": "not_run",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": true,
+        "limitation": ""
+      },
+      {
+        "name": "founder-command-center-operator",
+        "version": "unversioned",
+        "previous_version": null,
+        "benchmark_status": "not registered",
+        "state": "unproven",
+        "runs": 0,
+        "has_contract": true,
+        "registered": false,
+        "limitation": ""
+      }
+    ],
+    "sources": [
+      "evaluations/skill-fitness.yaml",
+      "skills/"
+    ]
+  },
+  "knowledge": {
+    "people": 1,
+    "projects": [
+      "CO.FOUND — Canonical Continuity Memory v2",
+      "CO.FOUND — Capability, Skill & Tool Registry v4.1",
+      "CO.FOUND — Evolution Ledger",
+      "Co.lab",
+      "Founder Command Center + OS — HISTORICAL / SUPERSEDED",
+      "Personal Second Brain"
+    ],
+    "skills_indexed": 12,
+    "topics": 54,
+    "schema_version": 2,
+    "corpus": [
+      {
+        "directory": "architecture",
+        "files": 1
+      },
+      {
+        "directory": "areas",
+        "files": 5
+      },
+      {
+        "directory": "decisions",
+        "files": 5
+      },
+      {
+        "directory": "evaluations",
+        "files": 5
+      },
+      {
+        "directory": "governance",
+        "files": 1
+      },
+      {
+        "directory": "notes",
+        "files": 2
+      },
+      {
+        "directory": "observability",
+        "files": 1
+      },
+      {
+        "directory": "projects",
+        "files": 6
+      },
+      {
+        "directory": "reviews",
+        "files": 7
+      },
+      {
+        "directory": "routing",
+        "files": 1
+      },
+      {
+        "directory": "skills",
+        "files": 22
+      }
+    ],
+    "total_files": 56,
+    "sources": [
+      "entities.json"
+    ]
+  },
+  "graph": {
+    "available": true,
+    "state": "stale",
+    "nodes": 34,
+    "links": 31,
+    "hyperedges": 3,
+    "communities": 7,
+    "indexed_files": 11,
+    "repository_files": 62,
+    "unindexed": [
+      "DESIGN.md",
+      "PRODUCT.md",
+      "architecture/DRX-AI-OS.md",
+      "areas/channel-registry.md",
+      "areas/drx-identity-covenant.md",
+      "decisions/cofound-implementation-hardening-v4.1-2026-08-18.md",
+      "decisions/cofound-product-hierarchy-2026-08-17.md",
+      "decisions/founder-intelligence-canonical-lock-2026-08-17.md",
+      "decisions/last-bench-brand-asset-lock-2026-08-21.md",
+      "evaluations/acceptance-evidence.yaml",
+      "evaluations/acceptance-tests.yaml",
+      "evaluations/cofound-v0-acceptance.yaml",
+      "evaluations/runtime-connectivity-evidence.yaml",
+      "evaluations/skill-fitness.yaml",
+      "governance/authority-matrix.yaml",
+      "notes/last-bench-legal-review-source.md",
+      "observability/event-schema.yaml",
+      "projects/cofound-evolution-ledger.md",
+      "projects/cofound.md",
+      "projects/colab.md"
+    ],
+    "unindexed_total": 51,
+    "sources": [
+      "graphify-out/graph.json",
+      "graphify-out/manifest.json"
+    ]
+  },
+  "history": [
+    {
+      "kind": "review",
+      "title": "Erfan Second Brain — Strict Expert Verification Audit",
+      "date": "2026-08-21",
+      "path": "reviews/second-brain-verification-audit-2026-08-21.md"
+    },
+    {
+      "kind": "decision",
+      "title": "Last Bench Canonical Brand Asset Lock — 2026-08-21",
+      "date": "2026-08-21",
+      "path": "decisions/last-bench-brand-asset-lock-2026-08-21.md"
+    },
+    {
+      "kind": "review",
+      "title": "Knowledge Change Log",
+      "date": "2026-08-18",
+      "path": "reviews/knowledge-change-log.md"
+    },
+    {
+      "kind": "review",
+      "title": "CO.FOUND v4/v4.1 — Execution QC",
+      "date": "2026-08-18",
+      "path": "reviews/cofound-v4.1-execution-qc-2026-08-18.md"
+    },
+    {
+      "kind": "review",
+      "title": "CO.FOUND — Final Convergence Audit",
+      "date": "2026-08-18",
+      "path": "reviews/cofound-final-convergence-audit-2026-08-18.md"
+    },
+    {
+      "kind": "decision",
+      "title": "CO.FOUND / Founder Intelligence — FINAL CONVERGENCE LOCK v4",
+      "date": "2026-08-18",
+      "path": "decisions/founder-intelligence-canonical-lock-2026-08-17.md"
+    },
+    {
+      "kind": "decision",
+      "title": "CO.FOUND — v4.1 Implementation Hardening",
+      "date": "2026-08-18",
+      "path": "decisions/cofound-implementation-hardening-v4.1-2026-08-18.md"
+    },
+    {
+      "kind": "review",
+      "title": "Erfan Second Brain — System Audit",
+      "date": "2026-08-17",
+      "path": "reviews/second-brain-system-audit-2026-08-17.md"
+    },
+    {
+      "kind": "review",
+      "title": "Founder Intelligence — Ultra-Max Audit + Pre-Live Review",
+      "date": "2026-08-17",
+      "path": "reviews/founder-intelligence-ultramax-audit-2026-08-17.md"
+    },
+    {
+      "kind": "review",
+      "title": "CO.FOUND — Provenance-Hardened Ultra-Max Re-Audit",
+      "date": "2026-08-17",
+      "path": "reviews/cofound-ultramax-reaudit-2026-08-17.md"
+    },
+    {
+      "kind": "decision",
+      "title": "CO.FOUND — Product Hierarchy Lock",
+      "date": "2026-08-17",
+      "path": "decisions/cofound-product-hierarchy-2026-08-17.md"
+    },
+    {
+      "kind": "decision",
+      "title": "Decision: Obsidian-ready local knowledge base",
+      "date": "2026-07-19",
+      "path": "decisions/2026-07-19-obsidian-first-knowledge-base.md"
+    }
+  ],
+  "unmapped_statuses": [],
+  "states": [
+    "proven",
+    "partial",
+    "unproven",
+    "failed",
+    "stale"
+  ]
+}

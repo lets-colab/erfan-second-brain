@@ -11,11 +11,25 @@
       "word_count": 717
     },
     {
+      "id": "DESIGN.md",
+      "title": "DR.X Console design system",
+      "kind": "resource",
+      "status": "active",
+      "word_count": 1305
+    },
+    {
+      "id": "PRODUCT.md",
+      "title": "Product",
+      "kind": "resource",
+      "status": "active",
+      "word_count": 811
+    },
+    {
       "id": "README.md",
       "title": "Erfan Second Brain",
       "kind": "resource",
       "status": "active",
-      "word_count": 1102
+      "word_count": 1284
     },
     {
       "id": "architecture/DRX-AI-OS.md",
@@ -454,9 +468,9 @@
     }
   ],
   "summary": {
-    "documents": 46,
+    "documents": 48,
     "edges": 25,
-    "words": 43750,
-    "isolated_documents": 16
+    "words": 46048,
+    "isolated_documents": 18
   }
 }

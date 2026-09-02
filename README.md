@@ -83,6 +83,19 @@ The repository contains a strong verification framework, but the wider DR.X AI O
 
 A specialist skill is not considered proven merely because it is active. Register it in `evaluations/skill-fitness.yaml`, benchmark it on representative tasks, record regressions, and use fresh final-state evidence.
 
+## DR.X Console
+
+`console/index.html` renders the current verification state of this repository. Open it directly in a browser; no server or build step is required.
+
+```bash
+python3 scripts/build_console_state.py    # refresh console/state.json and state.js
+open console/index.html                   # xdg-open on Linux
+```
+
+The console holds no data of its own. Every figure is read from a contract file in this repository and displays the path it came from, so a value on screen can always be traced back to the file that asserts it. `scripts/build_console_state.py --check` reports whether the on-disk state still matches the repository, and CI refreshes it on every push to `main`.
+
+It separates **what exists** from **what is proven**, in keeping with `AGENTS.md` rules 15, 17 and 20. A contract file being present is never rendered as a passing state, unexecuted tests are shown rather than omitted from the denominator, and the headline verdict is governed by the worst material input rather than an average. Design rationale and the token system are in `DESIGN.md`; the surface brief is in `PRODUCT.md`.
+
 ## Learning loop
 
 The intended DR.X improvement loop is:

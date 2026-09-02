@@ -1,0 +1,151 @@
+/* DR.X Console — design tokens.
+ *
+ * Source of truth for the values documented in DESIGN.md. Every contrast ratio
+ * in the comments was measured, not estimated.
+ *
+ * Three theme states are supported:
+ *   :root                                    -> full light palette
+ *   :root:not([data-theme="light"]) + media  -> system dark preference
+ *   :root[data-theme="dark"]                 -> explicit toggle wins
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Surface ---------------------------------------------------------------
+   * Pure white ground with no hidden warmth. Warmth lives in the status
+   * colors, not the surface. Panel neutrals are tinted toward the brand hue
+   * (68deg) by 0.003-0.012 chroma rather than toward generic warmth. */
+  --bg: oklch(1 0 0);
+  --surface: oklch(0.985 0.003 68);
+  --surface-2: oklch(0.963 0.005 68);
+  --surface-3: oklch(0.94 0.006 68);
+  --line: oklch(0.9 0.006 68);
+  --line-strong: oklch(0.82 0.008 68);
+
+  /* Ink — ratios measured against --surface */
+  --ink: oklch(0.2 0.012 68);       /* 17.35:1 */
+  --ink-2: oklch(0.44 0.012 68);    /*  7.45:1 */
+  --ink-3: oklch(0.52 0.01 68);     /*  5.28:1 */
+
+  /* Proof states. The semantic axis of this interface.
+   * Amber is the brand primary because "defined but never executed" is this
+   * system's honest resting state. All clear 4.5:1 for small text. */
+  --st-proven: oklch(0.46 0.1 168);    /* 6.41:1 */
+  --st-partial: oklch(0.55 0.13 95);   /* 4.62:1 */
+  --st-unproven: oklch(0.54 0.15 68);  /* 4.99:1 */
+  --st-failed: oklch(0.51 0.19 27);    /* 6.07:1 */
+  --st-stale: oklch(0.52 0.02 68);     /* 5.29:1 */
+
+  /* Tint washes for row emphasis. Kept far below text weight so they never
+   * compete with the status marker or label. */
+  --st-proven-wash: oklch(0.46 0.1 168 / 0.07);
+  --st-partial-wash: oklch(0.55 0.13 95 / 0.08);
+  --st-unproven-wash: oklch(0.54 0.15 68 / 0.07);
+  --st-failed-wash: oklch(0.51 0.19 27 / 0.07);
+  --st-stale-wash: oklch(0.52 0.02 68 / 0.06);
+
+  --accent: var(--st-unproven);
+  --focus: oklch(0.54 0.15 68);
+
+  /* Type ------------------------------------------------------------------
+   * One sans for interface, one mono for data. Fixed rem scale at ~1.15,
+   * not fluid: users view at consistent DPI and a clamp-scaled heading in a
+   * dense panel reads worse, not better. */
+  --font-ui: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --t-xs: 0.75rem;
+  --t-sm: 0.8125rem;
+  --t-base: 0.9375rem;
+  --t-md: 1.0625rem;
+  --t-lg: 1.375rem;
+  --t-xl: 1.75rem;
+  --t-readout: 2.5rem;
+
+  /* Space — 4px base */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+
+  --radius: 3px;
+  --radius-lg: 5px;
+  --rail: 232px;
+
+  /* Motion — state feedback only, never choreography */
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+  --dur: 180ms;
+
+  /* Semantic z-index scale. No arbitrary values. */
+  --z-base: 0;
+  --z-sticky: 10;
+  --z-rail: 20;
+  --z-tooltip: 30;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    /* Warm ink near-black. Not pure black (the HUD reflex) and not cool
+     * blue-gray (the SaaS-dark reflex). */
+    --bg: oklch(0.17 0.008 68);
+    --surface: oklch(0.21 0.009 68);
+    --surface-2: oklch(0.245 0.01 68);
+    --surface-3: oklch(0.28 0.01 68);
+    --line: oklch(0.31 0.01 68);
+    --line-strong: oklch(0.4 0.012 68);
+
+    --ink: oklch(0.955 0.004 68);   /* 15.55:1 */
+    --ink-2: oklch(0.8 0.008 68);   /*  9.48:1 */
+    --ink-3: oklch(0.7 0.01 68);    /*  6.63:1 */
+
+    --st-proven: oklch(0.76 0.11 168);   /* 8.67:1 */
+    --st-partial: oklch(0.82 0.13 95);   /* 10.19:1 */
+    --st-unproven: oklch(0.8 0.14 68);   /* 9.25:1 */
+    --st-failed: oklch(0.7 0.16 27);     /* 6.19:1 */
+    --st-stale: oklch(0.68 0.02 68);     /* 6.14:1 */
+
+    --st-proven-wash: oklch(0.76 0.11 168 / 0.12);
+    --st-partial-wash: oklch(0.82 0.13 95 / 0.12);
+    --st-unproven-wash: oklch(0.8 0.14 68 / 0.12);
+    --st-failed-wash: oklch(0.7 0.16 27 / 0.12);
+    --st-stale-wash: oklch(0.68 0.02 68 / 0.1);
+
+    --focus: oklch(0.8 0.14 68);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: oklch(0.17 0.008 68);
+  --surface: oklch(0.21 0.009 68);
+  --surface-2: oklch(0.245 0.01 68);
+  --surface-3: oklch(0.28 0.01 68);
+  --line: oklch(0.31 0.01 68);
+  --line-strong: oklch(0.4 0.012 68);
+
+  --ink: oklch(0.955 0.004 68);
+  --ink-2: oklch(0.8 0.008 68);
+  --ink-3: oklch(0.7 0.01 68);
+
+  --st-proven: oklch(0.76 0.11 168);
+  --st-partial: oklch(0.82 0.13 95);
+  --st-unproven: oklch(0.8 0.14 68);
+  --st-failed: oklch(0.7 0.16 27);
+  --st-stale: oklch(0.68 0.02 68);
+
+  --st-proven-wash: oklch(0.76 0.11 168 / 0.12);
+  --st-partial-wash: oklch(0.82 0.13 95 / 0.12);
+  --st-unproven-wash: oklch(0.8 0.14 68 / 0.12);
+  --st-failed-wash: oklch(0.7 0.16 27 / 0.12);
+  --st-stale-wash: oklch(0.68 0.02 68 / 0.1);
+
+  --focus: oklch(0.8 0.14 68);
+}
