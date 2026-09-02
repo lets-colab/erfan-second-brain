@@ -1,0 +1,42 @@
+version: 1.0
+status: active
+purpose: convert_execution_outcomes_into_measurable_learning
+
+loop:
+  - decision
+  - execution
+  - observation
+  - outcome
+  - diagnosis
+  - lesson
+  - knowledge_update
+  - skill_update
+  - regression_test
+
+lesson:
+  id: string
+  statement: string
+  source_refs: list
+  discovered_at: datetime
+  scope: string
+  confidence: high|medium|low
+  applies_when: string
+  avoid_when: string
+  validation_test: string
+  status: proposed|verified|retired
+
+failure_pattern:
+  id: string
+  symptom: string
+  boundary: string
+  causal_hypothesis: string
+  discriminating_test: string
+  repair: string
+  recurrence_count: integer
+  last_seen: datetime
+
+promotion:
+  require_reproducible_evidence: true
+  require_regression_test: true
+  user_corrections_override_inference: true
+  retired_lessons_remain_historical: true
