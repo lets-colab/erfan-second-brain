@@ -1,0 +1,38 @@
+version: 1.0
+status: canonical-schema
+purpose: temporal_claim_record_for_founder_world_model
+
+required_fields:
+  - id
+  - claim
+  - scope
+  - source
+  - classification
+  - confidence
+  - created_at
+  - valid_from
+
+optional_fields:
+  - valid_until
+  - supersedes
+  - superseded_by
+  - owner
+  - evidence_refs
+  - outcome_refs
+  - tags
+
+classification:
+  - source_fact
+  - user_position
+  - external_claim
+  - derived
+  - inference
+  - simulation
+  - unknown
+
+invariants:
+  - canonical_claims_must_have_source
+  - superseded_claims_remain_for_history
+  - newer_valid_claims_do_not_erase_history
+  - conflicting_current_claims_are_flagged
+  - unknown_is_preferred_to_false_certainty

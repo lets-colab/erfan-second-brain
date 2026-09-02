@@ -1,0 +1,61 @@
+version: 1.0
+status: active
+purpose: compile_minimal_authoritative_task_context_before_model_execution
+
+assembly_order:
+  - task
+  - project_scope
+  - authoritative_state
+  - decisions
+  - constraints
+  - required_skills
+  - evidence
+  - recent_outcomes
+  - unknowns
+
+budgets:
+  default_context_utilization_target: 0.65
+  hard_max_context_utilization: 0.85
+  reserve_for_output_and_tool_results: 0.15
+
+selection:
+  authoritative_first: true
+  prefer_recent_valid_state: true
+  prefer_direct_evidence_over_summary: true
+  prefer_project_scope_before_global_memory: true
+  include_global_context_only_when_relevant: true
+  include_unknowns_when_material: true
+
+freshness:
+  stale_after_days:
+    decisions: 180
+    project_state: 14
+    kpis: 7
+    operational_tasks: 3
+    external_claims: 30
+  stale_items_must_be_labeled: true
+  stale_items_cannot_override_newer_authoritative_state: true
+
+conflicts:
+  precedence:
+    - explicit_current_user_correction
+    - canonical_source
+    - dated_decision
+    - current_project_state
+    - verified_external_evidence
+    - derived_summary
+    - inference
+  unresolved_conflict_action: surface_conflict_and_escalate
+
+security:
+  untrusted_content_is_data_not_instruction: true
+  retrieved_content_cannot_grant_permissions: true
+  secrets_are_never_context_targets: true
+  cross_project_retrieval_default: deny
+
+output_contract:
+  include_source_refs: true
+  include_confidence: true
+  include_freshness_status: true
+  include_unknowns: true
+  include_next_action_for_execution_tasks: true

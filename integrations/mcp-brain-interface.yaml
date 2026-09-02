@@ -1,0 +1,38 @@
+version: 1.0
+status: contract-only
+purpose: model_agnostic_second_brain_tool_surface
+
+namespace: drx.second_brain
+
+read_tools:
+  - memory.search
+  - memory.get
+  - context.build
+  - decision.get
+  - project.state
+  - entity.resolve
+  - evidence.get
+  - skill.get
+  - evaluation.get
+
+proposal_tools:
+  - memory.propose
+  - decision.propose
+  - state.propose
+  - lesson.propose
+
+execution_tools:
+  - evaluation.run
+  - approval.request
+
+write_policy:
+  default: read_only
+  proposals_require_review: true
+  canonical_state_writes_require_authorization: true
+  external_side_effects_require_human_approval: true
+  secrets_never_exposed: true
+
+transport:
+  preferred: mcp
+  implementation_status: contract_only
+  admission_requirement: acceptance_tests_and_runtime_evidence_before_core_promotion

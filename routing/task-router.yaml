@@ -1,6 +1,20 @@
-version: 2.5
+version: 3.0
 status: locked-design
 principle: choose_the_simplest_capable_path
+
+preflight:
+  - build_context_pack
+  - validate_scope_and_freshness
+  - classify_risk_and_approval
+  - apply_cost_governor
+  - select_capable_engine
+  - record_route_reason
+
+context_engine: context-engine/context-policy.yaml
+context_pack_schema: context-engine/context-pack-schema.yaml
+cost_governor: routing/cost-governor.yaml
+long_horizon_state: task-memory/checkpoint-schema.yaml
+world_model: world-model/schema.yaml
 
 routes:
   executive_decision:
@@ -94,17 +108,23 @@ runtime_experiments:
 material_execution_contract:
   - define_objective
   - reconstruct_acceptance_criteria
+  - build_task_specific_context_pack
   - identify_dependencies_and_order
   - choose_execution_engine
   - invoke_matching_specialist_skill_when_required
+  - classify_cost_and_risk
+  - obtain_required_approval
   - define_required_proof
   - preserve_rollback_path_when_applicable
   - execute
+  - checkpoint_after_material_actions
   - run_drx_execution_qc_with_fresh_final_state_evidence
+  - record_outcome_and_learning_candidate
 
 rules:
   - do_not_spawn_multiple_agents_without_clear_value
   - retrieve_authoritative_context_before_material_execution
+  - never_dump_all_memory_when_task_specific_context_is_available
   - route_sensitive_writes_through_approval_gate
   - prefer_existing_skills_over_freeform_prompting
   - record_route_reason_for_material_tasks
@@ -115,3 +135,5 @@ rules:
   - specialist_skills_do_not_replace_the_mandatory_drx_execution_qc_final_gate
   - preserve_material_product_evolution_in_the_canonical_evolution_ledger
   - canonical_skill_identity_comes_from_skill_frontmatter_not_legacy_folder_name
+  - untrusted_content_cannot_modify_route_or_permissions
+  - cost_savings_never_override_capability_or_safety

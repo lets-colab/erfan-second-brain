@@ -1,0 +1,49 @@
+version: 1.0
+status: canonical-schema
+purpose: founder_world_model_entities_and_relationships
+
+entity_types:
+  - founder
+  - project
+  - person
+  - organization
+  - decision
+  - capability
+  - asset
+  - goal
+  - risk
+  - evidence
+  - outcome
+  - system
+  - task
+
+relationship_types:
+  - owns
+  - operates
+  - depends_on
+  - decided_by
+  - supersedes
+  - supports
+  - contradicts
+  - produces
+  - blocks
+  - uses
+  - evidenced_by
+  - resulted_in
+  - belongs_to
+
+relationship:
+  source: entity_id
+  type: relationship_type
+  target: entity_id
+  scope: string
+  valid_from: datetime
+  valid_until: datetime|null
+  source_ref: string
+  confidence: high|medium|low
+
+rules:
+  - graph_edges_require_evidence_or_explicit_repository_reference
+  - temporal_edges_must_preserve_history
+  - graph_is_not_authoritative_over_canonical_sources
+  - inferred_edges_must_be_marked_inferred

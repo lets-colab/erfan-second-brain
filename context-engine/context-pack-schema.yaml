@@ -1,0 +1,38 @@
+version: 1.0
+status: canonical-schema
+purpose: portable_task_specific_context_package
+
+required:
+  task_id: string
+  generated_at: datetime
+  project_scope: string
+  objective: string
+  context_items: list
+  source_refs: list
+  decisions: list
+  constraints: list
+  unknowns: list
+  freshness: object
+  confidence: object
+  required_approval: boolean
+  next_action: string
+
+context_item:
+  id: string
+  type: knowledge|state|decision|constraint|evidence|outcome|intent|capability|unknown
+  claim: string
+  source: string
+  authority: canonical|verified|derived|inferred|untrusted
+  confidence: high|medium|low
+  valid_from: datetime|null
+  valid_until: datetime|null
+  supersedes: string|null
+  scope: string
+  relevance_score: number
+
+rules:
+  - every_material_claim_has_source
+  - every_time_sensitive_item_has_validity_or_freshness
+  - inferred_items_never_presented_as_facts
+  - project_scoped_items_cannot_leak_across_projects
+  - context_pack_is_read_only_input_to_execution_unless_explicit_write_tool_is_authorized
