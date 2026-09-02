@@ -515,7 +515,11 @@
       nav,
       el("div", { class: "rail-foot" }, [
         toggle,
-        el("span", { class: "mono", text: state.repo.short || "no commit" }),
+        el("span", {
+          class: "mono",
+          text: (state.generated_at || "").slice(0, 10) || "ungenerated",
+          title: "State generated " + formatDate(state.generated_at),
+        }),
       ]),
     ]);
   }
@@ -609,13 +613,9 @@
         ]),
         el("div", { class: "stamp" }, [
           el("span", { text: "generated " + formatDate(state.generated_at) }),
-          el("span", { class: "mono", text: (state.repo.branch || "detached") + " @ " + (state.repo.short || "—") + (state.repo.dirty ? " (uncommitted changes)" : "") }),
           el("span", {}, [
             el("span", { text: "contracts " }),
-            (function () {
-              var chip = stateChip(state.verification.state);
-              return chip;
-            })(),
+            stateChip(state.verification.state),
           ]),
         ]),
       ]),
@@ -628,7 +628,9 @@
       el("p", {
         class: "footnote",
         text: state.contract + " Regenerate with scripts/build_console_state.py; CI refreshes it on every push to main. " +
-          "A stale console shows a stale timestamp rather than confidently wrong numbers.",
+          "A stale console shows a stale timestamp rather than confidently wrong numbers. " +
+          "It records no commit of its own, because a committed artifact cannot name the commit that contains it: " +
+          "run git log console/state.json for that, and build_console_state.py --check for whether it is current.",
       }),
     ]);
 

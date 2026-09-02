@@ -30,6 +30,9 @@ jobs:
       - name: Verify repository contracts
         run: python scripts/verify_second_brain.py
 
+      - name: Test console state extractor
+        run: python scripts/test_console_state.py
+
       # --check compares on-disk state against a fresh read, ignoring the
       # generated_at stamp. Rewriting only when substantive state changed keeps
       # the timestamp from producing an empty commit on every run.

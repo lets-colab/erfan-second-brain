@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T01:14:20+00:00",
+  "generated_at": "2026-09-02T05:12:15+00:00",
   "generator": "scripts/build_console_state.py",
   "contract": "Values are read from repository files. The console authors none of them.",
   "verdict": {
@@ -11,14 +11,6 @@
       "knowledge graph does not cover the current repository"
     ],
     "governed_by": "worst material input (AGENTS.md rules 15, 17, 20)"
-  },
-  "repo": {
-    "commit": "69e4938e168ff967495e691e3d6967a58e9e47a4",
-    "short": "69e4938",
-    "branch": "claude/install-graphify-mempalace-x1tevo",
-    "committed_at": "2026-09-02T01:11:26+00:00",
-    "subject": "Merge origin/main into console branch",
-    "dirty": true
   },
   "verification": {
     "state": "proven",
@@ -224,11 +216,11 @@
     ]
   },
   "skills": {
-    "total": 14,
+    "total": 13,
     "counts": {
       "proven": 0,
       "partial": 2,
-      "unproven": 12,
+      "unproven": 11,
       "failed": 0,
       "stale": 0
     },
@@ -242,8 +234,9 @@
         "benchmark_status": "not_run",
         "state": "unproven",
         "runs": 0,
-        "has_contract": false,
+        "has_contract": true,
         "registered": true,
+        "directory": "founder-command-center-operator",
         "limitation": "Legacy folder path is retained for compatibility; canonical skill identity comes from frontmatter name `cofound-operator`."
       },
       {
@@ -255,6 +248,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-architecture-convergence",
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
@@ -266,6 +260,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-brand-asset-lock",
         "limitation": "The protocol addresses known logo/portrait failure modes, but effectiveness is not proven until final exported artifacts pass source-comparison and user-acceptance benchmarks repeatedly."
       },
       {
@@ -277,6 +272,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-contextual-communicator",
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
@@ -288,6 +284,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-decision-council",
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
@@ -299,6 +296,7 @@
         "runs": 1,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-execution-qc",
         "limitation": ""
       },
       {
@@ -310,6 +308,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-fable-godlevel-execution",
         "limitation": "Presence in the repository does not establish superiority or repeatability; benchmark before any improvement claim."
       },
       {
@@ -321,6 +320,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-fable2036-reasoner",
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
@@ -332,6 +332,7 @@
         "runs": 1,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-founder-portfolio-trendcraft",
         "limitation": ""
       },
       {
@@ -343,6 +344,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-memory-retriever",
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
@@ -354,6 +356,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-prelive-simulator",
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
@@ -365,6 +368,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
+        "directory": "drx-representative",
         "limitation": "Version metadata establishes the current contract baseline; it does not prove performance."
       },
       {
@@ -376,17 +380,7 @@
         "runs": 0,
         "has_contract": true,
         "registered": true,
-        "limitation": ""
-      },
-      {
-        "name": "founder-command-center-operator",
-        "version": "unversioned",
-        "previous_version": null,
-        "benchmark_status": "not registered",
-        "state": "unproven",
-        "runs": 0,
-        "has_contract": true,
-        "registered": false,
+        "directory": "drx-systematic-debugger",
         "limitation": ""
       }
     ],

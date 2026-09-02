@@ -181,9 +181,21 @@ def _parse_mapping_entry(rows, idx, indent):
     if rest:
         return {key: _scalar(rest)}, idx
 
-    if idx < len(rows) and rows[idx][0] > indent:
-        value, idx = _parse_block(rows, idx, rows[idx][0])
-        return {key: value}, idx
+    if idx < len(rows):
+        next_indent, next_content = rows[idx]
+        # A block sequence may sit at the same indent as its key, which is the
+        # ordinary way to write a list in YAML:
+        #     evidence:
+        #     - run-2026-08-01
+        # Requiring a deeper indent here would misparse that as a null value and
+        # then fail on the "- " line. Only reached once real evidence is
+        # recorded, since the current files all use inline `evidence: []`.
+        if next_content.startswith("- ") and next_indent >= indent:
+            value, idx = _parse_block(rows, idx, next_indent)
+            return {key: value}, idx
+        if next_indent > indent:
+            value, idx = _parse_block(rows, idx, next_indent)
+            return {key: value}, idx
 
     return {key: None}, idx
 
@@ -223,29 +235,23 @@ def tally(values) -> dict:
     return counts
 
 
-def git(*args: str) -> str:
-    try:
-        return subprocess.run(
-            ["git", *args], cwd=ROOT, capture_output=True, text=True, check=True
-        ).stdout.strip()
-    except (subprocess.CalledProcessError, FileNotFoundError):
-        return ""
-
-
 # --------------------------------------------------------------------------
 # Collectors
 # --------------------------------------------------------------------------
 
 
-def collect_repo() -> dict:
-    return {
-        "commit": git("rev-parse", "HEAD"),
-        "short": git("rev-parse", "--short", "HEAD"),
-        "branch": git("rev-parse", "--abbrev-ref", "HEAD"),
-        "committed_at": git("log", "-1", "--format=%cI"),
-        "subject": git("log", "-1", "--format=%s"),
-        "dirty": bool(git("status", "--porcelain")),
-    }
+# Deliberately no commit SHA, branch, or dirty flag in the payload.
+#
+# This artifact is committed, so any commit identity it records is the one
+# BEFORE the commit that contains it: the checked-in file would permanently
+# name the previous SHA and, because the tree is dirty at generation time,
+# permanently claim uncommitted changes. A console whose thesis is that nothing
+# may read more confidently than its evidence cannot ship a field that is
+# wrong by construction.
+#
+# generated_at is safe because it describes when the read happened rather than
+# asserting the artifact's own identity. `git log console/state.json` answers
+# the commit question correctly, and --check answers the freshness question.
 
 
 def collect_verification() -> dict:
@@ -294,8 +300,12 @@ def collect_acceptance() -> dict:
         state = map_status(raw_status)
         ev = record.get("evidence") if isinstance(record, dict) else None
         invalidated = bool(isinstance(record, dict) and record.get("invalidated_evidence"))
-        # Evidence that predates a material change is stale, not merely absent.
-        if invalidated and state == "unproven":
+        # Invalidation dominates the recorded status, whatever it says. Rule 16:
+        # a material change invalidates the evidence it affects, so a pass or a
+        # partial carrying invalidated_evidence is stale too. Gating this on
+        # "unproven" would let a stale critical pass count toward critical_proven
+        # and let the console present a release as current on dead evidence.
+        if invalidated:
             state = "stale"
         items.append(
             {
@@ -349,15 +359,26 @@ def collect_skills() -> dict:
     fitness = read_yaml(fitness_path) if fitness_path.exists() else {}
     registry = fitness.get("skills") or {}
 
-    on_disk = set()
+    # Identity comes from the SKILL.md `name` frontmatter, matching how
+    # verify_second_brain.py reads it. The directory basename is not the
+    # identity: skills/founder-command-center-operator/ declares
+    # `name: cofound-operator`, which is what the fitness registry uses. Keying
+    # on the basename would split that skill into a phantom "registry only" row
+    # and a phantom "contract only" row, and inflate the total.
+    on_disk = {}
     skills_dir = ROOT / "skills"
     if skills_dir.is_dir():
         for entry in sorted(skills_dir.iterdir()):
-            if entry.is_dir() and not entry.name.startswith("_") and (entry / "SKILL.md").exists():
-                on_disk.add(entry.name)
+            contract = entry / "SKILL.md"
+            if not entry.is_dir() or entry.name.startswith("_") or not contract.exists():
+                continue
+            text = contract.read_text(encoding="utf-8", errors="replace")
+            match = re.search(r"^name:\s*([^\n]+)", text, re.MULTILINE)
+            declared = match.group(1).strip().strip("\"'") if match else entry.name
+            on_disk[declared] = entry.name
 
     items = []
-    for name in sorted(set(registry) | on_disk):
+    for name in sorted(set(registry) | set(on_disk)):
         record = registry.get(name) or {}
         if not isinstance(record, dict):
             record = {}
@@ -377,6 +398,7 @@ def collect_skills() -> dict:
                 "runs": run_count,
                 "has_contract": name in on_disk,
                 "registered": name in registry,
+                "directory": on_disk.get(name),
                 "limitation": record.get("limitation") or "",
             }
         )
@@ -592,7 +614,6 @@ def build_state() -> dict:
             "blocking": blocking,
             "governed_by": "worst material input (AGENTS.md rules 15, 17, 20)",
         },
-        "repo": collect_repo(),
         "verification": verification,
         "readiness": readiness,
         "acceptance": acceptance,
@@ -632,11 +653,10 @@ def main() -> int:
             print("console/state.json is missing; run scripts/build_console_state.py", file=sys.stderr)
             return 1
         current = json.loads(json_path.read_text(encoding="utf-8"))
-        # Provenance, not substantive state. "repo" carries the commit this file
-        # was generated at, so committing the file necessarily changes it: were
-        # it compared here, --check could never pass after a commit and CI would
-        # rewrite, commit, and invalidate itself on every run.
-        volatile = ("generated_at", "repo")
+        # generated_at describes when the read happened, not what was read, so
+        # it is excluded from the comparison. Nothing else in the payload is
+        # self-referential; see the note above collect_verification.
+        volatile = ("generated_at",)
         a = {k: v for k, v in current.items() if k not in volatile}
         b = {k: v for k, v in state.items() if k not in volatile}
         if a != b:

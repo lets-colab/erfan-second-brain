@@ -51,10 +51,13 @@ repository's constitution forbids exactly that grammar.
 The current honest state is:
 
 - overall knowledge readiness **3.5 / 10.5**, governed by the lowest material dimension
-- **0 of 11** acceptance tests executed
+- **1 of 13** acceptance tests executed, and **0 of 10** critical gates carry pass evidence
 - `production_certified: false`, `human_owner_signoff: false`
 - most production skills at `benchmark_status: not_run`
 - Graphify output stale relative to the repository it describes
+
+Those figures are the console's own reading at the time of writing and will drift.
+The console is the current answer; this list is illustrative.
 
 A conventional dashboard would render this as a wall of green, because every file
 is present and the verification script passes. The console must render it as what

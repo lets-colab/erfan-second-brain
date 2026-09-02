@@ -22,7 +22,7 @@
       "title": "Product",
       "kind": "resource",
       "status": "active",
-      "word_count": 811
+      "word_count": 845
     },
     {
       "id": "README.md",
@@ -594,7 +594,7 @@
   "summary": {
     "documents": 60,
     "edges": 33,
-    "words": 54973,
+    "words": 55007,
     "isolated_documents": 25
   }
 }
