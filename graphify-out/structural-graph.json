@@ -144,6 +144,34 @@
       "word_count": 510
     },
     {
+      "id": "integrations/notebooklm/CLAUDE_CODE_SYNC_PROMPT.md",
+      "title": "Claude Code prompt — sync a NotebookLM notebook into the shared DR.X source of truth",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 521
+    },
+    {
+      "id": "integrations/notebooklm/MCP_SETUP.md",
+      "title": "NotebookLM MCP — setup",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 507
+    },
+    {
+      "id": "integrations/notebooklm/SYNC_CONTRACT.md",
+      "title": "NotebookLM ↔ DR.X Retrieval Sync Contract",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 873
+    },
+    {
+      "id": "integrations/notebooklm/snapshots/README.md",
+      "title": "NotebookLM snapshots",
+      "kind": "integrations",
+      "status": "unknown",
+      "word_count": 207
+    },
+    {
       "id": "notes/last-bench-legal-review-source.md",
       "title": "Last Bench Legal Review Source",
       "kind": "resource",
@@ -503,6 +531,41 @@
       "type": "references"
     },
     {
+      "source": "integrations/notebooklm/CLAUDE_CODE_SYNC_PROMPT.md",
+      "target": "integrations/notebooklm/MCP_SETUP.md",
+      "type": "references"
+    },
+    {
+      "source": "integrations/notebooklm/CLAUDE_CODE_SYNC_PROMPT.md",
+      "target": "integrations/notebooklm/SYNC_CONTRACT.md",
+      "type": "references"
+    },
+    {
+      "source": "integrations/notebooklm/MCP_SETUP.md",
+      "target": "integrations/notebooklm/CLAUDE_CODE_SYNC_PROMPT.md",
+      "type": "references"
+    },
+    {
+      "source": "integrations/notebooklm/MCP_SETUP.md",
+      "target": "integrations/notebooklm/SYNC_CONTRACT.md",
+      "type": "references"
+    },
+    {
+      "source": "integrations/notebooklm/snapshots/README.md",
+      "target": "integrations/notebooklm/CLAUDE_CODE_SYNC_PROMPT.md",
+      "type": "references"
+    },
+    {
+      "source": "integrations/notebooklm/snapshots/README.md",
+      "target": "integrations/notebooklm/MCP_SETUP.md",
+      "type": "references"
+    },
+    {
+      "source": "integrations/notebooklm/snapshots/README.md",
+      "target": "integrations/notebooklm/SYNC_CONTRACT.md",
+      "type": "references"
+    },
+    {
       "source": "skills/drx-contextual-communicator/SKILL.md",
       "target": "skills/drx-contextual-communicator/references/interaction-contract.md",
       "type": "references"
@@ -529,9 +592,9 @@
     }
   ],
   "summary": {
-    "documents": 56,
-    "edges": 26,
-    "words": 52865,
+    "documents": 60,
+    "edges": 33,
+    "words": 54973,
     "isolated_documents": 25
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T01:11:26+00:00",
+  "generated_at": "2026-09-02T01:14:20+00:00",
   "generator": "scripts/build_console_state.py",
   "contract": "Values are read from repository files. The console authors none of them.",
   "verdict": {
@@ -13,10 +13,10 @@
     "governed_by": "worst material input (AGENTS.md rules 15, 17, 20)"
   },
   "repo": {
-    "commit": "66395274025cd1b4dfadee86ff1ae3babd9c9526",
-    "short": "6639527",
+    "commit": "69e4938e168ff967495e691e3d6967a58e9e47a4",
+    "short": "69e4938",
     "branch": "claude/install-graphify-mempalace-x1tevo",
-    "committed_at": "2026-09-02T01:10:59+00:00",
+    "committed_at": "2026-09-02T01:11:26+00:00",
     "subject": "Merge origin/main into console branch",
     "dirty": true
   },
@@ -431,7 +431,7 @@
       },
       {
         "directory": "integrations",
-        "files": 5
+        "files": 9
       },
       {
         "directory": "notes",
@@ -466,7 +466,7 @@
         "files": 4
       }
     ],
-    "total_files": 74,
+    "total_files": 78,
     "sources": [
       "entities.json"
     ]
@@ -479,7 +479,7 @@
     "hyperedges": 3,
     "communities": 7,
     "indexed_files": 11,
-    "repository_files": 76,
+    "repository_files": 80,
     "unindexed": [
       "DESIGN.md",
       "PRODUCT.md",
@@ -502,7 +502,7 @@
       "governance/authority-matrix.yaml",
       "integrations/claude-design/CLAUDE_CODE_SYNC_PROMPT.md"
     ],
-    "unindexed_total": 65,
+    "unindexed_total": 69,
     "sources": [
       "graphify-out/graph.json",
       "graphify-out/manifest.json"

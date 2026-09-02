@@ -6,9 +6,9 @@ It is a **structural reference graph**, not a semantic Graphify run. An edge mea
 
 ## Current corpus
 
-- Documents indexed: **56**
-- Approximate words: **52,865**
-- Explicit internal reference edges: **26**
+- Documents indexed: **60**
+- Approximate words: **54,973**
+- Explicit internal reference edges: **33**
 - Structurally isolated documents: **25**
 - Project records: **6**
 - Skill records: **13**
